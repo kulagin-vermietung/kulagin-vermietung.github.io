@@ -137,7 +137,6 @@ body {
 }
 
 header {
-  background-color: red;
   background-image: url(/img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
