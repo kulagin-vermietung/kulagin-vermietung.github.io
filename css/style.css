@@ -3,13 +3,13 @@
  */
 
 :root {
-  --background-body: #fff;
+  --background-body: #f1f2f4;
   --background: #efefef;
   --background-alt: #f7f7f7;
   --selection: #9e9e9e;
   --text-main: #363636;
   --text-bright: #000;
-  --text-muted: #70777f;
+  --text-muted: #9e9e9e;
   --links: #0076d1;
   --focus: #0096bfab;
   --border: #dbdbdb;
@@ -34,7 +34,7 @@
   --selection: #1c76c5;
   --text-main: #dbdbdb;
   --text-bright: #fff;
-  --text-muted: #a9b1ba;
+  --text-muted: #fff;
   --links: #41adff;
   --focus: #0096bfab;
   --border: #526980;
@@ -109,9 +109,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  max-width: 950px;
   margin: auto;
-  padding: 0 10px;
   word-wrap: break-word;
   color: #363636;
   color: var(--text-main);
@@ -141,8 +139,19 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 250px;   
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+  height: 250px;  
+  opacity: 0.5;
+  }
+
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px 15px 180px 15px;
+  background-color: #fff;
+  background-image: url('/img/logo-footer-transparent.png');
+  background-repeat: no-repeat;
+  background-position:bottom; 
+  position: relative;
   }
 
 button {
@@ -1614,31 +1623,28 @@ dialog::backdrop {
 }
 
 footer {
-  border-top: 1px solid #dbdbdb;
-  border-top: 1px solid var(--border);
-  padding-top: 10px;
-  color: #70777f;
-  color: var(--text-muted);
+  background-color: #012D50;
+  height: 150px;
+  padding: 35px;
+  color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
 
   footer {
-  color: #a9b1ba;
-  color: var(--text-muted);
+  color: #fff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
 
   footer {
-  border-top: 1px solid #526980;
-  border-top: 1px solid var(--border);
+  
   }
 }
 
 body > footer {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 @media print {
