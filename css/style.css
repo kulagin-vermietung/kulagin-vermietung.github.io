@@ -3,7 +3,7 @@
  */
 
 :root {
-  --background-body: #f1f2f4;
+  --background-body: #f5f5f5;
   --background: #efefef;
   --background-alt: #f7f7f7;
   --selection: #9e9e9e;
@@ -152,13 +152,30 @@ header {
 section {
   max-width: 1200px;
   margin: auto;
-  padding: 20px 15px 180px 15px;
+  padding: 20px 15px 45px 15px;
   background-color: #fff;
-  background-image: url('/img/logo-footer-transparent.svg');
-  background-repeat: no-repeat;
-  background-position:bottom; 
-  position: relative;
+  display: block;
   }
+
+  section-odd {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 15px 45px 15px;
+    background-color: #eef1f3;
+    display: block;
+    }
+
+  last-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 15px 180px 15px;
+    background-color: #fff;
+    background-image: url('/img/logo-footer-transparent.svg');
+    background-repeat: no-repeat;
+    background-position:bottom; 
+    position: relative;
+    display: block;
+    }
 
 button {
   transition:
@@ -275,8 +292,7 @@ h6 {
 }
 
 h1 {
-  color: #000;
-  color: var(--text-bright);
+  color: #012D50;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -288,8 +304,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
-  color: var(--text-bright);
+  color: #012D50;
 }
 
 @media (prefers-color-scheme: dark) {
