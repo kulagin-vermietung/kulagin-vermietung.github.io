@@ -1631,7 +1631,7 @@ dialog::backdrop {
 footer {
   background-color: #012D50;
   height: 62px;
-  padding: 35px 35px 35px 85px;
+  padding: 30px 30px 30px 110px;
   color: #fff;
   line-height: 30px;
 }
@@ -1654,10 +1654,7 @@ body > footer {
   margin-top: 0px;
 }
 
-#map {
-  height: 300px;
-  width: 400px;
-}
+
 
 @media print {
   body,

@@ -51,49 +51,27 @@
   <h1>Willkommen!</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, officiis? Odio sapiente quas tempora nihil non debitis earum architecto ipsa exercitationem, iure tenetur. Illum similique exercitationem iste. Reiciendis, expedita? Accusantium.</p>
 
-<div id="map"></div>
+
+
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.0215677437656!2d12.326233412351776!3d51.32279954518734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f70c6570e24f%3A0x3b3bafffabf55776!2sGie%C3%9Ferstra%C3%9Fe%2050%2C%2004229%20Leipzig!5e0!3m2!1sde!2sde!4v1658489185921!5m2!1sde!2sde" 
+  width="80%" height="250" frameborder="0" style="display:block;margin: auto; border-radius: 0px;border: 0px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, officiis? Odio sapiente quas tempora nihil non debitis earum architecto ipsa exercitationem, iure tenetur. Illum similique exercitationem iste. Reiciendis, expedita? Accusantium.</p>
 
 
 </section>
 
-<footer><b>© Kulagin Vermietung</b> | Gießerstraße 50, 04229 Leipzig<br>Tel: <a href="tel:+493141112233">+49 (0)314 111 22 33</a> | Mail: <a href="mailto:kontakt@kulagin-vermietung.de">kontakt@kulagin-vermietung.de</a></footer>
+<footer>
+<b>© Kulagin Vermietung</b> | Gießerstraße 50, 04229 Leipzig<br>Tel: <a href="tel:+493141112233">+49 (0)314 111 22 33</a> | Mail: <a href="mailto:kontakt@kulagin-vermietung.de">kontakt@kulagin-vermietung.de</a>
+</footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-
-  <script>
-        
-    var MarkerAnnotation = mapkit.MarkerAnnotation;
-    var work = new mapkit.Coordinate(51,32289, 12,32639);
-    
-    mapkit.init({
-        authorizationCallback: function(done) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/services/jwt");
-            xhr.addEventListener("load", function() {
-                done(this.responseText);
-            });
-            xhr.send();
-        }
-    });
-    var map = new mapkit.Map("map");
-        
-    // Setting properties after creation:
-    var workAnnotation = new MarkerAnnotation(work);
-    workAnnotation.color = "#012D50"; 
-    workAnnotation.title = "Kulagin Vermietung";
-    workAnnotation.subtitle = "Gießerstraße 50";
-    workAnnotation.selected = "true";
-    workAnnotation.glyphText = "";
-    
-    // Add and show annotation on the map
-    map.showItems([workAnnotation]);
-      
-    </script>
-
-
 
 
 </body>
