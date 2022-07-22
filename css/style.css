@@ -143,10 +143,10 @@ header {
   }
 
 .site-logo {
-    width: 320px;
+    width: 350px;
     height: auto;
     margin:auto;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
 section {
@@ -154,7 +154,7 @@ section {
   margin: auto;
   padding: 20px 15px 180px 15px;
   background-color: #fff;
-  background-image: url('/img/logo-footer-transparent.png');
+  background-image: url('/img/logo-footer-transparent.svg');
   background-repeat: no-repeat;
   background-position:bottom; 
   position: relative;
