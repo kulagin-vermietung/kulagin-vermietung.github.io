@@ -1630,9 +1630,10 @@ dialog::backdrop {
 
 footer {
   background-color: #012D50;
-  height: 150px;
-  padding: 35px;
+  height: 62px;
+  padding: 35px 35px 35px 85px;
   color: #fff;
+  line-height: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
