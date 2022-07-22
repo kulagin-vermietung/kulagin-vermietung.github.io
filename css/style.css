@@ -140,11 +140,17 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   height: 250px;  
-  opacity: 0.5;
+  }
+
+.site-logo {
+    width: 320px;
+    height: auto;
+    margin:auto;
+    padding-top: 50px;
   }
 
 section {
-  max-width: 950px;
+  max-width: 1200px;
   margin: auto;
   padding: 20px 15px 180px 15px;
   background-color: #fff;
