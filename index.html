@@ -22,6 +22,10 @@
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/style.css">
 
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+
 <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -46,11 +50,51 @@
 <section>
   <h1>Willkommen!</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, officiis? Odio sapiente quas tempora nihil non debitis earum architecto ipsa exercitationem, iure tenetur. Illum similique exercitationem iste. Reiciendis, expedita? Accusantium.</p>
+
+<div id="map"></div>
+
+
 </section>
 
 <footer><b>© Kulagin Vermietung</b> | Gießerstraße 50, 04229 Leipzig<br>Tel: <a href="tel:+493141112233">+49 (0)314 111 22 33</a> | Mail: <a href="mailto:kontakt@kulagin-vermietung.de">kontakt@kulagin-vermietung.de</a></footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+  <script>
+        
+    var MarkerAnnotation = mapkit.MarkerAnnotation;
+    var work = new mapkit.Coordinate(51,32289, 12,32639);
+    
+    mapkit.init({
+        authorizationCallback: function(done) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/services/jwt");
+            xhr.addEventListener("load", function() {
+                done(this.responseText);
+            });
+            xhr.send();
+        }
+    });
+    var map = new mapkit.Map("map");
+        
+    // Setting properties after creation:
+    var workAnnotation = new MarkerAnnotation(work);
+    workAnnotation.color = "#012D50"; 
+    workAnnotation.title = "Kulagin Vermietung";
+    workAnnotation.subtitle = "Gießerstraße 50";
+    workAnnotation.selected = "true";
+    workAnnotation.glyphText = "";
+    
+    // Add and show annotation on the map
+    map.showItems([workAnnotation]);
+      
+    </script>
+
+
+
+
 </body>
 </html>

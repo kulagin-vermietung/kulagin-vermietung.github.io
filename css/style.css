@@ -1654,6 +1654,11 @@ body > footer {
   margin-top: 0px;
 }
 
+#map {
+  height: 300px;
+  width: 400px;
+}
+
 @media print {
   body,
   pre,
