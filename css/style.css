@@ -169,6 +169,18 @@ header {
   display: block;
 }
 
+.section-last-odd {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 15px 180px 15px;
+  background-color: #eef1f3;
+  background-image: url("/img/logo-footer-transparent.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  display: block;
+}
+
 .googlemaps {
   width: 100%;
   height: 250px;
@@ -1626,5 +1638,199 @@ body > footer {
   a {
     color: #00f;
     text-decoration: underline;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap; // make sure it wraps
+}
+.tabs label {
+  order: 1; // Put the labels first
+  display: block;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #012d50;
+  color: white;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+.news {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20vw;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.news:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #012d50;
+  -webkit-animation: leftRight 15s infinite linear;
+  animation: leftRight 15s infinite linear;
+}
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.gallery_items {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400%;
+  -webkit-animation: slide 15s infinite ease-in-out;
+  animation: slide 15s infinite ease-in-out;
+}
+
+.gallery_item {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 25%;
+}
+
+.gallery_item img {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+@keyframes leftRight {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 100%;
+  }
+  31% {
+    width: 0%;
+  }
+  66% {
+    width: 100%;
+  }
+  67% {
+    width: 0%;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-webkit-keyframes leftRight {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 100%;
+  }
+  31% {
+    width: 0%;
+  }
+  66% {
+    width: 100%;
+  }
+  67% {
+    width: 0%;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  31% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  99% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  31% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  99% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
   }
 }
