@@ -906,8 +906,8 @@ textarea:disabled {
 }
 
 fieldset {
-  border: 1px #0096bfab solid;
-  border: 1px var(--focus) solid;
+  border: 0px #0096bfab solid;
+  border: 0px var(--focus) solid;
   border-radius: 6px;
   margin: 0;
   margin-bottom: 12px;
@@ -916,8 +916,8 @@ fieldset {
 
 @media (prefers-color-scheme: dark) {
   fieldset {
-    border: 1px #0096bfab solid;
-    border: 1px var(--focus) solid;
+    border: 0px #0096bfab solid;
+    border: 0px var(--focus) solid;
   }
 }
 
