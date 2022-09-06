@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:0,Das Erste HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15172/index.m3u8
+https://mcdn.daserste.de/daserste/de/master_1920p_5000.m3u8
 #EXTINF:0,ZDF HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6059/index.m3u8
