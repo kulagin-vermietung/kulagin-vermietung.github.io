@@ -122,6 +122,9 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7258/index.m3u8
 #EXTINF:0,Spiegel Geschichte HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6091/index.m3u8
+#EXTINF:0,Welt der Wunder HD
+#EXTGRP:DE
+https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
 #EXTINF:0,NatGeo HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7255/index.m3u8
@@ -134,6 +137,9 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7257/index.m3u8
 #EXTINF:0,Deluxe Music HD
 #EXTGRP:DE
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+#EXTINF:0,MTV HD
+#EXTGRP:DE
+https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/mtvg18ef/master/mtvg18ef.m3u8
 #EXTINF:0,Syfy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
