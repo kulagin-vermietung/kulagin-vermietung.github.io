@@ -116,6 +116,9 @@ https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master
 #EXTINF:0,Phoenix HD
 #EXTGRP:DE
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
+#EXTINF:0,euronews HD
+#EXTGRP:DE
+https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
 #EXTINF:0,WELT HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7258/index.m3u8
