@@ -377,6 +377,3 @@ https://w-news2weltcms.akamaized.net/hls/live/2040885/Welt-NextNews/index.m3u8
 #EXTINF:0,Bild
 #EXTGRP:DE
 https://bild.personalstream.tv/v1/master.m3u8
-#EXTINF:0,ZDFneo
-#EXTGRP:DE
-https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
