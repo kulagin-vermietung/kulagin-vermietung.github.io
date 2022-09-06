@@ -110,6 +110,9 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7256/index.m3u8
 #EXTINF:0,Animal Planet HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7257/index.m3u8
+#EXTINF:0,Deluxe Music HD
+#EXTGRP:DE
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 #EXTINF:0,Syfy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
