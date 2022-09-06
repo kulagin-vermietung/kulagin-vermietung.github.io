@@ -71,9 +71,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6081/index.m3u8
 #EXTINF:0,ORF 1 HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15177/index.m3u8
-#EXTINF:0,ARD FHD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7233/index.m3u8
 #EXTINF:0,ARD alpha
 #EXTGRP:DE
 https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
