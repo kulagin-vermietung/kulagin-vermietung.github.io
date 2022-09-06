@@ -119,6 +119,9 @@ https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 #EXTINF:0,euronews HD
 #EXTGRP:DE
 https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:0,Sachsen Fernsehen Leipzig HD
+#EXTGRP:DE
+https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/chunks.m3u8
 #EXTINF:0,WELT HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7258/index.m3u8
