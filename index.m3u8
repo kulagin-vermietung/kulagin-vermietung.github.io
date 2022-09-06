@@ -106,7 +106,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/1021/index.m3u8
 https://artelivezdf.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:0,NTV HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7259/index.m3u8
+https://pntvlive-a.akamaized.net/live/ntvhome/hls/ntvhome.m3u8
 #EXTINF:0,Tagesschau24
 #EXTGRP:DE
 https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
