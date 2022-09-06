@@ -7,10 +7,10 @@ https://mcdn.daserste.de/daserste/de/master.m3u8
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
 #EXTINF:0,ZDFinfo HD
 #EXTGRP:DE
-https://zdf-hls-15.akamaized.net/hls/live/2016500/de/high/master.m3u8
+https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
 #EXTINF:0,ZDFneo HD
 #EXTGRP:DE
-https://zdf-hls-15.akamaized.net/hls/live/2016499/de/high/master.m3u8
+https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:0,RTL HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6062/index.m3u8
