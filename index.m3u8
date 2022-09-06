@@ -74,19 +74,31 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15177/index.m3u8
 #EXTINF:0,ARD alpha
 #EXTGRP:DE
 https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
-#EXTINF:0,WDR HD Aachen
+#EXTINF:0,WDR HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15173/index.m3u8
+https://mcdn.wdr.de/wdr/wdrfs/de/master.m3u8
 #EXTINF:0,HR HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15180/index.m3u8
 #EXTINF:0,NDR HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15181/index.m3u8
+#EXTINF:0,MDR HD
+#EXTGRP:DE
+https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/master.m3u8
 #EXTINF:0,3sat HD
 #EXTGRP:DE
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
-#EXTINF:0,Deutsche Welle
+#EXTINF:0,rbb HD
+#EXTGRP:DE
+https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
+#EXTINF:0,SWR HD
+#EXTGRP:DE
+https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
+#EXTINF:0,SR HD
+#EXTGRP:DE
+https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
+#EXTINF:0,Deutsche Welle HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/1021/index.m3u8
 #EXTINF:0,arte HD
@@ -362,15 +374,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19042/index.m3u8
 #EXTINF:0,Dazn 2 HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19043/index.m3u8
-#EXTINF:0,MDR
-#EXTGRP:DE
-https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/master.m3u8
-#EXTINF:0,rbb
-#EXTGRP:DE
-https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
-#EXTINF:0,SWR HD
-#EXTGRP:DE
-https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
 #EXTINF:0,Servus TV
 #EXTGRP:DE
 https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
@@ -383,3 +386,6 @@ https://w-news2weltcms.akamaized.net/hls/live/2040885/Welt-NextNews/index.m3u8
 #EXTINF:0,Bild
 #EXTGRP:DE
 https://bild.personalstream.tv/v1/master.m3u8
+#EXTINF:0,BR HD
+#EXTGRP:DE
+https://mcdn.br.de/br/fs/bfs_sued/hls/de/master.m3u8
