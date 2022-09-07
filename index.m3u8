@@ -166,13 +166,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6094/index.m3u8
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6090/index.m3u8
 #EXTINF:0,TNT Film HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6110/index.m3u8
-#EXTINF:0,TNT Film HD
-#EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6089/index.m3u8
-#EXTINF:0,TNT Comedy HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6111/index.m3u8
 #EXTINF:0,Sport 1 HD
 #EXTGRP:DE
 https://streaming-s1free.sport1.de/EtK8kRUn7fEhkVL9rJTF3Q==,1662562640/ls-45420-1/index.m3u8
@@ -182,21 +176,12 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19023/index.m3u8
 #EXTINF:0,Auto Motor Sport HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19025/index.m3u8
-#EXTINF:0,Sport Digital HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19026/index.m3u8
 #EXTINF:0,Motorvision TV
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6112/index.m3u8
 #EXTINF:0,Eurosport HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15179/index.m3u8
-#EXTINF:0,Eurosport360 1 HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19039/index.m3u8
-#EXTINF:0,Eurosport360 2 HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19040/index.m3u8
 #EXTINF:0,Sky Cinema Comedy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2483/index.m3u8
