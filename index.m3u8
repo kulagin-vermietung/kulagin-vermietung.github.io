@@ -68,6 +68,9 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6081/index.m3u8
 #EXTINF:0,ORF 1 HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15177/index.m3u8
+#EXTINF:0,Servus TV HD
+#EXTGRP:DE
+https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
 #EXTINF:0,ARD alpha HD
 #EXTGRP:DE
 https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
@@ -122,6 +125,9 @@ https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/chunks.m
 #EXTINF:0,WELT HD
 #EXTGRP:DE
 https://w-live2weltcms.akamaized.net/hls/live/2041019/Welt-LivePGM/index.m3u8
+#EXTINF:0,Bild HD
+#EXTGRP:DE
+https://bild.personalstream.tv/v1/master.m3u8
 #EXTINF:0,Spiegel Geschichte HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6091/index.m3u8
@@ -392,12 +398,3 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19042/index.m3u8
 #EXTINF:0,Dazn 2 HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19043/index.m3u8
-#EXTINF:0,Servus TV
-#EXTGRP:DE
-https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
-#EXTINF:0,Welt News
-#EXTGRP:DE
-https://w-news2weltcms.akamaized.net/hls/live/2040885/Welt-NextNews/index.m3u8
-#EXTINF:0,Bild
-#EXTGRP:DE
-https://bild.personalstream.tv/v1/master.m3u8
