@@ -100,7 +100,7 @@ https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
 https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
 #EXTINF:0,Deutsche Welle HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/1021/index.m3u8
+https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8
 #EXTINF:0,arte HD
 #EXTGRP:DE
 https://artelivezdf.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
@@ -121,7 +121,7 @@ https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
 https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/chunks.m3u8
 #EXTINF:0,WELT HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7258/index.m3u8
+https://w-live2weltcms.akamaized.net/hls/live/2041019/Welt-LivePGM/index.m3u8
 #EXTINF:0,Spiegel Geschichte HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6091/index.m3u8
@@ -389,9 +389,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19043/index.m3u8
 #EXTINF:0,Servus TV
 #EXTGRP:DE
 https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
-#EXTINF:0,Welt
-#EXTGRP:DE
-https://w-live2weltcms.akamaized.net/hls/live/2041019/Welt-LivePGM/index.m3u8
 #EXTINF:0,Welt News
 #EXTGRP:DE
 https://w-news2weltcms.akamaized.net/hls/live/2040885/Welt-NextNews/index.m3u8
