@@ -149,7 +149,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
 #EXTINF:0,Insight HD
 #EXTGRP:DE
 https://insighttv-samsung-de.amagi.tv/playlist.m3u8
-#EXTINF:0,InWonder HD
+#EXTINF:0 tvg-logo="https://i.imgur.com/CdeROZx.png",InWonder HD
 #EXTGRP:DE
 https://inwonder-samsung-de.amagi.tv/playlist.m3u8
 #EXTINF:0,Universal TV HD
