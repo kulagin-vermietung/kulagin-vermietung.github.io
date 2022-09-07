@@ -179,9 +179,6 @@ https://streaming-s1free.sport1.de/EtK8kRUn7fEhkVL9rJTF3Q==,1662562640/ls-45420-
 #EXTINF:0,Sport1+ HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19023/index.m3u8
-#EXTINF:0,FC Bayern TV
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19024/index.m3u8
 #EXTINF:0,Auto Motor Sport HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19025/index.m3u8
@@ -302,44 +299,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19007/index.m3u8
 #EXTINF:0,Sky Sport News HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2477/index.m3u8
-#EXTINF:0,Sky Sport 1 HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2478/index.m3u8
-#EXTINF:0,Sky Sport 2 HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2479/index.m3u8
-#EXTINF:0,sky Sport 1 FHD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19027/index.m3u8
-#EXTINF:0,sky Sport 1
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19028/index.m3u8
-#EXTINF:0,sky Sport 2
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19029/index.m3u8
-#EXTINF:0,sky Sport 3
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19030/index.m3u8
-#EXTINF:0,sky Sport 4
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19031/index.m3u8
-#EXTINF:0,sky Sport 5
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19032/index.m3u8
-#EXTINF:0,sky Sport 6
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19033/index.m3u8
-#EXTINF:0,sky Sport 7
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19034/index.m3u8
-#EXTINF:0,sky Sport 8
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19035/index.m3u8
-#EXTINF:0,sky Sport 9
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19036/index.m3u8
-#EXTINF:0,sky Sport 10
-#EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19037/index.m3u8
 #EXTINF:0,Dazn 1 HD
 #EXTGRP:DE
