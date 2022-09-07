@@ -260,16 +260,13 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2486/index.m3u8
 #EXTINF:0,Sky Atlantic HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2488/index.m3u8
-#EXTINF:0,Sky Krimi
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2491/index.m3u8
 #EXTINF:0,sky Comedy
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19012/index.m3u8
 #EXTINF:0,Sky Romance TV FHD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7231/index.m3u8
-#EXTINF:0,sky Krimi
+#EXTINF:0,sky Krimi HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19019/index.m3u8
 #EXTINF:0,Sky Nature HD
@@ -281,9 +278,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19021/index.m3u8
 #EXTINF:0,Sky Arts HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2494/index.m3u8
-#EXTINF:0,sky one
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19011/index.m3u8
 #EXTINF:0,sky one HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19000/index.m3u8
@@ -293,9 +287,6 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19003/index.m3u8
 #EXTINF:0,sky replay HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19006/index.m3u8
-#EXTINF:0,sky Serien & Shows
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19007/index.m3u8
 #EXTINF:0,Sky Sport News HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2477/index.m3u8
