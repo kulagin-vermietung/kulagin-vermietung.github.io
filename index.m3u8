@@ -200,63 +200,39 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19040/index.m3u8
 #EXTINF:0,Sky Cinema HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2484/index.m3u8
-#EXTINF:0,Sky Cinema Action HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2482/index.m3u8
-#EXTINF:0,Sky Cinema Comedy
+#EXTINF:0,Sky Cinema Comedy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2483/index.m3u8
-#EXTINF:0,sky Crime HD
+#EXTINF:0,Sky Crime HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19001/index.m3u8
-#EXTINF:0,sky Comedy HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19002/index.m3u8
-#EXTINF:0,sky Cinema Fun
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19010/index.m3u8
 #EXTINF:0,Sky Cinema Family HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2489/index.m3u8
-#EXTINF:0,sky Cinema Family
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19008/index.m3u8
 #EXTINF:0,Sky Cinema Nostalgie HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2490/index.m3u8
-#EXTINF:0,sky Cinema Thriller HD
+#EXTINF:0,Sky Cinema Thriller HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19004/index.m3u8
-#EXTINF:0,Sky Cinema Comic-Helden
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2493/index.m3u8
-#EXTINF:0,sky Cinema Special
+#EXTINF:0,Sky Cinema Special HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19013/index.m3u8
-#EXTINF:0,sky Cinema Premieren
+#EXTINF:0,Sky Cinema Premieren HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19014/index.m3u8
-#EXTINF:0,sky Cinema Premieren +24
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19015/index.m3u8
-#EXTINF:0,sky Cinema Action
+#EXTINF:0,Sky Cinema Action HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19016/index.m3u8
-#EXTINF:0,sky Cinema Classics HD
+#EXTINF:0,Sky Cinema Classics HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19017/index.m3u8
-#EXTINF:0,sky Cinema Fun HD
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19018/index.m3u8
 #EXTINF:0,Sky Hits HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2486/index.m3u8
 #EXTINF:0,Sky Atlantic HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2488/index.m3u8
-#EXTINF:0,sky Comedy
-#EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19012/index.m3u8
 #EXTINF:0,Sky Krimi HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19019/index.m3u8
