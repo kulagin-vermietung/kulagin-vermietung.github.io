@@ -146,6 +146,12 @@ https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/mtvg18ef/master/mtvg18ef.m3u8
 #EXTINF:0,Syfy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
+#EXTINF:0,Insight HD
+#EXTGRP:DE
+https://insighttv-samsung-de.amagi.tv/playlist.m3u8
+#EXTINF:0,InWonder HD
+#EXTGRP:DE
+https://inwonder-samsung-de.amagi.tv/playlist.m3u8
 #EXTINF:0,Universal TV HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6094/index.m3u8
@@ -163,7 +169,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6089/index.m3u8
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6111/index.m3u8
 #EXTINF:0,Sport 1 HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2503/index.m3u8
+https://streaming-s1free.sport1.de/EtK8kRUn7fEhkVL9rJTF3Q==,1662562640/ls-45420-1/index.m3u8
 #EXTINF:0,Sport1+ HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19023/index.m3u8
