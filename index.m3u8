@@ -52,7 +52,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15178/index.m3u8
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7230/index.m3u8
 #EXTINF:0,KIKA HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15175/index.m3u8
+https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8
 #EXTINF:0,Super RTL HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6063/index.m3u8
@@ -79,10 +79,10 @@ https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
 https://mcdn.wdr.de/wdr/wdrfs/de/master.m3u8
 #EXTINF:0,HR HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15180/index.m3u8
+https://hrhlsde.akamaized.net/hls/live/2024526/hrhlsde/index.m3u8
 #EXTINF:0,NDR HD
 #EXTGRP:DE
-http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15181/index.m3u8
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:0,MDR HD
 #EXTGRP:DE
 https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/master.m3u8
@@ -149,6 +149,9 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.
 #EXTINF:0,MTV HD
 #EXTGRP:DE
 https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/mtvg18ef/master/mtvg18ef.m3u8
+#EXTINF:0,XITE HD
+#EXTGRP:DE
+https://xite-samsung-de.amagi.tv/playlist.m3u8
 #EXTINF:0,Syfy HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
