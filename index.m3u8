@@ -172,7 +172,7 @@ http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6090/index.m3u8
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6089/index.m3u8
 #EXTINF:0,Sport 1 HD
 #EXTGRP:DE
-https://streaming-s1free.sport1.de/EtK8kRUn7fEhkVL9rJTF3Q==,1662562640/ls-45420-1/index.m3u8
+https://oz.sport1.de/api/ottv1/2/livestream/view/sport2.m3u8
 #EXTINF:0,Sport1+ HD
 #EXTGRP:DE
 http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19023/index.m3u8
