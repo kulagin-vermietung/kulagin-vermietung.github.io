@@ -1,0 +1,238 @@
+#EXTM3U
+#EXTINF:0,Das Erste HD
+#EXTGRP:DE
+https://mcdn.daserste.de/daserste/de/master.m3u8
+#EXTINF:0,One HD
+#EXTGRP:DE
+https://mcdn.one.ard.de/ardone/hls/master.m3u8
+#EXTINF:0,ZDF HD
+#EXTGRP:DE
+https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
+#EXTINF:0,ZDFinfo HD
+#EXTGRP:DE
+https://zdf-hls-17.akamaized.net/hls/live/2016500/de/veryhigh/master.m3u8
+#EXTINF:0,ZDFneo HD
+#EXTGRP:DE
+https://zdf-hls-16.akamaized.net/hls/live/2016499/de/veryhigh/master.m3u8
+#EXTINF:0,RTL HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6062/index.m3u8
+#EXTINF:0,RTL 2 HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6065/index.m3u8
+#EXTINF:0,Sat.1 HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6060/index.m3u8
+#EXTINF:0,VOX HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6061/index.m3u8
+#EXTINF:0,ProSieben HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6057/index.m3u8
+#EXTINF:0,ProSieben Maxx HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15174/index.m3u8
+#EXTINF:0,Kabel Eins HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6067/index.m3u8
+#EXTINF:0,SIXX HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15170/index.m3u8
+#EXTINF:0,DMAX HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15281/index.m3u8
+#EXTINF:0,RTL Nitro HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6064/index.m3u8
+#EXTINF:0,RTL Crime HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15178/index.m3u8
+#EXTINF:0,RTL Passion HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7230/index.m3u8
+#EXTINF:0,KIKA HD
+#EXTGRP:DE
+https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8
+#EXTINF:0,Super RTL HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6063/index.m3u8
+#EXTINF:0,Nick HD
+#EXTGRP:DE
+https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/nick1999/master/nick1999.m3u8
+#EXTINF:0,Disney Cinemagic HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2485/index.m3u8
+#EXTINF:0,Comedy Central HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6081/index.m3u8
+#EXTINF:0,ORF 1 HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15177/index.m3u8
+#EXTINF:0,Servus TV HD
+#EXTGRP:DE
+https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
+#EXTINF:0,ARD alpha HD
+#EXTGRP:DE
+https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
+#EXTINF:0,WDR HD
+#EXTGRP:DE
+https://mcdn.wdr.de/wdr/wdrfs/de/master.m3u8
+#EXTINF:0,HR HD
+#EXTGRP:DE
+https://hrhlsde.akamaized.net/hls/live/2024526/hrhlsde/index.m3u8
+#EXTINF:0,NDR HD
+#EXTGRP:DE
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
+#EXTINF:0,MDR HD
+#EXTGRP:DE
+https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/master.m3u8
+#EXTINF:0,3sat HD
+#EXTGRP:DE
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
+#EXTINF:0,rbb HD
+#EXTGRP:DE
+https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
+#EXTINF:0,BR HD
+#EXTGRP:DE
+https://mcdn.br.de/br/fs/bfs_sued/hls/de/master.m3u8
+#EXTINF:0,SWR HD
+#EXTGRP:DE
+https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
+#EXTINF:0,SR HD
+#EXTGRP:DE
+https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/bqKVx2b.png",Deutsche Welle HD
+#EXTGRP:DE
+https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8
+#EXTINF:0,arte HD
+#EXTGRP:DE
+https://artelivezdf.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
+#EXTINF:0,NTV HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7259/index.m3u8
+#EXTINF:0,Tagesschau24 HD
+#EXTGRP:DE
+https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/V9ms5n6.png",Phoenix HD
+#EXTGRP:DE
+https://zdf-hls-19.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8
+#EXTINF:0,euronews HD
+#EXTGRP:DE
+https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/uz5ADwG.png",Sachsen Fernsehen Leipzig HD
+#EXTGRP:DE
+https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/chunks.m3u8
+#EXTINF:0,WELT HD
+#EXTGRP:DE
+https://w-live2weltcms.akamaized.net/hls/live/2041019/Welt-LivePGM/index.m3u8
+#EXTINF:0,Bild HD
+#EXTGRP:DE
+https://bild.personalstream.tv/v1/master.m3u8
+#EXTINF:0,Spiegel Geschichte HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6091/index.m3u8
+#EXTINF:0,Welt der Wunder HD
+#EXTGRP:DE
+https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
+#EXTINF:0,NatGeo HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7255/index.m3u8
+#EXTINF:0,Nat Geo Wild HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7256/index.m3u8
+#EXTINF:0,Animal Planet HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/7257/index.m3u8
+#EXTINF:0,Deluxe Music HD
+#EXTGRP:DE
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+#EXTINF:0,MTV HD
+#EXTGRP:DE
+https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/mtvg18ef/master/mtvg18ef.m3u8
+#EXTINF:0,XITE HD
+#EXTGRP:DE
+https://xite-samsung-de.amagi.tv/playlist.m3u8
+#EXTINF:0,Syfy HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6092/index.m3u8
+#EXTINF:0,Insight HD
+#EXTGRP:DE
+https://insighttv-samsung-de.amagi.tv/playlist.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/CdeROZx.png",InWonder HD
+#EXTGRP:DE
+https://inwonder-samsung-de.amagi.tv/playlist.m3u8
+#EXTINF:0,Universal TV HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6094/index.m3u8
+#EXTINF:0,TNT Serie HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6090/index.m3u8
+#EXTINF:0,TNT Film HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6089/index.m3u8
+#EXTINF:0,Sport 1 HD
+#EXTGRP:DE
+https://oz.sport1.de/api/ottv1/2/livestream/view/sport2.m3u8
+#EXTINF:0,Sport1+ HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19023/index.m3u8
+#EXTINF:0,Auto Motor Sport HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19025/index.m3u8
+#EXTINF:0,Motorvision TV
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/6112/index.m3u8
+#EXTINF:0,Eurosport HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/15179/index.m3u8
+#EXTINF:0,Sky Cinema Comedy HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2483/index.m3u8
+#EXTINF:0,Sky Crime HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19001/index.m3u8
+#EXTINF:0,Sky Cinema Family HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2489/index.m3u8
+#EXTINF:0,Sky Cinema Thriller HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19004/index.m3u8
+#EXTINF:0,Sky Cinema Premieren HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19014/index.m3u8
+#EXTINF:0,Sky Cinema Action HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19016/index.m3u8
+#EXTINF:0,Sky Cinema Classics HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19017/index.m3u8
+#EXTINF:0,Sky Hits HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2486/index.m3u8
+#EXTINF:0,Sky Atlantic HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2488/index.m3u8
+#EXTINF:0,Sky Krimi HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19019/index.m3u8
+#EXTINF:0,Sky Nature HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19020/index.m3u8
+#EXTINF:0,Sky Documentaries HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19021/index.m3u8
+#EXTINF:0,Sky One HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19000/index.m3u8
+#EXTINF:0,Sky Replay HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19006/index.m3u8
+#EXTINF:0,Sky Sport News HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/2477/index.m3u8
+#EXTINF:0,Dazn 1 HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19042/index.m3u8
+#EXTINF:0,Dazn 2 HD
+#EXTGRP:DE
+http://c264ac5e.edmonst.net/iptv/EGAUT7KYQSH3UD/19043/index.m3u8
