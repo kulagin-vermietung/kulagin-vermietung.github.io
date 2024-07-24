@@ -4,6 +4,28 @@
     box-sizing: border-box;
   }
 
+  #logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 125px;
+    width: 125px;
+    background: url(https://www.kulagin-vermietung.de/images/logo.svg) no-repeat;
+    text-indent: -999em;
+    text-decoration: none;
+  }
+
+  #right{
+  float: right;
+  top: -60;
+  right: 20;
+  height: 300px;
+  width: 300px;
+  text-indent: -999em;
+  position: absolute;
+}
+
   html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -95,6 +117,11 @@
 </style>
 
 <div class="app">
+  <div>
+      <img src="https://www.kulagin-vermietung.de/images/logo.svg" class="ribbon" id="right">
+      </img>
+  </div>
+
   <div class="Datumfeld">
     <div class="Datum">
       <script type="text/javascript">
