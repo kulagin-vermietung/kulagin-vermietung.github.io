@@ -1,11 +1,59 @@
 <style>
+  * {
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  :root {
+    --theme-bg-color: rgba(16 18 27 / 40%);
+    --body-font: "Poppins", sans-serif;
+    --body-color: #f9fafb;
+    --button-bg: rgb(146 151 179 / 13%);
+    --border-color: rgba(113 119 144 / 25%);
+    --video-bg: #252936;
+    --delay: 0s;
+    --primary-color: #3a6df0;
+  }
+
   body {
-    background: url(https://assets.adac.de/image/upload/ar_16:9,c_fill,f_auto,g_auto,q_auto:eco,w_1500/v1/ADAC-eV/KOR/Bilder/PR/sehenswuerdigkeiten-leipzig-skyline-2203_vslokk.jpeg)
-      no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    font-family: var(--body-font);
+    color: var(--body-color);
+    background-image: url(https://www.merian.de/uploads/media/1920x1080/09/9399-leipzig-skyline.jpg?v=1-0);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 2em;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .app {
+    background-color: var(--theme-bg-color);
+    max-width: 98%;
+    max-height: 85%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: relative;
   }
 
   .Datum {
@@ -18,15 +66,10 @@
   }
 
   .Datumfeld {
-    border-radius: 20px !important;
-    background-color: rgba(0, 0, 0, 0.6) !important;
     margin-bottom: 20px !important;
     padding-left: 10px;
     padding-top: 35px !important;
-    padding-bottom: 13px !important;
-    width: 315px;
     font-size: 110%;
-    margin-top: 20px;
   }
 
   #ww_8d54a846565b5 .ww_infoicon {
@@ -34,10 +77,16 @@
   }
 
   #ww_8d54a846565b5 {
-    border-radius: 20px !important;
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    padding-top: 35 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     padding-bottom: 35 !important;
+  }
+
+  #ww_8d54a846565b5 .ww-box {
+    margin-left: -15 !important;
+  }
+
+  #ww_8d54a846565b5 .ww_delimiter {
+    background-color: rgba(0, 0, 0, 0) !important;
   }
 
   .ww_arr {
@@ -45,7 +94,7 @@
   }
 </style>
 
-<body>
+<div class="app">
   <div class="Datumfeld">
     <div class="Datum">
       <script type="text/javascript">
@@ -467,4 +516,4 @@
     async
     src="https://app2.weatherwidget.org/js/?id=ww_f419203d51e4f"
   ></script>
-</body>
+</div>
