@@ -694,7 +694,7 @@ h5,
   text-decoration: none !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #0075d2;
+  color: #0075d2 !important;
 }
 .site-navbar .site-navigation .site-menu > li.active > a {
   color: #0075d2 !important;
@@ -2160,7 +2160,8 @@ h5,
 .box-92819 {
   z-index: 2;
   background: #fff;
-  padding: 3rem;
+  padding: 2rem;
+  padding-top: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
