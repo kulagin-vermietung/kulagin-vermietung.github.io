@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Uhr - Berliner Zeit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -42,14 +46,20 @@
 
       .date {
         font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 5rem;
+      }
+
+      .clock-container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 5rem;
       }
 
       .clock {
         font-size: 3rem;
         display: flex;
         gap: 0.5rem;
-        margin-bottom: 1.5rem;
       }
 
       .hours {
@@ -68,13 +78,56 @@
         color: white;
       }
 
-      .weather {
-        font-size: 1.2rem;
+      .sun-times-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .sun-times-row {
+        display: flex;
+        align-items: center;
+        width: 150px;
+      }
+
+      .weather-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
         margin-bottom: 1rem;
       }
 
-      .sun-times {
-        font-size: 1rem;
+      .weather {
+        font-size: 1.2rem;
+      }
+
+      .extra-weather-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 20px;
+      }
+
+      .extra-weather-row {
+        display: flex;
+        align-items: center;
+        width: 200px;
+      }
+
+      .hourly-forecast {
+        display: flex;
+        gap: 10px;
+      }
+
+      .hourly-forecast-row {
+        text-align: center;
+      }
+
+      .hourly-forecast-row div {
+        margin-bottom: 5px;
       }
 
       .forecast {
@@ -99,6 +152,14 @@
       .forecast-day p {
         margin: 0;
       }
+
+      .weather-icon {
+        font-size: 1.5rem;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 15px;
+      }
     </style>
   </head>
   <body>
@@ -108,15 +169,39 @@
       class="logo"
     />
     <div class="date"></div>
-    <div class="clock">
-      <span class="hours">00</span>
-      <span class="separator">:</span>
-      <span class="minutes">00</span>
-      <span class="separator">:</span>
-      <span class="seconds">00</span>
+    <div class="clock-container">
+      <div class="clock">
+        <span class="hours">00</span>
+        <span class="separator">:</span>
+        <span class="minutes">00</span>
+        <span class="separator">:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div class="sun-times-table">
+        <div class="sun-times-row">
+          <i class="wi wi-sunrise weather-icon"></i>
+          <span id="sunrise-time">--:--</span>
+        </div>
+        <div class="sun-times-row">
+          <i class="wi wi-sunset weather-icon"></i>
+          <span id="sunset-time">--:--</span>
+        </div>
+      </div>
     </div>
-    <div class="weather">Lade Wetterdaten...</div>
-    <div class="sun-times">Lade Sonnenaufgang und Sonnenuntergang...</div>
+    <div class="weather-container">
+      <div class="weather"></div>
+      <div class="extra-weather-table">
+        <div class="extra-weather-row">
+          <i class="wi wi-strong-wind weather-icon"></i>
+          <span id="wind-speed">-- km/h</span>
+        </div>
+        <div class="extra-weather-row">
+          <i class="wi wi-raindrop weather-icon"></i>
+          <span id="precip-prob">--%</span>
+        </div>
+      </div>
+      <div class="hourly-forecast">Lade stündliche Vorhersage...</div>
+    </div>
     <div class="forecast">Lade Wettervorhersage...</div>
 
     <script>
@@ -150,32 +235,84 @@
       async function updateWeather() {
         try {
           const response = await fetch(
-            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
+            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&hourly=temperature_2m,precipitation_probability&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
           );
           if (!response.ok)
             throw new Error("Fehler beim Laden der Wetterdaten");
           const data = await response.json();
 
           const temperature = data.current_weather.temperature;
-          const sunrise = new Date(data.daily.sunrise[0]).toLocaleTimeString(
-            "de-DE",
-            { hour: "2-digit", minute: "2-digit" }
-          );
-          const sunset = new Date(data.daily.sunset[0]).toLocaleTimeString(
-            "de-DE",
-            { hour: "2-digit", minute: "2-digit" }
-          );
+          const weatherCode = data.current_weather.weathercode;
+          const windSpeed = data.current_weather.windspeed;
+          const precipProb = data.hourly.precipitation_probability[0];
+          const sunrise = new Date(data.daily.sunrise[0]);
+          const sunset = new Date(data.daily.sunset[0]);
+          const currentTime = new Date();
+          const isDaytime = currentTime >= sunrise && currentTime < sunset;
+
+          const weatherIcons = {
+            0: "wi-day-sunny", // Klarer Himmel
+            1: "wi-day-cloudy", // Leicht bewölkt
+            2: "wi-cloudy", // Bewölkt
+            3: "wi-rain", // Regen
+            45: "wi-fog", // Nebel
+            48: "wi-snow", // Schnee
+            51: "wi-rain-mix", // Sprühregen
+          };
+
+          const nightIcons = {
+            0: "wi-night-clear", // Klarer Himmel
+            1: "wi-night-alt-cloudy", // Leicht bewölkt
+            2: "wi-night-cloudy", // Bewölkt
+            3: "wi-night-alt-rain", // Regen
+            45: "wi-night-fog", // Nebel
+            48: "wi-night-snow", // Schnee
+            51: "wi-night-alt-rain-mix", // Sprühregen
+          };
+
+          const iconClass = isDaytime
+            ? weatherIcons[weatherCode] || "wi-day-sunny"
+            : nightIcons[weatherCode] || "wi-night-clear";
 
           document.querySelector(
             ".weather"
-          ).textContent = `Aktuelles Wetter in Plagwitz, Leipzig: ${temperature}°C`;
-          document.querySelector(
-            ".sun-times"
-          ).textContent = `Sonnenaufgang: ${sunrise} | Sonnenuntergang: ${sunset}`;
+          ).innerHTML = `Plagwitz, Leipzig: ${temperature}°C <i class="weather-icon wi ${iconClass}"></i>`;
+
+          document.getElementById("sunrise-time").textContent =
+            sunrise.toLocaleTimeString("de-DE", {
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+          document.getElementById("sunset-time").textContent =
+            sunset.toLocaleTimeString("de-DE", {
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+          document.getElementById(
+            "wind-speed"
+          ).textContent = `${windSpeed} km/h`;
+          document.getElementById("precip-prob").textContent = `${precipProb}%`;
+
+          const hourlyForecastContainer =
+            document.querySelector(".hourly-forecast");
+          hourlyForecastContainer.innerHTML = "";
+          const currentHour = new Date().getHours();
+          for (let i = 0; i < 5; i++) {
+            const hour = (currentHour + i) % 24;
+            const temp = data.hourly.temperature_2m[i + currentHour];
+
+            const row = document.createElement("div");
+            row.classList.add("hourly-forecast-row");
+            row.innerHTML = `
+                        <div>${hour}:00</div>
+                        <div>${temp}°C</div>
+                    `;
+            hourlyForecastContainer.appendChild(row);
+          }
 
           const forecastContainer = document.querySelector(".forecast");
           forecastContainer.innerHTML = "";
-          for (let i = 0; i < 5; i++) {
+          for (let i = 0; i < 7; i++) {
             const day = new Date(data.daily.time[i]).toLocaleDateString(
               "de-DE",
               { weekday: "long" }
@@ -195,10 +332,10 @@
         } catch (error) {
           document.querySelector(".weather").textContent =
             "Wetterdaten konnten nicht geladen werden.";
-          document.querySelector(".sun-times").textContent =
-            "Sonnenaufgang und Sonnenuntergang konnten nicht geladen werden.";
           document.querySelector(".forecast").textContent =
             "Wettervorhersage konnte nicht geladen werden.";
+          document.querySelector(".hourly-forecast").textContent =
+            "Stündliche Vorhersage konnte nicht geladen werden.";
         }
       }
 
