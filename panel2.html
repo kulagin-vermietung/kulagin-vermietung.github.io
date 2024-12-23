@@ -210,6 +210,13 @@
         padding-bottom: 10px;
         padding-top: 10px;
       }
+
+      .weather-icon-daily {
+        font-size: 2rem; /* Passe die Größe hier an */
+        display: block;
+        margin: 0 auto; /* Zentriert das Icon horizontal */
+        margin-bottom: 5px; /* Abstand zum nächsten Element */
+      }
     </style>
   </head>
   <body>
@@ -281,7 +288,7 @@
       async function updateWeather() {
         try {
           const response = await fetch(
-            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&hourly=temperature_2m,precipitation_probability,weathercode&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
+            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&hourly=temperature_2m,precipitation_probability,weathercode&daily=weathercode,sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
           );
 
           if (!response.ok)
