@@ -212,10 +212,12 @@
       }
 
       .weather-icon-daily {
-        font-size: 2rem; /* Passe die Größe hier an */
+        font-size: 3rem !important; /* Passe die Größe hier an */
         display: block;
         margin: 0 auto; /* Zentriert das Icon horizontal */
         margin-bottom: 5px; /* Abstand zum nächsten Element */
+        padding-bottom: 10px;
+        padding-top: 10px;
       }
     </style>
   </head>
@@ -444,14 +446,21 @@
             const minTemp = parseFloat(data.daily.temperature_2m_min[i])
               .toFixed(1)
               .replace(".", ",");
+            const weatherCodeDaily = data.daily.weathercode[i];
+            const isDaytime = true; // Icons basieren auf Tageswetter (nicht Nacht)
+
+            const iconClassDaily = isDaytime
+              ? weatherIcons[weatherCodeDaily] || "wi-na"
+              : nightIcons[weatherCodeDaily] || "wi-na";
 
             const dayElement = document.createElement("div");
             dayElement.classList.add("forecast-day");
             dayElement.innerHTML = `
-                        <h3>${day}</h3>
-                        <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
-                        <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
-                    `;
+        <h3>${day}</h3>
+        <div class="weather-icon-daily"><i class="wi ${iconClassDaily}"></i></div>
+        <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
+        <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
+    `;
             forecastContainer.appendChild(dayElement);
           }
         } catch (error) {
