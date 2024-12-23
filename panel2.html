@@ -88,7 +88,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
+        font-size: 1.5rem;
       }
 
       .sun-times-row {
@@ -166,6 +167,22 @@
         line-height: 1;
         margin-right: 15px;
       }
+
+      .weather-icon-suntimes {
+        font-size: 1.8rem;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 10px;
+      }
+
+      .weather-icon-minmax {
+        font-size: 1.5rem;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 5px;
+      }
     </style>
   </head>
   <body>
@@ -185,11 +202,11 @@
       </div>
       <div class="sun-times-table">
         <div class="sun-times-row">
-          <i class="wi wi-sunrise weather-icon"></i>
+          <i class="wi wi-sunrise weather-icon-suntimes"></i>
           <span id="sunrise-time">--:--</span>
         </div>
         <div class="sun-times-row">
-          <i class="wi wi-sunset weather-icon"></i>
+          <i class="wi wi-sunset weather-icon-suntimes"></i>
           <span id="sunset-time">--:--</span>
         </div>
       </div>
@@ -330,8 +347,8 @@
             dayElement.classList.add("forecast-day");
             dayElement.innerHTML = `
                         <h3>${day}</h3>
-                        <p>Max: ${maxTemp}°C</p>
-                        <p>Min: ${minTemp}°C</p>
+                        <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
+                        <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
                     `;
             forecastContainer.appendChild(dayElement);
           }
