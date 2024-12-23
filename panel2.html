@@ -46,7 +46,7 @@
 
       .date {
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.7rem;
       }
 
       .clock-container {
@@ -104,7 +104,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
       }
 
       .weather {
@@ -165,11 +165,12 @@
 
       .forecast-day h3 {
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
 
       .forecast-day p {
         margin: 0;
+        font-size: 1.3rem;
       }
 
       .weather-icon {
@@ -456,7 +457,9 @@
             const dayElement = document.createElement("div");
             dayElement.classList.add("forecast-day");
             dayElement.innerHTML = `
-        <h3>${day}</h3>
+       <h3>${day}</h3>
+
+
         <div class="weather-icon-daily"><i class="wi ${iconClassDaily}"></i></div>
         <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
         <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
