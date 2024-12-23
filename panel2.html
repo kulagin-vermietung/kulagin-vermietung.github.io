@@ -38,9 +38,9 @@
 
       .logo {
         position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 255px;
+        top: 20px;
+        right: 20px;
+        width: 230px;
         height: auto;
       }
 
@@ -53,7 +53,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3.8rem;
       }
 
       .clock {
@@ -88,8 +88,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 15px;
+        gap: 1.4rem;
         font-size: 1.5rem;
+        margin-left: 3rem;
       }
 
       .sun-times-row {
@@ -101,32 +102,38 @@
       .weather-container {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         margin-bottom: 1rem;
       }
 
       .weather {
-        font-size: 1.2rem;
+        font-size: 6.3rem;
+        display: flex;
+        align-items: center;
+        gap: 15px;
       }
 
       .extra-weather-table {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
+        gap: 1.4rem;
+        font-size: 1.5rem;
         margin-left: 20px;
       }
 
       .extra-weather-row {
-        display: flex;
+        display: grid;
+        grid-template-columns: 50px auto;
         align-items: center;
-        width: 200px;
+        gap: 10px;
+        width: 100%;
       }
 
       .hourly-forecast {
         display: flex;
-        gap: 10px;
+        gap: 1rem;
       }
 
       .hourly-forecast-row {
@@ -134,7 +141,12 @@
       }
 
       .hourly-forecast-row div {
-        margin-bottom: 5px;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+      }
+
+      .hourly-forecast-row div:nth-child(2) {
+        font-weight: bold;
       }
 
       .forecast {
@@ -161,11 +173,18 @@
       }
 
       .weather-icon {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         vertical-align: middle;
         display: inline-block;
         line-height: 1;
         margin-right: 15px;
+      }
+
+      .weather-icon-current {
+        font-size: 3.9rem;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
       }
 
       .weather-icon-suntimes {
@@ -182,6 +201,14 @@
         display: inline-block;
         line-height: 1;
         margin-right: 5px;
+      }
+
+      .hourly-forecast-icon {
+        font-size: 3rem !important;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
       }
     </style>
   </head>
@@ -258,13 +285,17 @@
       async function updateWeather() {
         try {
           const response = await fetch(
-            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&hourly=temperature_2m,precipitation_probability&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
+            "https://api.open-meteo.com/v1/forecast?latitude=51.3190&longitude=12.3336&current_weather=true&hourly=temperature_2m,precipitation_probability,weathercode&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin"
           );
+
           if (!response.ok)
             throw new Error("Fehler beim Laden der Wetterdaten");
           const data = await response.json();
 
-          const temperature = data.current_weather.temperature;
+          const temperature = parseFloat(data.current_weather.temperature)
+            .toFixed(1)
+            .replace(".", ",");
+
           const weatherCode = data.current_weather.weathercode;
           const windSpeed = data.current_weather.windspeed;
           const precipProb = data.hourly.precipitation_probability[0];
@@ -275,22 +306,66 @@
 
           const weatherIcons = {
             0: "wi-day-sunny", // Klarer Himmel
-            1: "wi-day-cloudy", // Leicht bewölkt
-            2: "wi-cloudy", // Bewölkt
-            3: "wi-rain", // Regen
+            1: "wi-day-sunny-overcast", // Überwiegend klar
+            2: "wi-day-cloudy", // Teilweise bewölkt
+            3: "wi-cloudy", // Bedeckt
             45: "wi-fog", // Nebel
-            48: "wi-snow", // Schnee
-            51: "wi-rain-mix", // Sprühregen
+            48: "wi-fog", // Reifender Nebel
+            51: "wi-raindrops", // Leichter Nieselregen
+            53: "wi-raindrops", // Mäßiger Nieselregen
+            55: "wi-raindrops", // Starker Nieselregen
+            56: "wi-sleet", // Leichter gefrierender Nieselregen
+            57: "wi-sleet", // Starker gefrierender Nieselregen
+            61: "wi-day-showers", // Leichter Regen
+            63: "wi-rain", // Mäßiger Regen
+            65: "wi-rain-wind", // Starker Regen
+            66: "wi-day-rain-mix", // Leichter gefrierender Regen
+            67: "wi-rain-mix", // Starker gefrierender Regen
+            71: "wi-snow", // Leichter Schneefall
+            73: "wi-snow", // Mäßiger Schneefall
+            75: "wi-snow-wind", // Starker Schneefall
+            77: "wi-snowflake-cold", // Schneekörner
+            80: "wi-day-showers", // Leichte Regenschauer
+            81: "wi-showers", // Mäßige Regenschauer
+            82: "wi-thunderstorm", // Starke Regenschauer
+            85: "wi-snow", // Leichte Schneeschauer
+            86: "wi-snow-wind", // Starke Schneeschauer
+            95: "wi-thunderstorm", // Gewitter (leicht oder mäßig)
+            96: "wi-thunderstorm", // Gewitter mit leichtem Hagel
+            99: "wi-thunderstorm", // Gewitter mit starkem Hagel
+            default: "wi-na", // Fallback für unbekannte Codes
           };
 
           const nightIcons = {
             0: "wi-night-clear", // Klarer Himmel
-            1: "wi-night-alt-cloudy", // Leicht bewölkt
-            2: "wi-night-cloudy", // Bewölkt
-            3: "wi-night-alt-rain", // Regen
+            1: "wi-night-alt-partly-cloudy", // Überwiegend klar
+            2: "wi-night-alt-cloudy", // Teilweise bewölkt
+            3: "wi-night-cloudy", // Bedeckt
             45: "wi-night-fog", // Nebel
-            48: "wi-night-snow", // Schnee
-            51: "wi-night-alt-rain-mix", // Sprühregen
+            48: "wi-night-fog", // Reifender Nebel
+            51: "wi-night-alt-sprinkle", // Leichter Nieselregen
+            53: "wi-night-alt-sprinkle", // Mäßiger Nieselregen
+            55: "wi-night-alt-sprinkle", // Starker Nieselregen
+            56: "wi-night-alt-sleet", // Leichter gefrierender Nieselregen
+            57: "wi-night-alt-sleet", // Starker gefrierender Nieselregen
+            61: "wi-night-alt-showers", // Leichter Regen
+            63: "wi-night-alt-rain", // Mäßiger Regen
+            65: "wi-night-alt-rain-wind", // Starker Regen
+            66: "wi-night-alt-rain-mix", // Leichter gefrierender Regen
+            67: "wi-night-alt-rain-mix", // Starker gefrierender Regen
+            71: "wi-night-alt-snow", // Leichter Schneefall
+            73: "wi-night-alt-snow", // Mäßiger Schneefall
+            75: "wi-night-alt-snow-wind", // Starker Schneefall
+            77: "wi-snowflake-cold", // Schneekörner
+            80: "wi-night-alt-showers", // Leichte Regenschauer
+            81: "wi-night-alt-showers", // Mäßige Regenschauer
+            82: "wi-night-alt-thunderstorm", // Starke Regenschauer
+            85: "wi-night-alt-snow", // Leichte Schneeschauer
+            86: "wi-night-alt-snow-wind", // Starke Schneeschauer
+            95: "wi-night-alt-thunderstorm", // Gewitter (leicht oder mäßig)
+            96: "wi-night-alt-thunderstorm", // Gewitter mit leichtem Hagel
+            99: "wi-night-alt-thunderstorm", // Gewitter mit starkem Hagel
+            default: "wi-na", // Fallback für unbekannte Codes
           };
 
           const iconClass = isDaytime
@@ -299,7 +374,7 @@
 
           document.querySelector(
             ".weather"
-          ).innerHTML = `Plagwitz, Leipzig: ${temperature}°C <i class="weather-icon wi ${iconClass}"></i>`;
+          ).innerHTML = `${temperature}°C <i class="weather-icon-current wi ${iconClass}"></i>`;
 
           document.getElementById("sunrise-time").textContent =
             sunrise.toLocaleTimeString("de-DE", {
@@ -320,16 +395,36 @@
             document.querySelector(".hourly-forecast");
           hourlyForecastContainer.innerHTML = "";
           const currentHour = new Date().getHours();
+
+          const sunriseTime = new Date(data.daily.sunrise[0]).getTime();
+          const sunsetTime = new Date(data.daily.sunset[0]).getTime();
+
           for (let i = 0; i < 5; i++) {
-            const hour = (currentHour + i) % 24;
-            const temp = data.hourly.temperature_2m[i + currentHour];
+            const forecastDate = new Date(); // Aktuelles Datum
+            forecastDate.setHours(currentHour + i); // Setze die Stunde auf die Vorhersagestunde
+            const hour = String((currentHour + i) % 24).padStart(2, "0");
+
+            const hourTime = forecastDate.getTime(); // Zeitstempel für die Vorhersagestunde
+
+            const temp = parseFloat(data.hourly.temperature_2m[i + currentHour])
+              .toFixed(1)
+              .replace(".", ",");
+
+            const weatherCodeHourly = data.hourly.weathercode[i + currentHour];
+            const isDaytimeHourly =
+              hourTime >= sunriseTime && hourTime < sunsetTime;
+
+            const iconClassHourly = isDaytimeHourly
+              ? weatherIcons[Math.floor(weatherCodeHourly)] || "wi-na"
+              : nightIcons[Math.floor(weatherCodeHourly)] || "wi-na";
 
             const row = document.createElement("div");
             row.classList.add("hourly-forecast-row");
             row.innerHTML = `
-                        <div>${hour}:00</div>
-                        <div>${temp}°C</div>
-                    `;
+  <div>${hour}:00</div>
+  <div class="hourly-forecast-icon"><i class="wi ${iconClassHourly}"></i></div>
+  <div><b>${temp}°C</b></div>
+`;
             hourlyForecastContainer.appendChild(row);
           }
 
@@ -340,8 +435,12 @@
               "de-DE",
               { weekday: "short" }
             );
-            const maxTemp = data.daily.temperature_2m_max[i];
-            const minTemp = data.daily.temperature_2m_min[i];
+            const maxTemp = parseFloat(data.daily.temperature_2m_max[i])
+              .toFixed(1)
+              .replace(".", ",");
+            const minTemp = parseFloat(data.daily.temperature_2m_min[i])
+              .toFixed(1)
+              .replace(".", ",");
 
             const dayElement = document.createElement("div");
             dayElement.classList.add("forecast-day");
