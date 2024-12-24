@@ -298,9 +298,7 @@
             throw new Error("Fehler beim Laden der Wetterdaten");
           const data = await response.json();
 
-          const temperature = parseFloat(data.current_weather.temperature)
-            .toFixed(1)
-            .replace(".", ",");
+          const temperature = Math.round(data.current_weather.temperature);
 
           const weatherCode = data.current_weather.weathercode;
           const windSpeed = data.current_weather.windspeed;
@@ -412,9 +410,9 @@
 
             const hourTime = forecastDate.getTime(); // Zeitstempel für die Vorhersagestunde
 
-            const temp = parseFloat(data.hourly.temperature_2m[i + currentHour])
-              .toFixed(1)
-              .replace(".", ",");
+            const temp = Math.round(
+              data.hourly.temperature_2m[i + currentHour]
+            );
 
             const weatherCodeHourly = data.hourly.weathercode[i + currentHour];
             const isDaytimeHourly =
@@ -441,12 +439,9 @@
               "de-DE",
               { weekday: "short" }
             );
-            const maxTemp = parseFloat(data.daily.temperature_2m_max[i])
-              .toFixed(1)
-              .replace(".", ",");
-            const minTemp = parseFloat(data.daily.temperature_2m_min[i])
-              .toFixed(1)
-              .replace(".", ",");
+            const maxTemp = Math.round(data.daily.temperature_2m_max[i]);
+            const minTemp = Math.round(data.daily.temperature_2m_min[i]);
+
             const weatherCodeDaily = data.daily.weathercode[i];
             const isDaytime = true; // Icons basieren auf Tageswetter (nicht Nacht)
 
