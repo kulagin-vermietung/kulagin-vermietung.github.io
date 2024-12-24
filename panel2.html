@@ -252,7 +252,7 @@
           <span id="wind-speed">-- km/h</span>
         </div>
         <div class="extra-weather-row">
-          <i class="wi wi-raindrop weather-icon"></i>
+          <i class="wi wi-umbrella weather-icon"></i>
           <span id="precip-prob">--%</span>
         </div>
       </div>
@@ -301,7 +301,7 @@
           const temperature = Math.round(data.current_weather.temperature);
 
           const weatherCode = data.current_weather.weathercode;
-          const windSpeed = data.current_weather.windspeed;
+          const windSpeed = Math.round(data.current_weather.windspeed);
           const precipProb = data.hourly.precipitation_probability[0];
           const sunrise = new Date(data.daily.sunrise[0]);
           const sunset = new Date(data.daily.sunset[0]);
