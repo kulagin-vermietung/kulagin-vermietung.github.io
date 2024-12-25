@@ -12,15 +12,14 @@
       body {
         font-family: Arial, sans-serif;
         margin: 0;
-        background: url("https://www.varta-guide.de/wp-content/uploads/pixxio/home/Extern_Varta_3/Abendstimmung-Skyline-von-Leipzig.jpg")
-          no-repeat center center fixed;
+        background: no-repeat center center fixed;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
+        padding: 15px;
         color: white;
-        text-shadow: 1px 1px 2px black;
+        text-shadow: 1px 2px 2px black;
         position: relative;
         overflow: hidden;
       }
@@ -32,28 +31,28 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.75);
+        background: rgba(0, 0, 0, 0.7);
         z-index: -1;
       }
 
       .logo {
         position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 230px;
+        top: 15px;
+        right: 15px;
+        width: 200px;
         height: auto;
       }
 
       .date {
         font-size: 2.5rem;
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.2rem;
       }
 
       .clock-container {
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 3.8rem;
+        margin-bottom: 2rem;
       }
 
       .clock {
@@ -104,7 +103,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
       }
 
       .weather {
@@ -261,6 +260,20 @@
     <div class="forecast">Lade Wettervorhersage...</div>
 
     <script>
+      // Array mit URLs der Hintergrundbilder
+      const backgroundImages = [
+        "https://www.merian.de/uploads/media/1920x1080/09/9399-leipzig-skyline.jpg",
+        "https://www.ccl-leipzig.de/files/ccl/media/ueber-uns/standort-leipzig/content/standort-leipzig-ccl-content-11.jpg",
+        "https://bilder.deutschlandfunk.de/45/8a/da/6f/458ada6f-720a-4faf-9bc0-6e6abc2ede76/leipzig-116-original.jpg",
+      ];
+
+      // Zufällig ein Bild auswählen
+      const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+      const selectedImage = backgroundImages[randomIndex];
+
+      // Hintergrundbild dynamisch setzen
+      document.body.style.backgroundImage = `url(${selectedImage})`;
+
       function updateClock() {
         const now = new Date();
 
