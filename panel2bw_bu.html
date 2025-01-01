@@ -173,8 +173,7 @@
       }
 
       .weather-icon {
-        width: 45px; /* Breite anpassen */
-        height: 45px; /* Höhe anpassen */
+        font-size: 1.8rem;
         vertical-align: middle;
         display: inline-block;
         line-height: 1;
@@ -189,8 +188,7 @@
       }
 
       .weather-icon-suntimes {
-        width: 45px; /* Breite anpassen */
-        height: 45px; /* Höhe anpassen */
+        font-size: 1.8rem;
         vertical-align: middle;
         display: inline-block;
         line-height: 1;
@@ -236,19 +234,11 @@
       </div>
       <div class="sun-times-table">
         <div class="sun-times-row">
-          <img
-            src="/images/icons/sunrise.png"
-            alt="Sunrise Icon"
-            class="weather-icon-suntimes"
-          />
+          <i class="wi wi-sunrise weather-icon-suntimes"></i>
           <span id="sunrise-time">--:--</span>
         </div>
         <div class="sun-times-row">
-          <img
-            src="/images/icons/sunset.png"
-            alt="Sunset Icon"
-            class="weather-icon-suntimes"
-          />
+          <i class="wi wi-sunset weather-icon-suntimes"></i>
           <span id="sunset-time">--:--</span>
         </div>
       </div>
@@ -257,19 +247,11 @@
       <div class="weather"></div>
       <div class="extra-weather-table">
         <div class="extra-weather-row">
-          <img
-            src="/images/icons/wind.png"
-            alt="Wind Icon"
-            class="weather-icon"
-          />
+          <i class="wi wi-strong-wind weather-icon"></i>
           <span id="wind-speed">-- km/h</span>
         </div>
         <div class="extra-weather-row">
-          <img
-            src="/images/icons/umbrella.png"
-            alt="Umbrella Icon"
-            class="weather-icon"
-          />
+          <i class="wi wi-umbrella weather-icon"></i>
           <span id="precip-prob">--%</span>
         </div>
       </div>
