@@ -197,6 +197,24 @@
         margin-right: 10px;
       }
 
+      .hourly-weather-icon {
+        width: 50px; /* Breite anpassen */
+        height: 50px; /* Höhe anpassen */
+        vertical-align: middle;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .daily-weather-icon {
+        width: 60px; /* Breite anpassen */
+        height: 60px; /* Höhe anpassen */
+        vertical-align: middle;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
       .weather-icon-minmax {
         font-size: 1.5rem;
         vertical-align: middle;
@@ -355,35 +373,35 @@
           const isDaytime = currentTime >= sunrise && currentTime < sunset;
 
           const weatherIcons = {
-            0: "wi-day-sunny", // Klarer Himmel
-            1: "wi-day-sunny-overcast", // Überwiegend klar
-            2: "wi-day-cloudy", // Teilweise bewölkt
-            3: "wi-cloudy", // Bedeckt
-            45: "wi-fog", // Nebel
-            48: "wi-fog", // Reifender Nebel
-            51: "wi-raindrops", // Leichter Nieselregen
-            53: "wi-raindrops", // Mäßiger Nieselregen
-            55: "wi-raindrops", // Starker Nieselregen
-            56: "wi-sleet", // Leichter gefrierender Nieselregen
-            57: "wi-sleet", // Starker gefrierender Nieselregen
-            61: "wi-day-showers", // Leichter Regen
-            63: "wi-rain", // Mäßiger Regen
-            65: "wi-rain-wind", // Starker Regen
-            66: "wi-day-rain-mix", // Leichter gefrierender Regen
-            67: "wi-rain-mix", // Starker gefrierender Regen
-            71: "wi-snow", // Leichter Schneefall
-            73: "wi-snow", // Mäßiger Schneefall
-            75: "wi-snow-wind", // Starker Schneefall
-            77: "wi-snowflake-cold", // Schneekörner
-            80: "wi-day-showers", // Leichte Regenschauer
-            81: "wi-showers", // Mäßige Regenschauer
-            82: "wi-thunderstorm", // Starke Regenschauer
-            85: "wi-snow", // Leichte Schneeschauer
-            86: "wi-snow-wind", // Starke Schneeschauer
-            95: "wi-thunderstorm", // Gewitter (leicht oder mäßig)
-            96: "wi-thunderstorm", // Gewitter mit leichtem Hagel
-            99: "wi-thunderstorm", // Gewitter mit starkem Hagel
-            default: "wi-na", // Fallback für unbekannte Codes
+            0: "/images/icons/day/0-day-sunny.png", // Klarer Himmel
+            1: "/images/icons/day/1-day-sunny-overcast.png", // Überwiegend klar
+            2: "/images/icons/day/2-day-cloudy.png", // Teilweise bewölkt
+            3: "/images/icons/day/3-day-cloudy.png", // Bedeckt
+            45: "/images/icons/day/45-day-fog-low.png", // Nebel
+            48: "/images/icons/day/48-day-fog-medium.png", // Reifender Nebel
+            51: "/images/icons/day/51-day-raindrops-low.png", // Leichter Nieselregen
+            53: "/images/icons/day/53-day-raindrops-medium.png", // Mäßiger Nieselregen
+            55: "/images/icons/day/55-day-raindrops-heavy.png", // Starker Nieselregen
+            56: "/images/icons/day/56-day-sleet-low.png", // Leichter gefrierender Nieselregen
+            57: "/images/icons/day/57-day-sleet-medium.png", // Starker gefrierender Nieselregen
+            61: "/images/icons/day/61-day-showers.png", // Leichter Regen
+            63: "/images/icons/day/63-day-rain-low.png", // Mäßiger Regen
+            65: "/images/icons/day/65-day-rain-heavy.png", // Starker Regen
+            66: "/images/icons/day/66-day-rain-mix.png", // Leichter gefrierender Regen
+            67: "/images/icons/day/67-day-rain-mix.png", // Starker gefrierender Regen
+            71: "/images/icons/day/71-day-snow.png", // Leichter Schneefall
+            73: "/images/icons/day/73-day-snow.png", // Mäßiger Schneefall
+            75: "/images/icons/day/75-day-snow.png", // Starker Schneefall
+            77: "/images/icons/day/77-day-snowflake-cold.png", // Schneekörner
+            80: "/images/icons/day/80-day-showers.png", // Leichte Regenschauer
+            81: "/images/icons/day/81-day-showers.png", // Mäßige Regenschauer
+            82: "/images/icons/day/82-day-thunderstorm.png", // Starke Regenschauer
+            85: "/images/icons/day/85-day-snow-low.png", // Leichte Schneeschauer
+            86: "/images/icons/day/86-day-snow-heavy.png", // Starke Schneeschauer
+            95: "/images/icons/day/95-day-thunderstorm.png", // Gewitter (leicht oder mäßig)
+            96: "/images/icons/day/96-day-thunderstorm.png", // Gewitter mit leichtem Hagel
+            99: "/images/icons/day/99-day-thunderstorm.png", // Gewitter mit starkem Hagel
+            default: "/images/icons/day/day-default.png", // Fallback für unbekannte Codes
           };
 
           const nightIcons = {
@@ -422,9 +440,9 @@
             ? weatherIcons[weatherCode] || "wi-day-sunny"
             : nightIcons[weatherCode] || "wi-night-clear";
 
-          document.querySelector(
-            ".weather"
-          ).innerHTML = `${temperature}°C <i class="weather-icon-current wi ${iconClass}"></i>`;
+          document.querySelector(".weather").innerHTML = `
+  ${temperature}°C <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
+`;
 
           document.getElementById("sunrise-time").textContent =
             sunrise.toLocaleTimeString("de-DE", {
@@ -471,8 +489,8 @@
             const row = document.createElement("div");
             row.classList.add("hourly-forecast-row");
             row.innerHTML = `
-  <div>${hour}:00</div>
-  <div class="hourly-forecast-icon"><i class="wi ${iconClassHourly}"></i></div>
+  <div>${hour.toString().padStart(2, "0")}:00</div>
+  <img src="${iconClassHourly}" alt="Hourly Weather Icon" class="hourly-weather-icon" />
   <div><b>${temp}°C</b></div>
 `;
             hourlyForecastContainer.appendChild(row);
@@ -501,10 +519,10 @@
        <h3>${day}</h3>
 
 
-        <div class="weather-icon-daily"><i class="wi ${iconClassDaily}"></i></div>
-        <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
-        <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
-    `;
+      <img src="${iconClassDaily}" alt="Daily Weather Icon" class="daily-weather-icon" />
+  <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
+  <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
+`;
             forecastContainer.appendChild(dayElement);
           }
         } catch (error) {
