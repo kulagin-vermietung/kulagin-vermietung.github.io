@@ -59,27 +59,28 @@
         font-size: 7.5rem;
         display: flex;
         gap: 0.5rem;
+        width: 500px;
+        justify-content: flex-start;
+        text-align: center;
       }
 
-      .hours {
-        color: white;
-      }
-
-      .minutes {
-        color: white;
-      }
-
+      .hours,
+      .minutes,
       .seconds {
+        display: inline-block;
+        text-align: center;
+        min-width: 55px;
         color: white;
-        opacity: 0.6;
       }
 
-      .separator {
+      .separator,
+      .separatorsec {
+        display: inline-block;
+        min-width: 15px;
         color: white;
       }
 
       .separatorsec {
-        color: white;
         opacity: 0.6;
       }
 
@@ -89,7 +90,7 @@
         justify-content: center;
         gap: 1.4rem;
         font-size: 1.5rem;
-        margin-left: 3rem;
+        margin-left: 30px;
       }
 
       .sun-times-row {
@@ -172,47 +173,33 @@
         font-size: 1.3rem;
       }
 
-      .weather-icon {
-        width: 45px; /* Breite anpassen */
-        height: 45px; /* Höhe anpassen */
+      .weather-icon,
+      .weather-icon-suntimes {
+        width: 45px;
+        height: 45px;
         vertical-align: middle;
         display: inline-block;
         line-height: 1;
-        margin-right: 15px;
       }
 
       .weather-icon-current {
         font-size: 3.9rem;
-        vertical-align: middle;
-        display: inline-block;
-        line-height: 1;
-      }
-
-      .weather-icon-suntimes {
-        width: 45px; /* Breite anpassen */
-        height: 45px; /* Höhe anpassen */
-        vertical-align: middle;
-        display: inline-block;
-        line-height: 1;
-        margin-right: 10px;
       }
 
       .hourly-weather-icon {
-        width: 50px; /* Breite anpassen */
-        height: 50px; /* Höhe anpassen */
+        width: 50px;
+        height: 50px;
         vertical-align: middle;
         margin: 0 auto;
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding: 10px 0;
       }
 
       .daily-weather-icon {
-        width: 60px; /* Breite anpassen */
-        height: 60px; /* Höhe anpassen */
+        width: 60px;
+        height: 60px;
         vertical-align: middle;
         margin: 0 auto;
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding: 10px 0;
       }
 
       .weather-icon-minmax {
@@ -221,23 +208,6 @@
         display: inline-block;
         line-height: 1;
         margin-right: 5px;
-      }
-
-      .hourly-forecast-icon {
-        font-size: 3rem !important;
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 10px;
-        padding-top: 10px;
-      }
-
-      .weather-icon-daily {
-        font-size: 3rem !important; /* Passe die Größe hier an */
-        display: block;
-        margin: 0 auto; /* Zentriert das Icon horizontal */
-        margin-bottom: 5px; /* Abstand zum nächsten Element */
-        padding-bottom: 10px;
-        padding-top: 10px;
       }
     </style>
   </head>
@@ -337,6 +307,7 @@
         const hours = String(berlinTime.getHours()).padStart(2, "0");
         const minutes = String(berlinTime.getMinutes()).padStart(2, "0");
         const seconds = String(berlinTime.getSeconds()).padStart(2, "0");
+        document.querySelector(".seconds").textContent = seconds;
 
         document.querySelector(".hours").textContent = hours;
         document.querySelector(".minutes").textContent = minutes;
@@ -442,7 +413,7 @@
             : nightIcons[weatherCode] || "wi-night-clear";
 
           document.querySelector(".weather").innerHTML = `
-  ${temperature}°C <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
+  ${temperature}° <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
 `;
 
           document.getElementById("sunrise-time").textContent =
@@ -492,7 +463,7 @@
             row.innerHTML = `
   <div>${hour.toString().padStart(2, "0")}:00</div>
   <img src="${iconClassHourly}" alt="Hourly Weather Icon" class="hourly-weather-icon" />
-  <div><b>${temp}°C</b></div>
+  <div><b>${temp}°</b></div>
 `;
             hourlyForecastContainer.appendChild(row);
           }
@@ -521,8 +492,8 @@
 
 
       <img src="${iconClassDaily}" alt="Daily Weather Icon" class="daily-weather-icon" />
-  <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°C</p>
-  <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°C</p>
+  <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°</p>
+  <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°</p>
 `;
             forecastContainer.appendChild(dayElement);
           }
