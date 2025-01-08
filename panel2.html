@@ -45,7 +45,6 @@
 
       .date {
         font-size: 2.5rem;
-        margin-bottom: 0.2rem;
       }
 
       .clock-container {
@@ -53,6 +52,7 @@
         align-items: center;
         gap: 1rem;
         margin-bottom: 2rem;
+        margin-left: -10px;
       }
 
       .clock {
@@ -71,6 +71,21 @@
         text-align: center;
         min-width: 55px;
         color: white;
+      }
+
+      .hours,
+      .minutes {
+        display: inline-block;
+        text-align: center;
+        min-width: 55px;
+        color: white;
+      }
+
+      .seconds {
+        display: inline-block;
+        text-align: center;
+        min-width: 55px;
+        color: rgba(255, 255, 255, 0.6);
       }
 
       .separator,
@@ -133,16 +148,23 @@
 
       .hourly-forecast {
         display: flex;
-        gap: 1rem;
+        gap: 1.7rem;
       }
 
       .hourly-forecast-row {
-        text-align: center;
+        display: flex;
+        flex-direction: column; /* Inhalte vertikal anordnen */
+        align-items: center; /* Inhalte horizontal zentrieren */
+        justify-content: center; /* Vertikale Zentrierung */
+        text-align: center; /* Text zentrieren */
+        width: 100%; /* Container nutzt die volle Breite */
       }
 
       .hourly-forecast-row div {
-        margin-left: 2rem;
         font-size: 1.3rem;
+        align-items: center; /* Inhalte horizontal zentrieren */
+        justify-content: center; /* Vertikale Zentrierung */
+        text-align: center; /* Text zentrieren */
       }
 
       .hourly-forecast-row div:nth-child(2) {
@@ -187,6 +209,7 @@
       }
 
       .hourly-weather-icon {
+        display: block;
         width: 50px;
         height: 50px;
         vertical-align: middle;
@@ -208,6 +231,15 @@
         display: inline-block;
         line-height: 1;
         margin-right: 5px;
+      }
+
+      .weather-description {
+        font-size: 1.3rem; /* Schriftgröße der Beschreibung */
+        font-weight: 600; /* Normale Textstärke */
+        margin-top: -0.5rem; /* Abstand zur Temperaturanzeige */
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center; /* Zentriert den Text */
+        display: block; /* Blockdarstellung für bessere Positionierung */
       }
     </style>
   </head>
@@ -408,12 +440,52 @@
             default: "/images/icons/night/night-default.png", // Fallback für unbekannte Codes
           };
 
+          const weatherDescriptions = {
+            0: "Klar",
+            1: "Überwiegend klar",
+            2: "Teilweise bewölkt",
+            3: "Bedeckt",
+            45: "Nebel",
+            48: "Reifender Nebel",
+            51: "Leichter Nieselregen",
+            53: "Mäßiger Nieselregen",
+            55: "Starker Nieselregen",
+            56: "Gefrierender Nieselregen",
+            57: "Starker Eisregen",
+            61: "Leichter Regen",
+            63: "Mäßiger Regen",
+            65: "Starker Regen",
+            66: "Gefrierender Regen",
+            67: "Starker Regen",
+            71: "Leichter Schnee",
+            73: "Mäßiger Schnee",
+            75: "Starker Schnee",
+            77: "Schneekörner",
+            80: "Leichte Schauer",
+            81: "Mäßige Schauer",
+            82: "Starke Schauer",
+            85: "Leichte Schneeschauer",
+            86: "Starke Schneeschauer",
+            95: "Leichtes Gewitter",
+            96: "Hagel Gewitter",
+            99: "Starkes Gewitter",
+            default: "Unbekanntes Wetter",
+          };
+
           const iconClass = isDaytime
             ? weatherIcons[weatherCode] || "wi-day-sunny"
             : nightIcons[weatherCode] || "wi-night-clear";
 
+          const description =
+            weatherDescriptions[weatherCode] || weatherDescriptions.default;
+
           document.querySelector(".weather").innerHTML = `
-  ${temperature}° <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      ${temperature}° <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
+    </div>
+    <div class="weather-description">${description}</div>
+  </div>
 `;
 
           document.getElementById("sunrise-time").textContent =
