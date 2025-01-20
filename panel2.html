@@ -13,7 +13,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         background: no-repeat center center fixed;
-        background-size: cover;
+        background-size: cover; /* Passt das Bild proportional an und füllt den gesamten Hintergrund */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -320,6 +320,8 @@
       };
       img.onerror = function () {
         console.error("Hintergrundbild konnte nicht geladen werden.");
+        document.body.style.backgroundSize = "cover"; // Passt die Größe an
+        document.body.style.backgroundPosition = "center"; // Zentriert das Bild
       };
 
       function updateClock() {
