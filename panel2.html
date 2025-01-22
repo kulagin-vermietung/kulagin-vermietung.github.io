@@ -9,6 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
     />
     <style>
+      html {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -22,6 +28,7 @@
         text-shadow: 1px 2px 2px black;
         position: relative;
         overflow: hidden;
+        height: 100%;
       }
 
       body::before {
@@ -166,7 +173,7 @@
       }
 
       .forecast {
-        margin-top: 1rem;
+        margin-top: auto;
         display: flex;
         justify-content: space-between;
         width: 100%;
