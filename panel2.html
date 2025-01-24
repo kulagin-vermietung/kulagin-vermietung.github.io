@@ -333,7 +333,7 @@
         document.body.style.backgroundImage = `url(${selectedImage})`;
       };
       img.onerror = function () {
-        console.error("Hintergrundbild konnte nicht geladen werden.");
+        console.error("");
         document.body.style.backgroundSize = "cover"; // Passt die Größe an
         document.body.style.backgroundPosition = "center"; // Zentriert das Bild
       };
@@ -580,12 +580,9 @@
             forecastContainer.appendChild(dayElement);
           }
         } catch (error) {
-          document.querySelector(".weather").textContent =
-            "Wetterdaten konnten nicht geladen werden.";
-          document.querySelector(".forecast").textContent =
-            "Wettervorhersage konnte nicht geladen werden.";
-          document.querySelector(".hourly-forecast").textContent =
-            "Stündliche Vorhersage konnte nicht geladen werden.";
+          document.querySelector(".weather").textContent = "";
+          document.querySelector(".forecast").textContent = "";
+          document.querySelector(".hourly-forecast").textContent = "";
         }
       }
 
