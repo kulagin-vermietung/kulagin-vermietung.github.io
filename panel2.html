@@ -575,12 +575,12 @@
             const dayElement = document.createElement("div");
             dayElement.classList.add("forecast-day");
             dayElement.innerHTML = `
-       <h3>${day}</h3>
-
-
-      <img src="${iconClassDaily}" alt="Daily Weather Icon" class="daily-weather-icon" />
-  <p><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°</p>
-  <p><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°</p>
+  <h3>${day}</h3>
+  <img src="${iconClassDaily}" alt="Daily Weather Icon" class="daily-weather-icon" />
+  <p style="display: flex; justify-content: center; gap: 10px;">
+    <span><i class="wi wi-direction-up weather-icon-minmax"></i> ${maxTemp}°</span>
+    <span><i class="wi wi-direction-down weather-icon-minmax"></i> ${minTemp}°</span>
+  </p>
 `;
             forecastContainer.appendChild(dayElement);
           }
