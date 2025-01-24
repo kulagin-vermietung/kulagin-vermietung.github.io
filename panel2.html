@@ -120,7 +120,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-bottom: 1.5rem;
       }
 
       .weather {
@@ -149,7 +148,7 @@
 
       .hourly-forecast {
         display: flex;
-        gap: 4rem;
+        gap: 8rem;
       }
 
       .hourly-forecast-row {
@@ -222,7 +221,7 @@
         height: 50px;
         vertical-align: middle;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 5px 0;
       }
 
       .daily-weather-icon {
@@ -491,7 +490,7 @@
 
           document.querySelector(".weather").innerHTML = `
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="display: flex; align-items: center; gap: 20px;">
       ${temperature}° <img src="${iconClass}" alt="Weather Icon" class="weather-icon-current" />
     </div>
     <div class="weather-description">${description}</div>
