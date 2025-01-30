@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 1050px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* Fixierte Navigation */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Breite über die gesamte Seite */
+  display: flex;
+  justify-content: center; /* Zentriert die Inhalte */
+  align-items: center;
+  padding: 15px 0;
+  height: 110px;
+  background: transparent;
+  transition: background 0.1s ease-in-out;
+  z-index: 1000; /* Stellt sicher, dass die Navbar über dem Bild bleibt */
+}
+
+.nav-bar .container {
+  width: 1050px; /* Beibehaltung der 1050px Breite für den Inhalt */
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar.scrolled {
+  background: #0075d2; /* Blaue Farbe */
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung */
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+nav .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0075d2; /* Gleiche blaue Farbe wie "MEHR INFOS" */
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+nav .btn:hover {
+  background-color: #1b4fc7; /* Dunkleres Blau beim Hover */
+  color: white; /* Beibehaltung der weißen Textfarbe */
+}
+
+nav .btn:active {
+  transform: scale(0.98); /* Klick-Animation */
+}
+
+.nav-bar.scrolled .btn {
+  background-color: white; /* Hintergrund wird weiß */
+  color: #0075d2; /* Text wird blau */
+}
+
+.nav-bar.scrolled .btn:hover {
+  background-color: #f1f1f1; /* Etwas dunkleres Weiß beim Hover */
+}
+
+nav a:hover {
+  color: white; /* Standardfarbe für alle Links */
+}
+
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url("/images/header.webp") no-repeat center 33% / cover;
+  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header-Text */
+.header-content {
+  text-align: left;
+  max-width: 1050px;
+  color: white;
+}
+
+.header-text {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Stapelt die Elemente vertikal */
+  align-items: center; /* Zentriert den Inhalt */
+  padding: 100px 0;
+  background: white;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Damit der Container im Layout bleibt */
+  max-width: 1050px; /* Feste Begrenzung */
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: stretch; /* Beide Elemente haben gleiche Höhe */
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.about-content .text {
+  width: 60%;
+}
+
+.about-content .image {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  border-radius: 5px; /* Rundung auf allen Seiten */
+  overflow: hidden; /* Schneidet das Bild innerhalb des Radius ab */
+  position: relative;
+}
+
+.about-content .image::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: url("/images/plagwitz.webp") no-repeat 120% 10% / 110%;
+  border-radius: 5px; /* Jetzt bleibt der Radius erhalten */
+}
+
+.blue-text {
+  color: #0075d2;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0075d2; /* Blau wie auf dem Screenshot */
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.read-more:hover {
+  background-color: #1b4fc7; /* Dunkleres Blau beim Hover */
+  color: white; /* Beibehaltung der weißen Textfarbe */
+}
+
+.read-more:active {
+  transform: scale(0.98); /* Klick-Animation */
+}
+
+.apartments {
+  background: #f8f8f8; /* Hintergrundfarbe der Section */
+  padding: 80px 0;
+}
+
+.apartments .container {
+  width: 1050px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.apartments h3 {
+  color: #0075d2;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.apartments h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.apartments p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.apartment-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.apartment {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 48%;
+  text-align: left;
+}
+
+.apartment-image {
+  width: 100%;
+  height: 200px;
+  background: url("/images/plagwitz.webp") no-repeat center center / cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.apartment p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button-Styling */
+.apartment .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0075d2;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.apartment .btn:hover {
+  background-color: #1b4fc7;
+}

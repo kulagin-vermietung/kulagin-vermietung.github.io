@@ -1,1 +1,110 @@
-leer
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kulagin Vermietung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="container">
+          <div class="logo">
+            <img src="/images/logowhite.svg" alt="Kulagin Vermietung Logo" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#about">Über Uns</a></li>
+              <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#kontakt" class="btn">KONTAKT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="header-content">
+          <div class="header-text">
+            <h1>Willkommen</h1>
+            <p>
+              Entdecken Sie schöne und moderne Wohnungen zur Miete in Plagwitz
+              und genießen Sie den einzigartigen Charme dieses trendigen
+              Stadtteils.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="text">
+            <h3 class="blue-text">PLAGWITZ</h3>
+            <h2>Ein lebendiger und kreativer Stadtteil mit Geschichte</h2>
+            <p>
+              Die Gießerstraße 50 befindet sich im Herzen von Plagwitz, einem
+              Stadtteil, der die perfekte Symbiose aus Vergangenheit und
+              Gegenwart darstellt. Einst ein florierendes Industriegebiet mit
+              Fabriken und Produktionsstätten, hat sich Plagwitz in den letzten
+              Jahrzehnten zu einem Vorzeigeprojekt des urbanen Wandels
+              entwickelt. Die Umnutzung historischer Industriegebäude in moderne
+              Wohn-, Arbeits- und Kulturflächen ist ein Paradebeispiel für
+              nachhaltige Stadtentwicklung.
+            </p>
+            <a href="#" class="read-more">Weiterlesen</a>
+          </div>
+          <div class="image"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apartments">
+      <div class="container">
+        <h3 class="blue-text">WOHNEN NEU ERLEBEN</h3>
+        <h2>Stilvoll renoviert & modern ausgestattet</h2>
+        <p>
+          Unsere Wohnungen sind frisch renoviert und modern ausgestattet. Wir
+          laden Sie herzlich dazu ein, unsere Auswahl an schönen Wohnungen zu
+          erkunden und sich von dem einzigartigen Flair begeistern zu lassen.
+        </p>
+
+        <div class="apartment-list">
+          <div class="apartment">
+            <div class="apartment-image"></div>
+            <h3>2 Zimmer Wohnung</h3>
+            <p>Beschreibung</p>
+            <a href="#" class="btn">MEHR INFOS</a>
+          </div>
+          <div class="apartment">
+            <div class="apartment-image"></div>
+            <h3>3 Zimmer Wohnung</h3>
+            <p>Beschreibung</p>
+            <a href="#" class="btn">MEHR INFOS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".nav-bar");
+        var kontaktButton = document.querySelector(".btn");
+
+        if (window.scrollY > 30) {
+          navbar.classList.add("scrolled");
+          kontaktButton.classList.add("scrolled-btn");
+        } else {
+          navbar.classList.remove("scrolled");
+          kontaktButton.classList.remove("scrolled-btn");
+        }
+      });
+    </script>
+  </body>
+</html>
