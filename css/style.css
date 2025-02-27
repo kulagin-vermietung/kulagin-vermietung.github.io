@@ -288,9 +288,17 @@ header {
 
 .apartment-image {
   width: 100%;
-  height: 200px;
-  background: url("/images/plagwitz.webp") no-repeat center center / cover;
+  height: 500px;
+  background: url("/images/grundrisse/mitte_mit.webp") no-repeat center center /
+    cover;
   margin-bottom: 15px;
+  background-size: contain; /* Das Bild wird vollständig angezeigt */
+}
+
+.apartment:nth-child(2) .apartment-image {
+  background: url("/images/grundrisse/rechts_mit.webp") no-repeat center center /
+    cover;
+  background-size: contain; /* Das Bild wird vollständig angezeigt */
 }
 
 .apartment p {
