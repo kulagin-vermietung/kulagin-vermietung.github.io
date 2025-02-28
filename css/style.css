@@ -115,7 +115,7 @@ header {
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,5 +321,88 @@ header {
 }
 
 .apartment .btn:hover {
+  background-color: #1b4fc7;
+}
+
+.ausstattung {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.ausstattung .container {
+  width: 1050px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ausstattung h3 {
+  color: #0075d2;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ausstattung h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.ausstattung p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.ausstattung-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ausstattung-item {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  gap: 15px;
+}
+
+.ausstattung-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.ausstattung-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ausstattung-item p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+}
+
+.ausstattung .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0075d2;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.ausstattung .btn:hover {
   background-color: #1b4fc7;
 }
