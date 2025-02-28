@@ -59,7 +59,7 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -136,7 +136,7 @@ header {
 
 .header-text h1 {
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -174,12 +174,12 @@ header {
 }
 
 .about-content .text {
-  width: 60%;
+  width: 65%;
 }
 
 .about-content .image {
-  width: 40%;
-  height: auto;
+  width: 35%;
+  height: 480px;
   flex-grow: 1;
   overflow: hidden; /* Schneidet das Bild innerhalb des Radius ab */
   position: relative;
@@ -192,7 +192,7 @@ header {
   left: -10%;
   width: 120%;
   height: 120%;
-  background: url("/images/plagwitz.webp") no-repeat 10% -10% / 90%;
+  background: url("/images/plagwitz.webp") no-repeat 10% 30% / 90%;
 }
 
 .blue-text {
@@ -280,8 +280,6 @@ header {
 }
 
 .apartment {
-  background: white;
-  padding: 20px;
   width: 48%;
   text-align: left;
 }
@@ -289,14 +287,14 @@ header {
 .apartment-image {
   width: 100%;
   height: 500px;
-  background: url("/images/grundrisse/mitte_mit.webp") no-repeat center center /
+  background: url("/images/grundrisse/we_mitte.webp") no-repeat center center /
     cover;
   margin-bottom: 15px;
   background-size: contain; /* Das Bild wird vollständig angezeigt */
 }
 
 .apartment:nth-child(2) .apartment-image {
-  background: url("/images/grundrisse/rechts_mit.webp") no-repeat center center /
+  background: url("/images/grundrisse/we_rechts.webp") no-repeat center center /
     cover;
   background-size: contain; /* Das Bild wird vollständig angezeigt */
 }
