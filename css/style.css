@@ -376,6 +376,9 @@ header {
   width: 95px;
   height: 95px;
   object-fit: cover;
+  pointer-events: none; /* Verhindert jegliche Mausinteraktion */
+  user-drag: none; /* Verhindert das Ziehen des Bildes */
+  -webkit-user-drag: none; /* Speziell für WebKit-Browser */
 }
 
 .ausstattung-item h3 {
@@ -404,5 +407,63 @@ header {
 }
 
 .ausstattung .btn:hover {
+  background-color: #1b4fc7;
+}
+
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 500px; /* Fixe Breite für jedes Bild */
+  height: 500px; /* Beibehalten oder anpassen */
+  object-fit: cover;
+  flex-shrink: 0;
+
+  pointer-events: none; /* Verhindert jegliche Mausinteraktion */
+  user-drag: none; /* Verhindert das Ziehen des Bildes */
+  -webkit-user-drag: none; /* Speziell für WebKit-Browser */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0075d2;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  z-index: 10;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.slider-btn:hover {
   background-color: #1b4fc7;
 }

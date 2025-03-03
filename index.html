@@ -106,7 +106,7 @@
         <div class="ausstattung-list">
           <div class="ausstattung-item">
             <img
-              src="/images/ausstattung/thermostat.svg"
+              src="/images/ausstattung/thermostat.webp"
               alt="Digitale Thermostate"
             />
             <div>
@@ -116,7 +116,7 @@
           </div>
           <div class="ausstattung-item">
             <img
-              src="/images/ausstattung/rfid.svg"
+              src="/images/ausstattung/rfid.webp"
               alt="Zutritt über RFID-System"
             />
             <div>
@@ -126,7 +126,7 @@
           </div>
           <div class="ausstattung-item">
             <img
-              src="/images/ausstattung/sprechanlage.svg"
+              src="/images/ausstattung/sprechanlage.webp"
               alt="Videosprechanlage"
             />
             <div>
@@ -136,7 +136,7 @@
           </div>
           <div class="ausstattung-item">
             <img
-              src="/images/ausstattung/fussbodenheizung.svg"
+              src="/images/ausstattung/fussbodenheizung.webp"
               alt="Fußbodenheizung in jedem Zimmer"
             />
             <div>
@@ -147,6 +147,25 @@
         </div>
 
         <a href="#" class="btn">MEHR INFOS</a>
+      </div>
+    </section>
+
+    <section class="image-slider">
+      <div class="slider-container">
+        <button class="slider-btn prev">&lt;</button>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img src="/images/panel/01.webp" alt="Bild 1" />
+            <img src="/images/panel/02.webp" alt="Bild 2" />
+            <img src="/images/panel/03.webp" alt="Bild 3" />
+            <img src="/images/panel/04.webp" alt="Bild 4" />
+            <img src="/images/panel/05.webp" alt="Bild 5" />
+            <img src="/images/panel/06.webp" alt="Bild 6" />
+            <img src="/images/panel/07.webp" alt="Bild 7" />
+            <img src="/images/panel/08.webp" alt="Bild 8" />
+          </div>
+        </div>
+        <button class="slider-btn next">&gt;</button>
       </div>
     </section>
 
@@ -162,6 +181,81 @@
           navbar.classList.remove("scrolled");
           kontaktButton.classList.remove("scrolled-btn");
         }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".slider");
+        const images = Array.from(document.querySelectorAll(".slider img"));
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+        const imageWidth = 500; // Fixe Breite für jedes Bild
+        const totalImages = images.length;
+
+        let index = 4; // Richtiger Startpunkt für 4 geklonte Bilder
+        let allowShift = true;
+
+        // *** 4 Bilder vorne und hinten klonen ***
+        const clonesBefore = images.slice(-4).map((img) => img.cloneNode(true));
+        const clonesAfter = images
+          .slice(0, 4)
+          .map((img) => img.cloneNode(true));
+
+        clonesBefore
+          .reverse()
+          .forEach((clone) => slider.insertBefore(clone, slider.firstChild));
+        clonesAfter.forEach((clone) => slider.appendChild(clone));
+
+        // *** Bilder nach Klonen erneut erfassen ***
+        const slideImages = document.querySelectorAll(".slider img");
+        const totalSlides = slideImages.length;
+
+        // *** Setzt den Slider auf die richtige Startposition (Bild 1 nach Klonen) ***
+        slider.style.transform = `translateX(-${index * imageWidth}px)`;
+        slider.style.width = `${totalSlides * imageWidth}px`;
+
+        function updateSlider() {
+          if (!allowShift) return;
+          allowShift = false;
+
+          slider.style.transition = "transform 0.5s ease-out";
+          slider.style.transform = `translateX(-${index * imageWidth}px)`;
+
+          setTimeout(() => {
+            if (index >= totalSlides - 4) {
+              // Korrektur für 4 Klone
+              slider.style.transition = "none";
+              index = 4; // Nach Bild 8 → Bild 1, ohne Sprung
+              slider.style.transform = `translateX(-${index * imageWidth}px)`;
+            } else if (index <= 3) {
+              // Korrektur für 4 Klone
+              slider.style.transition = "none";
+              index = totalImages + 3; // Nach Bild 1 → Bild 8, ohne Sprung
+              slider.style.transform = `translateX(-${index * imageWidth}px)`;
+            }
+            allowShift = true;
+          }, 500);
+        }
+
+        nextBtn.addEventListener("click", function () {
+          if (allowShift) {
+            index++;
+            updateSlider();
+          }
+        });
+
+        prevBtn.addEventListener("click", function () {
+          if (allowShift) {
+            index--;
+            updateSlider();
+          }
+        });
+
+        // *** Nach dem Laden die richtige Position sofort setzen ***
+        window.addEventListener("load", function () {
+          updateSlider(true);
+        });
       });
     </script>
   </body>
