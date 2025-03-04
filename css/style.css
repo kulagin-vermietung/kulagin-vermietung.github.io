@@ -576,9 +576,44 @@ header {
   background-color: #f1f1f1;
 }
 
+.contact-map {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contact-map iframe {
   width: 100%;
   height: 100%;
+  flex-grow: 1; /* Sorgt dafür, dass die Karte sich dem Container anpasst */
+}
+
+.contact-address {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.contact-address h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-address p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.contact-address a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-address a:hover {
+  text-decoration: underline;
 }
 
 .footer {
