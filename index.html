@@ -156,8 +156,8 @@
         <div class="slider-wrapper">
           <div class="slider">
             <img src="/images/slider/01.webp" alt="Bild 1" />
-            <img src="/images/slider/02.webp" alt="Bild 2" />
-            <img src="/images/slider/03.webp" alt="Bild 3" />
+            <img src="/images/slider/03.webp" alt="Bild 2" />
+            <img src="/images/slider/02.webp" alt="Bild 3" />
             <img src="/images/slider/04.webp" alt="Bild 4" />
             <img src="/images/slider/05.webp" alt="Bild 5" />
             <img src="/images/slider/06.webp" alt="Bild 6" />
@@ -215,15 +215,31 @@
           <div class="contact-map">
             <!-- Anschrift über der Karte -->
             <div class="contact-address">
-              <h3>Kulagin Vermietung</h3>
-              <p>Gießerstraße 50, 04229 Leipzig</p>
-              <p>
-                E-Mail:
-                <a href="mailto:kontakt@kulagin-vermietung.de"
+              <p class="contact-info">
+                <img
+                  src="/images/icons/map.svg"
+                  alt="Map Icon"
+                  class="contact-icon"
+                />
+                Gießerstraße 50, 04229 Leipzig
+              </p>
+              <p class="contact-info">
+                <img
+                  src="/images/icons/mail.svg"
+                  alt="E-Mail Icon"
+                  class="contact-icon"
+                /><a href="mailto:kontakt@kulagin-vermietung.de"
                   >kontakt@kulagin-vermietung.de</a
                 >
               </p>
-              <p>Tel.: <a href="tel:+491607959616">0160 7959616</a></p>
+              <p class="contact-info">
+                <img
+                  src="/images/icons/phone.svg"
+                  alt="Telefon Icon"
+                  class="contact-icon"
+                />
+                <a href="tel:+491607959616">0160 7959616</a>
+              </p>
             </div>
 
             <!-- Google Maps Iframe -->
@@ -283,7 +299,7 @@
         const images = Array.from(document.querySelectorAll(".slider img"));
         const nextBtn = document.querySelector(".next");
         const prevBtn = document.querySelector(".prev");
-        const imageWidth = 500; // Fixe Breite für jedes Bild
+        const imageWidth = 403; // Fixe Breite für jedes Bild
         const totalImages = images.length;
 
         let index = 4; // Richtiger Startpunkt für 4 geklonte Bilder
@@ -328,7 +344,7 @@
               slider.style.transform = `translateX(-${index * imageWidth}px)`;
             }
             allowShift = true;
-          }, 500);
+          }, 403);
         }
 
         nextBtn.addEventListener("click", function () {

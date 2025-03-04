@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 1050px;
+  width: 1000px;
   max-width: 95%;
   margin: 0 auto;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-bar .container {
-  width: 1050px; /* Beibehaltung der 1050px Breite für den Inhalt */
+  width: 1000px; /* Beibehaltung der 1000px Breite für den Inhalt */
   max-width: 90%;
   display: flex;
   justify-content: space-between;
@@ -46,6 +46,11 @@ body {
 
 .logo img {
   height: 80px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 nav ul {
@@ -102,8 +107,8 @@ nav a:hover {
 header {
   position: relative;
   width: 100%;
-  height: 80vh;
-  background: url("/images/header.webp") no-repeat center 33% / cover;
+  height: 70vh;
+  background: url("/images/header.webp") no-repeat center 70% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
 
   display: flex;
@@ -124,12 +129,12 @@ header {
 /* Header-Text */
 .header-content {
   text-align: left;
-  max-width: 1050px;
+  max-width: 1000px;
   color: white;
 }
 
 .header-text {
-  max-width: 1050px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -152,7 +157,7 @@ header {
   justify-content: center;
   flex-direction: column; /* Stapelt die Elemente vertikal */
   align-items: center; /* Zentriert den Inhalt */
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
 }
 
@@ -161,7 +166,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%; /* Damit der Container im Layout bleibt */
-  max-width: 1050px; /* Feste Begrenzung */
+  max-width: 1000px; /* Feste Begrenzung */
   margin: 0 auto;
 }
 
@@ -179,7 +184,7 @@ header {
 
 .about-content .image {
   width: 35%;
-  height: 480px;
+  height: 440px;
   flex-grow: 1;
   overflow: hidden; /* Schneidet das Bild innerhalb des Radius ab */
   position: relative;
@@ -191,7 +196,7 @@ header {
   top: -10%;
   left: -10%;
   width: 120%;
-  height: 120%;
+  height: 130%;
   background: url("/images/plagwitz.webp") no-repeat 10% 30% / 90%;
 }
 
@@ -245,7 +250,7 @@ header {
 }
 
 .apartments .container {
-  width: 1050px;
+  width: 1000px;
   max-width: 90%;
   margin: 0 auto;
   text-align: left;
@@ -275,12 +280,11 @@ header {
 
 .apartment-list {
   display: flex;
-  gap: 30px;
   justify-content: space-between;
 }
 
 .apartment {
-  width: 48%;
+  width: 49%;
   text-align: left;
 }
 
@@ -330,7 +334,7 @@ header {
 }
 
 .ausstattung .container {
-  width: 1050px;
+  width: 1000px;
   max-width: 90%;
   margin: 0 auto;
   text-align: left;
@@ -376,9 +380,11 @@ header {
   width: 95px;
   height: 95px;
   object-fit: cover;
-  pointer-events: none; /* Verhindert jegliche Mausinteraktion */
-  user-drag: none; /* Verhindert das Ziehen des Bildes */
-  -webkit-user-drag: none; /* Speziell für WebKit-Browser */
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .ausstattung-item h3 {
@@ -430,17 +436,19 @@ header {
 .slider {
   display: flex;
   transition: transform 0.5s ease;
+  gap: 3px;
 }
 
 .slider img {
-  width: 500px; /* Fixe Breite für jedes Bild */
-  height: 500px; /* Beibehalten oder anpassen */
+  width: 400px; /* Fixe Breite für jedes Bild */
+  height: 400px; /* Beibehalten oder anpassen */
   object-fit: cover;
   flex-shrink: 0;
-
-  pointer-events: none; /* Verhindert jegliche Mausinteraktion */
-  user-drag: none; /* Verhindert das Ziehen des Bildes */
-  -webkit-user-drag: none; /* Speziell für WebKit-Browser */
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .slider-btn {
@@ -475,7 +483,7 @@ header {
 }
 
 .contact .container {
-  max-width: 1050px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -503,6 +511,7 @@ header {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
+  margin-bottom: -15px;
 }
 
 /* Zwei Spalten: Formular und Karte */
@@ -534,7 +543,9 @@ header {
 .contact form input,
 .contact form textarea {
   width: 100%;
-  padding: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 18px;
   border: none;
   border-bottom: 1.5px solid white;
@@ -551,7 +562,19 @@ header {
 
 .contact form textarea {
   resize: none;
-  height: 150px;
+  height: 100px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Abstand zwischen Text und Icon */
+}
+
+.contact-icon {
+  width: 22px; /* Größe des Icons */
+  height: 22px;
+  object-fit: contain;
 }
 
 .required {
@@ -590,9 +613,7 @@ header {
 }
 
 .contact-address {
-  margin-bottom: 15px;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
   text-align: left;
 }
 
@@ -604,7 +625,7 @@ header {
 
 .contact-address p {
   font-size: 16px;
-  margin: 5px 0;
+  margin-bottom: 4px 0;
 }
 
 .contact-address a {
@@ -617,15 +638,47 @@ header {
 }
 
 .footer {
+  position: relative;
   background: #fff;
-  padding: 50px 0;
+  padding: 40px 0;
   color: #333;
   text-align: center;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/footer.svg") no-repeat center bottom;
+  background-size: 70%; /* Hier die Größe des Bildes anpassen */
+  opacity: 0.09; /* Hier kannst du die Transparenz anpassen */
+  z-index: 0;
+  /* Erzeugt einen sanften Fade-Effekt an den Seiten */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 60%,
+    transparent
+  );
 }
 
 .footer .container {
-  max-width: 1050px;
+  position: relative;
+  max-width: 1000px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .footer-content {
@@ -638,7 +691,12 @@ header {
 }
 
 .footer-logo img {
-  height: 70px;
+  height: 80px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .footer-links ul {
