@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kulagin Vermietung - Plagwitz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="header-plagwitz">
+      <div class="nav-bar">
+        <div class="container">
+          <a href="/index.html"
+            ><div class="logo">
+              <img
+                src="/images/logowhite.svg"
+                alt="Kulagin Vermietung Logo"
+              /></div
+          ></a>
+          <nav>
+            <ul>
+              <li><a href="#about">Über Uns</a></li>
+              <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#kontakt" class="btn">KONTAKT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="overlay-plagwitz">
+        <div class="header-content">
+          <div class="header-text">
+            <h1>Plagwitz</h1>
+            <p>Ein lebendiger und kreativer Stadtteil mit Geschichte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="text-plagwitz">
+            <h2>Allgemein</h2>
+            <p>
+              Die Gießerstraße 50 befindet sich im Herzen von Plagwitz, einem
+              Stadtteil, der die perfekte Symbiose aus Vergangenheit und
+              Gegenwart darstellt. Einst ein florierendes Industriegebiet mit
+              Fabriken und Produktionsstätten, hat sich Plagwitz in den letzten
+              Jahrzehnten zu einem Vorzeigeprojekt des urbanen Wandels
+              entwickelt. Die Umnutzung historischer Industriegebäude in moderne
+              Wohn-, Arbeits- und Kulturflächen ist ein Paradebeispiel für
+              nachhaltige Stadtentwicklung.
+            </p>
+            <h2>Ein Viertel mit Charakter</h2>
+            <p>
+              Plagwitz besticht durch seine Vielfalt an architektonischen Stilen
+              und das harmonische Zusammenspiel von Alt und Neu. Die ehemaligen
+              Industriehöfe, wie die Plagwitzer Höfe oder die Baumwollspinnerei,
+              wurden sorgfältig restauriert und bieten heute Platz für Galerien,
+              Ateliers, Cafés und Werkstätten. Begrünte Innenhöfe und liebevoll
+              angelegte Gemeinschaftsgärten schaffen Rückzugsorte inmitten des
+              urbanen Trubels.
+            </p>
+            <p>
+              Die Nähe zu den Wasserwegen, insbesondere dem Karl-Heine-Kanal und
+              der Weißen Elster, macht das Viertel besonders attraktiv. Entlang
+              der Kanäle laden breite Uferpromenaden mit alten Brücken,
+              historischen Gebäuden und moderner Kunst zum Flanieren ein. Die
+              Nähe zum weitläufigen Auenwald bietet zudem einen direkten Zugang
+              zur Natur – perfekt für Spaziergänge, Jogging oder Fahrradtouren.
+            </p>
+            <p>
+              Die Atmosphäre ist kreativ und inspirierend – ein Anziehungspunkt
+              für Familien, Studenten, Künstler und Berufstätige gleichermaßen.
+              Es ist ein Ort, an dem urbaner Lifestyle und naturnahes Wohnen
+              harmonisch verschmelzen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="/images/logo.svg" alt="Kulagin Vermietung Logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#about">Über Uns</a></li>
+              <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+              <li><a href="#">Impressum</a></li>
+              <li><a href="#">Datenschutz</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-copy">
+          &copy; 2025 Kulagin Vermietung – Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".nav-bar");
+        var kontaktButton = document.querySelector(".btn");
+
+        if (window.scrollY > 30) {
+          navbar.classList.add("scrolled");
+          kontaktButton.classList.add("scrolled-btn");
+        } else {
+          navbar.classList.remove("scrolled");
+          kontaktButton.classList.remove("scrolled-btn");
+        }
+      });
+    </script>
+  </body>
+</html>
