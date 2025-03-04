@@ -127,6 +127,30 @@ header {
   text-align: left;
 }
 
+.header-wohnung2 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: url("/images/header/wohnung2.webp") no-repeat center 155% / cover;
+  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.header-wohnung3 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: url("/images/header/wohnung3.webp") no-repeat center 165% / cover;
+  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
 /* Overlay */
 .overlay {
   width: 100%;
@@ -147,6 +171,40 @@ header {
 }
 
 .overlay-plagwitz .header-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  text-align: left;
+  margin-top: 65px;
+}
+
+.overlay-wohnung2 {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center; /* Statt center → linksbündig */
+  align-items: center;
+}
+
+.overlay-wohnung2 .header-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  text-align: left;
+  margin-top: 65px;
+}
+
+.overlay-wohnung3 {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center; /* Statt center → linksbündig */
+  align-items: center;
+}
+
+.overlay-wohnung3 .header-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto; /* Zentriert den Container auf der Seite */
@@ -274,6 +332,32 @@ header {
 
 .read-more:active {
   transform: scale(0.98); /* Klick-Animation */
+}
+
+.wohnung-grundriss img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin: -90px auto; /* Zentriert das Bild horizontal */
+  display: block; /* Notwendig, damit `margin: auto` funktioniert */
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
+}
+
+.wohnungs-grundriss img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin: 35px auto; /* Zentriert das Bild horizontal */
+  display: block; /* Notwendig, damit `margin: auto` funktioniert */
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .apartments {
