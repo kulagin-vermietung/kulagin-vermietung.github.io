@@ -185,22 +185,18 @@
         <!-- Zwei Spalten: Links Formular, rechts Google Maps -->
         <div class="contact-columns">
           <div class="contact-form">
-            <form
-              action="mailto:deine@email.de"
-              method="post"
-              enctype="text/plain"
-            >
-              <label for="name">Name *</label>
-              <input type="text" id="name" name="name" required />
+            <form action="https://formspree.io/f/xzbonqko" method="POST">
+              <label for="email">Ihre E-Mail:</label>
+              <input type="email" id="email" name="E-Mail" required />
 
-              <label for="email">E-Mail *</label>
-              <input type="email" id="email" name="email" required />
+              <label for="name">Ihr Name:</label>
+              <input type="text" id="name" name="Interessent" required />
 
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" />
+              <label for="phone">Telefon:</label>
+              <input type="tel" id="phone" name="Telefon" />
 
-              <label for="message">Nachricht *</label>
-              <textarea id="message" name="message" required></textarea>
+              <label for="message">Ihre Nachricht:</label>
+              <textarea id="message" name="Nachricht" required></textarea>
 
               <button type="submit" class="btn">ABSENDEN</button>
             </form>
