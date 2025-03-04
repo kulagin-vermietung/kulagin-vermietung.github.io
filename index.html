@@ -185,7 +185,11 @@
         <!-- Zwei Spalten: Links Formular, rechts Google Maps -->
         <div class="contact-columns">
           <div class="contact-form">
-            <form action="/sendmail.php" method="post">
+            <form
+              action="mailto:deine@email.de"
+              method="post"
+              enctype="text/plain"
+            >
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" required />
 
@@ -200,6 +204,10 @@
 
               <button type="submit" class="btn">ABSENDEN</button>
             </form>
+            <div
+              id="responseMessage"
+              style="display: none; color: white; margin-top: 15px"
+            ></div>
           </div>
 
           <div class="contact-map">
