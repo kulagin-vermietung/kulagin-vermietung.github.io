@@ -551,7 +551,13 @@ header {
 
 .contact form textarea {
   resize: none;
-  height: 100px;
+  height: 150px;
+}
+
+.required {
+  color: red;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 .contact .btn {

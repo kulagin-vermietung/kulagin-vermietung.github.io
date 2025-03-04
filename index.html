@@ -186,16 +186,22 @@
         <div class="contact-columns">
           <div class="contact-form">
             <form action="https://formspree.io/f/xzbonqko" method="POST">
-              <label for="email">Ihre E-Mail:</label>
+              <label for="email"
+                >Ihre E-Mail: <span class="required">*</span></label
+              >
               <input type="email" id="email" name="E-Mail" required />
 
-              <label for="name">Ihr Name:</label>
+              <label for="name"
+                >Ihr Name: <span class="required">*</span></label
+              >
               <input type="text" id="name" name="Interessent" required />
 
               <label for="phone">Telefon:</label>
               <input type="tel" id="phone" name="Telefon" />
 
-              <label for="message">Ihre Nachricht:</label>
+              <label for="message"
+                >Ihre Nachricht: <span class="required">*</span></label
+              >
               <textarea id="message" name="Nachricht" required></textarea>
 
               <button type="submit" class="btn">ABSENDEN</button>
