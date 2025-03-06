@@ -460,6 +460,11 @@ nav a:hover {
   margin-right: 2px;
   margin-bottom: 4px;
   vertical-align: middle;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .zimmer-icon {
@@ -471,6 +476,11 @@ nav a:hover {
   margin-left: 20px;
   vertical-align: middle;
   margin-bottom: 5px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .price-icon {
@@ -482,6 +492,11 @@ nav a:hover {
   margin-left: 24px;
   vertical-align: middle;
   margin-bottom: 2px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
 }
 
 .trenner {
@@ -739,6 +754,12 @@ nav a:hover {
   width: 22px; /* Größe des Icons */
   height: 22px;
   object-fit: contain;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
+  opacity: 0.85;
 }
 
 .required {
