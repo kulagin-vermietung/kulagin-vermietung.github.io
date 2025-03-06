@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #fff;
   color: #333;
 }
 
@@ -151,6 +155,19 @@ nav a:hover {
   text-align: left;
 }
 
+.header-ausstattung {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: url("/images/header/ausstattung.webp") no-repeat center 285% /
+    cover;
+  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
 /* Overlay */
 .overlay {
   width: 100%;
@@ -205,6 +222,23 @@ nav a:hover {
 }
 
 .overlay-wohnung3 .header-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  text-align: left;
+  margin-top: 65px;
+}
+
+.overlay-ausstattung {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center; /* Statt center → linksbündig */
+  align-items: center;
+}
+
+.overlay-ausstattung .header-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto; /* Zentriert den Container auf der Seite */
@@ -523,7 +557,6 @@ nav a:hover {
   color: #0075d2;
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -538,26 +571,27 @@ nav a:hover {
   font-size: 18px;
   font-weight: 300;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .ausstattung-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 
 .ausstattung-item {
   display: flex;
   align-items: center;
-  width: 48%;
+  width: 49%;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .ausstattung-item img {
-  width: 95px;
-  height: 95px;
+  width: 98px;
+  height: 98px;
   object-fit: cover;
   pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
   user-select: none !important; /* Verhindert das Markieren */
@@ -568,11 +602,12 @@ nav a:hover {
 
 .ausstattung-item h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .ausstattung-item p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #333;
 }
@@ -830,20 +865,20 @@ nav a:hover {
   padding: 40px 0;
   color: #333;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .footer::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -35px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background: url("/images/footer.svg") no-repeat center bottom;
-  background-size: 70%; /* Hier die Größe des Bildes anpassen */
-  opacity: 0.07; /* Hier kannst du die Transparenz anpassen */
-  z-index: 0;
+  background-size: contain; /* Hier die Größe des Bildes anpassen */
+  opacity: 0.06; /* Hier kannst du die Transparenz anpassen */
+  z-index: 1;
   /* Erzeugt einen sanften Fade-Effekt an den Seiten */
   -webkit-mask-image: linear-gradient(
     to right,
@@ -907,6 +942,6 @@ nav a:hover {
 
 .footer-copy {
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 15px;
   opacity: 0.8;
 }

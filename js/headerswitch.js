@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
             headerContainer.classList.add("header-wohnung3");
             headerOverlay.classList.add("overlay-wohnung3"); // Neue Klasse für das Overlay
           }
+          else if (page === "ausstattung.html") {
+            headerTitle.innerText = "Ausstattung";
+            headerDescription.innerText =
+              "Hochwertig, zeitgemäß & durchdacht";
+            headerContainer.classList.add("header-ausstattung");
+            headerOverlay.classList.add("overlay-ausstattung"); // Neue Klasse für das Overlay
+          }
       }
         }, 1); // Kleines Timeout, um sicherzustellen, dass der Header geladen wurde
       })
