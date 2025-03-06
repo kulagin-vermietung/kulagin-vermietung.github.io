@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (page === "index.html" || page === "") {
               headerTitle.innerText = "Willkommen";
               headerDescription.innerText =
-                "Entdecken Sie schöne und moderne Wohnungen zur Miete in Plagwitz und genießen Sie den einzigartigen Charme dieses trendigen Stadtteils.";
+                "Unsere stilvoll renovierten Wohnungen vereinen modernes Design, hochwertige Ausstattung und urbanes Flair. Entdecken Sie Ihr neues Zuhause und genießen Sie Wohnkomfort auf höchstem Niveau!";
               headerContainer.classList.add("header");
               headerOverlay.classList.add("overlay-index"); // Neue Klasse für das Overlay
             } else if (page === "plagwitz.html") {

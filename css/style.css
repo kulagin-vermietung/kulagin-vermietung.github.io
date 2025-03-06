@@ -361,7 +361,7 @@ nav a:hover {
 }
 
 .apartments {
-  background: #f8f8f8; /* Hintergrundfarbe der Section */
+  background: #f3faff; /* Hintergrundfarbe der Section */
   padding: 80px 0;
 }
 
@@ -390,7 +390,7 @@ nav a:hover {
 .apartments p {
   font-size: 18px;
   font-weight: 300;
-  color: #555;
+  color: #333;
   margin-bottom: 30px;
 }
 
@@ -409,7 +409,8 @@ nav a:hover {
   height: 500px;
   background: url("/images/grundrisse/we_mitte.webp") no-repeat center center /
     cover;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: -20px;
   background-size: contain; /* Das Bild wird vollständig angezeigt */
 }
 
@@ -444,6 +445,53 @@ nav a:hover {
   background-color: #1b4fc7;
 }
 
+.wohnung-details {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.size-icon {
+  width: 17.5px; /* Größe des Icons */
+  height: 17.5px;
+  object-fit: contain;
+  opacity: 0.45;
+  margin-right: 2px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+.zimmer-icon {
+  width: 19.5px; /* Größe des Icons */
+  height: 19.5px;
+  object-fit: contain;
+  opacity: 0.45;
+  margin-right: 7px;
+  margin-left: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.price-icon {
+  width: 18px; /* Größe des Icons */
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.45;
+  margin-right: 9px;
+  margin-left: 24px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.trenner {
+  width: 60%; /* Volle Breite */
+  height: 1px; /* Dünne Linie */
+  background: #0075d2;
+  margin-top: -4px;
+  margin-bottom: 10px;
+}
+
 .ausstattung {
   background: #fff;
   padding: 80px 0;
@@ -474,7 +522,7 @@ nav a:hover {
 .ausstattung p {
   font-size: 18px;
   font-weight: 300;
-  color: #555;
+  color: #333;
   margin-bottom: 30px;
 }
 
@@ -511,7 +559,7 @@ nav a:hover {
 .ausstattung-item p {
   font-size: 18px;
   font-weight: 300;
-  color: #555;
+  color: #333;
 }
 
 .ausstattung .btn {
@@ -771,7 +819,7 @@ nav a:hover {
   height: 100%;
   background: url("/images/footer.svg") no-repeat center bottom;
   background-size: 70%; /* Hier die Größe des Bildes anpassen */
-  opacity: 0.09; /* Hier kannst du die Transparenz anpassen */
+  opacity: 0.07; /* Hier kannst du die Transparenz anpassen */
   z-index: 0;
   /* Erzeugt einen sanften Fade-Effekt an den Seiten */
   -webkit-mask-image: linear-gradient(
