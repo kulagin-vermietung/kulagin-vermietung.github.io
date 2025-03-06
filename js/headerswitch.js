@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             headerOverlay.classList.add("overlay-ausstattung"); // Neue Klasse für das Overlay
           }
       }
-        }, 1); // Kleines Timeout, um sicherzustellen, dass der Header geladen wurde
+        }, 0.1); // Kleines Timeout, um sicherzustellen, dass der Header geladen wurde
       })
       .catch((error) =>
         console.error("Fehler beim Laden des Headers:", error)
