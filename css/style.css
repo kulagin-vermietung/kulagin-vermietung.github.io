@@ -763,9 +763,11 @@ nav a:hover {
 }
 
 .required {
-  color: red;
-  font-size: 16px;
+  font-size: 11px;
   margin-left: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
 }
 
 .contact .btn {
