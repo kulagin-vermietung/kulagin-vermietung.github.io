@@ -877,7 +877,7 @@ nav a:hover {
   background: url("/images/footer.svg") no-repeat center bottom;
   background-size: contain; /* Hier die Größe des Bildes anpassen */
   opacity: 0.06; /* Hier kannst du die Transparenz anpassen */
-  z-index: 1;
+  z-index: 10;
   /* Erzeugt einen sanften Fade-Effekt an den Seiten */
   -webkit-mask-image: linear-gradient(
     to right,
