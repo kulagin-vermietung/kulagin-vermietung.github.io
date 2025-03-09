@@ -111,8 +111,8 @@ nav a:hover {
 .header {
   position: relative;
   width: 100%;
-  height: 70vh;
-  background: url("/images/header/main.webp") no-repeat center 70% / cover;
+  height: 475px;
+  background: url("/images/header/main.webp") no-repeat center 90% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
   display: flex;
   align-items: center;
@@ -122,8 +122,8 @@ nav a:hover {
 .header-plagwitz {
   position: relative;
   width: 100%;
-  height: 30vh;
-  background: url("/images/header/plagwitz.webp") no-repeat center 100% / cover;
+  height: 275px;
+  background: url("/images/header/plagwitz.webp") no-repeat center 80% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
   display: flex;
   align-items: left;
@@ -134,7 +134,7 @@ nav a:hover {
 .header-wohnung2 {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 275px;
   background: url("/images/header/wohnung2.webp") no-repeat center 155% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
   display: flex;
@@ -146,7 +146,7 @@ nav a:hover {
 .header-wohnung3 {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 275px;
   background: url("/images/header/wohnung3.webp") no-repeat center 165% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
   display: flex;
@@ -158,9 +158,21 @@ nav a:hover {
 .header-ausstattung {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 275px;
   background: url("/images/header/ausstattung.webp") no-repeat center 285% /
     cover;
+  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.header-downloads {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  background: url("/images/header/downloads.webp") no-repeat center 180% / cover;
   background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
   display: flex;
   align-items: left;
@@ -172,7 +184,7 @@ nav a:hover {
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +193,7 @@ nav a:hover {
 .overlay-plagwitz {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center; /* Statt center → linksbündig */
   align-items: center;
@@ -239,6 +251,23 @@ nav a:hover {
 }
 
 .overlay-ausstattung .header-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  text-align: left;
+  margin-top: 65px;
+}
+
+.overlay-downloads {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center; /* Statt center → linksbündig */
+  align-items: center;
+}
+
+.overlay-downloads .header-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto; /* Zentriert den Container auf der Seite */
@@ -877,7 +906,7 @@ nav a:hover {
   background: url("/images/footer.svg") no-repeat center bottom;
   background-size: contain; /* Hier die Größe des Bildes anpassen */
   opacity: 0.06; /* Hier kannst du die Transparenz anpassen */
-  z-index: 10;
+  z-index: 1;
   /* Erzeugt einen sanften Fade-Effekt an den Seiten */
   -webkit-mask-image: linear-gradient(
     to right,
@@ -1038,4 +1067,60 @@ nav a:hover {
   transform: scale(1.05);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.download-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.download-table th,
+.download-table td {
+  border-bottom: 1px solid #0075d2;
+  padding: 12px;
+  text-align: left;
+}
+.download-table thead tr th {
+  border-bottom: none;
+}
+.download-table tr:last-child td {
+  border-bottom: none;
+}
+
+.download-table th {
+  font-weight: 600;
+  background-color: rgba(0, 117, 210, 0.075); /* #0075d2 mit 20 % Transparenz */
+  color: #0075d2; /* Blaue Farbe aus .blue-text */
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.download-table img.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0075d2;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1b4fc7;
+}
+
+.download-text {
+  color: #0075d2;
+  text-transform: uppercase;
 }

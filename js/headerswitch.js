@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
             headerContainer.classList.add("header-ausstattung");
             headerOverlay.classList.add("overlay-ausstattung"); // Neue Klasse für das Overlay
           }
+          else if (page === "downloads.html") {
+            headerTitle.innerText = "Downloads";
+            headerDescription.innerText =
+              "Mietunterlagen, Vorlagen und Anleitungen – alles Wichtige auf einen Blick!";
+            headerContainer.classList.add("header-downloads");
+            headerOverlay.classList.add("overlay-downloads"); // Neue Klasse für das Overlay
+          }
       }
         }, 0.1); // Kleines Timeout, um sicherzustellen, dass der Header geladen wurde
       })

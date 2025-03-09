@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const imageWidth = 403; // Fixe Breite für jedes Bild
   const totalImages = images.length;
 
-  let index = 4; // Richtiger Startpunkt für 4 geklonte Bilder
+  let index = 5; // Richtiger Startpunkt für 4 geklonte Bilder
   let allowShift = true;
 
   // *** 4 Bilder vorne und hinten klonen ***
-  const clonesBefore = images.slice(-4).map((img) => img.cloneNode(true));
-  const clonesAfter = images.slice(0, 4).map((img) => img.cloneNode(true));
+  const clonesBefore = images.slice(-5).map((img) => img.cloneNode(true));
+  const clonesAfter = images.slice(0, 5).map((img) => img.cloneNode(true));
 
   clonesBefore
     .reverse()
@@ -30,19 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!allowShift) return;
     allowShift = false;
 
-    slider.style.transition = "transform 0.5s ease-out";
+    slider.style.transition = "transform 0.4s ease-out";
     slider.style.transform = `translateX(-${index * imageWidth}px)`;
 
     setTimeout(() => {
-      if (index >= totalSlides - 4) {
+      if (index >= totalSlides - 5) {
         // Korrektur für 4 Klone
         slider.style.transition = "none";
-        index = 4; // Nach Bild 8 → Bild 1, ohne Sprung
+        index = 5; // Nach Bild 8 → Bild 1, ohne Sprung
         slider.style.transform = `translateX(-${index * imageWidth}px)`;
-      } else if (index <= 3) {
+      } else if (index < 5) {
         // Korrektur für 4 Klone
         slider.style.transition = "none";
-        index = totalImages + 3; // Nach Bild 1 → Bild 8, ohne Sprung
+        index = totalImages + 4; // Nach Bild 1 → Bild 8, ohne Sprung
         slider.style.transform = `translateX(-${index * imageWidth}px)`;
       }
       allowShift = true;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   prevBtn.addEventListener("click", function () {
     if (allowShift) {
-      index--;
+      index -= 1; // Korrekte Anpassung um nur 1 Bild zurück
       updateSlider();
     }
   });
