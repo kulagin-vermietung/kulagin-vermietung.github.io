@@ -910,6 +910,17 @@ nav a:hover {
   transition: background 0.3s ease;
 }
 
+.contact .btn::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("/images/icons/send.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 13px;
+  margin-bottom: -5px;
+}
+
 .contact .btn:hover {
   background-color: var(--grau-farbe);
 }
@@ -1162,7 +1173,8 @@ nav a:hover {
 }
 
 .download-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 12px 24px;
   background-color: var(--blau-farbe);
   color: var(--hintergrund-farbe);
@@ -1172,6 +1184,18 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
+}
+
+.download-btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/download.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: -6px;
 }
 
 .download-btn:hover {
