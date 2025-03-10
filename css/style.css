@@ -1,3 +1,14 @@
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+  --blau-farbe: #0075d2;
+  --dunkelblau-farbe: #1b4fc7;
+  --text-farbe: #333;
+  --hintergrund-farbe: #fff;
+  --grau-farbe: #f1f1f1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,8 +21,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--hintergrund-farbe);
+  color: var(--text-farbe);
 }
 
 .container {
@@ -20,24 +31,23 @@ body {
   margin: 0 auto;
 }
 
-/* Fixierte Navigation */
 .nav-bar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Breite über die gesamte Seite */
+  width: 100%;
   display: flex;
-  justify-content: center; /* Zentriert die Inhalte */
+  justify-content: center;
   align-items: center;
   padding: 15px 0;
   height: 110px;
   background: transparent;
   transition: background 0.1s ease-in-out;
-  z-index: 1000; /* Stellt sicher, dass die Navbar über dem Bild bleibt */
+  z-index: 1000;
 }
 
 .nav-bar .container {
-  width: 1000px; /* Beibehaltung der 1000px Breite für den Inhalt */
+  width: 1000px;
   max-width: 90%;
   display: flex;
   justify-content: space-between;
@@ -45,38 +55,39 @@ body {
 }
 
 .nav-bar.scrolled {
-  background: #0075d2; /* Blaue Farbe */
+  background: var(--blau-farbe);
 }
 
 .logo img {
   height: 80px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  align-items: center; /* Vertikale Zentrierung */
+  align-items: center;
   gap: 30px;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--hintergrund-farbe);
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 nav .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 12px 24px;
-  background-color: #0075d2; /* Gleiche blaue Farbe wie "MEHR INFOS" */
-  color: white;
+  background-color: var(--blau-farbe);
+  color: var(--hintergrund-farbe);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -85,35 +96,58 @@ nav .btn {
   transition: background 0.3s ease, transform 0.1s ease;
 }
 
+nav .btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/contact.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: -6px;
+}
+
 nav .btn:hover {
-  background-color: #1b4fc7; /* Dunkleres Blau beim Hover */
-  color: white; /* Beibehaltung der weißen Textfarbe */
+  background-color: var(--dunkelblau-farbe);
+  color: var(--hintergrund-farbe);
 }
 
 nav .btn:active {
-  transform: scale(0.98); /* Klick-Animation */
+  transform: scale(0.98);
 }
 
 .nav-bar.scrolled .btn {
-  background-color: white; /* Hintergrund wird weiß */
-  color: #0075d2; /* Text wird blau */
+  background-color: var(--hintergrund-farbe);
+  color: var(--blau-farbe);
+}
+
+.nav-bar.scrolled .btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/contactblue.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: -6px;
 }
 
 .nav-bar.scrolled .btn:hover {
-  background-color: #f1f1f1; /* Etwas dunkleres Weiß beim Hover */
+  background-color: var(--grau-farbe);
 }
 
 nav a:hover {
-  color: white; /* Standardfarbe für alle Links */
+  color: var(--hintergrund-farbe);
 }
 
-/* Header */
 .header {
   position: relative;
   width: 100%;
   height: 475px;
   background: url("/images/header/main.webp") no-repeat center 90% / cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +158,7 @@ nav a:hover {
   width: 100%;
   height: 275px;
   background: url("/images/header/plagwitz.webp") no-repeat center 80% / cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -136,7 +170,7 @@ nav a:hover {
   width: 100%;
   height: 275px;
   background: url("/images/header/wohnung2.webp") no-repeat center 155% / cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -148,7 +182,7 @@ nav a:hover {
   width: 100%;
   height: 275px;
   background: url("/images/header/wohnung3.webp") no-repeat center 165% / cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -161,7 +195,7 @@ nav a:hover {
   height: 275px;
   background: url("/images/header/ausstattung.webp") no-repeat center 285% /
     cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -173,14 +207,13 @@ nav a:hover {
   width: 100%;
   height: 275px;
   background: url("/images/header/downloads.webp") no-repeat center 180% / cover;
-  background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
   text-align: left;
 }
 
-/* Overlay */
 .overlay {
   width: 100%;
   height: 100%;
@@ -195,14 +228,14 @@ nav a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center; /* Statt center → linksbündig */
+  justify-content: center;
   align-items: center;
 }
 
 .overlay-plagwitz .header-content {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  margin: 0 auto;
   text-align: left;
   margin-top: 65px;
 }
@@ -212,14 +245,14 @@ nav a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
   display: flex;
-  justify-content: center; /* Statt center → linksbündig */
+  justify-content: center;
   align-items: center;
 }
 
 .overlay-wohnung2 .header-content {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  margin: 0 auto;
   text-align: left;
   margin-top: 65px;
 }
@@ -229,14 +262,14 @@ nav a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
   display: flex;
-  justify-content: center; /* Statt center → linksbündig */
+  justify-content: center;
   align-items: center;
 }
 
 .overlay-wohnung3 .header-content {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  margin: 0 auto;
   text-align: left;
   margin-top: 65px;
 }
@@ -246,14 +279,14 @@ nav a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
   display: flex;
-  justify-content: center; /* Statt center → linksbündig */
+  justify-content: center;
   align-items: center;
 }
 
 .overlay-ausstattung .header-content {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  margin: 0 auto;
   text-align: left;
   margin-top: 65px;
 }
@@ -263,23 +296,22 @@ nav a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center; /* Statt center → linksbündig */
+  justify-content: center;
   align-items: center;
 }
 
 .overlay-downloads .header-content {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  margin: 0 auto;
   text-align: left;
   margin-top: 65px;
 }
 
-/* Header-Text */
 .header-content {
   text-align: left;
   max-width: 1000px;
-  color: white;
+  color: var(--hintergrund-farbe);
 }
 
 .header-text {
@@ -304,8 +336,8 @@ nav a:hover {
 .about {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* Stapelt die Elemente vertikal */
-  align-items: center; /* Zentriert den Inhalt */
+  flex-direction: column;
+  align-items: center;
   padding: 80px 0;
   background: white;
 }
@@ -314,14 +346,14 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Damit der Container im Layout bleibt */
-  max-width: 1000px; /* Feste Begrenzung */
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-content {
   display: flex;
-  align-items: stretch; /* Beide Elemente haben gleiche Höhe */
+  align-items: stretch;
   justify-content: space-between;
   gap: 30px;
   width: 100%;
@@ -339,7 +371,7 @@ nav a:hover {
   width: 35%;
   height: 440px;
   flex-grow: 1;
-  overflow: hidden; /* Schneidet das Bild innerhalb des Radius ab */
+  overflow: hidden;
   position: relative;
 }
 
@@ -354,7 +386,7 @@ nav a:hover {
 }
 
 .blue-text {
-  color: #0075d2;
+  color: var(--blau-farbe);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -376,10 +408,11 @@ nav a:hover {
 }
 
 .read-more {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 12px 24px;
-  background-color: #0075d2; /* Blau wie auf dem Screenshot */
-  color: white;
+  background-color: var(--blau-farbe);
+  color: var(--hintergrund-farbe);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -387,44 +420,55 @@ nav a:hover {
   text-align: center;
   transition: background 0.3s ease, transform 0.1s ease;
 }
+.read-more::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/more.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 8px;
+  margin-bottom: 1px;
+  margin-left: -4px;
+}
 
 .read-more:hover {
-  background-color: #1b4fc7; /* Dunkleres Blau beim Hover */
-  color: white; /* Beibehaltung der weißen Textfarbe */
+  background-color: var(--dunkelblau-farbe);
+  color: var(--hintergrund-farbe);
 }
 
 .read-more:active {
-  transform: scale(0.98); /* Klick-Animation */
+  transform: scale(0.98);
 }
 
 .wohnung-grundriss img {
   width: 90%;
   height: auto;
   object-fit: cover;
-  margin: -90px auto; /* Zentriert das Bild horizontal */
-  display: block; /* Notwendig, damit `margin: auto` funktioniert */
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  margin: -90px auto;
+  display: block;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .wohnungs-grundriss img {
   width: 90%;
   height: auto;
   object-fit: cover;
-  margin: 35px auto; /* Zentriert das Bild horizontal */
-  display: block; /* Notwendig, damit `margin: auto` funktioniert */
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  margin: 35px auto;
+  display: block;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .apartments {
-  background: #f3faff; /* Hintergrundfarbe der Section */
+  background-color: rgba(0, 117, 210, 0.075);
   padding: 80px 0;
 }
 
@@ -436,7 +480,7 @@ nav a:hover {
 }
 
 .apartments h3 {
-  color: #0075d2;
+  color: var(--blau-farbe);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -453,7 +497,7 @@ nav a:hover {
 .apartments p {
   font-size: 18px;
   font-weight: 300;
-  color: #333;
+  color: var(--text-farbe);
   margin-bottom: 30px;
 }
 
@@ -474,13 +518,13 @@ nav a:hover {
     cover;
   margin-bottom: 10px;
   margin-top: -20px;
-  background-size: contain; /* Das Bild wird vollständig angezeigt */
+  background-size: contain;
 }
 
 .apartment:nth-child(2) .apartment-image {
   background: url("/images/grundrisse/we_rechts.webp") no-repeat center center /
     cover;
-  background-size: contain; /* Das Bild wird vollständig angezeigt */
+  background-size: contain;
 }
 
 .apartment p {
@@ -490,12 +534,12 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* Button-Styling */
 .apartment .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 12px 24px;
-  background-color: #0075d2;
-  color: white;
+  background-color: var(--blau-farbe);
+  color: var(--hintergrund-farbe);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -504,34 +548,46 @@ nav a:hover {
   transition: background 0.3s ease;
 }
 
+.apartment .btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/more.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: -5px;
+}
+
 .apartment .btn:hover {
-  background-color: #1b4fc7;
+  background-color: var(--dunkelblau-farbe);
 }
 
 .wohnung-details {
   font-size: 16px;
   font-weight: 400;
-  color: #333;
+  color: var(--text-farbe);
   margin-bottom: 20px;
 }
 
 .size-icon {
-  width: 17.5px; /* Größe des Icons */
+  width: 17.5px;
   height: 17.5px;
   object-fit: contain;
   opacity: 0.45;
   margin-right: 2px;
   margin-bottom: 4px;
   vertical-align: middle;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .zimmer-icon {
-  width: 19.5px; /* Größe des Icons */
+  width: 19.5px;
   height: 19.5px;
   object-fit: contain;
   opacity: 0.45;
@@ -539,15 +595,15 @@ nav a:hover {
   margin-left: 20px;
   vertical-align: middle;
   margin-bottom: 5px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .price-icon {
-  width: 18px; /* Größe des Icons */
+  width: 18px;
   height: 18px;
   object-fit: contain;
   opacity: 0.45;
@@ -555,23 +611,23 @@ nav a:hover {
   margin-left: 24px;
   vertical-align: middle;
   margin-bottom: 2px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .trenner {
-  width: 60%; /* Volle Breite */
-  height: 1px; /* Dünne Linie */
-  background: #0075d2;
+  width: 60%;
+  height: 1px;
+  background: var(--blau-farbe);
   margin-top: -4px;
   margin-bottom: 10px;
 }
 
 .ausstattung {
-  background: #fff;
+  background: var(--hintergrund-farbe);
   padding: 80px 0;
 }
 
@@ -583,7 +639,7 @@ nav a:hover {
 }
 
 .ausstattung h3 {
-  color: #0075d2;
+  color: var(--blau-farbe);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -599,7 +655,7 @@ nav a:hover {
 .ausstattung p {
   font-size: 18px;
   font-weight: 300;
-  color: #333;
+  color: var(--text-farbe);
   margin-bottom: 20px;
 }
 
@@ -622,10 +678,10 @@ nav a:hover {
   width: 98px;
   height: 98px;
   object-fit: cover;
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .ausstattung-item h3 {
@@ -637,14 +693,15 @@ nav a:hover {
 .ausstattung-item p {
   font-size: 16px;
   font-weight: 300;
-  color: #333;
+  color: var(--text-farbe);
 }
 
 .ausstattung .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 12px 24px;
-  background-color: #0075d2;
-  color: white;
+  background-color: var(--blau-farbe);
+  color: var(--hintergrund-farbe);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -654,8 +711,20 @@ nav a:hover {
   margin-top: 20px;
 }
 
+.ausstattung .btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/icons/more.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: -5px;
+}
+
 .ausstattung .btn:hover {
-  background-color: #1b4fc7;
+  background-color: var(--dunkelblau-farbe);
 }
 
 .image-slider {
@@ -682,26 +751,26 @@ nav a:hover {
 }
 
 .slider img {
-  width: 400px; /* Fixe Breite für jedes Bild */
-  height: 400px; /* Beibehalten oder anpassen */
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   flex-shrink: 0;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #0075d2;
+  background-color: var(--blau-farbe);
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: var(--hintergrund-farbe);
   padding: 10px 15px;
   z-index: 10;
 }
@@ -715,13 +784,13 @@ nav a:hover {
 }
 
 .slider-btn:hover {
-  background-color: #1b4fc7;
+  background-color: var(--dunkelblau-farbe);
 }
 
 .contact {
-  background: #0075d2; /* Blaue Hintergrundfarbe */
+  background: var(--blau-farbe);
   padding: 80px 0;
-  color: white;
+  color: var(--hintergrund-farbe);
 }
 
 .contact .container {
@@ -729,7 +798,6 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* Kopfbereich: Überschriften und Einleitung */
 .contact-header {
   text-align: left;
   margin-bottom: 40px;
@@ -740,7 +808,7 @@ nav a:hover {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--hintergrund-farbe);
 }
 
 .contact-header h2 {
@@ -756,7 +824,6 @@ nav a:hover {
   margin-bottom: -15px;
 }
 
-/* Zwei Spalten: Formular und Karte */
 .contact-columns {
   display: flex;
   gap: 50px;
@@ -770,7 +837,6 @@ nav a:hover {
   width: 50%;
 }
 
-/* Formular-Styling (bleibt weitgehend gleich) */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -792,14 +858,13 @@ nav a:hover {
   border: none;
   border-bottom: 1.5px solid white;
   background: transparent;
-  color: white;
+  color: var(--hintergrund-farbe);
   font-size: 16px;
 }
 
 .contact form input:focus,
 .contact form textarea:focus {
   outline: none;
-  border-bottom: 1.5px solid #f1f1f1;
 }
 
 .contact form textarea {
@@ -810,18 +875,18 @@ nav a:hover {
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Abstand zwischen Text und Icon */
+  gap: 10px;
 }
 
 .contact-icon {
-  width: 22px; /* Größe des Icons */
+  width: 22px;
   height: 22px;
   object-fit: contain;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
   opacity: 0.85;
 }
 
@@ -834,8 +899,8 @@ nav a:hover {
 }
 
 .contact .btn {
-  background-color: #fff;
-  color: #0075d2;
+  background-color: var(--hintergrund-farbe);
+  color: var(--blau-farbe);
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
@@ -846,7 +911,7 @@ nav a:hover {
 }
 
 .contact .btn:hover {
-  background-color: #f1f1f1;
+  background-color: var(--grau-farbe);
 }
 
 .contact-map {
@@ -859,7 +924,7 @@ nav a:hover {
 .contact-map iframe {
   width: 100%;
   height: 100%;
-  flex-grow: 1; /* Sorgt dafür, dass die Karte sich dem Container anpasst */
+  flex-grow: 1;
 }
 
 .contact-address {
@@ -879,7 +944,7 @@ nav a:hover {
 }
 
 .contact-address a {
-  color: white;
+  color: var(--hintergrund-farbe);
   text-decoration: none;
 }
 
@@ -889,9 +954,9 @@ nav a:hover {
 
 .footer {
   position: relative;
-  background: #fff;
+  background: var(--hintergrund-farbe);
   padding: 40px 0;
-  color: #333;
+  color: var(--text-farbe);
   text-align: center;
   overflow: visible;
 }
@@ -904,10 +969,10 @@ nav a:hover {
   width: 100%;
   height: 120%;
   background: url("/images/footer.svg") no-repeat center bottom;
-  background-size: contain; /* Hier die Größe des Bildes anpassen */
-  opacity: 0.06; /* Hier kannst du die Transparenz anpassen */
+  background-size: contain;
+  opacity: 0.06;
   z-index: 1;
-  /* Erzeugt einen sanften Fade-Effekt an den Seiten */
+
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
@@ -937,16 +1002,16 @@ nav a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  color: #333;
+  color: var(--text-farbe);
 }
 
 .footer-logo img {
   height: 80px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .footer-links ul {
@@ -957,7 +1022,7 @@ nav a:hover {
 }
 
 .footer-links a {
-  color: #333;
+  color: var(--text-farbe);
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
@@ -965,19 +1030,13 @@ nav a:hover {
 }
 
 .footer-links a:hover {
-  color: #0075d2; /* Helles Blau beim Hover */
+  color: var(--blau-farbe);
 }
 
 .footer-copy {
   font-size: 14px;
   margin-top: 15px;
   opacity: 0.8;
-}
-
-:root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
 }
 
 .animate__animated {
@@ -1050,7 +1109,6 @@ nav a:hover {
   animation-name: headShake;
 }
 
-/* Bounce In */
 .hvr-bounce-in {
   display: inline-block;
   vertical-align: middle;
@@ -1078,7 +1136,7 @@ nav a:hover {
 
 .download-table th,
 .download-table td {
-  border-bottom: 1px solid #0075d2;
+  border-bottom: 1px solid var(--blau-farbe);
   padding: 12px;
   text-align: left;
 }
@@ -1091,8 +1149,8 @@ nav a:hover {
 
 .download-table th {
   font-weight: 600;
-  background-color: rgba(0, 117, 210, 0.075); /* #0075d2 mit 20 % Transparenz */
-  color: #0075d2; /* Blaue Farbe aus .blue-text */
+  background-color: rgba(0, 117, 210, 0.075);
+  color: var(--blau-farbe);
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1106,8 +1164,8 @@ nav a:hover {
 .download-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #0075d2;
-  color: white;
+  background-color: var(--blau-farbe);
+  color: var(--hintergrund-farbe);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1117,16 +1175,16 @@ nav a:hover {
 }
 
 .download-btn:hover {
-  background-color: #1b4fc7;
+  background-color: var(--dunkelblau-farbe);
 }
 
 .download-text {
-  color: #0075d2;
+  color: var(--blau-farbe);
   text-transform: uppercase;
 }
 
 .downloads-icon {
-  width: 45px; /* Größe des Icons */
+  width: 45px;
   height: 45px;
   object-fit: contain;
   opacity: 0.4;
@@ -1134,15 +1192,15 @@ nav a:hover {
   margin-left: 24px;
   vertical-align: middle;
   margin-bottom: 2px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .downloads-iconalt {
-  width: 47px; /* Größe des Icons */
+  width: 47px;
   height: 47px;
   object-fit: contain;
   opacity: 0.4;
@@ -1150,9 +1208,9 @@ nav a:hover {
   margin-left: 24px;
   vertical-align: middle;
   margin-bottom: 2px;
-  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
-  user-select: none !important; /* Verhindert das Markieren */
-  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
-  -moz-user-select: none !important; /* Für Firefox */
-  -ms-user-select: none !important; /* Für Internet Explorer */
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
