@@ -214,6 +214,18 @@ nav a:hover {
   text-align: left;
 }
 
+.header-ueberuns {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  background: url("/images/header/ueberuns.webp") no-repeat center 800% / cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -301,6 +313,23 @@ nav a:hover {
 }
 
 .overlay-downloads .header-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 65px;
+}
+
+.overlay-ueberuns {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-ueberuns .header-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -1150,6 +1179,9 @@ nav a:hover {
   border-bottom: 1px solid var(--blau-farbe);
   padding: 12px;
   text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
 }
 .download-table thead tr th {
   border-bottom: none;
@@ -1232,6 +1264,114 @@ nav a:hover {
   margin-left: 24px;
   vertical-align: middle;
   margin-bottom: 2px;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.team-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgba(0, 117, 210, 0.075);
+}
+
+.team-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: start;
+}
+
+.team-container .team-member {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-container .sergej {
+  background-image: url("/images/team/sergej.webp");
+  background-size: 115%; /* Zoomt um 20% */
+  background-position: center 40%;
+}
+
+.team-container .max {
+  background-image: url("/images/team/max.webp");
+  background-position: center;
+}
+
+.team-container div {
+  text-align: left;
+}
+
+.team-section h3 {
+  color: var(--blau-farbe);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team-section p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.team-section .container {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.team-text {
+  color: var(--blau-farbe);
+  font-weight: 400;
+}
+
+.icon-ausbildung {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: -3px;
+  opacity: 0.45;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-aufgaben {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  opacity: 0.45;
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;

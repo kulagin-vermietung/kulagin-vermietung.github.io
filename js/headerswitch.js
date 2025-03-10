@@ -54,6 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
             headerContainer.classList.add("header-downloads");
             headerOverlay.classList.add("overlay-downloads"); // Neue Klasse für das Overlay
           }
+          else if (page === "ueberuns.html") {
+            headerTitle.innerText = "Über Uns";
+            headerDescription.innerText =
+              "Vermietung mit Herz und Verstand! Wir kümmern uns mit vollem Einsatz um unser Objekt.";
+            headerContainer.classList.add("header-ueberuns");
+            headerOverlay.classList.add("overlay-ueberuns"); // Neue Klasse für das Overlay
+          }
       }
         }, 0.1); // Kleines Timeout, um sicherzustellen, dass der Header geladen wurde
       })
