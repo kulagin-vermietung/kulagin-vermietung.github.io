@@ -146,8 +146,7 @@ nav a:hover {
   position: relative;
   width: 100%;
   height: 475px;
-  background: url("/images/header/main.webp") no-repeat center 90% / cover;
-  background-attachment: fixed;
+  background: url("/images/header/main.webp") no-repeat center 45% / cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,9 +155,8 @@ nav a:hover {
 .header-plagwitz {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/plagwitz.webp") no-repeat center 80% / cover;
-  background-attachment: fixed;
+  height: 300px;
+  background: url("/images/header/plagwitz.webp") no-repeat center 32% / cover;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -168,9 +166,8 @@ nav a:hover {
 .header-wohnung2 {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/wohnung2.webp") no-repeat center 155% / cover;
-  background-attachment: fixed;
+  height: 300px;
+  background: url("/images/header/wohnung2.webp") no-repeat center 75% / cover;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -180,9 +177,8 @@ nav a:hover {
 .header-wohnung3 {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/wohnung3.webp") no-repeat center 165% / cover;
-  background-attachment: fixed;
+  height: 300px;
+  background: url("/images/header/wohnung3.webp") no-repeat center 75% / cover;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -192,10 +188,9 @@ nav a:hover {
 .header-ausstattung {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/ausstattung.webp") no-repeat center 285% /
+  height: 300px;
+  background: url("/images/header/ausstattung.webp") no-repeat center 55% /
     cover;
-  background-attachment: fixed;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -205,9 +200,8 @@ nav a:hover {
 .header-downloads {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/downloads.webp") no-repeat center 180% / cover;
-  background-attachment: fixed;
+  height: 300px;
+  background: url("/images/header/downloads.webp") no-repeat center 75% / cover;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -217,9 +211,8 @@ nav a:hover {
 .header-ueberuns {
   position: relative;
   width: 100%;
-  height: 275px;
-  background: url("/images/header/ueberuns.webp") no-repeat center 400% / cover;
-  background-attachment: fixed;
+  height: 300px;
+  background: url("/images/header/ueberuns.webp") no-repeat center 35% / cover;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -229,7 +222,7 @@ nav a:hover {
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.38);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +231,7 @@ nav a:hover {
 .overlay-plagwitz {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +299,7 @@ nav a:hover {
 .overlay-downloads {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.38);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,7 +316,7 @@ nav a:hover {
 .overlay-ueberuns {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.38);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1179,7 +1172,7 @@ nav a:hover {
   border-bottom: 1px solid var(--blau-farbe);
   padding: 12px;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -1197,6 +1190,7 @@ nav a:hover {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
 .download-table img.icon {
@@ -1236,12 +1230,11 @@ nav a:hover {
 
 .download-text {
   color: var(--blau-farbe);
-  text-transform: uppercase;
 }
 
 .downloads-icon {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   opacity: 0.4;
   margin-right: 9px;
@@ -1256,8 +1249,8 @@ nav a:hover {
 }
 
 .downloads-iconalt {
-  width: 47px;
-  height: 47px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   opacity: 0.4;
   margin-right: 9px;
@@ -1366,11 +1359,12 @@ nav a:hover {
 }
 
 .icon-aufgaben {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   vertical-align: middle;
   margin-right: 10px;
+  margin-left: -2px;
   opacity: 0.45;
   pointer-events: none !important;
   user-select: none !important;
