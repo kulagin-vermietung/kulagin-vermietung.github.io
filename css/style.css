@@ -1124,3 +1124,35 @@ nav a:hover {
   color: #0075d2;
   text-transform: uppercase;
 }
+
+.downloads-icon {
+  width: 45px; /* Größe des Icons */
+  height: 45px;
+  object-fit: contain;
+  opacity: 0.4;
+  margin-right: 9px;
+  margin-left: 24px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
+}
+
+.downloads-iconalt {
+  width: 47px; /* Größe des Icons */
+  height: 47px;
+  object-fit: contain;
+  opacity: 0.4;
+  margin-right: 9px;
+  margin-left: 24px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  pointer-events: none !important; /* Verhindert jegliche Mausinteraktion */
+  user-select: none !important; /* Verhindert das Markieren */
+  -webkit-user-drag: none !important; /* Speziell für WebKit-Browser */
+  -moz-user-select: none !important; /* Für Firefox */
+  -ms-user-select: none !important; /* Für Internet Explorer */
+}
