@@ -749,6 +749,15 @@ nav a:hover {
   background-color: var(--dunkelblau-farbe);
 }
 
+.ausstattunggeplant {
+  font-size: 14px;
+  font-weight: 100;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  font-style: italic;
+}
+
 .image-slider {
   width: 100%;
   overflow: hidden;
