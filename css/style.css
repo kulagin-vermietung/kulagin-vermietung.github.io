@@ -1313,7 +1313,7 @@ nav a:hover {
 .team-container .sergej {
   background-image: url("/images/team/sergej.webp");
   background-size: 115%; /* Zoomt um 20% */
-  background-position: center 40%;
+  background-position: center 5%;
 }
 
 .team-container .max {
