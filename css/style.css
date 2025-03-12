@@ -381,6 +381,23 @@ nav a:hover {
   width: 100%;
 }
 
+.about-content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.bild-plagwitz {
+  width: 45%;
+  height: 100%;
+  min-height: 490px;
+  background: url("/images/plagwitz/giesserei.webp") no-repeat center center;
+  background-size: 110%;
+  background-position: center;
+}
+
 .about-content .text {
   width: 65%;
 }
@@ -491,7 +508,6 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
-  border-radius: 3px;
 }
 
 .bahn2 {
@@ -504,7 +520,6 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
-  border-radius: 3px;
 }
 
 .bahn14 {
@@ -517,7 +532,6 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
-  border-radius: 3px;
 }
 
 .autobahn {
