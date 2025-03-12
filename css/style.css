@@ -404,7 +404,7 @@ nav a:hover {
   left: -10%;
   width: 120%;
   height: 130%;
-  background: url("/images/plagwitz.webp") no-repeat 10% 30% / 90%;
+  background: url("/images/plagwitz/plagwitz.webp") no-repeat 10% 30% / 90%;
 }
 
 .blue-text {
@@ -588,6 +588,41 @@ nav a:hover {
   align-items: center;
   vertical-align: middle;
   font-style: italic;
+}
+
+.karteplagwitz {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  position: relative;
+  cursor: grab;
+}
+
+.karte-container {
+  width: 3185px;
+  height: 2607px;
+  background: url("/images/plagwitz/karte.webp") no-repeat top left;
+  background-size: contain;
+  position: absolute;
+  transform: translate(0, 0) scale(1);
+  transform-origin: center;
+}
+
+.karte-marker {
+  position: absolute;
+  left: 750px;
+  top: 1616px;
+  width: 48px;
+  height: 48px;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
 .read-more {
