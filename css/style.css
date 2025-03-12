@@ -429,6 +429,164 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
+.s-bahn-symbol {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 1px;
+  padding: 3.6px 9px;
+  border-radius: 50px;
+  text-align: center;
+  min-width: 40px;
+}
+
+.bus {
+  display: inline-block;
+  background-color: #a71681;
+  color: white;
+  font-weight: 600;
+  font-size: 14.4px; /* 10% kleiner */
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px; /* 10% kleiner */
+  border-radius: 94.5px; /* 10% kleiner */
+  text-align: center;
+  min-width: 29.7px; /* 10% kleiner */
+}
+
+.busn1 {
+  display: inline-block;
+  background-color: #f7a600;
+  color: #164194;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px;
+  border-radius: 94.5px;
+  text-align: center;
+  min-width: 29.7px;
+}
+
+.busn60 {
+  display: inline-block;
+  background-color: #a71681;
+  color: white;
+  font-weight: 600;
+  font-size: 13.6px;
+  letter-spacing: -1px;
+  padding: 4.5px 2.35px;
+  border-radius: 94.5px;
+  text-align: center;
+  min-width: 29px;
+}
+
+.bahn3 {
+  display: inline-block;
+  background-color: #65b32e;
+  color: white;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px;
+  text-align: center;
+  min-width: 29.7px;
+}
+
+.bahn2 {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px;
+  text-align: center;
+  min-width: 29.7px;
+}
+
+.bahn14 {
+  display: inline-block;
+  background-color: #009fe3;
+  color: white;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px;
+  text-align: center;
+  min-width: 29.7px;
+}
+
+.autobahn {
+  display: inline-block;
+  background-color: #0038b7;
+  color: white;
+  font-weight: 600;
+  font-size: 14.4px;
+  letter-spacing: 0px;
+  padding: 3.6px 2.7px;
+  border-radius: 3px;
+  text-align: center;
+  min-width: 36px;
+}
+
+.icon-steckbrief {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: -2px;
+  margin-bottom: 2px;
+  opacity: 0.45;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-pin {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: -4px;
+  margin-bottom: 2px;
+  opacity: 0.45;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-verkehr {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: -2px;
+  margin-bottom: 2px;
+  opacity: 0.45;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.infoplagwitz {
+  font-size: 14px;
+  font-weight: 100;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  font-style: italic;
+}
+
 .read-more {
   display: inline-flex;
   align-items: center;
