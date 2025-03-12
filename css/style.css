@@ -491,6 +491,7 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
+  border-radius: 3px;
 }
 
 .bahn2 {
@@ -503,6 +504,7 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
+  border-radius: 3px;
 }
 
 .bahn14 {
@@ -515,6 +517,7 @@ nav a:hover {
   padding: 3.6px 2.7px;
   text-align: center;
   min-width: 29.7px;
+  border-radius: 3px;
 }
 
 .autobahn {
@@ -551,7 +554,7 @@ nav a:hover {
   height: 24px;
   object-fit: contain;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 8px;
   margin-left: -4px;
   margin-bottom: 2px;
   opacity: 0.45;
@@ -567,7 +570,7 @@ nav a:hover {
   height: 22px;
   object-fit: contain;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 8px;
   margin-left: -2px;
   margin-bottom: 2px;
   opacity: 0.45;
