@@ -395,7 +395,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url("/images/plagwitz/giesserei.webp") no-repeat center center;
+  background: url("/images/plagwitz/giesserei.webp") no-repeat 45% center;
   background-size: cover;
   display: flex;
 }
@@ -467,9 +467,57 @@ nav a:hover {
   background-color: #ffcc00;
   color: black;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0-5px;
   text-align: center;
   border-radius: 50px;
+  font-size: 12.96px;
+  padding: 3.24px 2.43px;
+  min-width: 38px;
+}
+
+.s-bahn-symbolrb13 {
+  display: inline-block;
+  background-color: #f18700;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0-5px;
+  text-align: center;
+  font-size: 12.96px;
+  padding: 3.24px 2.43px;
+  min-width: 38px;
+}
+
+.s-bahn-symbolrb22 {
+  display: inline-block;
+  background-color: #009bd9;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0-5px;
+  text-align: center;
+  font-size: 12.96px;
+  padding: 3.24px 2.43px;
+  min-width: 38px;
+}
+
+.s-bahn-symbolre13 {
+  display: inline-block;
+  background-color: #00998b;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0-5px;
+  text-align: center;
+  font-size: 12.96px;
+  padding: 3.24px 2.43px;
+  min-width: 38px;
+}
+
+.s-bahn-symbolre12 {
+  display: inline-block;
+  background-color: #a5027d;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0-5px;
+  text-align: center;
   font-size: 12.96px;
   padding: 3.24px 2.43px;
   min-width: 38px;
@@ -635,7 +683,7 @@ nav a:hover {
   object-fit: contain;
   vertical-align: middle;
   margin-right: 1px;
-  margin-bottom: 4px;
+  margin-bottom: 2.5px;
   opacity: 0.45;
   pointer-events: none !important;
   user-select: none !important;
@@ -890,6 +938,13 @@ nav a:hover {
 }
 
 .ausstattung h3 {
+  color: var(--blau-farbe);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.viertel h3 {
   color: var(--blau-farbe);
   font-size: 14px;
   font-weight: 600;
@@ -1277,7 +1332,7 @@ nav a:hover {
 }
 
 .footer-logo img {
-  height: 80px;
+  height: 60px;
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
@@ -1289,7 +1344,7 @@ nav a:hover {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 35px;
+  gap: 25px;
 }
 
 .footer-links a {
@@ -1629,4 +1684,41 @@ nav a:hover {
 .tabelle-resultate {
   flex: 2;
   text-align: left;
+}
+
+.bild-plagwitz-neu {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  background: url("/images/plagwitz/plagwitz.webp") no-repeat 45% center;
+  background-size: cover;
+  display: flex;
+}
+
+.viertel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: rgba(0, 117, 210, 0.075);
+}
+
+.plagwitz-item {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.plagwitz-item img {
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
