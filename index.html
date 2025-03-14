@@ -15,6 +15,11 @@
     <script src="/js/headerfooterload.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/headerswitch.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -193,22 +198,55 @@
       </div>
     </section>
 
-    <section class="image-slider">
-      <div class="slider-container">
-        <button class="slider-btn prev">&lt;</button>
-        <div class="slider-wrapper">
-          <div class="slider">
-            <img src="/images/slider/01.webp" alt="Bild 1" />
-            <img src="/images/slider/03.webp" alt="Bild 2" />
-            <img src="/images/slider/02.webp" alt="Bild 3" />
-            <img src="/images/slider/04.webp" alt="Bild 4" />
-            <img src="/images/slider/05.webp" alt="Bild 5" />
-            <img src="/images/slider/06.webp" alt="Bild 6" />
-            <img src="/images/slider/07.webp" alt="Bild 7" />
-            <img src="/images/slider/08.webp" alt="Bild 8" />
+    <section class="slider-custom-section">
+      <div class="slider-custom-container">
+        <h3 class="blue-text">BILDER SAGEN MEHR ALS WORTE</h3>
+        <h2>Unsere Impressionen auf einen Blick</h2>
+        <div class="swiper swiper-slider">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="/images/slider/01.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/02.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/03.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/04.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/05.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/06.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/07.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/slider/08.webp"
+              alt="Swiper"
+            />
           </div>
+          <span class="swiper-pagination"></span>
         </div>
-        <button class="slider-btn next">&gt;</button>
       </div>
     </section>
 
@@ -296,6 +334,57 @@
         </div>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper-slider", {
+          // Optional parameters
+          centeredSlides: true,
+          slidesPerView: 1,
+          grabCursor: true,
+          freeMode: false,
+          loop: true,
+          mousewheel: false,
+          keyboard: {
+            enabled: false,
+          },
+
+          // Autoplay settings
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+
+          // Pagination settings
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+
+          // Navigation settings
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          // Responsive breakpoints
+          breakpoints: {
+            600: {
+              slidesPerView: 1.5,
+              spaceBetween: 15,
+            },
+            800: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1000: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+          },
+        });
+      });
+    </script>
 
     <div id="footer-link"></div>
   </body>
