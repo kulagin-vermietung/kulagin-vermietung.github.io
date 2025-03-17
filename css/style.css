@@ -60,13 +60,13 @@ body {
   background: var(--blau-farbe);
 }
 
-.logo img {
-  height: 80px;
+.logo {
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
+  margin-top: 5px;
 }
 
 nav ul {
@@ -711,8 +711,12 @@ nav a:hover {
 }
 
 .karteplagwitz {
-  width: 100%;
   height: 340px;
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: -45px;
 }
 
 .read-more {
@@ -1212,6 +1216,7 @@ nav a:hover {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   opacity: 0.85;
+  color: white;
 }
 
 .required {
@@ -1232,6 +1237,7 @@ nav a:hover {
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-align: center;
 }
 
 .contact .btn::before {
