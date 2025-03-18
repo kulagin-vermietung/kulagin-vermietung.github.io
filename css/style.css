@@ -74,7 +74,7 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 nav a {
@@ -83,89 +83,6 @@ nav a {
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s;
-}
-
-nav .navlink {
-  position: relative;
-  text-decoration: none;
-  padding: 11px 15px;
-  transition: color 0.4s;
-}
-
-nav .navlink::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: 0;
-  left: 0;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: top right;
-  transition: transform 0.2s ease-out;
-}
-
-nav .navlink::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: bottom left;
-  transition: transform 0.2s ease-out;
-}
-
-nav .navlink span::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: white;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.2s ease-out;
-}
-
-nav .navlink span::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.2s ease-out;
-}
-
-nav .navlink:hover {
-  color: white;
-}
-
-nav .navlink:hover::before {
-  transform: scaleX(1);
-  transform-origin: top left;
-}
-
-nav .navlink:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom right;
-}
-
-nav .navlink:hover span::before {
-  transform: scaleY(1);
-  transform-origin: bottom;
-}
-
-nav .navlink:hover span::after {
-  transform: scaleY(1);
-  transform-origin: top;
 }
 
 nav .btn {
@@ -180,6 +97,7 @@ nav .btn {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease, transform 0.1s ease;
+  border-radius: 5px;
 }
 
 nav .btn::before {
@@ -486,6 +404,7 @@ nav a:hover {
   background: url("/images/plagwitz/giesserei.webp") no-repeat 45% center;
   background-size: cover;
   display: flex;
+  border-radius: 5px;
 }
 
 .about-content .text {
@@ -580,6 +499,7 @@ nav a:hover {
   font-size: 12.96px;
   padding: 3.24px 2.43px;
   min-width: 38px;
+  border-radius: 3px;
 }
 
 .s-bahn-symbolrb22 {
@@ -592,6 +512,7 @@ nav a:hover {
   font-size: 12.96px;
   padding: 3.24px 2.43px;
   min-width: 38px;
+  border-radius: 3px;
 }
 
 .s-bahn-symbolre13 {
@@ -604,6 +525,7 @@ nav a:hover {
   font-size: 12.96px;
   padding: 3.24px 2.43px;
   min-width: 38px;
+  border-radius: 3px;
 }
 
 .s-bahn-symbolre12 {
@@ -616,6 +538,7 @@ nav a:hover {
   font-size: 12.96px;
   padding: 3.24px 2.43px;
   min-width: 38px;
+  border-radius: 3px;
 }
 
 .bus {
@@ -670,6 +593,7 @@ nav a:hover {
   padding: 3.24px 2.43px;
   text-align: center;
   min-width: 26.73px;
+  border-radius: 3px;
 }
 
 .bahn2 {
@@ -682,6 +606,7 @@ nav a:hover {
   padding: 3.24px 2.43px;
   text-align: center;
   min-width: 26.73px;
+  border-radius: 3px;
 }
 
 .bahn14 {
@@ -694,6 +619,7 @@ nav a:hover {
   padding: 3.24px 2.43px;
   text-align: center;
   min-width: 26.73px;
+  border-radius: 3px;
 }
 
 .autobahn {
@@ -706,6 +632,7 @@ nav a:hover {
   padding: 3.24px 2.43px;
   text-align: center;
   min-width: 35px;
+  border-radius: 3px;
 }
 
 .icon-steckbrief {
@@ -808,6 +735,8 @@ nav a:hover {
   margin: 0 auto;
   margin-bottom: 100px;
   margin-top: -45px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .read-more {
@@ -822,6 +751,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease, transform 0.1s ease;
+  border-radius: 5px;
 }
 .read-more::before {
   content: "";
@@ -950,6 +880,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
+  border-radius: 5px;
 }
 
 .apartment .btn::before {
@@ -1097,6 +1028,7 @@ nav a:hover {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
+  border-radius: 5px;
 }
 
 .ausstattung-item h3 {
@@ -1124,6 +1056,7 @@ nav a:hover {
   text-align: center;
   transition: background 0.3s ease;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 .ausstattung .btn::before {
@@ -1185,31 +1118,6 @@ nav a:hover {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--blau-farbe);
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--hintergrund-farbe);
-  padding: 10px 15px;
-  z-index: 10;
-}
-
-.slider-btn.prev {
-  left: 10px;
-}
-
-.slider-btn.next {
-  right: 10px;
-}
-
-.slider-btn:hover {
-  background-color: var(--dunkelblau-farbe);
 }
 
 .contact {
@@ -1335,6 +1243,7 @@ nav a:hover {
   cursor: pointer;
   transition: background 0.3s ease;
   text-align: center;
+  border-radius: 5px;
 }
 
 .contact .btn::before {
@@ -1363,6 +1272,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   flex-grow: 1;
+  border-radius: 5px;
 }
 
 .contact-address {
@@ -1617,6 +1527,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
+  border-radius: 5px;
 }
 
 .download-btn::before {
@@ -1812,6 +1723,7 @@ nav a:hover {
   background: url("/images/plagwitz/plagwitz.webp") no-repeat 45% center;
   background-size: cover;
   display: flex;
+  border-radius: 5px;
 }
 
 .viertel {
@@ -1839,6 +1751,7 @@ nav a:hover {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
+  border-radius: 5px;
 }
 
 .plagwitz-item p {
@@ -1939,6 +1852,7 @@ swiper-slide {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
+  border-radius: 5px;
 }
 
 .swiper-pagination {
