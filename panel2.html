@@ -271,7 +271,7 @@
       <div class="sun-times-table">
         <div class="sun-times-row">
           <img
-            src="/images/icons/sunrise.png"
+            src="/images/panel/icons/sunrise.png"
             alt="Sunrise Icon"
             class="weather-icon-suntimes"
           />
@@ -279,7 +279,7 @@
         </div>
         <div class="sun-times-row">
           <img
-            src="/images/icons/sunset.png"
+            src="/images/panel/icons/sunset.png"
             alt="Sunset Icon"
             class="weather-icon-suntimes"
           />
@@ -292,7 +292,7 @@
       <div class="extra-weather-table">
         <div class="extra-weather-row">
           <img
-            src="/images/icons/wind.png"
+            src="/images/panel/icons/wind.png"
             alt="Wind Icon"
             class="weather-icon"
           />
@@ -300,7 +300,7 @@
         </div>
         <div class="extra-weather-row">
           <img
-            src="/images/icons/umbrella.png"
+            src="/images/panel/icons/umbrella.png"
             alt="Umbrella Icon"
             class="weather-icon"
           />
@@ -399,67 +399,67 @@
           const isDaytime = currentTime >= sunrise && currentTime < sunset;
 
           const weatherIcons = {
-            0: "/images/icons/day/0-day-sunny.png", // Klarer Himmel
-            1: "/images/icons/day/1-day-sunny-overcast.png", // Überwiegend klar
-            2: "/images/icons/day/2-day-cloudy.png", // Teilweise bewölkt
-            3: "/images/icons/day/3-day-cloudy.png", // Bedeckt
-            45: "/images/icons/day/45-day-fog-low.png", // Nebel
-            48: "/images/icons/day/48-day-fog-medium.png", // Reifender Nebel
-            51: "/images/icons/day/51-day-raindrops-low.png", // Leichter Nieselregen
-            53: "/images/icons/day/53-day-raindrops-medium.png", // Mäßiger Nieselregen
-            55: "/images/icons/day/55-day-raindrops-heavy.png", // Starker Nieselregen
-            56: "/images/icons/day/56-day-sleet-low.png", // Leichter gefrierender Nieselregen
-            57: "/images/icons/day/57-day-sleet-medium.png", // Starker gefrierender Nieselregen
-            61: "/images/icons/day/61-day-showers.png", // Leichter Regen
-            63: "/images/icons/day/63-day-rain-low.png", // Mäßiger Regen
-            65: "/images/icons/day/65-day-rain-heavy.png", // Starker Regen
-            66: "/images/icons/day/66-day-rain-mix.png", // Leichter gefrierender Regen
-            67: "/images/icons/day/67-day-rain-mix.png", // Starker gefrierender Regen
-            71: "/images/icons/day/71-day-snow.png", // Leichter Schneefall
-            73: "/images/icons/day/73-day-snow.png", // Mäßiger Schneefall
-            75: "/images/icons/day/75-day-snow.png", // Starker Schneefall
-            77: "/images/icons/day/77-day-snowflake-cold.png", // Schneekörner
-            80: "/images/icons/day/80-day-showers.png", // Leichte Regenschauer
-            81: "/images/icons/day/81-day-showers.png", // Mäßige Regenschauer
-            82: "/images/icons/day/82-day-thunderstorm.png", // Starke Regenschauer
-            85: "/images/icons/day/85-day-snow-low.png", // Leichte Schneeschauer
-            86: "/images/icons/day/86-day-snow-heavy.png", // Starke Schneeschauer
-            95: "/images/icons/day/95-day-thunderstorm.png", // Gewitter (leicht oder mäßig)
-            96: "/images/icons/day/96-day-thunderstorm.png", // Gewitter mit leichtem Hagel
-            99: "/images/icons/day/99-day-thunderstorm.png", // Gewitter mit starkem Hagel
-            default: "/images/icons/day/day-default.png", // Fallback für unbekannte Codes
+            0: "/images/panel/icons/day/0-day-sunny.png", // Klarer Himmel
+            1: "/images/panel/icons/day/1-day-sunny-overcast.png", // Überwiegend klar
+            2: "/images/panel/icons/day/2-day-cloudy.png", // Teilweise bewölkt
+            3: "/images/panel/icons/day/3-day-cloudy.png", // Bedeckt
+            45: "/images/panel/icons/day/45-day-fog-low.png", // Nebel
+            48: "/images/panel/icons/day/48-day-fog-medium.png", // Reifender Nebel
+            51: "/images/panel/icons/day/51-day-raindrops-low.png", // Leichter Nieselregen
+            53: "/images/panel/icons/day/53-day-raindrops-medium.png", // Mäßiger Nieselregen
+            55: "/images/panel/icons/day/55-day-raindrops-heavy.png", // Starker Nieselregen
+            56: "/images/panel/icons/day/56-day-sleet-low.png", // Leichter gefrierender Nieselregen
+            57: "/images/panel/icons/day/57-day-sleet-medium.png", // Starker gefrierender Nieselregen
+            61: "/images/panel/icons/day/61-day-showers.png", // Leichter Regen
+            63: "/images/panel/icons/day/63-day-rain-low.png", // Mäßiger Regen
+            65: "/images/panel/icons/day/65-day-rain-heavy.png", // Starker Regen
+            66: "/images/panel/icons/day/66-day-rain-mix.png", // Leichter gefrierender Regen
+            67: "/images/panel/icons/day/67-day-rain-mix.png", // Starker gefrierender Regen
+            71: "/images/panel/icons/day/71-day-snow.png", // Leichter Schneefall
+            73: "/images/panel/icons/day/73-day-snow.png", // Mäßiger Schneefall
+            75: "/images/panel/icons/day/75-day-snow.png", // Starker Schneefall
+            77: "/images/panel/icons/day/77-day-snowflake-cold.png", // Schneekörner
+            80: "/images/panel/icons/day/80-day-showers.png", // Leichte Regenschauer
+            81: "/images/panel/icons/day/81-day-showers.png", // Mäßige Regenschauer
+            82: "/images/panel/icons/day/82-day-thunderstorm.png", // Starke Regenschauer
+            85: "/images/panel/icons/day/85-day-snow-low.png", // Leichte Schneeschauer
+            86: "/images/panel/icons/day/86-day-snow-heavy.png", // Starke Schneeschauer
+            95: "/images/panel/icons/day/95-day-thunderstorm.png", // Gewitter (leicht oder mäßig)
+            96: "/images/panel/icons/day/96-day-thunderstorm.png", // Gewitter mit leichtem Hagel
+            99: "/images/panel/icons/day/99-day-thunderstorm.png", // Gewitter mit starkem Hagel
+            default: "/images/panel/icons/day/day-default.png", // Fallback für unbekannte Codes
           };
 
           const nightIcons = {
-            0: "/images/icons/night/0-night-clear.png", // Klarer Himmel
-            1: "/images/icons/night/1-night-moon-overcast.png", // Überwiegend klar
-            2: "/images/icons/night/2-night-cloudy.png", // Teilweise bewölkt
-            3: "/images/icons/night/3-night-cloudy.png", // Bedeckt
-            45: "/images/icons/night/45-night-fog-low.png", // Nebel
-            48: "/images/icons/night/48-night-fog-medium.png", // Reifender Nebel
-            51: "/images/icons/night/51-night-raindrops-low.png", // Leichter Nieselregen
-            53: "/images/icons/night/53-night-raindrops-medium.png", // Mäßiger Nieselregen
-            55: "/images/icons/night/55-night-raindrops-heavy.png", // Starker Nieselregen
-            56: "/images/icons/night/56-night-sleet-low.png", // Leichter gefrierender Nieselregen
-            57: "/images/icons/night/57-night-sleet-medium.png", // Starker gefrierender Nieselregen
-            61: "/images/icons/night/61-night-showers.png", // Leichter Regen
-            63: "/images/icons/night/63-night-rain-low.png", // Mäßiger Regen
-            65: "/images/icons/night/65-night-rain-heavy.png", // Starker Regen
-            66: "/images/icons/night/66-night-rain-mix.png", // Leichter gefrierender Regen
-            67: "/images/icons/night/67-night-rain-mix.png", // Starker gefrierender Regen
-            71: "/images/icons/night/71-night-snow.png", // Leichter Schneefall
-            73: "/images/icons/night/73-night-snow.png", // Mäßiger Schneefall
-            75: "/images/icons/night/75-night-snow.png", // Starker Schneefall
-            77: "/images/icons/night/77-night-snowflake-cold.png", // Schneekörner
-            80: "/images/icons/night/80-night-showers.png", // Leichte Regenschauer
-            81: "/images/icons/night/81-night-showers.png", // Mäßige Regenschauer
-            82: "/images/icons/night/82-night-thunderstorm.png", // Starke Regenschauer
-            85: "/images/icons/night/85-night-snow-low.png", // Leichte Schneeschauer
-            86: "/images/icons/night/86-night-snow-heavy.png", // Starke Schneeschauer
-            95: "/images/icons/night/95-night-thunderstorm.png", // Gewitter (leicht oder mäßig)
-            96: "/images/icons/night/96-night-thunderstorm.png", // Gewitter mit leichtem Hagel
-            99: "/images/icons/night/99-night-thunderstorm.png", // Gewitter mit starkem Hagel
-            default: "/images/icons/night/night-default.png", // Fallback für unbekannte Codes
+            0: "/images/panel/icons/night/0-night-clear.png", // Klarer Himmel
+            1: "/images/panel/icons/night/1-night-moon-overcast.png", // Überwiegend klar
+            2: "/images/panel/icons/night/2-night-cloudy.png", // Teilweise bewölkt
+            3: "/images/panel/icons/night/3-night-cloudy.png", // Bedeckt
+            45: "/images/panel/icons/night/45-night-fog-low.png", // Nebel
+            48: "/images/panel/icons/night/48-night-fog-medium.png", // Reifender Nebel
+            51: "/images/panel/icons/night/51-night-raindrops-low.png", // Leichter Nieselregen
+            53: "/images/panel/icons/night/53-night-raindrops-medium.png", // Mäßiger Nieselregen
+            55: "/images/panel/icons/night/55-night-raindrops-heavy.png", // Starker Nieselregen
+            56: "/images/panel/icons/night/56-night-sleet-low.png", // Leichter gefrierender Nieselregen
+            57: "/images/panel/icons/night/57-night-sleet-medium.png", // Starker gefrierender Nieselregen
+            61: "/images/panel/icons/night/61-night-showers.png", // Leichter Regen
+            63: "/images/panel/icons/night/63-night-rain-low.png", // Mäßiger Regen
+            65: "/images/panel/icons/night/65-night-rain-heavy.png", // Starker Regen
+            66: "/images/panel/icons/night/66-night-rain-mix.png", // Leichter gefrierender Regen
+            67: "/images/panel/icons/night/67-night-rain-mix.png", // Starker gefrierender Regen
+            71: "/images/panel/icons/night/71-night-snow.png", // Leichter Schneefall
+            73: "/images/panel/icons/night/73-night-snow.png", // Mäßiger Schneefall
+            75: "/images/panel/icons/night/75-night-snow.png", // Starker Schneefall
+            77: "/images/panel/icons/night/77-night-snowflake-cold.png", // Schneekörner
+            80: "/images/panel/icons/night/80-night-showers.png", // Leichte Regenschauer
+            81: "/images/panel/icons/night/81-night-showers.png", // Mäßige Regenschauer
+            82: "/images/panel/icons/night/82-night-thunderstorm.png", // Starke Regenschauer
+            85: "/images/panel/icons/night/85-night-snow-low.png", // Leichte Schneeschauer
+            86: "/images/panel/icons/night/86-night-snow-heavy.png", // Starke Schneeschauer
+            95: "/images/panel/icons/night/95-night-thunderstorm.png", // Gewitter (leicht oder mäßig)
+            96: "/images/panel/icons/night/96-night-thunderstorm.png", // Gewitter mit leichtem Hagel
+            99: "/images/panel/icons/night/99-night-thunderstorm.png", // Gewitter mit starkem Hagel
+            default: "/images/panel/icons/night/night-default.png", // Fallback für unbekannte Codes
           };
 
           const weatherDescriptions = {
