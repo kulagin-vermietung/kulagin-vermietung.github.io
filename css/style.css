@@ -7,6 +7,7 @@
   --text-farbe: #333;
   --hintergrund-farbe: #fff;
   --grau-farbe: #f1f1f1;
+  --radius: 6px;
 }
 
 html {
@@ -170,7 +171,7 @@ nav .btn {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease, transform 0.1s ease;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 nav .btn::before {
@@ -431,7 +432,7 @@ nav a:hover {
 .header-text p {
   font-size: 22px;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .about {
@@ -477,7 +478,7 @@ nav a:hover {
   background: url("/images/plagwitz/giesserei.webp") no-repeat 45% center;
   background-size: cover;
   display: flex;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .about-content .text {
@@ -808,7 +809,7 @@ nav a:hover {
   margin: 0 auto;
   margin-bottom: 100px;
   margin-top: -45px;
-  border-radius: 5px;
+  border-radius: var(--radius);
   overflow: hidden;
 }
 
@@ -824,7 +825,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease, transform 0.1s ease;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 .read-more::before {
   content: "";
@@ -906,6 +907,7 @@ nav a:hover {
   font-weight: 300;
   color: var(--text-farbe);
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 .apartment-list {
@@ -953,7 +955,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .apartment .btn::before {
@@ -1074,6 +1076,7 @@ nav a:hover {
 .ausstattung p {
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.6;
   color: var(--text-farbe);
   margin-bottom: 20px;
 }
@@ -1101,7 +1104,7 @@ nav a:hover {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .ausstattung-item h3 {
@@ -1114,6 +1117,7 @@ nav a:hover {
   font-size: 16px;
   font-weight: 300;
   color: var(--text-farbe);
+  line-height: 1.6;
 }
 
 .ausstattung .btn {
@@ -1129,7 +1133,7 @@ nav a:hover {
   text-align: center;
   transition: background 0.3s ease;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .ausstattung .btn::before {
@@ -1316,7 +1320,7 @@ nav a:hover {
   cursor: pointer;
   transition: background 0.3s ease;
   text-align: center;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .contact .btn::before {
@@ -1345,7 +1349,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   flex-grow: 1;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .contact-address {
@@ -1361,6 +1365,7 @@ nav a:hover {
 
 .contact-address p {
   font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 4px 0;
 }
 
@@ -1596,7 +1601,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .download-btn::before {
@@ -1792,7 +1797,7 @@ nav a:hover {
   background: url("/images/plagwitz/plagwitz.webp") no-repeat 45% center;
   background-size: cover;
   display: flex;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .viertel {
@@ -1820,12 +1825,13 @@ nav a:hover {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .plagwitz-item p {
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.6;
   color: var(--text-farbe);
 }
 
@@ -1874,13 +1880,6 @@ nav a:hover {
   margin-inline: auto;
 }
 
-@font-face {
-  font-family: swiper-icons;
-  src: url("data:application/font-woff;charset=utf-8;base64, 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");
-  font-weight: 400;
-  font-style: normal;
-}
-
 .swiper,
 swiper-container {
   margin-left: auto;
@@ -1921,7 +1920,7 @@ swiper-slide {
   -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .swiper-pagination {
@@ -2020,7 +2019,7 @@ h4 a:hover {
   background-color: var(--blau-farbe);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2028,7 +2027,6 @@ h4 a:hover {
   visibility: hidden;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #scroll-to-top svg {
