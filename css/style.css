@@ -1818,7 +1818,7 @@ nav a:hover {
 }
 
 .plagwitz-item img {
-  width: 140px;
+  min-width: 140px;
   height: 210px;
   object-fit: cover;
   user-select: none !important;
