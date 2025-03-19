@@ -15,6 +15,7 @@
     <script src="/js/headerfooterload.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/headerswitch.js"></script>
+    <script src="/js/showmore.js"></script>
   </head>
   <body>
     <div id="header-link"></div>
@@ -679,89 +680,96 @@ l-223 0 53 -57 c73 -81 94 -130 93 -223 0 -61 -5 -85 -26 -125 -55 -105 -146
                   </p>
                 </div>
               </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/kunstkraftwerk.webp"
-                  alt="Kunstkraftwerk Leipzig "
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Kunstkraftwerk Leipzig</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+            </div>
+            <button id="toggleButton" class="einblenden">
+              Weitere anzeigen
+            </button>
+            <div class="hidden-items" style="display: none">
+              <div class="ausstattung-list" style="margin-top: 40px">
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/kunstkraftwerk.webp"
+                    alt="Kunstkraftwerk Leipzig "
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Kunstkraftwerk Leipzig</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/YhRjnkCequ7jmCtE7"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Saalfelder Str. 8b, 04179 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    In diesem ehemaligen Heizkraftwerk finden heute immersive
-                    Kunstinstallationen und multimediale Ausstellungen statt,
-                    die historische Industriekultur mit moderner Kunst
-                    verbinden.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/YhRjnkCequ7jmCtE7"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Saalfelder Str. 8b, 04179 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      In diesem ehemaligen Heizkraftwerk finden heute immersive
+                      Kunstinstallationen und multimediale Ausstellungen statt,
+                      die historische Industriekultur mit moderner Kunst
+                      verbinden.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/buergerbahnhof.webp"
-                  alt="Bürgerbahnhof Plagwitz
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/buergerbahnhof.webp"
+                    alt="Bürgerbahnhof Plagwitz
                   "
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Bürgerbahnhof Plagwitz</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Bürgerbahnhof Plagwitz</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/Ccu24hrNJuNf3vXz5"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Röckener Straße, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein ehemaliger Güterbahnhof, der sich in einen kreativen
-                    Gemeinschaftsort gewandelt hat. Heute gibt es dort Urban
-                    Gardening, einen Bauspielplatz, ein Kulturcafé und
-                    vielseitige Veranstaltungen.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/Ccu24hrNJuNf3vXz5"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Röckener Straße, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein ehemaliger Güterbahnhof, der sich in einen kreativen
+                      Gemeinschaftsort gewandelt hat. Heute gibt es dort Urban
+                      Gardening, einen Bauspielplatz, ein Kulturcafé und
+                      vielseitige Veranstaltungen.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -887,256 +895,263 @@ l-223 0 53 -57 c73 -81 94 -130 93 -223 0 -61 -5 -85 -26 -125 -55 -105 -146
                   </p>
                 </div>
               </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/taeubchenthal.webp"
-                  alt="Täubchenthal"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Täubchenthal</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+            </div>
+            <button id="toggleButton2" class="einblenden">
+              Weitere anzeigen
+            </button>
+            <div class="hidden-items2" style="display: none">
+              <div class="ausstattung-list" style="margin-top: 40px">
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/taeubchenthal.webp"
+                    alt="Täubchenthal"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Täubchenthal</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/TqMgfZaKVL82JhUWA"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Wachsmuthstr. 1, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein ehemaliger Industriebau, heute ein Hotspot für Konzerte,
-                    Partys und mehr. Das Täubchenthal besticht durch kreatives
-                    Ambiente, Live-Acts und Clubnächte. Beliebt ist der
-                    Außenbereich.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/TqMgfZaKVL82JhUWA"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Wachsmuthstr. 1, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein ehemaliger Industriebau, heute ein Hotspot für
+                      Konzerte, Partys und mehr. Das Täubchenthal besticht durch
+                      kreatives Ambiente, Live-Acts und Clubnächte. Beliebt ist
+                      der Außenbereich.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/druckkunst.webp"
-                  alt="Werkstattmuseum für Druckkunst"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Werkstattmuseum für Druckkunst</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/druckkunst.webp"
+                    alt="Werkstattmuseum für Druckkunst"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Werkstattmuseum für Druckkunst</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/ADe7hBd7QHE1Yof4A"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Nonnenstr. 38, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein faszinierender Ort, der sich der Geschichte und Kunst
-                    des Druckens widmet. Besucher können historische
-                    Druckmaschinen in Aktion erleben und tief in die Welt des
-                    Handwerks eintauchen.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/ADe7hBd7QHE1Yof4A"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Nonnenstr. 38, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein faszinierender Ort, der sich der Geschichte und Kunst
+                      des Druckens widmet. Besucher können historische
+                      Druckmaschinen in Aktion erleben und tief in die Welt des
+                      Handwerks eintauchen.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/sportbad.webp"
-                  alt="Sportbad an der Elster"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Sportbad an der Elster</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/sportbad.webp"
+                    alt="Sportbad an der Elster"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Sportbad an der Elster</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/M3epDNMufiwRiWzh7"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Antonienstr. 8, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein modernes Schwimmbad mit einem großen Sportbecken und
-                    einem separaten Wellnessbereich. Ideal für sportliche
-                    Betätigung oder zum Entspannen nach einem ereignisreichen
-                    Tag.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/M3epDNMufiwRiWzh7"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Antonienstr. 8, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein modernes Schwimmbad mit einem großen Sportbecken und
+                      einem separaten Wellnessbereich. Ideal für sportliche
+                      Betätigung oder zum Entspannen nach einem ereignisreichen
+                      Tag.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/kosmos.webp"
-                  alt="KOSMOS Boulderhalle"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>KOSMOS Boulderhalle</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/kosmos.webp"
+                    alt="KOSMOS Boulderhalle"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>KOSMOS Boulderhalle</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/4r1zY8QPWMPt2Zcc8"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Erich-Zeigner-Allee 64, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Eine moderne Boulderhalle mit abwechslungsreichen
-                    Kletterrouten für Anfänger und Profis. Perfekt für
-                    sportliche Herausforderungen und gemeinsames Training in
-                    entspannter Atmosphäre.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/4r1zY8QPWMPt2Zcc8"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Erich-Zeigner-Allee 64, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Eine moderne Boulderhalle mit abwechslungsreichen
+                      Kletterrouten für Anfänger und Profis. Perfekt für
+                      sportliche Herausforderungen und gemeinsames Training in
+                      entspannter Atmosphäre.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/pool.webp"
-                  alt="Pool Sports"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>Pool Sports</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/pool.webp"
+                    alt="Pool Sports"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>Pool Sports</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/ghN2xHtbumPQwUSVA"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Zschochersche Str. 79b, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein vielseitiges Freizeitzentrum mit Billard, Tischtennis,
-                    Steeldart und Kicker. Egal ob Freizeitspiel oder Turnier –
-                    hier gibt es perfekte Bedingungen für alle, die Spaß an
-                    Geschicklichkeit und Präzision haben.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/ghN2xHtbumPQwUSVA"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Zschochersche Str. 79b, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein vielseitiges Freizeitzentrum mit Billard, Tischtennis,
+                      Steeldart und Kicker. Egal ob Freizeitspiel oder Turnier –
+                      hier gibt es perfekte Bedingungen für alle, die Spaß an
+                      Geschicklichkeit und Präzision haben.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="plagwitz-item">
-                <img
-                  src="/images/plagwitz/jump.webp"
-                  alt="JUMP House Leipzig"
-                  class="hvr-bounce-in"
-                />
-                <div>
-                  <h3>JUMP House Leipzig</h3>
-                  <h4>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512.000000 512.000000"
-                      class="icon-viertel"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                <div class="plagwitz-item">
+                  <img
+                    src="/images/plagwitz/jump.webp"
+                    alt="JUMP House Leipzig"
+                    class="hvr-bounce-in"
+                  />
+                  <div>
+                    <h3>JUMP House Leipzig</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512.000000 512.000000"
+                        class="icon-viertel"
                       >
-                        <path
-                          d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                        />
-                      </g></svg
-                    ><a
-                      href="https://maps.app.goo.gl/x13fUewjiL9HNnco6"
-                      target="_blank"
-                      class="hover-link-blue"
-                      >Markranstädter Str. 8A, 04229 Leipzig</a
-                    >
-                  </h4>
-                  <p>
-                    Ein großes Trampolinpark-Erlebnis mit verschiedenen
-                    Sprungbereichen, Ninja-Parcours und Action-Spielen. Perfekt
-                    für Spaß, Fitness und sportliche Herausforderungen für alle
-                    Altersgruppen.
-                  </p>
+                          />
+                        </g></svg
+                      ><a
+                        href="https://maps.app.goo.gl/x13fUewjiL9HNnco6"
+                        target="_blank"
+                        class="hover-link-blue"
+                        >Markranstädter Str. 8A, 04229 Leipzig</a
+                      >
+                    </h4>
+                    <p>
+                      Ein großes Trampolinpark-Erlebnis mit verschiedenen
+                      Sprungbereichen, Ninja-Parcours und Action-Spielen.
+                      Perfekt für Spaß, Fitness und sportliche Herausforderungen
+                      für alle Altersgruppen.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
