@@ -1820,6 +1820,7 @@ nav a:hover {
 .plagwitz-item img {
   min-width: 140px;
   height: 210px;
+  max-width: 140px;
   object-fit: cover;
   user-select: none !important;
   -webkit-user-drag: none !important;
