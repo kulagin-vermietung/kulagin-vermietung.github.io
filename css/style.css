@@ -45,7 +45,7 @@ body {
   padding: 15px 0;
   height: 110px;
   background: transparent;
-  transition: background 0.1s ease-in-out;
+  transition: background 0.2s ease-in-out;
   z-index: 1000;
 }
 
@@ -59,6 +59,7 @@ body {
 
 .nav-bar.scrolled {
   background: var(--blau-farbe);
+  transition: background 0.15s ease-in-out;
 }
 
 .logo {
