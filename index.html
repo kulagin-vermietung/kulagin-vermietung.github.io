@@ -11,11 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="/js/navbarscroll.js"></script>
     <script src="/js/headerfooterload.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/headerswitch.js"></script>
     <script src="/js/scrolltotop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -39,7 +42,7 @@
             </p>
             <a href="/plagwitz.html" class="read-more">Weiterlesen</a>
           </div>
-          <div class="bild-plagwitz hvr-bounce-in"></div>
+          <div class="bild-plagwitz hvr-bounce-in" data-aos="zoom-in-up"></div>
         </div>
       </div>
     </section>
@@ -59,7 +62,10 @@
 
         <div class="apartment-list">
           <div class="apartment">
-            <div class="apartment-image hvr-bounce-in"></div>
+            <div
+              class="apartment-image hvr-bounce-in"
+              data-aos="zoom-in-up"
+            ></div>
             <h3>2 Zimmer Wohnung</h3>
             <p>
               Ideal für Singles oder Paare: Frisch renoviert, modern
@@ -149,7 +155,10 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
             <a href="/wohnung-2-zimmer.html" class="btn">MEHR INFOS</a>
           </div>
           <div class="apartment">
-            <div class="apartment-image hvr-bounce-in"></div>
+            <div
+              class="apartment-image hvr-bounce-in"
+              data-aos="zoom-in-up"
+            ></div>
             <h3>3 Zimmer Wohnung</h3>
             <p>
               Geräumig und modern: Bietet viel Platz, eine clevere
@@ -254,7 +263,7 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
         </p>
 
         <div class="ausstattung-list">
-          <div class="ausstattung-item">
+          <div class="ausstattung-item" data-aos="zoom-in-up">
             <img
               src="/images/ausstattung/thermostat.webp"
               alt="Digitale Thermostate"
@@ -268,7 +277,7 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
               </p>
             </div>
           </div>
-          <div class="ausstattung-item">
+          <div class="ausstattung-item" data-aos="zoom-in-up">
             <img
               src="/images/ausstattung/rfid.webp"
               alt="Zutritt über RFID-System"
@@ -282,7 +291,7 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
               </p>
             </div>
           </div>
-          <div class="ausstattung-item">
+          <div class="ausstattung-item" data-aos="zoom-in-up">
             <img
               src="/images/ausstattung/sprechanlage.webp"
               alt="Videosprechanlage"
@@ -296,7 +305,7 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
               </p>
             </div>
           </div>
-          <div class="ausstattung-item">
+          <div class="ausstattung-item" data-aos="zoom-in-up">
             <img
               src="/images/ausstattung/fussbodenheizung.webp"
               alt="Fußbodenheizung in jedem Zimmer"
@@ -320,7 +329,7 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
       <div class="slider-custom-container">
         <h3 class="blue-text">BILDER SAGEN MEHR ALS WORTE</h3>
         <h2>Unsere Impressionen auf einen Blick</h2>
-        <div class="swiper swiper-slider">
+        <div class="swiper swiper-slider" data-aos="zoom-in-up">
           <div class="swiper-wrapper">
             <img
               class="swiper-slide"
@@ -550,5 +559,9 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
         </g>
       </svg>
     </button>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
