@@ -11,12 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="/js/navbarscroll.js"></script>
     <script src="/js/headerfooterload.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/headerswitch.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/slideanim.js"></script>
   </head>
   <body>
     <div id="header-link"></div>
@@ -54,10 +54,7 @@
         <h2>Unser Team</h2>
         <div class="team-container">
           <div>
-            <div
-              class="team-member sergej hvr-bounce-in"
-              data-aos="zoom-in-up"
-            ></div>
+            <div class="team-member sergej hvr-bounce-in slideanim"></div>
             <h3>Sergej Kulagin</h3>
             <p>
               <svg
@@ -110,10 +107,7 @@
             </p>
           </div>
           <div>
-            <div
-              class="team-member max hvr-bounce-in"
-              data-aos="zoom-in-up"
-            ></div>
+            <div class="team-member max hvr-bounce-in slideanim"></div>
             <h3>Max Kulagin</h3>
             <p>
               <svg
@@ -183,8 +177,5 @@
     </section>
 
     <div id="footer-link"></div>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
