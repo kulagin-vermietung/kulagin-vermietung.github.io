@@ -454,6 +454,24 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.about .container-wohnung {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about .container2 {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .about-content {
   display: flex;
   align-items: stretch;
@@ -472,11 +490,9 @@ nav a:hover {
 }
 
 .about-content3 {
-  display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 30px;
-  width: 100%;
+
   height: 100%;
 }
 
@@ -741,6 +757,23 @@ nav a:hover {
   -ms-user-select: none !important;
 }
 
+.icon-kleiner {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: -2px;
+  margin-bottom: 2px;
+  opacity: 0.45;
+  color: var(--blau-farbe);
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
 .icon-pin {
   width: 24px;
   height: 24px;
@@ -751,6 +784,57 @@ nav a:hover {
   margin-left: -4px;
   margin-bottom: 2px;
   opacity: 0.45;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-gruen {
+  width: 23.3px;
+  height: 23.3px;
+  object-fit: contain;
+  color: #65b32e;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: -4px;
+  margin-bottom: 2px;
+  opacity: 1;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-rot {
+  width: 19.5px;
+  height: 19.5px;
+  object-fit: contain;
+  color: #da0a0a;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: -2px;
+  margin-bottom: 2px;
+  opacity: 1;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.icon-gelb {
+  width: 18.88px;
+  height: 18.88px;
+  object-fit: contain;
+  color: #e2c800;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: -1.6px;
+  margin-bottom: 2px;
+  opacity: 1;
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
@@ -1794,9 +1878,28 @@ nav a:hover {
   line-height: 1.6;
 }
 
+.tabelle-container-wohnung {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 .tabelle-info {
   flex: 1;
   min-width: 225px;
+}
+
+.tabelle-info-wohnung {
+  flex: 1;
+  min-width: 230px;
+}
+.tabelle-info-wohnung-kurz {
+  flex: 1;
+  min-width: 188px;
 }
 
 .tabelle-resultate {
