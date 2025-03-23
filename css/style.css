@@ -774,6 +774,23 @@ nav a:hover {
   -ms-user-select: none !important;
 }
 
+.icon-mini {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-left: -1px;
+  margin-bottom: 2px;
+  opacity: 0.45;
+  color: var(--blau-farbe);
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
 .icon-pin {
   width: 24px;
   height: 24px;
