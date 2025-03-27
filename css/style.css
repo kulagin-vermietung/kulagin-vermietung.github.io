@@ -1,3 +1,35 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/poppins-v22-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/poppins-v22-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/poppins-v22-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2");
+}
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -19,8 +51,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-align: justify;
-  hyphens: auto;
 }
 
 body {
@@ -88,76 +118,30 @@ nav a {
   text-decoration: none;
 }
 
-.hover-link {
-  position: relative;
-  display: inline-block; /* optional, falls nötig */
-}
-
-.hover-link::after {
+.navlink:after {
+  border-bottom: 3px solid #fff;
   content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
+  display: block;
+  margin: 2px auto 0;
+  transition: width 50ms ease-in-out 0s;
+  width: 0;
+}
+.navlink:hover:after {
+  transition: width 50ms ease-in-out 0s;
   width: 100%;
-  height: 3px;
-  background-color: white;
-  opacity: 0; /* Standardmäßig versteckt */
-  transition: opacity 50ms, transform 50ms;
-  transform: translate3d(-100%, 0, 0);
 }
 
-.hover-link:hover::after,
-.hover-link:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.hover-link-small {
-  position: relative;
-  display: inline-block; /* optional, falls nötig */
-}
-
-.hover-link-small::after {
+.contact-info a:after {
+  border-bottom: 2px solid #fff;
   content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
+  display: block;
+  margin: 0.1px auto 0;
+  transition: width 50ms ease-in-out 0s;
+  width: 0;
+}
+.contact-info a:hover:after {
+  transition: width 50ms ease-in-out 0s;
   width: 100%;
-  height: 2px;
-  background-color: white;
-  opacity: 0; /* Standardmäßig versteckt */
-  transition: opacity 50ms, transform 50ms;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.hover-link-small:hover::after,
-.hover-link-small:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.hover-link-blue {
-  position: relative;
-  display: inline-block; /* optional, falls nötig */
-}
-
-.hover-link-blue::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--blau-farbe);
-  opacity: 0; /* Standardmäßig versteckt */
-  transition: opacity 50ms, transform 50ms;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.hover-link-blue:hover::after,
-.hover-link-blue:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 nav .btn {
@@ -434,6 +418,8 @@ nav a:hover {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about {
@@ -572,6 +558,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about-content2 p {
@@ -579,6 +567,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .s-bahn-symbol {
@@ -1024,6 +1014,8 @@ nav a:hover {
   color: var(--text-farbe);
   margin-bottom: 30px;
   line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .apartment-list {
@@ -1057,6 +1049,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .apartment .btn {
@@ -1195,6 +1189,8 @@ nav a:hover {
   line-height: 1.6;
   color: var(--text-farbe);
   margin-bottom: 20px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .ausstattung-list {
@@ -1234,6 +1230,8 @@ nav a:hover {
   font-weight: 300;
   color: var(--text-farbe);
   line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .ausstattung .btn {
@@ -1348,6 +1346,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: -15px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .contact-columns {
@@ -1483,6 +1483,8 @@ nav a:hover {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 4px 0;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .contact-address a {
@@ -1568,6 +1570,19 @@ nav a:hover {
   transition: color 0.3s ease;
 }
 
+.footer-links a:after {
+  border-bottom: 2px solid var(--blau-farbe);
+  content: "";
+  display: block;
+  margin: 0.1px auto 0;
+  transition: width 50ms ease-in-out 0s;
+  width: 0;
+}
+.footer-links a:hover:after {
+  transition: width 50ms ease-in-out 0s;
+  width: 100%;
+  color: var(--blau-farbe);
+}
 .footer-links a:hover {
   color: var(--blau-farbe);
 }
@@ -1647,24 +1662,6 @@ nav a:hover {
   animation-timing-function: ease-in-out;
   -webkit-animation-name: headShake;
   animation-name: headShake;
-}
-
-.hvr-bounce-in {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.3s;
-}
-.hvr-bounce-in:hover,
-.hvr-bounce-in:focus,
-.hvr-bounce-in:active {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .download-table {
@@ -1839,6 +1836,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .team-section .container {
@@ -1969,6 +1968,8 @@ nav a:hover {
   font-weight: 300;
   line-height: 1.6;
   color: var(--text-farbe);
+  text-align: justify;
+  hyphens: auto;
 }
 
 .plagwitz-item h4 {
@@ -2000,6 +2001,26 @@ nav a:hover {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.plagwitz-link {
+  display: inline-block;
+}
+.plagwitz-link:after {
+  border-bottom: 2px solid var(--blau-farbe);
+  content: "";
+  display: block;
+  margin: 0.1px auto 0;
+  transition: width 50ms ease-in-out 0s;
+  width: 0;
+}
+.plagwitz-link:hover:after {
+  transition: width 50ms ease-in-out 0s;
+  width: 100%;
+  color: var(--blau-farbe);
+}
+.plagwitz-link:hover {
+  color: var(--blau-farbe);
 }
 
 /* Slider-Abschnitt */
@@ -2217,27 +2238,13 @@ h4 a:hover {
   margin-left: -4px;
 }
 
-.slideanim {
-  visibility: hidden;
-  visibility: visible\9; /*For old IE browsers IE6-8 */
+.fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
 }
-.slideanim.slide {
-  visibility: visible;
-  animation: slide 0.3s;
-}
-.slideanim::after {
-  /* useful when its child elements are float:left; */
-  content: "";
-  display: table;
-  clear: both;
-}
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
+.fadein.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
