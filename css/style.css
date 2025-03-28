@@ -172,6 +172,7 @@ nav .btn::before {
 nav .btn:hover {
   background-color: var(--dunkelblau-farbe);
   color: var(--hintergrund-farbe);
+  transform: scale(1.02);
 }
 .einblenden:active,
 .read-more:active,
@@ -185,19 +186,33 @@ nav .btn:active {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(0,512) scale(0.1,-0.1)" fill="%230075d2"><path d="M1386 5109 c-62 -15 -153 -68 -197 -116 -22 -24 -55 -74 -72 -111 l-32 -67 -3 -210 -3 -211 -86 -29 c-230 -78 -591 -287 -695 -403 -68 -75 -140 -249 -180 -431 -30 -136 -30 -416 0 -581 112 -614 506 -1279 1108 -1872 594 -585 1248 -958 1860 -1059 46 -8 155 -13 259 -13 147 0 199 4 282 22 195 42 369 119 447 199 67 67 167 221 257 398 127 245 160 345 160 476 0 194 -51 302 -193 406 -46 34 -175 129 -288 212 -113 83 -230 164 -260 180 -155 83 -335 57 -476 -69 -32 -29 -135 -125 -227 -213 l-169 -161 -36 20 c-71 37 -279 181 -376 259 -142 114 -298 258 -414 382 l-102 108 1383 5 1382 5 58 24 c118 47 210 152 242 276 22 88 23 2191 0 2278 -32 125 -107 215 -223 270 l-67 32 -1650 2 c-974 0 -1666 -3 -1689 -8z m839 -1268 c385 -316 716 -584 735 -595 44 -26 141 -28 185 -4 17 9 351 280 743 602 393 322 716 586 718 586 2 0 4 -400 4 -890 l0 -890 -1492 0 -1493 0 -38 66 c-38 64 -38 66 -20 87 10 11 101 109 204 218 202 215 239 270 260 382 15 81 2 173 -37 248 -28 57 -396 564 -454 627 -37 39 -40 48 -40 98 0 41 3 53 12 48 7 -4 327 -267 713 -583z m-1375 -211 c110 -154 257 -349 351 -466 l58 -71 -71 -78 c-80 -89 -98 -124 -98 -192 0 -127 211 -477 479 -798 159 -191 446 -469 657 -637 162 -129 373 -264 529 -340 84 -40 109 -48 158 -48 72 0 102 15 193 96 39 35 74 64 78 64 4 0 78 -56 166 -124 134 -104 265 -201 482 -356 l37 -26 -41 -64 c-35 -53 -50 -67 -102 -91 -94 -44 -208 -70 -336 -76 -258 -13 -538 60 -870 226 -939 468 -1800 1481 -1981 2333 -17 79 -22 139 -23 258 -1 172 12 249 65 376 28 66 36 76 96 118 37 25 67 45 68 43 1 -1 49 -67 105 -147z"/></g></svg>')
     center center/contain no-repeat;
 }
-.contact .btn:hover,
+
 .nav-bar.scrolled .btn:hover {
   background-color: var(--grau-farbe);
+  transform: scale(1.02);
+}
+.nav-bar.scrolled .btn:active {
+  transform: scale(0.98);
+}
+
+.contact .btn:hover {
+  background-color: var(--grau-farbe);
+  transform: scale(1.01);
+}
+.contact .btn:active {
+  transform: scale(0.99);
 }
 .header {
   height: 475px;
   background: url("/images/header/main.webp") center 45% / cover no-repeat;
+  background-color: #4498d2;
   align-items: center;
   justify-content: center;
 }
 .header-plagwitz {
   height: 300px;
   background: url("/images/header/plagwitz.webp") center 32% / cover no-repeat;
+  background-color: #72b4db;
   align-items: left;
   justify-content: left;
   text-align: left;
@@ -232,10 +247,12 @@ nav .btn:active {
 .header-ausstattung {
   background: url("/images/header/ausstattung.webp") center 55% / cover
     no-repeat;
+  background-color: #cbd2d4;
   justify-content: left;
 }
 .header-downloads {
   background: url("/images/header/downloads.webp") center 75% / cover no-repeat;
+  background-color: #a2adb5;
   justify-content: left;
 }
 .header-ueberuns {
@@ -243,6 +260,7 @@ nav .btn:active {
   width: 100%;
   height: 300px;
   background: url("/images/header/ueberuns.webp") center 35% / cover no-repeat;
+  background-color: #30547d;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -364,6 +382,7 @@ nav .btn:active {
   display: flex;
   border-radius: var(--radius);
 }
+
 .about-content .text {
   width: 65%;
 }
@@ -799,6 +818,7 @@ nav .btn:active {
   color: var(--hintergrund-farbe);
   font-size: 14px;
   text-transform: uppercase;
+  transition: background 0.3s, transform 0.1s;
 }
 .apartment .btn::before,
 .ausstattung .btn::before {
@@ -811,6 +831,13 @@ nav .btn:active {
 .ausstattung .btn:hover,
 .download-btn:hover {
   background-color: var(--dunkelblau-farbe);
+  transform: scale(1.02);
+}
+#scroll-to-top:active,
+.apartment .btn:active,
+.ausstattung .btn:active,
+.download-btn:active {
+  transform: scale(0.98);
 }
 .wohnung-details {
   font-size: 16px;
@@ -1067,6 +1094,7 @@ nav .btn:active {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background 0.3s, transform 0.1s;
 }
 .contact .btn::before {
   content: "";
@@ -1078,6 +1106,7 @@ nav .btn:active {
   margin-right: 13px;
   margin-bottom: -4.7px;
 }
+
 .contact-map {
   width: 40%;
   display: flex;
