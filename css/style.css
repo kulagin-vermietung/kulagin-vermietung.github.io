@@ -1751,11 +1751,13 @@ h4 a {
 .action-buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
-  padding: 2rem 1rem;
+  gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 26px;
   width: 1000px;
   max-width: 95%;
   margin: 0 auto;
+  z-index: 20;
 }
 
 .action-buttons button,
@@ -1770,6 +1772,7 @@ h4 a {
   color: var(--blau-farbe);
   opacity: 0.45;
   transition: transform 0.1s;
+  margin-top: -10px;
 }
 
 .icon-share:hover {
@@ -1779,4 +1782,11 @@ h4 a {
 
 .icon-share:active {
   transform: scale(0.96);
+}
+
+.blue-share {
+  color: var(--blau-farbe);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
