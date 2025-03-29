@@ -204,14 +204,15 @@ nav .btn:active {
 }
 .header {
   height: 475px;
-  background: url("/images/header/main.webp") center 45% / cover no-repeat;
+  background: url("/images/header/main.webp") center center / cover no-repeat;
   background-color: #4498d2;
   align-items: center;
   justify-content: center;
 }
 .header-plagwitz {
   height: 300px;
-  background: url("/images/header/plagwitz.webp") center 32% / cover no-repeat;
+  background: url("/images/header/plagwitz.webp") center center / cover
+    no-repeat;
   background-color: #72b4db;
   align-items: left;
   justify-content: left;
@@ -228,11 +229,13 @@ nav .btn:active {
 .header-wohnung2 {
   background: url("/images/header/wohnung2.webp") center 75% / cover no-repeat;
   justify-content: left;
+  height: 300px;
   text-align: left;
 }
 .header-wohnung3 {
   background: url("/images/header/wohnung3.webp") center 75% / cover no-repeat;
   justify-content: left;
+  height: 300px;
   text-align: left;
 }
 .header-ausstattung,
@@ -248,11 +251,13 @@ nav .btn:active {
   background: url("/images/header/ausstattung.webp") center 55% / cover
     no-repeat;
   background-color: #cbd2d4;
+  height: 300px;
   justify-content: left;
 }
 .header-downloads {
   background: url("/images/header/downloads.webp") center 75% / cover no-repeat;
   background-color: #a2adb5;
+  height: 300px;
   justify-content: left;
 }
 .header-ueberuns {
