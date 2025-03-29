@@ -387,7 +387,16 @@ nav .btn:active {
   display: flex;
   border-radius: var(--radius);
 }
-
+.bild-mitte {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  background: url("/images/wohnungen/mitte/tuer.webp") center 70% / cover
+    no-repeat;
+  display: flex;
+  border-radius: var(--radius);
+}
 .about-content .text {
   width: 65%;
 }
@@ -768,6 +777,9 @@ nav .btn:active {
   background-color: rgba(0, 117, 210, 0.075);
   padding: 80px 0;
 }
+.wohnungdetails {
+  background-color: rgba(0, 117, 210, 0.075);
+}
 .apartments .container,
 .ausstattung .container,
 .team-section .container {
@@ -807,14 +819,14 @@ nav .btn:active {
 .apartment-image {
   width: 100%;
   height: 500px;
-  background: url("/images/grundrisse/we_mitte.webp") center center/contain
-    no-repeat;
+  background: url("/images/wohnungen/mitte/grundriss.webp") center
+    center/contain no-repeat;
   margin-bottom: 10px;
   margin-top: -20px;
 }
 .apartment:nth-child(2) .apartment-image {
-  background: url("/images/grundrisse/we_rechts.webp") center center/contain
-    no-repeat;
+  background: url("/images/wohnungen/links/grundriss.webp") center
+    center/contain no-repeat;
 }
 .apartment .btn,
 .download-btn {
@@ -1507,6 +1519,12 @@ h4 a {
 .viertel {
   background-color: rgba(0, 117, 210, 0.075);
   padding: 80px 0;
+}
+
+.slider-wohnung-section {
+  background-color: white;
+  padding: 80px 0;
+  margin: 0 auto;
 }
 .viertel {
   display: flex;

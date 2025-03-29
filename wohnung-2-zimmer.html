@@ -6,6 +6,7 @@
     <title>Kulagin Vermietung - 2 Zimmer Wohnung</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/sitefunctions.js"></script>
+    <script src="/js/slider.js"></script>
     <link rel="preload" as="image" href="/images/header/wohnung2.webp" />
   </head>
   <body>
@@ -187,7 +188,7 @@
               2 Zimmer Wohnung
             </h1>
             <p id="header-description">
-              Stilvoll renoviert & modern ausgestattet
+              Frisch sanierte 2-Zimmer-Wohnung mit Komfort, Ruhe und Charme
             </p>
           </div>
         </div>
@@ -196,11 +197,36 @@
 
     <section class="about">
       <div class="container">
+        <div class="about-content">
+          <div class="text">
+            <h3 class="blue-text">Modern wohnen in stilvollem Ambiente</h3>
+            <h2>Ihr neues Zuhause in Leipzig</h2>
+            <p>
+              Diese frisch sanierte 2-Zimmer-Wohnung mit ca. 55 m² Wohnfläche
+              verbindet modernes Wohnen mit einem angenehmen Wohngefühl in
+              ruhiger und gut angebundener Lage von Leipzig. Helle, gut
+              geschnittene Räume, eine großzügige Deckenhöhe von 2,75 m und
+              hochwertige Materialien schaffen eine stilvolle und einladende
+              Atmosphäre – perfekt, um sich vom ersten Moment an zuhause zu
+              fühlen. Die moderne Ausstattung sorgt für Komfort im Alltag,
+              während durchdachte Details zusätzlichen Nutzen bieten. Ideal für
+              Singles oder Paare, die Wert auf Qualität, Ästhetik und ein
+              entspanntes Wohnumfeld legen. Hier lässt es sich nicht nur wohnen,
+              sondern rundum wohlfühlen.
+            </p>
+          </div>
+          <div class="bild-mitte fadein"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about wohnungdetails">
+      <div class="container">
         <div class="about-content2">
           <div class="text-plagwitz">
-            <h3 class="blue-text">Text</h3>
+            <h3 class="blue-text">Das Wichtigste auf einen Blick</h3>
 
-            <h2>Eckdaten</h2>
+            <h2>Alles, was Sie wissen müssen</h2>
           </div>
         </div>
       </div>
@@ -287,7 +313,7 @@ l0 -960 -640 0 -640 0 0 960 0 960 640 0 640 0 0 -960z"
                   </g></svg
                 ><span class="download-text">Lage & Etage:</span>
               </div>
-              <div class="tabelle-resultate">1. Obergeschoss Mitte</div>
+              <div class="tabelle-resultate">1. OG / 2. OG / 3. OG Mitte</div>
             </div>
             <div class="tabelle-container-wohnung">
               <div class="tabelle-info-wohnung">
@@ -369,7 +395,7 @@ c21 15 50 44 64 65 21 31 25 48 25 113 0 65 -4 82 -25 113 -14 21 -43 50 -64
               </div>
               <div class="tabelle-resultate">2,75 m</div>
             </div>
-            <div class="tabelle-container-wohnung">
+            <div class="tabelle-container-wohnung" style="margin-bottom: 15px">
               <div class="tabelle-info-wohnung">
                 <svg
                   viewBox="0 0 512.000000 512.000000"
@@ -398,6 +424,7 @@ c21 15 50 44 64 65 21 31 25 48 25 113 0 65 -4 82 -25 113 -14 21 -43 50 -64
               </div>
               <div class="tabelle-resultate">2 Zimmer</div>
             </div>
+            <div class="trenner"></div>
             <div class="tabelle-container-wohnung">
               <div class="tabelle-info-wohnung">
                 <svg
@@ -831,7 +858,7 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
               </div>
               <div class="tabelle-resultate">befindet sich in Erstellung</div>
             </div>
-            <div class="tabelle-container-wohnung">
+            <div class="tabelle-container-wohnung" style="margin-bottom: 15px">
               <div class="tabelle-info-wohnung-kurz">
                 <svg
                   viewBox="0 0 512.000000 512.000000"
@@ -872,9 +899,20 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
                   /></svg
                 ><span class="download-text">Verfügbarkeit:</span>
               </div>
-              <div class="tabelle-resultate">ab sofort</div>
+              <div class="tabelle-resultate">
+                <svg
+                  viewBox="0 0 512.000000 512.000000"
+                  class="icon-gruen"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M0 0 C0.92203217 0.00054382 1.84406433 0.00108765 2.79403687 0.00164795 C25.63723845 0.06340703 46.94861889 3.18205148 68.6875 10.375 C69.48704102 10.63651855 70.28658203 10.89803711 71.11035156 11.16748047 C109.83090729 24.04541682 145.71125389 49.00308034 170.6875 81.375 C171.32921143 82.20209473 171.32921143 82.20209473 171.98388672 83.04589844 C193.77468544 111.31037701 209.13065359 145.01387686 214.6875 180.375 C214.94805176 181.94145264 214.94805176 181.94145264 215.21386719 183.53955078 C216.84591802 194.29043109 217.08551289 204.89363791 217.0625 215.75 C217.06228851 216.67297882 217.06207703 217.59595764 217.06185913 218.54690552 C217.0277252 233.50872858 216.05660113 247.74695531 212.6875 262.375 C212.50558105 263.20322266 212.32366211 264.03144531 212.13623047 264.88476562 C201.59675673 312.01570986 174.71900096 355.51133817 136.6875 385.375 C135.6444364 386.20951688 134.60147017 387.04415546 133.55859375 387.87890625 C126.28272856 393.6505997 118.78967525 398.80954994 110.6875 403.375 C109.89118164 403.82633301 109.09486328 404.27766602 108.27441406 404.74267578 C87.38810255 416.44441519 65.29985891 425.08568805 41.6875 429.375 C41.00620026 429.49888092 40.32490051 429.62276184 39.62295532 429.75039673 C26.69964326 432.04209798 14.11309514 432.90485105 1 432.8125 C0.08950897 432.80979095 -0.82098206 432.80708191 -1.75906372 432.80429077 C-16.61084108 432.73757003 -30.79433135 431.71879471 -45.3125 428.375 C-46.14072266 428.19308105 -46.96894531 428.01116211 -47.82226562 427.82373047 C-94.98189603 417.2778419 -138.40896864 390.39667217 -168.3125 352.375 C-169.10398438 351.40046875 -169.89546875 350.4259375 -170.7109375 349.421875 C-192.79107257 321.69981268 -207.81142496 287.3846333 -213.3125 252.375 C-213.48620117 251.32997314 -213.65990234 250.28494629 -213.83886719 249.20825195 C-215.46694736 238.47844906 -215.71160423 227.89759652 -215.6875 217.0625 C-215.68695618 216.14046783 -215.68641235 215.21843567 -215.68585205 214.26846313 C-215.62417254 191.45469366 -212.57718541 170.06844895 -205.3125 148.375 C-205.0345459 147.53727051 -204.7565918 146.69954102 -204.47021484 145.83642578 C-197.09051019 124.06400521 -186.41602263 103.5402553 -172.3125 85.375 C-171.53261719 84.36566406 -170.75273437 83.35632813 -169.94921875 82.31640625 C-164.40390452 75.37245148 -158.39918503 68.8432662 -152.3125 62.375 C-151.69632813 61.71628906 -151.08015625 61.05757812 -150.4453125 60.37890625 C-120.79169141 29.66116001 -77.1104556 8.94272633 -35.3125 2.375 C-34.26747314 2.20129883 -33.22244629 2.02759766 -32.14575195 1.84863281 C-21.41594906 0.22055264 -10.83509652 -0.02410423 0 0 Z M93.26171875 109.69140625 C86.22956793 117.02234345 79.49828977 124.49263592 73.125 132.40234375 C70.25030145 135.90818605 67.29024222 139.33167347 64.3125 142.75 C58.82743494 149.04922954 53.40754738 155.39895983 48.02587891 161.78662109 C45.76982573 164.46408953 43.51043394 167.13872957 41.25 169.8125 C40.80011719 170.34488281 40.35023438 170.87726563 39.88671875 171.42578125 C36.46600105 175.46844762 33.01644463 179.48571961 29.5625 183.5 C26.06934894 187.56128745 22.62301604 191.65018587 19.25 195.8125 C15.15002248 200.86147774 10.90620531 205.77336947 6.6340332 210.67626953 C3.02996918 214.81518444 -0.53078094 218.98677137 -4.0625 223.1875 C-7.44610486 227.19565733 -10.84842146 231.18600747 -14.3125 235.125 C-15.01375 235.92421875 -15.715 236.7234375 -16.4375 237.546875 C-19.14308844 240.18482373 -21.27019772 240.36998109 -25 240.8125 C-30.46122202 240.69377778 -33.34163942 237.85117425 -37.3125 234.375 C-38.85745385 233.07483105 -40.40246479 231.77472927 -41.94848633 230.47583008 C-43.64431997 229.04621293 -45.33245035 227.60789922 -47.01953125 226.16796875 C-49.9199331 223.69862807 -52.85696618 221.27825889 -55.8125 218.875 C-59.8523361 215.58676132 -63.84328881 212.24763519 -67.8125 208.875 C-72.72883856 204.70020374 -77.67791511 200.57081885 -82.6875 196.5078125 C-84.44774081 195.07761684 -86.19770924 193.63469109 -87.9375 192.1796875 C-99.09577173 182.96050567 -108.96456421 180.05262621 -123.3125 181.375 C-127.00077807 182.21762228 -130.03966551 183.4938573 -133.3125 185.375 C-134.01761719 185.77589844 -134.72273438 186.17679687 -135.44921875 186.58984375 C-142.42908314 191.17661178 -146.47852551 198.14888487 -149.75 205.6875 C-151.44324331 216.78765059 -151.26752261 227.42019247 -144.5703125 236.8203125 C-135.77365186 247.14394064 -124.55638047 255.62550633 -114.0546875 264.1328125 C-110.94249852 266.67753683 -107.87523503 269.27118225 -104.8125 271.875 C-100.84350848 275.24788602 -96.8523282 278.58676774 -92.8125 281.875 C-88.2079642 285.62287798 -83.67230809 289.44483444 -79.1484375 293.2890625 C-74.84879598 296.93662568 -70.49211116 300.5094031 -66.1171875 304.06640625 C-63.57957401 306.1551661 -61.07437497 308.27509337 -58.57739258 310.41186523 C-39.53153428 327.28556562 -39.53153428 327.28556562 -15.1484375 331.74609375 C0.56542289 330.22591377 10.31906208 317.30188304 19.79296875 305.82421875 C21.25497736 304.02666718 22.71451249 302.22710169 24.171875 300.42578125 C27.66262878 296.19242923 31.27388801 292.06837015 34.88085938 287.93408203 C38.13422198 284.19538486 41.31977506 280.41605163 44.4375 276.5625 C47.96941087 272.19917215 51.67456936 268.0366152 55.453125 263.88671875 C58.47440037 260.49042494 61.31325933 256.9590702 64.171875 253.42578125 C67.11674949 249.85443501 70.14466976 246.36285513 73.1875 242.875 C76.92165168 238.59293708 80.61209104 234.29168165 84.1875 229.875 C89.31876127 223.54300484 94.68606275 217.42210553 100.03662109 211.27587891 C106.93798709 203.3294081 113.75896595 195.31319838 120.54345703 187.2668457 C122.89811051 184.47728579 125.26556984 181.70018267 127.65625 178.94140625 C130.69078366 175.43945652 133.69626747 171.91397771 136.6875 168.375 C137.19410156 167.78009766 137.70070313 167.18519531 138.22265625 166.57226562 C147.18706966 155.96857969 152.57907293 147.24411529 152.05859375 132.796875 C150.9257073 122.35046942 146.38230817 115.39793859 138.6875 108.375 C125.11758635 97.88356041 105.97318394 97.55308281 93.26171875 109.69140625 Z "
+                    transform="translate(255.3125,39.625)"
+                  /></svg
+                >ab sofort
+              </div>
             </div>
-
+            <div class="trenner"></div>
             <div class="tabelle-container-wohnung">
               <div class="tabelle-info-wohnung-kurz">
                 <svg
@@ -896,7 +934,9 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
                   /></svg
                 ><span class="download-text">Kaltmiete:</span>
               </div>
-              <div class="tabelle-resultate">825,00 €</div>
+              <div class="tabelle-resultate" style="font-weight: 500">
+                825,00 €
+              </div>
             </div>
             <div class="tabelle-container-wohnung">
               <div class="tabelle-info-wohnung-kurz">
@@ -979,7 +1019,7 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
               </div>
               <div class="tabelle-resultate">80,00 €</div>
             </div>
-            <div class="tabelle-container-wohnung">
+            <div class="tabelle-container-wohnung" style="margin-bottom: 15px">
               <div class="tabelle-info-wohnung-kurz">
                 <svg
                   viewBox="0 0 512.000000 512.000000"
@@ -1004,8 +1044,11 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
                   /></svg
                 ><span class="download-text">Warmmiete:</span>
               </div>
-              <div class="tabelle-resultate">965,00 €</div>
+              <div class="tabelle-resultate" style="font-weight: 500">
+                965,00 €
+              </div>
             </div>
+            <div class="trenner"></div>
             <div class="tabelle-container-wohnung">
               <div class="tabelle-info-wohnung-kurz">
                 <svg
@@ -1019,16 +1062,114 @@ l150 -71 95 0 95 0 140 67 c77 37 167 75 200 84 64 18 211 24 281 12 l41 -8 6
                   /></svg
                 ><span class="download-text">Kaution:</span>
               </div>
-              <div class="tabelle-resultate">2.475,00 €</div>
+              <div class="tabelle-resultate" style="font-weight: 500">
+                2.475,00 €
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container" style="margin-top: 45px">
+    </section>
+
+    <section class="slider-wohnung-section">
+      <div class="slider-custom-container">
+        <h3 class="blue-text">Raum für neue Möglichkeiten</h3>
+        <h2>Ein erster Eindruck, der bleibt</h2>
+        <div class="swiper swiper-slider fadein">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/wohnzimmer2.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/kueche.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/kueche2.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/kueche3.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/schlafzimmer.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/schlafzimmer2.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/flur.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/flur2.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/bad.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/bad2.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/bad3.webp"
+              alt="Swiper"
+            />
+            <img
+              class="swiper-slide"
+              src="/images/wohnungen/mitte/wohnzimmer.webp"
+              alt="Swiper"
+            />
+          </div>
+          <span class="swiper-pagination"></span>
+        </div>
+        <button id="toggleButton4" class="einblenden" style="margin-top: 30px">
+          Grundriss anzeigen
+        </button>
+        <div class="hidden-items4" style="display: none">
+          <img
+            src="/images/wohnungen/mitte/grundriss_gross.webp"
+            alt="Grundriss"
+            style="width: 100%; height: auto; display: block; margin-top: 35px"
+            class="fadein"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="about wohnungdetails">
+      <div class="container">
         <div class="about-content2">
-          <div class="text-plagwitz">
-            <h2>Text</h2>
-            <p>Text.</p>
+          <div class="text">
+            <h3 class="blue-text">Ihr neues Zuhause wartet</h3>
+            <h2>Haben wir Ihr Interesse geweckt?</h2>
+            <p>
+              Wenn Sie sich vorstellen können, dass diese Wohnung Ihr neues
+              Zuhause wird, zögern Sie nicht, mit uns in Kontakt zu treten. Über
+              unser Kontaktformular können Sie uns ganz unkompliziert eine
+              Nachricht senden – sei es für eine unverbindliche Anfrage,
+              weiterführende Informationen oder zur Vereinbarung eines
+              Besichtigungstermins. Wir nehmen uns gerne Zeit für Ihr Anliegen
+              und melden uns schnellstmöglich bei Ihnen zurück. Wir freuen uns
+              darauf, von Ihnen zu hören!
+            </p>
           </div>
         </div>
       </div>
