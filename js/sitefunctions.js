@@ -60,10 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenItems.style.display === ""
       ) {
         hiddenItems.style.display = "block";
-        toggleButton.textContent = "Weniger anzeigen";
+        toggleButton.textContent = " Weniger anzeigen";
       } else {
         hiddenItems.style.display = "none";
-        toggleButton.textContent = "Weitere anzeigen";
+        toggleButton.textContent = " Weitere anzeigen";
       }
     });
   });
@@ -79,10 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenItems.style.display === ""
       ) {
         hiddenItems.style.display = "block";
-        toggleButton.textContent = "Weniger anzeigen";
+        toggleButton.textContent = " Weniger anzeigen";
       } else {
         hiddenItems.style.display = "none";
-        toggleButton.textContent = "Weitere anzeigen";
+        toggleButton.textContent = " Weitere anzeigen";
       }
     });
   });
@@ -98,10 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenItems.style.display === ""
       ) {
         hiddenItems.style.display = "block";
-        toggleButton.textContent = "Weniger anzeigen";
+        toggleButton.textContent = " Weniger anzeigen";
       } else {
         hiddenItems.style.display = "none";
-        toggleButton.textContent = "Weitere anzeigen";
+        toggleButton.textContent = " Weitere anzeigen";
       }
     });
   });
@@ -118,10 +118,12 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenItems.style.display === ""
       ) {
         hiddenItems.style.display = "block";
-        toggleButton.textContent = "Grundriss ausblenden";
+        toggleButton.textContent = " Grundriss ausblenden";
       } else {
         hiddenItems.style.display = "none";
-        toggleButton.textContent = "Grundriss anzeigen";
+        toggleButton.textContent = " Grundriss anzeigen";
       }
     });
   });
+
+

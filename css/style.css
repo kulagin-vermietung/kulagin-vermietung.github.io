@@ -1747,3 +1747,36 @@ h4 a {
   opacity: 1;
   transform: translateY(0);
 }
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.action-buttons button,
+.action-buttons a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-share {
+  color: var(--blau-farbe);
+  opacity: 0.45;
+  transition: transform 0.1s;
+}
+
+.icon-share:hover {
+  transform: scale(1.04);
+  opacity: 0.85;
+}
+
+.icon-share:active {
+  transform: scale(0.96);
+}
