@@ -1431,8 +1431,7 @@ h4 a {
 }
 .team-container .sergej {
   background-image: url("/images/team/sergej.webp");
-  background-size: 120%;
-  background-position: 45% 30%;
+  background-position: center;
 }
 .team-container .max {
   background-image: url("/images/team/max.webp");
