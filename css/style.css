@@ -87,6 +87,7 @@ body {
 .nav-bar.scrolled {
   background: var(--blau-farbe);
   transition: background 0.15s ease-in-out;
+  border-radius: 0px 0px 6px 6px;
 }
 .logo {
   pointer-events: none !important;
@@ -1789,4 +1790,29 @@ h4 a {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.blauerbg {
+  background-color: var(--blau-farbe);
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  margin-left: -13px;
+  border-radius: var(--radius);
+}
+
+.weissicon {
+  opacity: 1;
+  color: white;
+}
+
+.weiss {
+  opacity: 1;
+  background-color: white;
+}
+
+.tabelle-resultate a {
+  color: var(--text-farbe);
+  text-decoration: none;
 }
