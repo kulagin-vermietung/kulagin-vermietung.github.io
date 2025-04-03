@@ -1816,10 +1816,3 @@ h4 a {
   color: var(--text-farbe);
   text-decoration: none;
 }
-
-#visits {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-top: 20px;
-}
