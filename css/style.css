@@ -1949,3 +1949,69 @@ h4 a {
   margin-right: 8px;
   margin-left: -4px;
 }
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 18px 0;
+  margin-bottom: 56px;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(300px * 17);
+  animation: scroll 20s linear infinite;
+}
+
+.logo-icon {
+  height: 35px;
+  width: auto;
+  margin: 0px 20px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  color: var(--blau-farbe);
+  transition: background 0.3s, transform 0.1s;
+}
+
+.logo-icon-small {
+  height: 35px;
+  width: auto;
+  margin: 0 20px;
+  transform: scale(0.8);
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  color: var(--blau-farbe);
+  transition: background 0.3s, transform 0.1s;
+}
+
+.logo-icon-big {
+  height: 30px;
+  width: auto;
+  margin: 0 20px;
+  transform: scale(1.15);
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  color: var(--blau-farbe);
+  transition: background 0.3s, transform 0.1s;
+}
+
+.logo-icon:hover {
+  transform: scale(1.06);
+}
+
+.logo-icon-small:hover {
+  transform: scale(0.85);
+}
+
+.logo-icon-big:hover {
+  transform: scale(1.25);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
