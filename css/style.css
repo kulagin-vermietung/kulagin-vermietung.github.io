@@ -1952,59 +1952,70 @@ h4 a {
 
 .logo-slider {
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
   padding: 18px 0;
-  margin-bottom: 56px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 
 .logo-track {
   display: flex;
-  width: calc(300px * 17);
-  animation: scroll 20s linear infinite;
+  will-change: transform;
+  animation: scroll 10s linear infinite;
 }
 
 .logo-icon {
-  height: 35px;
+  height: 25px;
+  flex: 0 0 auto;
   width: auto;
-  margin: 0px 20px;
-  object-fit: contain;
+  margin-left: 10px;
   transition: all 0.3s ease-in-out;
   color: var(--blau-farbe);
   transition: background 0.3s, transform 0.1s;
 }
 
 .logo-icon-small {
-  height: 35px;
+  height: 25px;
+  flex: 0 0 auto;
   width: auto;
-  margin: 0 20px;
-  transform: scale(0.8);
-  object-fit: contain;
+  transform: scale(0.9);
   transition: all 0.3s ease-in-out;
   color: var(--blau-farbe);
   transition: background 0.3s, transform 0.1s;
 }
 
 .logo-icon-big {
-  height: 30px;
+  height: 25px;
+  flex: 0 0 auto;
   width: auto;
-  margin: 0 20px;
-  transform: scale(1.15);
-  object-fit: contain;
+  transform: scale(1.11);
   transition: all 0.3s ease-in-out;
   color: var(--blau-farbe);
   transition: background 0.3s, transform 0.1s;
 }
 
 .logo-icon:hover {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 .logo-icon-small:hover {
-  transform: scale(0.85);
+  transform: scale(1);
 }
 
 .logo-icon-big:hover {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 @keyframes scroll {
