@@ -219,6 +219,15 @@ nav .btn:active {
   justify-content: left;
   text-align: left;
 }
+.header-impressum {
+  height: 300px;
+  background: url("/images/header/impressum.webp") center center / cover
+    no-repeat;
+  background-color: #ccc1b4;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
 .header-wohnung2,
 .header-wohnung3 {
   position: relative;
@@ -274,7 +283,8 @@ nav .btn:active {
 }
 .overlay,
 .overlay-downloads,
-.overlay-ueberuns {
+.overlay-ueberuns,
+.overlay-impressum {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.38);
@@ -295,7 +305,8 @@ nav .btn:active {
 .overlay-plagwitz .header-content,
 .overlay-ueberuns .header-content,
 .overlay-wohnung2 .header-content,
-.overlay-wohnung3 .header-content {
+.overlay-wohnung3 .header-content,
+.overlay-impressum .header-content {
   max-width: 1000px;
   width: 100%;
   margin: 65px auto 0;
@@ -375,7 +386,7 @@ nav .btn:active {
   align-items: stretch;
   height: 100%;
 }
-.about-content3 .text-plagwitz {
+.about-content3 .text-plagwitz .text-impressum {
   height: 100%;
   align-items: flex-end;
 }
@@ -404,7 +415,7 @@ nav .btn:active {
 .about-content .text {
   width: 65%;
 }
-.about-content .text-plagwitz {
+.about-content .text-plagwitz .text-impressum {
   width: 100%;
 }
 .about-content .image {
@@ -2079,6 +2090,20 @@ h4 a {
   transform: scale(1.04);
 }
 
-.hoveringicon:hover {
-  opacity: 1;
+.text-impressum li {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 40px;
+  text-align: justify;
+  hyphens: auto;
+  color: var(--text-farbe);
+}
+::marker {
+  color: var(--blau-farbe);
+}
+
+.text-impressum a {
+  text-decoration: none;
+  color: var(--blau-farbe);
+  transition: color 0.3s;
 }
