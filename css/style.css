@@ -387,7 +387,10 @@ nav .btn:active {
   background: url("/images/plagwitz/giesserei.webp") 45% center/cover no-repeat;
   display: flex;
   border-radius: var(--radius);
+  transition: all 0.3s ease-in-out;
+  transition: background 0.3s, transform 0.1s;
 }
+
 .bild-mitte {
   flex: 1;
   width: 100%;
@@ -613,6 +616,7 @@ nav .btn:active {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
+
 .icon-kleiner {
   width: 19px;
   height: 19px;
@@ -895,6 +899,15 @@ nav .btn:active {
   user-select: none !important;
   -webkit-user-drag: none !important;
 }
+
+.ausstattung-item img {
+  transition: all 0.3s ease-in-out;
+  transition: background 0.3s, transform 0.1s;
+}
+.ausstattung-item img:hover {
+  transform: scale(1.08);
+}
+
 .price-icon {
   width: 18px;
   height: 18px;
@@ -1342,6 +1355,7 @@ h4 a:hover {
   -webkit-user-drag: none !important;
   color: var(--blau-farbe);
 }
+
 .download-table td,
 .download-table th {
   border-bottom: 1px solid var(--blau-farbe);
@@ -1997,7 +2011,7 @@ h4 a {
   -webkit-animation: scroll-right 50s linear infinite;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  will-change: transform;
+  will-change: transform, opacity;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation-timing-function: linear;
@@ -2047,4 +2061,24 @@ h4 a {
   100% {
     transform: translateX(0);
   }
+}
+
+.hovering {
+  transition: all 0.3s ease-in-out;
+  transition: background 0.3s, transform 0.1s;
+}
+.hovering:hover {
+  transform: scale(1.025);
+}
+
+.hoveringbild {
+  transition: all 0.3s ease-in-out;
+  transition: background 0.3s, transform 0.1s;
+}
+.hoveringbild:hover {
+  transform: scale(1.04);
+}
+
+.hoveringicon:hover {
+  opacity: 1;
 }
