@@ -98,6 +98,7 @@ body {
   margin-top: 5px;
   color: #fff;
 }
+
 .header-content,
 .read-more,
 nav .btn,
@@ -896,6 +897,7 @@ nav .btn:active {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
+
 .zimmer-icon {
   width: 19.5px;
   height: 19.5px;
