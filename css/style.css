@@ -817,7 +817,7 @@ nav .btn:active {
 .ausstattung .btn,
 .download-btn {
   display: inline-flex;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: var(--radius);
   text-decoration: none;
 }
