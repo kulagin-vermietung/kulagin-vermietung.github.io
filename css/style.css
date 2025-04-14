@@ -2187,11 +2187,35 @@ h4 a {
   min-height: 40px;
 }
 
-.error-img {
-  width: auto;
-  height: 300px;
-  display: block;
-  color: var(--blau-farbe);
-  margin-bottom: 25px;
-  opacity: 0.7;
+.plagwitzbar {
+  background-color: var(--blau-farbe);
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-bottom: 35px;
+}
+
+.plagwitzitem {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-right: 1px solid white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.plagwitzitem:last-child {
+  border-right: none;
+}
+
+.plagwitzicon {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  margin-right: 8px;
 }
