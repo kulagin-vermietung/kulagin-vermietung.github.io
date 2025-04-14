@@ -2101,6 +2101,11 @@ h4 a {
   hyphens: auto;
   color: var(--text-farbe);
 }
+
+.impressumue {
+  color: var(--blau-farbe);
+  font-weight: 400;
+}
 ::marker {
   color: var(--blau-farbe);
 }
