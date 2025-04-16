@@ -127,3 +127,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton5");
+    const hiddenItems = document.querySelector(".hidden-items5");
+  
+    toggleButton.addEventListener("click", function () {
+      if (
+        hiddenItems.style.display === "none" ||
+        hiddenItems.style.display === ""
+      ) {
+        hiddenItems.style.display = "block";
+        toggleButton.textContent = " Weniger anzeigen";
+      } else {
+        hiddenItems.style.display = "none";
+        toggleButton.textContent = " Weitere anzeigen";
+      }
+    });
+  });
+
+
