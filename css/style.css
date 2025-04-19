@@ -428,6 +428,16 @@ nav .btn:active {
   display: flex;
   border-radius: var(--radius);
 }
+.bild-links {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  background: url("/images/wohnungen/links/tuer.webp") center 70% / cover
+    no-repeat;
+  display: flex;
+  border-radius: var(--radius);
+}
 .about-content .text {
   width: 65%;
 }
