@@ -30,6 +30,14 @@ body {
   font-weight: 700;
   src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: "Mynerve";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/mynerve-regular.ttf") format("truetype");
+}
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -2244,4 +2252,63 @@ h4 a {
 
 .plagwitzlink:hover:after {
   width: 100%;
+}
+.quote-carousel {
+  width: 1000px;
+  margin: 30px 0px 10px 0px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  background: #0075d2;
+  border-radius: 6px;
+}
+
+.quote-carousel .quote {
+  display: none;
+  font-size: 22px;
+
+  color: white;
+  font-family: "Mynerve", sans-serif;
+}
+
+.quote-carousel .quote.active {
+  display: block;
+}
+
+.quote-carousel .quote span {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.quote-dots {
+  text-align: center;
+  margin-bottom: -90px;
+  cursor: pointer;
+}
+
+.quote-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: rgba(0, 117, 210, 0.075);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.quote-dots .dot.active {
+  background-color: #0075d2;
+}
+
+.blue-text-quote {
+  color: var(--blau-farbe);
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  font-weight: 300;
+  text-align: center;
 }

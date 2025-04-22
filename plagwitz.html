@@ -6,6 +6,7 @@
     <title>Kulagin Vermietung - Plagwitz</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/sitefunctions.js"></script>
+
     <link rel="preload" as="image" href="/images/header/plagwitz.webp" />
   </head>
   <body>
@@ -2501,6 +2502,49 @@ l-223 0 53 -57 c73 -81 94 -130 93 -223 0 -61 -5 -85 -26 -125 -55 -105 -146
       </div>
     </section>
 
+    <section class="about">
+      <div class="container">
+        <div class="about-content2">
+          <div class="text-plagwitz">
+            <h3 class="blue-text-quote">
+              Plagwitz entdecken heißt, Leipzig fühlen – bunt, kreativ und
+              voller Leben. Wir freuen uns, Sie vielleicht bald als Nachbar:in
+              willkommen zu heißen!
+            </h3>
+
+            <div class="quote-carousel">
+              <div class="quote active">
+                „Plagwitz ist kein Stadtteil. Plagwitz ist ein Zustand.“<br /><span
+                  >Graffiti an der Karl-Heine-Straße</span
+                >
+              </div>
+              <div class="quote">
+                „Hier ist die Luft dicker von Ideen als von Abgasen.“<br /><span
+                  >Bloggerin @urbanspreeleipzig</span
+                >
+              </div>
+              <div class="quote">
+                „Wenn Berlin-Kreuzberg eine kleine Schwester hätte, würde sie
+                Plagwitz heißen.“<br /><span>LVZ</span>
+              </div>
+              <div class="quote">
+                „Plagwitz ist das Versprechen, dass Stadt auch schön, wild und
+                menschlich zugleich sein kann.“<br /><span
+                  >Stadtführer André Herrmann</span
+                >
+              </div>
+            </div>
+            <div class="quote-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
       class="action-buttons"
       style="margin-top: -90px, background: white"
@@ -2787,6 +2831,31 @@ l-223 0 53 -57 c73 -81 94 -130 93 -223 0 -61 -5 -85 -26 -125 -55 -105 -146
             alert("Teilen wird von diesem Browser nicht unterstützt.");
           }
         });
+    </script>
+
+    <script>
+      let currentQuote = 0;
+      const quotes = document.querySelectorAll(".quote-carousel .quote");
+      const dots = document.querySelectorAll(".quote-dots .dot");
+
+      function showQuote(index) {
+        quotes[currentQuote].classList.remove("active");
+        dots[currentQuote].classList.remove("active");
+        currentQuote = index;
+        quotes[currentQuote].classList.add("active");
+        dots[currentQuote].classList.add("active");
+      }
+
+      setInterval(() => {
+        let next = (currentQuote + 1) % quotes.length;
+        showQuote(next);
+      }, 4000);
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          showQuote(index);
+        });
+      });
     </script>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
