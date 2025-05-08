@@ -426,6 +426,19 @@ nav .btn:active {
   transition: background 0.3s, transform 0.1s;
 }
 
+.bild-giesser {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  background: url("/images/plagwitz/giesserstrasse.webp") 15% center/cover
+    no-repeat;
+  display: flex;
+  border-radius: var(--radius);
+  transition: all 0.3s ease-in-out;
+  transition: background 0.3s, transform 0.1s;
+}
+
 .bild-mitte {
   flex: 1;
   width: 100%;
@@ -2317,5 +2330,4 @@ h4 a {
   margin-bottom: 15px;
   margin-top: -10px;
   font-weight: 300;
-  text-align: center;
 }
