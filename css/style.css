@@ -1403,7 +1403,8 @@ h4 a:hover {
   margin-bottom: 40px;
 }
 .downloads-icon,
-.downloads-iconalt {
+.downloads-iconalt,
+.downloads-iconalt2 {
   object-fit: contain;
   opacity: 0.4;
   margin-right: 9px;
@@ -1463,8 +1464,14 @@ h4 a {
   -ms-user-select: none !important;
 }
 .downloads-iconalt {
-  width: 42px;
-  height: 42px;
+  width: 43px;
+  height: 43px;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+.downloads-iconalt2 {
+  width: 48px;
+  height: 48px;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
