@@ -317,6 +317,10 @@ nav .btn:active {
 .overlay-ueberuns,
 .overlay-impressum,
 .overlay-datenschutz,
+.overlay-plagwitz,
+.overlay-ausstattung,
+.overlay-wohnung2,
+.overlay-wohnung3,
 .overlay-404 {
   width: 100%;
   height: 100%;
@@ -342,12 +346,16 @@ nav .btn:active {
 .overlay-impressum .header-content,
 .overlay-datenschutz .header-content,
 .overlay-404 .header-content {
-  max-width: 1000px;
   width: 100%;
   margin: 65px auto 0;
   text-align: left;
 }
-.about .container,
+.about .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .header-text {
   max-width: 1000px;
   margin: 0 auto;
@@ -365,7 +373,7 @@ nav .btn:active {
 }
 .header-content {
   text-align: left;
-  max-width: 1000px;
+  max-width: 90%;
 }
 .header-text h1 {
   font-size: 60px;
@@ -1022,7 +1030,7 @@ nav .btn:active {
 .ausstattung p,
 .ausstattung-item p {
   color: var(--text-farbe);
-  text-align: justify;
+
   line-height: 1.6;
   hyphens: auto;
 }
@@ -1087,7 +1095,7 @@ nav .btn:active {
 .contact .container,
 .footer .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 90%;
 }
 .image-slider {
   width: 100%;
@@ -1251,7 +1259,7 @@ nav .btn:active {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 4px 0;
-  text-align: justify;
+
   hyphens: auto;
 }
 .contact-address a {
@@ -1682,9 +1690,9 @@ h4 a {
   margin: 0 auto;
 }
 .slider-custom-container {
-  max-width: 1000px;
   height: auto;
   margin-inline: auto;
+  max-width: 90%;
 }
 .swiper,
 swiper-container {
