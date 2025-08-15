@@ -95,7 +95,6 @@ body {
 .nav-bar.scrolled {
   background: var(--blau-farbe);
   transition: background 0.15s ease-in-out;
-  border-radius: 0px 0px 6px 6px;
 }
 .logo {
   pointer-events: none !important;
