@@ -2513,11 +2513,7 @@ body.menu-open .hamburger span:nth-child(3) {
   text-decoration: none;
 }
 
-.slider-custom-container,
-.slider-container,
-.image-slider,
-.swiper {
+/* === Prevent unintended horizontal scrolling (iOS fix) === */
+html {
   overflow-x: hidden;
-  overscroll-behavior-x: contain;
-  touch-action: pan-y;
 }
