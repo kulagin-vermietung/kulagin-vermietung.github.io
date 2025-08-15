@@ -1692,7 +1692,7 @@ h4 a {
 .slider-custom-container {
   height: auto;
   margin-inline: auto;
-  max-width: 90%;
+  max-width: 1000px;
 }
 .swiper,
 swiper-container {
