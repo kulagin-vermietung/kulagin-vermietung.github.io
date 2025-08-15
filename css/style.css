@@ -2430,7 +2430,7 @@ body.menu-open .hamburger span:nth-child(3) {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 78vw;
+    width: 50vw;
     max-width: 360px;
     background: var(--blau-farbe);
     box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
