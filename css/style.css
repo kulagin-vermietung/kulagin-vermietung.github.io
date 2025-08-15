@@ -2371,3 +2371,109 @@ h4 a {
     0% 100%
   );
 }
+
+/* === Hamburger Menu (mobile) === */
+.hamburger {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.hamburger span {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+.hamburger span:nth-child(1) {
+  top: 14px;
+}
+.hamburger span:nth-child(2) {
+  top: 21px;
+}
+.hamburger span:nth-child(3) {
+  top: 28px;
+}
+
+body.menu-open .hamburger span:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+body.menu-open .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+body.menu-open .hamburger span:nth-child(3) {
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  #primary-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 78vw;
+    max-width: 360px;
+    background: var(--blau-farbe);
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in-out;
+    z-index: 1001;
+    padding: 90px 24px 24px;
+  }
+  body.menu-open #primary-nav {
+    transform: translateX(0);
+  }
+
+  #primary-nav ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+  #primary-nav a {
+    font-size: 18px;
+  }
+
+  #primary-nav .btn {
+    background: #fff;
+    color: var(--blau-farbe);
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+
+  /* Icon vor dem Button in BLAU (überschreibt die weiße Data-URI) */
+  #primary-nav .btn::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(0,512) scale(0.1,-0.1)" fill="%230075d2"><path d="M1386 5109 c-62 -15 -153 -68 -197 -116 -22 -24 -55 -74 -72 -111 l-32 -67 -3 -210 -3 -211 -86 -29 c-230 -78 -591 -287 -695 -403 -68 -75 -140 -249 -180 -431 -30 -136 -30 -416 0 -581 112 -614 506 -1279 1108 -1872 594 -585 1248 -958 1860 -1059 46 -8 155 -13 259 -13 147 0 199 4 282 22 195 42 369 119 447 199 67 67 167 221 257 398 127 245 160 345 160 476 0 194 -51 302 -193 406 -46 34 -175 129 -288 212 -113 83 -230 164 -260 180 -155 83 -335 57 -476 -69 -32 -29 -135 -125 -227 -213 l-169 -161 -36 20 c-71 37 -279 181 -376 259 -142 114 -298 258 -414 382 l-102 108 1383 5 1382 5 58 24 c118 47 210 152 242 276 22 88 23 2191 0 2278 -32 125 -107 215 -223 270 l-67 32 -1650 2 c-974 0 -1666 -3 -1689 -8z m839 -1268 c385 -316 716 -584 735 -595 44 -26 141 -28 185 -4 17 9 351 280 743 602 393 322 716 586 718 586 2 0 4 -400 4 -890 l0 -890 -1492 0 -1493 0 -38 66 c-38 64 -38 66 -20 87 10 11 101 109 204 218 202 215 239 270 260 382 15 81 2 173 -37 248 -28 57 -396 564 -454 627 -37 39 -40 48 -40 98 0 41 3 53 12 48 7 -4 327 -267 713 -583z m-1375 -211 c110 -154 257 -349 351 -466 l58 -71 -71 -78 c-80 -89 -98 -124 -98 -192 0 -127 211 -477 479 -798 159 -191 446 -469 657 -637 162 -129 373 -264 529 -340 84 -40 109 -48 158 -48 72 0 102 15 193 96 39 35 74 64 78 64 4 0 78 -56 166 -124 134 -104 265 -201 482 -356 l37 -26 -41 -64 c-35 -53 -50 -67 -102 -91 -94 -44 -208 -70 -336 -76 -258 -13 -538 60 -870 226 -939 468 -1800 1481 -1981 2333 -17 79 -22 139 -23 258 -1 172 12 249 65 376 28 66 36 76 96 118 37 25 67 45 68 43 1 -1 49 -67 105 -147z"/></g></svg>')
+      center center/contain no-repeat;
+  }
+
+  /* Optional: Hover im Panel dezent lassen */
+  #primary-nav .btn:hover {
+    background: var(--grau-farbe);
+    color: var(--blau-farbe);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+  body.menu-open .nav-backdrop {
+    display: block;
+  }
+}

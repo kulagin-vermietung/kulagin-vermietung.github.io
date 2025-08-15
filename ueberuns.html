@@ -157,25 +157,29 @@
                 />
               </g></svg
           ></a>
-          <nav>
+          <button
+            class="hamburger"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Menü öffnen/schließen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <nav id="primary-nav">
             <ul>
-              <li>
-                <a href="/plagwitz.html" class="navlink">Plagwitz</a>
-              </li>
+              <li><a href="/plagwitz.html" class="navlink">Plagwitz</a></li>
               <li>
                 <a href="/ausstattung.html" class="navlink">Ausstattung</a>
               </li>
-              <li>
-                <a href="/downloads.html" class="navlink">Downloads</a>
-              </li>
-              <li>
-                <a href="/ueberuns.html" class="navlink">Über Uns</a>
-              </li>
+              <li><a href="/downloads.html" class="navlink">Downloads</a></li>
+              <li><a href="/ueberuns.html" class="navlink">Über Uns</a></li>
               <li><a href="/index.html#contact" class="btn">KONTAKT</a></li>
             </ul>
           </nav>
         </div>
       </div>
+      <div class="nav-backdrop" id="nav-backdrop" hidden></div>
       <div class="overlay-ueberuns" id="header-overlay">
         <div class="header-content">
           <div class="header-text">
