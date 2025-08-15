@@ -2512,3 +2512,35 @@ body.menu-open .hamburger span:nth-child(3) {
 .footer-links a {
   text-decoration: none;
 }
+
+/* === iOS horizontal overflow fix (ohne Slider zu bremsen) === */
+@media (max-width: 900px) {
+  /* Panel vollständig offscreen, solange geschlossen */
+  body:not(.menu-open) #primary-nav {
+    position: fixed;
+    top: 0;
+    right: -100vw; /* sicher aus dem Viewport schieben */
+    height: 100vh;
+    transform: none; /* Transform-Bugs vermeiden */
+    box-shadow: none; /* Shadow soll keinen Scrollbalken auslösen */
+  }
+
+  /* Offen: normal anzeigen (wir nutzen right statt translateX) */
+  body.menu-open #primary-nav {
+    right: 0;
+    transform: none;
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
+    transition: right 0.25s ease-in-out; /* gleitet rein/raus */
+  }
+}
+
+/* Falls der Header-Hintergrund „bleedet“ */
+.header {
+  overflow-x: hidden;
+}
+
+/* Maps-iframe auf iOS sicher innerhalb der Breite halten */
+.contact-map iframe {
+  display: block;
+  max-width: 100%;
+}
