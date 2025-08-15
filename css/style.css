@@ -2512,8 +2512,3 @@ body.menu-open .hamburger span:nth-child(3) {
 .footer-links a {
   text-decoration: none;
 }
-
-/* === Prevent unintended horizontal scrolling (iOS fix) === */
-body {
-  overflow-x: hidden;
-}
