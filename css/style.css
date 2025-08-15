@@ -2512,3 +2512,27 @@ body.menu-open .hamburger span:nth-child(3) {
 .footer-links a {
   text-decoration: none;
 }
+
+.slider-custom-container,
+.slider-container,
+.image-slider,
+.swiper {
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  touch-action: pan-y;
+}
+
+/* Safety: make sure common wrappers can't exceed viewport width */
+.header,
+.contact,
+.footer,
+.nav-bar,
+.container {
+  max-width: 100%;
+}
+
+/* === Prevent unintended horizontal scrolling (iOS fix) === */
+html,
+body {
+  overflow-x: hidden;
+}
