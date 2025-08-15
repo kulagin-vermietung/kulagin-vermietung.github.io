@@ -82,7 +82,7 @@ body {
 }
 .nav-bar .container {
   width: 1000px;
-  max-width: 90%;
+  max-width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -353,7 +353,7 @@ nav .btn:active {
 .about .container {
   max-width: 1000px;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 
 .header-text {
@@ -373,7 +373,7 @@ nav .btn:active {
 }
 .header-content {
   text-align: left;
-  max-width: 90%;
+  max-width: 95%;
 }
 .header-text h1 {
   font-size: 60px;
@@ -881,7 +881,7 @@ nav .btn:active {
 .ausstattung .container,
 .team-section .container {
   width: 1000px;
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   text-align: left;
 }
@@ -1095,7 +1095,7 @@ nav .btn:active {
 .contact .container,
 .footer .container {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 95%;
 }
 .image-slider {
   width: 100%;
@@ -1693,6 +1693,7 @@ h4 a {
   height: auto;
   margin-inline: auto;
   max-width: 1000px;
+  max-width: 95%;
 }
 .swiper,
 swiper-container {
