@@ -2514,6 +2514,6 @@ body.menu-open .hamburger span:nth-child(3) {
 }
 
 /* === Prevent unintended horizontal scrolling (iOS fix) === */
-html {
+body {
   overflow-x: hidden;
 }
