@@ -2794,3 +2794,8 @@ body.menu-open .hamburger span:nth-child(3) {
     display: none;
   }
 }
+
+.download-table td:nth-child(3) {
+  text-align: center; /* horizontal */
+  vertical-align: middle; /* vertikal in der Zelle */
+}
