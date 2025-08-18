@@ -2312,7 +2312,7 @@ h4 a {
   width: 100%;
 }
 .quote-carousel {
-  width: 95%; /* gleiche Breite wie andere Container */
+  width: 90%; /* gleiche Breite wie andere Container */
   max-width: 1000px;
   margin: 30px 0px 10px 0px;
   padding: 20px;
