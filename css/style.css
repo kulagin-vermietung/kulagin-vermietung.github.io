@@ -478,6 +478,7 @@ nav .btn:active {
   display: flex;
   border-radius: var(--radius);
 }
+
 .about-content .text {
   width: 60%;
 }
@@ -1030,7 +1031,7 @@ nav .btn:active {
 .ausstattung p,
 .ausstattung-item p {
   color: var(--text-farbe);
-
+  text-align: justify;
   line-height: 1.6;
   hyphens: auto;
 }
@@ -1091,6 +1092,24 @@ nav .btn:active {
   align-items: center;
   background-color: var(--blau-farbe);
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  /* Reihenfolge: erst Text/Tabelle, dann Bild */
+  .about-content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .text-plagwitz {
+    order: 1;
+  }
+  .bild-plagwitz-neu {
+    order: 2;
+    width: 100%;
+    min-height: 220px; /* auf Mobile sichtbar halten */
+    display: block;
+  }
 }
 .contact .container,
 .footer .container {
@@ -2661,5 +2680,24 @@ body.menu-open .hamburger span:nth-child(3) {
 @media (max-width: 600px) {
   html {
     font-size: 87%;
+  }
+}
+
+@media (max-width: 980px) {
+  /* Reihenfolge: erst Text/Tabelle, dann Bild */
+  .about-content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .text-plagwitz {
+    order: 1;
+  }
+  .bild-plagwitz-neu {
+    order: 2;
+    width: 100%;
+    min-height: 350px; /* auf Mobile sichtbar halten */
+    display: block;
+    background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
   }
 }
