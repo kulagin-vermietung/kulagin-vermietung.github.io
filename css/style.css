@@ -840,7 +840,7 @@ nav .btn:active {
 .karteplagwitz {
   height: 340px;
   width: 1000px;
-  max-width: 95%;
+  max-width: 90%;
   margin: -45px auto 90px;
   border-radius: var(--radius);
   overflow: hidden;
