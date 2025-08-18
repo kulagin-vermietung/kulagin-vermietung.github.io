@@ -1526,6 +1526,28 @@ h4 a {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
+
+.download-table th,
+.download-table td {
+  overflow: hidden; /* falls Text zu lang ist */
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* Standard (Desktop) – Beispielwerte */
+.download-table th:nth-child(1),
+.download-table td:nth-child(1) {
+  width: 10%;
+} /* Dokument (Icon) */
+.download-table th:nth-child(2),
+.download-table td:nth-child(2) {
+  width: 70%;
+} /* Beschreibung */
+.download-table th:nth-child(3),
+.download-table td:nth-child(3) {
+  width: 20%;
+} /* Download */
+
 .icon-aufgaben,
 .icon-ausbildung {
   margin-right: 10px;
@@ -2747,25 +2769,28 @@ body.menu-open .hamburger span:nth-child(3) {
   }
 }
 
-@media (max-width: 600px) {
-  .download-table {
+@media (max-width: 700px) {
+  .download-btn {
+    padding: 12px 8px 12px 21px; /* etwas schmaler ohne Text */
   }
-  @media (max-width: 600px) {
-    .download-btn {
-      padding: 12px 8px 12px 21px; /* etwas schmaler ohne Text */
-    }
 
-    .download-btn::after {
-      content: ""; /* sicherstellen, dass kein Rest-Text kommt */
-    }
+  .download-btn::after {
+    content: ""; /* sicherstellen, dass kein Rest-Text kommt */
+  }
 
-    .download-btn {
-      font-size: 0; /* Text unsichtbar machen */
-    }
+  .download-btn {
+    font-size: 0; /* Text unsichtbar machen */
+  }
 
-    .download-btn i {
-      font-size: 0px; /* Icon sichtbar halten */
-      margin: 0; /* zentrieren */
-    }
+  .download-btn i {
+    font-size: 0px; /* Icon sichtbar halten */
+    margin: 0; /* zentrieren */
+  }
+}
+
+@media (max-width: 500px) {
+  .download-table th:nth-child(1),
+  .download-table td:nth-child(1) {
+    display: none;
   }
 }
