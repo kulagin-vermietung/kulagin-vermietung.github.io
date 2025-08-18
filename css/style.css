@@ -2700,4 +2700,8 @@ body.menu-open .hamburger span:nth-child(3) {
     display: block;
     background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
   }
+
+  .tabelle-info {
+    min-width: 195px;
+  }
 }
