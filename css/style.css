@@ -1698,6 +1698,7 @@ h4 a {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
+
 .plagwitz-item h3 {
   font-size: 1.125rem;
   font-weight: 500;
@@ -2731,5 +2732,17 @@ body.menu-open .hamburger span:nth-child(3) {
   .plagwitz-item .text {
     flex: 1; /* Text füllt Rest */
     width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Giesser-Bild */
+  .about-content .bild-giesser {
+    order: 4;
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    background: url("/images/plagwitz/giesserstrasse.webp") 15% 35% / cover
+      no-repeat;
   }
 }
