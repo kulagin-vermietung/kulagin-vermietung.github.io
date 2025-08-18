@@ -2746,3 +2746,26 @@ body.menu-open .hamburger span:nth-child(3) {
       no-repeat;
   }
 }
+
+@media (max-width: 600px) {
+  .download-table {
+  }
+  @media (max-width: 600px) {
+    .download-btn {
+      padding: 12px 8px 12px 21px; /* etwas schmaler ohne Text */
+    }
+
+    .download-btn::after {
+      content: ""; /* sicherstellen, dass kein Rest-Text kommt */
+    }
+
+    .download-btn {
+      font-size: 0; /* Text unsichtbar machen */
+    }
+
+    .download-btn i {
+      font-size: 0px; /* Icon sichtbar halten */
+      margin: 0; /* zentrieren */
+    }
+  }
+}
