@@ -2723,7 +2723,7 @@ body.menu-open .hamburger span:nth-child(3) {
   }
 
   .plagwitz-item img {
-    flex: 0 0 15%; /* Bild fix 40% Breite, passt sich an Höhe an */
+    flex: 0 0 0%; /* Bild fix 40% Breite, passt sich an Höhe an */
     max-width: 200px; /* optional Begrenzung */
     height: auto;
   }
