@@ -463,8 +463,7 @@ nav .btn:active {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url("/images/wohnungen/mitte/tuer.webp") center 70% / cover
-    no-repeat;
+  background: url("/images/wohnungen/mitte/tuer.webp") 10% 70% / cover no-repeat;
   display: flex;
   border-radius: var(--radius);
 }
@@ -2731,6 +2730,15 @@ body.menu-open .hamburger span:nth-child(3) {
     background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
   }
 
+  .bild-mitte {
+    order: 3;
+    width: 100%;
+    min-height: 350px; /* auf Mobile sichtbar halten */
+    display: block;
+    background: url("/images/wohnungen/mitte/tuer.webp") 80% 80% / cover
+      no-repeat;
+  }
+
   .tabelle-info {
     min-width: 195px;
   }
@@ -2875,5 +2883,46 @@ body.menu-open .hamburger span:nth-child(3) {
     max-width: 100% !important;
     flex: initial !important; /* überschreibt evtl. flex-basis/min-width */
     box-sizing: border-box;
+  }
+}
+
+/* ===== Flicker-Fix: Einfliegende Bilder auf Mobile ===== */
+/* Verhindert Repaint-/Compositing-Flicker bei Background-Images und Slider-Bildern */
+.bild-plagwitz,
+.bild-giesser,
+.bild-mitte,
+.bild-links,
+.slider img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Keine Background-Transitions auf Bild-Containern → sonst Flackern beim Einblenden */
+.bild-plagwitz,
+.bild-giesser,
+.bild-mitte,
+.bild-links {
+  transition: transform 0.1s !important; /* überschreibt frühere 'transition: all/background' */
+}
+
+/* Auf sehr kleinen Screens Animationen der Bild-Container deaktivieren (bekannter iOS-Bug) */
+@media (max-width: 600px) {
+  .bild-plagwitz,
+  .bild-giesser,
+  .bild-mitte,
+  .bild-links,
+  .slider img {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Falls .fadein genutzt wird: auf Mobile ohne Animation anzeigen */
+  .fadein {
+    opacity: 1 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
   }
 }
