@@ -485,22 +485,19 @@ nav .btn:active {
 .about-content .text-plagwitz .text-impressum {
   width: 100%;
 }
-.about-content .image {
-  width: 35%;
-  height: 440px;
-  flex-grow: 1;
-  overflow: hidden;
-  position: relative;
+
+.about-content4 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 25px;
+  width: 100%;
 }
-.about-content .image::before {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 130%;
-  background: url("/images/plagwitz/plagwitz.webp") 10% 30%/90% no-repeat;
+
+.about-content4 .text {
+  width: 60%;
 }
+
 .apartment .btn::before,
 .ausstattung .btn::before,
 .read-more::before {
@@ -537,6 +534,7 @@ nav .btn:active {
 }
 .about-content h2,
 .about-content2 h2,
+.about-content4 h2,
 .about-content6 h2,
 .apartments h2,
 .ausstattung h2 {
@@ -552,6 +550,7 @@ nav .btn:active {
   margin-bottom: 25px;
 }
 .about-content p,
+.about-content4 p,
 .about-content2 p,
 .apartment p,
 .apartments p,
@@ -564,6 +563,7 @@ nav .btn:active {
 }
 .about-content p,
 .about-content2 p,
+.about-content4 p,
 .apartment p,
 .team-section p {
   margin-bottom: 15px;
@@ -2759,11 +2759,30 @@ body.menu-open .hamburger span:nth-child(3) {
 
 @media (max-width: 800px) {
   /* Giesser-Bild */
-  .about-content .bild-giesser {
-    order: 4;
-    display: block;
+
+  .about-content4 .text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  /* Giesser-Bild */
+
+  .about-content4 .text {
     width: 100%;
-    min-height: 220px;
+    margin-bottom: -10px;
+  }
+  .about-content4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bild-giesser {
+    order: 2;
+    width: 100%;
+    min-height: 250px; /* auf Mobile sichtbar halten */
+    display: block;
     background: url("/images/plagwitz/giesserstrasse.webp") 15% 35% / cover
       no-repeat;
   }
@@ -2771,7 +2790,7 @@ body.menu-open .hamburger span:nth-child(3) {
 
 @media (max-width: 700px) {
   .download-btn {
-    padding: 12px 8px 12px 21px; /* etwas schmaler ohne Text */
+    padding: 12px 8px 12px 23px; /* etwas schmaler ohne Text */
   }
 
   .download-btn::after {
