@@ -405,7 +405,7 @@ nav .btn:active {
 .about .container2 {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -2886,43 +2886,51 @@ body.menu-open .hamburger span:nth-child(3) {
   }
 }
 
-/* ===== Flicker-Fix: Einfliegende Bilder auf Mobile ===== */
-/* Verhindert Repaint-/Compositing-Flicker bei Background-Images und Slider-Bildern */
-.bild-plagwitz,
-.bild-giesser,
-.bild-mitte,
-.bild-links,
-.slider img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform, opacity;
-}
-
-/* Keine Background-Transitions auf Bild-Containern → sonst Flackern beim Einblenden */
-.bild-plagwitz,
-.bild-giesser,
-.bild-mitte,
-.bild-links {
-  transition: transform 0.1s !important; /* überschreibt frühere 'transition: all/background' */
-}
-
-/* Auf sehr kleinen Screens Animationen der Bild-Container deaktivieren (bekannter iOS-Bug) */
-@media (max-width: 600px) {
-  .bild-plagwitz,
-  .bild-giesser,
-  .bild-mitte,
-  .bild-links,
-  .slider img {
-    animation: none !important;
-    transition: none !important;
+@media (max-width: 950px) {
+  /* Falls irgendwo Mehrspalten aktiv sind */
+  .about .container-wohnung .text-plagwitz {
+    column-count: 1 !important;
+    column-gap: 0 !important;
   }
 
-  /* Falls .fadein genutzt wird: auf Mobile ohne Animation anzeigen */
-  .fadein {
-    opacity: 1 !important;
-    transform: none !important;
-    -webkit-transform: none !important;
+  .container-wohnung .trenner {
+    visibility: hidden;
+    margin-bottom: -5px;
+  }
+
+  .container-wohnung .about-content3 {
+    margin-bottom: 9px;
+  }
+
+  .tabelle-info-wohnung {
+    min-width: auto;
+  }
+
+  /* Jeder Tabellen-Block nimmt volle Breite → keine 2 Spalten */
+  .tabelle-container-wohnung {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: row; /* Label links, Wert rechts wie bisher */
+    gap: 8px;
+    break-inside: avoid; /* vermeidet Split in CSS-Multicol */
+  }
+
+  /* Falls ein Grid/Flex den Parent in 2 Spalten teilt, auf Block zwingen */
+  .about .container-wohnung,
+  .about .container-wohnung .about-content3,
+  .about .container-wohnung .text-plagwitz {
+    display: block !important;
+  }
+
+  /* Kleine Typo-Optimierung für die zwei Zellen innerhalb eines Rows */
+  .tabelle-info-wohnung,
+  .tabelle-resultate {
+    flex: 0 1 auto;
+  }
+
+  /* Abstände zwischen den Zeilen etwas erhöhen */
+  .tabelle-container-wohnung + .tabelle-container-wohnung {
+    margin-top: 10px;
   }
 }
