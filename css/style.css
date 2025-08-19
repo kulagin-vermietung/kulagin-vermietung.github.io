@@ -561,6 +561,12 @@ nav .btn:active {
   text-align: justify;
   hyphens: auto;
 }
+
+.no-justify {
+  text-align: left !important; /* überschreibt justify */
+  hyphens: none !important; /* überschreibt auto */
+}
+
 .about-content p,
 .about-content2 p,
 .about-content4 p,
@@ -2817,4 +2823,57 @@ body.menu-open .hamburger span:nth-child(3) {
 .download-table td:nth-child(3) {
   text-align: center; /* horizontal */
   vertical-align: middle; /* vertikal in der Zelle */
+}
+
+/* Mobile: Counter-Boxen auf 2 pro Reihe */
+@media (max-width: 700px) {
+  /* Container auf Grid umstellen: 2 Spalten */
+  .counter-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: -30px;
+  }
+
+  /* Boxen dürfen nicht breiter/min-breiter sein → sauber umbrechen */
+  .counter-wrapper .counter-box {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: initial !important; /* überschreibt evtl. frühere Flex-Breiten */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile: Team-Member Container untereinander */
+@media (max-width: 600px) {
+  .team-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px; /* optionaler Abstand */
+  }
+
+  .team-wrapper .team-member {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile: Team-Container untereinander (richtige Klassen) */
+@media (max-width: 850px) {
+  .team-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px; /* Abstand zwischen den beiden Team-Karten */
+  }
+
+  .team-container > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: initial !important; /* überschreibt evtl. flex-basis/min-width */
+    box-sizing: border-box;
+  }
 }
