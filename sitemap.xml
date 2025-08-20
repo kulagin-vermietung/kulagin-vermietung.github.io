@@ -39,12 +39,24 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.kulagin-vermietung.de/downloads/Kulagin_Vermietung_Print.pdf</loc>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.kulagin-vermietung.de/impressum.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.kulagin-vermietung.de/datenschutz.html</loc>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/Plagwitz_Print.pdf</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/Ausstattung_Print.pdf</loc>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.kulagin-vermietung.de/downloads/Mieterselbstauskunft.pdf</loc>
@@ -80,6 +92,22 @@
 </url>
 <url>
   <loc>https://www.kulagin-vermietung.de/downloads/Anleitung_Sprechanlage.pdf</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/Downloads_Print.pdf</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/Ueber_Uns_Print.pdf</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/2_Zimmer_Wohnung_Print.pdf</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.kulagin-vermietung.de/downloads/3_Zimmer_Wohnung_Print.pdf</loc>
   <priority>0.64</priority>
 </url>
 
