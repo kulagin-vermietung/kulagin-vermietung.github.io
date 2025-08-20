@@ -3020,7 +3020,7 @@ body.menu-open .hamburger span:nth-child(3) {
 .footer-content .footer-links li + li::before {
   content: "|";
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 5px;
   color: var(--blau-farbe);
   font-size: 0.8em; /* etwas kleiner */
 }
