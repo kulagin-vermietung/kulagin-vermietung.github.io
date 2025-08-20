@@ -1316,7 +1316,7 @@ nav .btn:active {
 .footer {
   position: relative;
   background: var(--hintergrund-farbe);
-  padding: 40px 0;
+  padding: 0px 0px 40px 0px;
   overflow: visible;
 }
 .download-table th,
@@ -2989,6 +2989,9 @@ body.menu-open .hamburger span:nth-child(3) {
     justify-content: center !important;
     margin: 0 auto;
     margin-top: 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    list-style: nowrap;
   }
 
   .footer-copy {
