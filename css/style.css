@@ -133,6 +133,7 @@ nav a {
   margin: 2px auto 0;
   width: 0;
 }
+
 .contact-info a:hover:after,
 .navlink:hover:after {
   transition: width 50ms ease-in-out;
