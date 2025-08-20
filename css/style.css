@@ -1900,15 +1900,6 @@ h4 a {
   margin-bottom: -5px;
   margin-left: -4px;
 }
-.fadein {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
-}
-.fadein.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .action-buttons {
   display: flex;
@@ -2924,8 +2915,8 @@ body.menu-open .hamburger span:nth-child(3) {
   }
 
   /* Kleine Typo-Optimierung für die zwei Zellen innerhalb eines Rows */
-  .tabelle-info-wohnung,
-  .tabelle-resultate {
+  .about-content3 .tabelle-info-wohnung,
+  .about-content3 .tabelle-resultate {
     flex: 0 1 auto;
   }
 
