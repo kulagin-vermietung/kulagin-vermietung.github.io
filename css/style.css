@@ -123,7 +123,7 @@ nav ul {
 }
 nav a {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -1747,7 +1747,7 @@ h4 a {
 
 .plagwitz-item h3 {
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .plagwitz-link {
   display: inline-block;
@@ -2025,7 +2025,6 @@ h4 a {
   padding: 20px 20px 20px 20px;
   box-sizing: border-box;
   line-height: 1.6;
-  font-weight: 300;
   text-align: justify;
   hyphens: auto;
 }
@@ -2376,7 +2375,7 @@ h4 a {
   display: block;
   margin-top: 12px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   color: white;
 }
