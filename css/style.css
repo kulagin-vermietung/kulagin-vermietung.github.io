@@ -35,7 +35,7 @@ body {
   font-family: "Mynerve";
   font-weight: normal;
   font-style: normal;
-  src: url("/fonts/mynerve-regular.ttf") format("truetype");
+  src: url("/fonts/mynerve-regular.woff2") format("woff2");
 }
 
 :root {
