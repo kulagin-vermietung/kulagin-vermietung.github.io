@@ -1361,7 +1361,7 @@ nav .btn:active {
   gap: 30px;
 }
 .footer-logo {
-  height: 60px;
+  height: 50px;
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
@@ -1402,8 +1402,8 @@ h4 a:hover {
   color: var(--blau-farbe);
 }
 .footer-copy {
-  font-size: 0.875rem;
-  margin-top: 15px;
+  font-size: 0.8rem;
+  margin-top: 25px;
   opacity: 0.8;
 }
 .animate__animated {
@@ -2968,4 +2968,64 @@ body.menu-open .hamburger span:nth-child(3) {
     padding-right: 13px;
     margin-right: -13px;
   }
+}
+
+/* Mobile: Footer untereinander */
+@media (max-width: 620px) {
+  .footer-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-content .footer-logo {
+    order: -1; /* Logo an erster Stelle */
+    margin: 0 auto;
+    height: 40px;
+  }
+
+  .footer-content .footer-links {
+    justify-content: center !important;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .footer-copy {
+    margin-top: 20px;
+  }
+}
+
+.footer-content .footer-links a {
+  padding: 0 8px;
+}
+
+.footer-content .footer-links a:not(:last-child)::after {
+  content: "|";
+  margin-left: 8px;
+  color: var(--blau-farbe);
+  font-size: 0.8em; /* etwas kleiner */
+}
+
+/* Footer Links als Reihe + ASCII-Separators */
+.footer-content .footer-links ul {
+  display: flex;
+  align-items: center;
+  gap: 0; /* Abstand kommt über Separator */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content .footer-links li + li::before {
+  content: "|";
+  display: inline-block;
+  margin: 0 8px;
+  color: var(--blau-farbe);
+  font-size: 0.8em; /* etwas kleiner */
+}
+
+/* Falls Anker block-level sind → auf inline-block setzen, damit Separator sichtbar bleibt */
+.footer-content .footer-links a {
+  display: inline-block;
 }
