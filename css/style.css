@@ -1,3 +1,8 @@
+.image-slider,
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 .nav-bar.scrolled .btn,
 body {
   background-color: var(--hintergrund-farbe);
@@ -32,12 +37,11 @@ body {
 }
 @font-face {
   font-display: swap;
-  font-family: "Mynerve";
-  font-weight: normal;
+  font-family: Mynerve;
+  font-weight: 400;
   font-style: normal;
   src: url("/fonts/mynerve-regular.woff2") format("woff2");
 }
-
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -59,7 +63,12 @@ html {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
-body {
+.footer,
+.footer-content,
+.footer-links a,
+.plagwitz-item p,
+body,
+h4 a {
   color: var(--text-farbe);
 }
 .container {
@@ -106,10 +115,13 @@ body {
   margin-top: 5px;
   color: #fff;
 }
-
+.ausstattung .btn,
+.contact,
+.contact-address a,
+.contact-header h3,
+.error-btn,
 .header-content,
 .read-more,
-.error-btn,
 nav .btn,
 nav a,
 nav a:hover {
@@ -133,7 +145,6 @@ nav a {
   margin: 2px auto 0;
   width: 0;
 }
-
 .contact-info a:hover:after,
 .navlink:hover:after {
   transition: width 50ms ease-in-out;
@@ -155,8 +166,8 @@ nav .btn::before {
   content: "";
   display: inline-block;
 }
-.read-more,
 .error-btn,
+.read-more,
 nav .btn {
   display: inline-flex;
   align-items: center;
@@ -181,35 +192,41 @@ nav .btn::before {
     center center/contain no-repeat;
 }
 .einblenden:hover,
-.read-more:hover,
 .error-btn:hover,
+.read-more:hover,
+.wekontakt:hover,
 nav .btn:hover {
   background-color: var(--dunkelblau-farbe);
   color: var(--hintergrund-farbe);
   transform: scale(1.02);
 }
+#scroll-to-top:active,
+.apartment .btn:active,
+.ausstattung .btn:active,
+.download-btn:active,
 .einblenden:active,
-.read-more:active,
 .error-btn:active,
+.nav-bar.scrolled .btn:active,
+.read-more:active,
+.wekontakt:active,
 nav .btn:active {
   transform: scale(0.98);
 }
-.nav-bar.scrolled .btn {
+.download-text,
+.footer-links a:hover,
+.nav-bar.scrolled .btn,
+.plagwitz-link:hover,
+h4 a:hover {
   color: var(--blau-farbe);
 }
 .nav-bar.scrolled .btn::before {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(0,512) scale(0.1,-0.1)" fill="%230075d2"><path d="M1386 5109 c-62 -15 -153 -68 -197 -116 -22 -24 -55 -74 -72 -111 l-32 -67 -3 -210 -3 -211 -86 -29 c-230 -78 -591 -287 -695 -403 -68 -75 -140 -249 -180 -431 -30 -136 -30 -416 0 -581 112 -614 506 -1279 1108 -1872 594 -585 1248 -958 1860 -1059 46 -8 155 -13 259 -13 147 0 199 4 282 22 195 42 369 119 447 199 67 67 167 221 257 398 127 245 160 345 160 476 0 194 -51 302 -193 406 -46 34 -175 129 -288 212 -113 83 -230 164 -260 180 -155 83 -335 57 -476 -69 -32 -29 -135 -125 -227 -213 l-169 -161 -36 20 c-71 37 -279 181 -376 259 -142 114 -298 258 -414 382 l-102 108 1383 5 1382 5 58 24 c118 47 210 152 242 276 22 88 23 2191 0 2278 -32 125 -107 215 -223 270 l-67 32 -1650 2 c-974 0 -1666 -3 -1689 -8z m839 -1268 c385 -316 716 -584 735 -595 44 -26 141 -28 185 -4 17 9 351 280 743 602 393 322 716 586 718 586 2 0 4 -400 4 -890 l0 -890 -1492 0 -1493 0 -38 66 c-38 64 -38 66 -20 87 10 11 101 109 204 218 202 215 239 270 260 382 15 81 2 173 -37 248 -28 57 -396 564 -454 627 -37 39 -40 48 -40 98 0 41 3 53 12 48 7 -4 327 -267 713 -583z m-1375 -211 c110 -154 257 -349 351 -466 l58 -71 -71 -78 c-80 -89 -98 -124 -98 -192 0 -127 211 -477 479 -798 159 -191 446 -469 657 -637 162 -129 373 -264 529 -340 84 -40 109 -48 158 -48 72 0 102 15 193 96 39 35 74 64 78 64 4 0 78 -56 166 -124 134 -104 265 -201 482 -356 l37 -26 -41 -64 c-35 -53 -50 -67 -102 -91 -94 -44 -208 -70 -336 -76 -258 -13 -538 60 -870 226 -939 468 -1800 1481 -1981 2333 -17 79 -22 139 -23 258 -1 172 12 249 65 376 28 66 36 76 96 118 37 25 67 45 68 43 1 -1 49 -67 105 -147z"/></g></svg>')
     center center/contain no-repeat;
 }
-
 .nav-bar.scrolled .btn:hover {
   background-color: var(--grau-farbe);
   transform: scale(1.02);
 }
-.nav-bar.scrolled .btn:active {
-  transform: scale(0.98);
-}
-
 .contact .btn:hover {
   background-color: var(--grau-farbe);
   transform: scale(1.01);
@@ -219,52 +236,47 @@ nav .btn:active {
 }
 .header {
   height: 475px;
-  background: url("/images/header/main.webp") center center / cover no-repeat;
-  background-color: #4498d2;
+  background: url("/images/header/main.webp") center center/cover no-repeat
+    #4498d2;
   align-items: center;
   justify-content: center;
 }
 .header-plagwitz {
   height: 300px;
-  background: url("/images/header/plagwitz.webp") center center / cover
-    no-repeat;
-  background-color: #72b4db;
+  background: url("/images/header/plagwitz.webp") center center/cover no-repeat
+    #72b4db;
   align-items: left;
   justify-content: left;
   text-align: left;
 }
 .header-impressum {
   height: 300px;
-  background: url("/images/header/impressum.webp") center center / cover
-    no-repeat;
-  background-color: #ccc1b4;
+  background: url("/images/header/impressum.webp") center center/cover no-repeat
+    #ccc1b4;
   align-items: left;
   justify-content: left;
+  text-align: left;
+}
+.header-404,
+.header-datenschutz {
+  align-items: left;
+  height: 300px;
   text-align: left;
 }
 .header-datenschutz {
-  height: 300px;
-  background: url("/images/header/datenschutz.webp") center center / cover
-    no-repeat;
-  background-color: #ccc1b4;
-  align-items: left;
+  background: url("/images/header/datenschutz.webp") center center/cover
+    no-repeat #ccc1b4;
   justify-content: left;
-  text-align: left;
 }
-
 .header-404 {
-  height: 300px;
-  background: url("/images/header/404.webp") center center / cover no-repeat;
-  background-color: #ccc1b4;
-  align-items: left;
+  background: url("/images/header/404.webp") center center/cover no-repeat
+    #ccc1b4;
   justify-content: left;
-  text-align: left;
 }
 .header-wohnung2,
 .header-wohnung3 {
   position: relative;
   width: 100%;
-  height: 300px;
   display: flex;
   align-items: left;
 }
@@ -283,7 +295,6 @@ nav .btn:active {
 .header-ausstattung,
 .header-downloads {
   align-items: left;
-  height: 300px;
   width: 100%;
   text-align: left;
   display: flex;
@@ -291,14 +302,13 @@ nav .btn:active {
 }
 .header-ausstattung {
   background: url("/images/header/ausstattung.webp") center 55% / cover
-    no-repeat;
-  background-color: #cbd2d4;
+    no-repeat #cbd2d4;
   height: 300px;
   justify-content: left;
 }
 .header-downloads {
-  background: url("/images/header/downloads.webp") center 75% / cover no-repeat;
-  background-color: #a2adb5;
+  background: url("/images/header/downloads.webp") center 75% / cover no-repeat
+    #a2adb5;
   height: 300px;
   justify-content: left;
 }
@@ -306,23 +316,23 @@ nav .btn:active {
   position: relative;
   width: 100%;
   height: 300px;
-  background: url("/images/header/ueberuns.webp") center 35% / cover no-repeat;
-  background-color: #30547d;
+  background: url("/images/header/ueberuns.webp") center 35% / cover no-repeat
+    #30547d;
   display: flex;
   align-items: left;
   justify-content: left;
   text-align: left;
 }
 .overlay,
-.overlay-downloads,
-.overlay-ueberuns,
-.overlay-impressum,
-.overlay-datenschutz,
-.overlay-plagwitz,
+.overlay-404,
 .overlay-ausstattung,
+.overlay-datenschutz,
+.overlay-downloads,
+.overlay-impressum,
+.overlay-plagwitz,
+.overlay-ueberuns,
 .overlay-wohnung2,
-.overlay-wohnung3,
-.overlay-404 {
+.overlay-wohnung3 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.38);
@@ -338,28 +348,25 @@ nav .btn:active {
   justify-content: center;
   align-items: center;
 }
+.overlay-404 .header-content,
 .overlay-ausstattung .header-content,
+.overlay-datenschutz .header-content,
 .overlay-downloads .header-content,
+.overlay-impressum .header-content,
 .overlay-plagwitz .header-content,
 .overlay-ueberuns .header-content,
 .overlay-wohnung2 .header-content,
-.overlay-wohnung3 .header-content,
-.overlay-impressum .header-content,
-.overlay-datenschutz .header-content,
-.overlay-404 .header-content {
+.overlay-wohnung3 .header-content {
   width: 100%;
   margin: 65px auto 0;
   text-align: left;
 }
-.about .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 90%;
-}
-
+.about .container,
 .header-text {
   max-width: 1000px;
   margin: 0 auto;
+}
+.header-text {
   width: 100%;
 }
 .overlay-ausstattung,
@@ -398,6 +405,7 @@ nav .btn:active {
   background: #fff;
 }
 .about .container {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -410,7 +418,8 @@ nav .btn:active {
   max-width: 1000px;
   margin: 0 auto;
 }
-.about-content {
+.about-content,
+.about-content4 {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -442,31 +451,27 @@ nav .btn:active {
   background: url("/images/plagwitz/giesserei.webp") 45% center/cover no-repeat;
   display: flex;
   border-radius: var(--radius);
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transition: background 0.3s, transform 0.1s;
 }
-
-.bild-giesser {
+.bild-giesser,
+.bild-mitte {
   flex: 1;
+  display: flex;
+  border-radius: var(--radius);
   width: 100%;
   height: auto;
+}
+.bild-giesser {
   flex-grow: 1;
   background: url("/images/plagwitz/giesserstrasse.webp") 15% center/cover
     no-repeat;
-  display: flex;
-  border-radius: var(--radius);
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transition: background 0.3s, transform 0.1s;
 }
-
 .bild-mitte {
-  flex: 1;
-  width: 100%;
-  height: auto;
   flex-grow: 1;
   background: url("/images/wohnungen/mitte/tuer.webp") 10% 70% / cover no-repeat;
-  display: flex;
-  border-radius: var(--radius);
 }
 .bild-links {
   flex: 1;
@@ -478,40 +483,25 @@ nav .btn:active {
   display: flex;
   border-radius: var(--radius);
 }
-
-.about-content .text {
-  width: 60%;
-}
-.about-content .text-plagwitz .text-impressum {
-  width: 100%;
-}
-
-.about-content4 {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  gap: 25px;
-  width: 100%;
-}
-
+.about-content .text,
 .about-content4 .text {
   width: 60%;
 }
-
+.about-content .text-plagwitz .text-impressum,
+.plagwitzlink:hover:after {
+  width: 100%;
+}
+.error-btn::before,
+.icon-steckbrief {
+  width: 20px;
+  height: 20px;
+}
 .apartment .btn::before,
 .ausstattung .btn::before,
 .read-more::before {
   width: 20px;
   height: 20px;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 538"><g transform="translate(0,538) scale(0.1,-0.1)" fill="%23fff"><path d="M1580 5249 c-550 -34 -827 -140 -1121 -429 -288 -284 -394 -542 -441 -1080 -18 -206 -18 -1865 0 -2075 30 -342 73 -528 163 -707 152 -302 478 -594 774 -696 154 -52 315 -81 580 -104 211 -18 1839 -18 2050 0 556 48 814 155 1105 458 183 191 292 384 348 614 62 256 73 426 79 1275 8 1141 -14 1489 -112 1785 -106 320 -389 637 -710 797 -193 96 -399 139 -780 163 -186 12 -1750 11 -1935 -1z m-98 -2170 c118 -25 221 -105 273 -214 26 -54 29 -70 30 -160 0 -88 -3 -107 -27 -157 -84 -180 -286 -270 -468 -208 -280 95 -356 449 -138 645 98 88 209 119 330 94z m1150 0 c120 -25 225 -108 276 -217 24 -50 27 -69 27 -162 0 -98 -2 -109 -32 -165 -42 -81 -104 -141 -183 -179 -59 -28 -74 -31 -160 -31 -86 0 -101 3 -160 31 -78 38 -147 105 -186 182 -27 52 -29 66 -29 162 0 93 3 112 27 162 50 106 148 186 263 214 65 16 93 16 157 3z m1149 1 c157 -30 282 -159 308 -319 27 -168 -60 -330 -217 -404 -61 -29 -76 -32 -162 -32 -82 0 -103 4 -152 27 -80 37 -152 107 -191 187 -30 61 -32 73 -32 166 0 90 3 106 29 160 52 105 141 178 259 210 64 17 89 18 158 5z"/></g></svg>')
-    center center/contain no-repeat;
-  margin-bottom: 1px;
-  content: "";
-}
-.error-btn::before {
-  width: 20px;
-  height: 20px;
-  background: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512"><path d="M0 0 C4.33444424 3.66350763 8.41401308 7.59343735 12.484375 11.54492188 C14.35529601 13.34110249 16.2865825 15.0557607 18.25 16.75 C21.20061765 19.29711438 24.10698786 21.88752237 27 24.5 C29.98062721 27.18983431 32.97245233 29.86310364 36 32.5 C39.89512811 35.89253093 43.72782763 39.35194201 47.5625 42.8125 C49.69417481 44.72554149 51.8401911 46.61887612 54 48.5 C57.89512811 51.89253093 61.72782763 55.35194201 65.5625 58.8125 C67.69417481 60.72554149 69.8401911 62.61887612 72 64.5 C75.89512811 67.89253093 79.72782763 71.35194201 83.5625 74.8125 C85.69417481 76.72554149 87.8401911 78.61887612 90 80.5 C93.89512811 83.89253093 97.72782763 87.35194201 101.5625 90.8125 C103.69417481 92.72554149 105.8401911 94.61887612 108 96.5 C111.89512811 99.89253093 115.72782763 103.35194201 119.5625 106.8125 C121.69417481 108.72554149 123.8401911 110.61887612 126 112.5 C129.89512811 115.89253093 133.72782763 119.35194201 137.5625 122.8125 C139.69417481 124.72554149 141.8401911 126.61887612 144 128.5 C147.89512811 131.89253093 151.72782763 135.35194201 155.5625 138.8125 C157.69417481 140.72554149 159.8401911 142.61887612 162 144.5 C165.89512811 147.89253093 169.72782763 151.35194201 173.5625 154.8125 C175.69417481 156.72554149 177.8401911 158.61887612 180 160.5 C183.89512811 163.89253093 187.72782763 167.35194201 191.5625 170.8125 C193.69417481 172.72554149 195.8401911 174.61887612 198 176.5 C198.63421875 177.05558594 199.2684375 177.61117187 199.921875 178.18359375 C201.46888538 179.53577388 203.02194443 180.88103997 204.578125 182.22265625 C212.27481254 188.96288408 217.34762627 194.44827981 218.2578125 204.984375 C218.58052025 214.14927498 216.84915807 220.68556063 211.8125 228.3125 C201.53496027 238.13326018 189.4555658 238.29822312 175.9375 238.125 C174.58138685 238.11494631 173.22526645 238.1058247 171.86914062 238.09765625 C168.579239 238.07424058 165.28971562 238.04144423 162 238 C162.00276538 239.04821898 162.00553076 240.09643797 162.00837994 241.17642117 C162.07500109 266.69083941 162.12428798 292.20524636 162.15543652 317.71973324 C162.17090037 330.05838552 162.19198079 342.39698032 162.22631836 354.7355957 C162.25623534 365.49088011 162.2755785 376.24612288 162.28226548 387.00144774 C162.28617382 392.69543936 162.29534913 398.38931188 162.31719017 404.0832653 C162.33759152 409.44546611 162.34382637 414.80749902 162.33932304 420.16973495 C162.34014661 422.13489635 162.34609042 424.1000635 162.35761642 426.06519127 C162.37261766 428.75537046 162.36892591 431.44492182 162.36076355 434.13511658 C162.36950207 434.9065454 162.3782406 435.67797423 162.38724393 436.47277969 C162.31398784 445.45039365 159.44095705 453.62599677 153 460 C146.99260816 464.36556121 141.78391548 467.12871484 134.30499268 467.12025452 C133.36552292 467.12162918 132.42605316 467.12300385 131.45811462 467.12442017 C130.43456375 467.12082489 129.41101288 467.11722961 128.35644531 467.11352539 C127.27321487 467.11367142 126.18998444 467.11381744 125.07392883 467.1139679 C121.49197388 467.113271 117.91007087 467.10548895 114.328125 467.09765625 C111.84519479 467.09579128 109.36226421 467.09436775 106.8793335 467.09336853 C101.01103191 467.08993995 95.14274951 467.08205769 89.27445579 467.07201904 C81.93687978 467.05973974 74.59930268 467.05437297 67.26171875 467.04882812 C54.17446969 467.03810176 41.08723603 467.02122486 28 467 C27.99853344 466.20615748 27.99706688 465.41231497 27.99555588 464.59441662 C27.95844598 445.24627409 27.89937588 425.89831148 27.81609726 406.55031109 C27.77634896 397.19361281 27.74393513 387.83699812 27.72900391 378.48022461 C27.71596553 370.32142521 27.68894524 362.16281006 27.64538693 354.00411445 C27.62282114 349.68722028 27.60708638 345.37055296 27.60811615 341.05359459 C27.60886567 336.98312291 27.590799 332.91315175 27.55883217 328.84280968 C27.55037373 327.35583787 27.54855543 325.86880965 27.55419731 324.38182449 C27.590616 313.29972037 26.60482251 302.837243 18.64453125 294.43359375 C12.32455324 288.92425425 6.29380444 287.85117931 -1.85449219 287.83886719 C-2.64201874 287.83390228 -3.42954529 287.82893738 -4.24093628 287.82382202 C-6.8429248 287.80923344 -9.44485232 287.80240336 -12.046875 287.796875 C-13.8604533 287.79112015 -15.67403158 287.78536246 -17.48760986 287.77960205 C-21.29057091 287.76910099 -25.09351087 287.76325269 -28.89648438 287.75976562 C-33.75637278 287.75428752 -38.61598009 287.73027035 -43.47578049 287.70179367 C-47.22313231 287.68311725 -50.97041716 287.677959 -54.71781158 287.67642975 C-56.50867497 287.6734132 -58.29953745 287.66541856 -60.09035492 287.65224457 C-62.60309367 287.63508158 -65.1151552 287.63708922 -67.62792969 287.64355469 C-68.35964386 287.6343399 -69.09135803 287.62512512 -69.84524536 287.6156311 C-77.93392838 287.68043056 -84.29865046 290.46864316 -90.23828125 295.96484375 C-95.52861712 302.07629605 -97.11395186 309.53658772 -97.15821838 317.40338135 C-97.1680072 318.72148804 -97.17779602 320.03959473 -97.18788147 321.39764404 C-97.19378533 322.85656702 -97.1995958 324.31549038 -97.20532227 325.77441406 C-97.21490329 327.311933 -97.22491351 328.84944932 -97.23532104 330.38696289 C-97.26235185 334.56012987 -97.2833713 338.73330814 -97.30332303 342.90651417 C-97.32519383 347.26808033 -97.35257717 351.62961176 -97.37937927 355.9911499 C-97.42929136 364.25000126 -97.4742357 372.50887192 -97.51740164 380.76776099 C-97.56678669 390.17035798 -97.62170012 399.57292013 -97.67708123 408.97548342 C-97.79087849 428.31695659 -97.89772246 447.65846265 -98 467 C-112.31712957 467.07022796 -126.63423224 467.12285574 -140.95149899 467.15543652 C-147.59997805 467.17107563 -154.24831036 467.19228209 -160.89672852 467.22631836 C-167.31579792 467.2589739 -173.73475598 467.27686623 -180.15390205 467.28463173 C-182.59984654 467.29016407 -185.04578511 467.30096736 -187.49168205 467.31719017 C-190.92419358 467.33904628 -194.35624816 467.34196344 -197.78881836 467.34057617 C-199.2971801 467.35675491 -199.2971801 467.35675491 -200.83601379 467.3732605 C-210.78321106 467.3299124 -217.78705665 465.07483113 -225.05078125 458.19140625 C-231.03813531 451.46013245 -232.15253767 444.45274479 -232.12025452 435.69842529 C-232.12110894 434.85379581 -232.12196337 434.00916632 -232.12284368 433.138942 C-232.12449276 430.30452059 -232.11898644 427.47015816 -232.11352539 424.63574219 C-232.11324337 422.60562135 -232.11340154 420.57550041 -232.1139679 418.54537964 C-232.11425529 413.0292546 -232.10836791 407.51315121 -232.10139394 401.99703121 C-232.09515076 396.23412625 -232.09455584 390.47122081 -232.09336853 384.70831299 C-232.09025807 373.79324028 -232.0820485 362.87817756 -232.07201904 351.96310925 C-232.06084908 339.53761942 -232.05534522 327.1121291 -232.05032361 314.68663549 C-232.03986567 289.12441812 -232.02227171 263.56220962 -232 238 C-232.83136475 238.01047363 -233.66272949 238.02094727 -234.51928711 238.03173828 C-237.64476471 238.0661057 -240.77014502 238.09103659 -243.89575195 238.10986328 C-245.89736377 238.12470245 -247.89888812 238.15013361 -249.90039062 238.17578125 C-261.40789698 238.23375357 -270.76902517 237.50644287 -279.6875 229.625 C-286.40061722 222.00470477 -288.50269446 215.35255462 -288.30859375 205.31640625 C-287.02553969 191.52763545 -276.81872991 183.54679334 -267 175 C-266.31808594 174.40316406 -265.63617188 173.80632812 -264.93359375 173.19140625 C-263.64443812 172.06372061 -262.35407187 170.93741744 -261.0625 169.8125 C-258.69035571 167.72788836 -256.34443935 165.61571356 -254 163.5 C-250.38323655 160.23609152 -246.73610392 157.01209051 -243.0625 153.8125 C-240.69035571 151.72788836 -238.34443935 149.61571356 -236 147.5 C-233.01937279 144.81016569 -230.02754767 142.13689636 -227 139.5 C-222.28298716 135.38918961 -217.64361111 131.19332155 -213 127 C-207.72014424 122.23213025 -202.42708194 117.48487782 -197.0625 112.8125 C-194.69035571 110.72788836 -192.34443935 108.61571356 -190 106.5 C-186.38323655 103.23609152 -182.73610392 100.01209051 -179.0625 96.8125 C-176.69035571 94.72788836 -174.34443935 92.61571356 -172 90.5 C-168.38323655 87.23609152 -164.73610392 84.01209051 -161.0625 80.8125 C-158.69035571 78.72788836 -156.34443935 76.61571356 -154 74.5 C-150.38323655 71.23609152 -146.73610392 68.01209051 -143.0625 64.8125 C-140.69035571 62.72788836 -138.34443935 60.61571356 -136 58.5 C-132.38323655 55.23609152 -128.73610392 52.01209051 -125.0625 48.8125 C-122.69035571 46.72788836 -120.34443935 44.61571356 -118 42.5 C-114.38323655 39.23609152 -110.73610392 36.01209051 -107.0625 32.8125 C-104.69035571 30.72788836 -102.34443935 28.61571356 -100 26.5 C-96.38112436 23.2341854 -92.73316615 20.00694969 -89.0546875 16.80859375 C-86.71979109 14.75335223 -84.42420466 12.65756967 -82.125 10.5625 C-58.56117503 -10.55873336 -27.91371784 -20.67550089 0 0 Z " fill="%23fff" transform="translate(291,28)"/></svg>')
     center center/contain no-repeat;
   margin-bottom: 1px;
   content: "";
@@ -525,9 +515,12 @@ nav .btn:active {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.bus,
+.busn1,
 .s-bahn-symbol,
 .s-bahn-symbolrb13,
 .s-bahn-symbolrb22,
+.s-bahn-symbolre12,
 .s-bahn-symbolre13 {
   font-size: 12.96px;
   padding: 3.24px 2.43px;
@@ -550,8 +543,8 @@ nav .btn:active {
   margin-bottom: 25px;
 }
 .about-content p,
-.about-content4 p,
 .about-content2 p,
+.about-content4 p,
 .apartment p,
 .apartments p,
 .team-section p {
@@ -561,12 +554,21 @@ nav .btn:active {
   text-align: justify;
   hyphens: auto;
 }
-
 .no-justify {
-  text-align: left !important; /* überschreibt justify */
-  hyphens: none !important; /* überschreibt auto */
+  text-align: left !important;
+  hyphens: none !important;
 }
-
+.autobahn,
+.bahn14,
+.bahn2,
+.bahn3,
+.bus,
+.busn1,
+.busn60,
+.s-bahn-symbol {
+  font-weight: 600;
+  text-align: center;
+}
 .about-content p,
 .about-content2 p,
 .about-content4 p,
@@ -578,9 +580,7 @@ nav .btn:active {
   display: inline-block;
   background-color: #fc0;
   color: #000;
-  font-weight: 600;
   letter-spacing: 0-5px;
-  text-align: center;
   border-radius: 50px;
   min-width: 38px;
 }
@@ -596,6 +596,14 @@ nav .btn:active {
   font-weight: 600;
   text-align: center;
 }
+.bahn14,
+.bahn2,
+.bahn3,
+.bus,
+.busn1,
+.busn60 {
+  min-width: 26.73px;
+}
 .s-bahn-symbolrb13 {
   background-color: #f18700;
 }
@@ -607,15 +615,11 @@ nav .btn:active {
 }
 .s-bahn-symbolre12 {
   background-color: #a5027d;
-  font-size: 12.96px;
-  padding: 3.24px 2.43px;
 }
 .bus,
 .busn1 {
   display: inline-block;
-  font-size: 12.96px;
   letter-spacing: 0;
-  padding: 3.24px 2.43px;
 }
 .bus,
 .busn1,
@@ -626,24 +630,15 @@ nav .btn:active {
 .bus {
   background-color: #a71681;
   color: #fff;
-  font-weight: 600;
-  text-align: center;
-  min-width: 26.73px;
 }
 .busn1 {
   background-color: #f7a600;
   color: #164194;
-  font-weight: 600;
-  text-align: center;
-  min-width: 26.73px;
 }
 .bahn3,
 .busn60 {
   color: #fff;
-  font-weight: 600;
-  text-align: center;
   display: inline-block;
-  min-width: 26.73px;
 }
 .busn60 {
   background-color: #a71681;
@@ -651,39 +646,42 @@ nav .btn:active {
   letter-spacing: -0.9px;
   padding: 4px 2.2px;
 }
+.autobahn,
+.bahn14,
+.bahn2,
 .bahn3 {
-  background-color: #65b32e;
   font-size: 12.96px;
   letter-spacing: 0;
   padding: 3.24px 2.43px;
   border-radius: 3px;
+}
+.bahn3 {
+  background-color: #65b32e;
 }
 .bahn2 {
   display: inline-block;
   background-color: #fc0;
   color: #000;
-  font-weight: 600;
-  font-size: 12.96px;
-  letter-spacing: 0;
-  padding: 3.24px 2.43px;
-  text-align: center;
-  min-width: 26.73px;
-  border-radius: 3px;
 }
 .autobahn,
 .bahn14 {
   color: #fff;
-  font-weight: 600;
-  font-size: 12.96px;
-  letter-spacing: 0;
-  padding: 3.24px 2.43px;
-  text-align: center;
-  border-radius: 3px;
   display: inline-block;
+}
+.icon-kleiner,
+.icon-mini,
+.icon-pin,
+.icon-steckbrief {
+  color: var(--blau-farbe);
+  opacity: 0.45;
+  margin-bottom: 2px;
+  -webkit-user-drag: none !important;
+  pointer-events: none !important;
+  vertical-align: middle;
+  object-fit: contain;
 }
 .bahn14 {
   background-color: #009fe3;
-  min-width: 26.73px;
 }
 .autobahn {
   background-color: #0038b7;
@@ -691,56 +689,40 @@ nav .btn:active {
 }
 .icon-kleiner,
 .icon-steckbrief {
-  object-fit: contain;
-  vertical-align: middle;
   margin-left: -2px;
-  margin-bottom: 2px;
-  opacity: 0.45;
-  color: var(--blau-farbe);
-  pointer-events: none !important;
   user-select: none !important;
-  -webkit-user-drag: none !important;
   margin-right: 10px;
-}
-.icon-steckbrief {
-  width: 20px;
-  height: 20px;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
-
 .icon-kleiner {
   width: 19px;
   height: 19px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .icon-mini,
 .icon-pin {
-  object-fit: contain;
-  color: var(--blau-farbe);
-  vertical-align: middle;
-  margin-bottom: 2px;
-  pointer-events: none !important;
   user-select: none !important;
-  -webkit-user-drag: none !important;
-  opacity: 0.45;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .icon-mini {
   width: 17px;
   height: 17px;
   margin-right: 12px;
   margin-left: -1px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .icon-pin {
   width: 24px;
   height: 24px;
   margin-right: 8px;
   margin-left: -4px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
+}
+.icon-gruen,
+.icon-gruen2 {
+  width: 23.3px;
+  height: 23.3px;
+  color: #65b32e;
+  margin-left: -4px;
 }
 .icon-gruen,
 .icon-rot {
@@ -754,10 +736,6 @@ nav .btn:active {
   opacity: 1;
 }
 .icon-gruen {
-  width: 23.3px;
-  height: 23.3px;
-  color: #65b32e;
-  margin-left: -4px;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
@@ -770,12 +748,6 @@ nav .btn:active {
   user-select: none !important;
   -webkit-user-drag: none !important;
   opacity: 1;
-}
-.icon-gruen2 {
-  width: 23.3px;
-  height: 23.3px;
-  color: #65b32e;
-  margin-left: -4px;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
@@ -796,6 +768,8 @@ nav .btn:active {
   -webkit-user-drag: none !important;
   margin-bottom: 2px;
   margin-right: 8px;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .icon-gelb {
   width: 18.88px;
@@ -803,8 +777,6 @@ nav .btn:active {
   color: #e2c800;
   margin-left: -1.6px;
   opacity: 1;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .icon-verkehr {
   width: 22px;
@@ -812,8 +784,6 @@ nav .btn:active {
   margin-left: -2px;
   color: var(--blau-farbe);
   opacity: 0.45;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .icon-auto,
 .icon-fahrrad {
@@ -824,6 +794,8 @@ nav .btn:active {
   user-select: none !important;
   -webkit-user-drag: none !important;
   vertical-align: middle;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .icon-auto {
   width: 16px;
@@ -831,16 +803,12 @@ nav .btn:active {
   margin-right: 6px;
   margin-left: 8px;
   margin-bottom: 2px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .icon-fahrrad {
   width: 21px;
   height: 21px;
   margin-right: 1px;
   margin-bottom: 2.5px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .wohnung-grundriss img,
 .wohnungs-grundriss img {
@@ -851,6 +819,8 @@ nav .btn:active {
   user-select: none !important;
   -webkit-user-drag: none !important;
   object-fit: cover;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .ausstattunggeplant,
 .infoplagwitz {
@@ -875,6 +845,9 @@ nav .btn:active {
   margin-left: -4px;
 }
 .error-btn::before {
+  background: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512"><path d="M0 0 C4.33444424 3.66350763 8.41401308 7.59343735 12.484375 11.54492188 C14.35529601 13.34110249 16.2865825 15.0557607 18.25 16.75 C21.20061765 19.29711438 24.10698786 21.88752237 27 24.5 C29.98062721 27.18983431 32.97245233 29.86310364 36 32.5 C39.89512811 35.89253093 43.72782763 39.35194201 47.5625 42.8125 C49.69417481 44.72554149 51.8401911 46.61887612 54 48.5 C57.89512811 51.89253093 61.72782763 55.35194201 65.5625 58.8125 C67.69417481 60.72554149 69.8401911 62.61887612 72 64.5 C75.89512811 67.89253093 79.72782763 71.35194201 83.5625 74.8125 C85.69417481 76.72554149 87.8401911 78.61887612 90 80.5 C93.89512811 83.89253093 97.72782763 87.35194201 101.5625 90.8125 C103.69417481 92.72554149 105.8401911 94.61887612 108 96.5 C111.89512811 99.89253093 115.72782763 103.35194201 119.5625 106.8125 C121.69417481 108.72554149 123.8401911 110.61887612 126 112.5 C129.89512811 115.89253093 133.72782763 119.35194201 137.5625 122.8125 C139.69417481 124.72554149 141.8401911 126.61887612 144 128.5 C147.89512811 131.89253093 151.72782763 135.35194201 155.5625 138.8125 C157.69417481 140.72554149 159.8401911 142.61887612 162 144.5 C165.89512811 147.89253093 169.72782763 151.35194201 173.5625 154.8125 C175.69417481 156.72554149 177.8401911 158.61887612 180 160.5 C183.89512811 163.89253093 187.72782763 167.35194201 191.5625 170.8125 C193.69417481 172.72554149 195.8401911 174.61887612 198 176.5 C198.63421875 177.05558594 199.2684375 177.61117187 199.921875 178.18359375 C201.46888538 179.53577388 203.02194443 180.88103997 204.578125 182.22265625 C212.27481254 188.96288408 217.34762627 194.44827981 218.2578125 204.984375 C218.58052025 214.14927498 216.84915807 220.68556063 211.8125 228.3125 C201.53496027 238.13326018 189.4555658 238.29822312 175.9375 238.125 C174.58138685 238.11494631 173.22526645 238.1058247 171.86914062 238.09765625 C168.579239 238.07424058 165.28971562 238.04144423 162 238 C162.00276538 239.04821898 162.00553076 240.09643797 162.00837994 241.17642117 C162.07500109 266.69083941 162.12428798 292.20524636 162.15543652 317.71973324 C162.17090037 330.05838552 162.19198079 342.39698032 162.22631836 354.7355957 C162.25623534 365.49088011 162.2755785 376.24612288 162.28226548 387.00144774 C162.28617382 392.69543936 162.29534913 398.38931188 162.31719017 404.0832653 C162.33759152 409.44546611 162.34382637 414.80749902 162.33932304 420.16973495 C162.34014661 422.13489635 162.34609042 424.1000635 162.35761642 426.06519127 C162.37261766 428.75537046 162.36892591 431.44492182 162.36076355 434.13511658 C162.36950207 434.9065454 162.3782406 435.67797423 162.38724393 436.47277969 C162.31398784 445.45039365 159.44095705 453.62599677 153 460 C146.99260816 464.36556121 141.78391548 467.12871484 134.30499268 467.12025452 C133.36552292 467.12162918 132.42605316 467.12300385 131.45811462 467.12442017 C130.43456375 467.12082489 129.41101288 467.11722961 128.35644531 467.11352539 C127.27321487 467.11367142 126.18998444 467.11381744 125.07392883 467.1139679 C121.49197388 467.113271 117.91007087 467.10548895 114.328125 467.09765625 C111.84519479 467.09579128 109.36226421 467.09436775 106.8793335 467.09336853 C101.01103191 467.08993995 95.14274951 467.08205769 89.27445579 467.07201904 C81.93687978 467.05973974 74.59930268 467.05437297 67.26171875 467.04882812 C54.17446969 467.03810176 41.08723603 467.02122486 28 467 C27.99853344 466.20615748 27.99706688 465.41231497 27.99555588 464.59441662 C27.95844598 445.24627409 27.89937588 425.89831148 27.81609726 406.55031109 C27.77634896 397.19361281 27.74393513 387.83699812 27.72900391 378.48022461 C27.71596553 370.32142521 27.68894524 362.16281006 27.64538693 354.00411445 C27.62282114 349.68722028 27.60708638 345.37055296 27.60811615 341.05359459 C27.60886567 336.98312291 27.590799 332.91315175 27.55883217 328.84280968 C27.55037373 327.35583787 27.54855543 325.86880965 27.55419731 324.38182449 C27.590616 313.29972037 26.60482251 302.837243 18.64453125 294.43359375 C12.32455324 288.92425425 6.29380444 287.85117931 -1.85449219 287.83886719 C-2.64201874 287.83390228 -3.42954529 287.82893738 -4.24093628 287.82382202 C-6.8429248 287.80923344 -9.44485232 287.80240336 -12.046875 287.796875 C-13.8604533 287.79112015 -15.67403158 287.78536246 -17.48760986 287.77960205 C-21.29057091 287.76910099 -25.09351087 287.76325269 -28.89648438 287.75976562 C-33.75637278 287.75428752 -38.61598009 287.73027035 -43.47578049 287.70179367 C-47.22313231 287.68311725 -50.97041716 287.677959 -54.71781158 287.67642975 C-56.50867497 287.6734132 -58.29953745 287.66541856 -60.09035492 287.65224457 C-62.60309367 287.63508158 -65.1151552 287.63708922 -67.62792969 287.64355469 C-68.35964386 287.6343399 -69.09135803 287.62512512 -69.84524536 287.6156311 C-77.93392838 287.68043056 -84.29865046 290.46864316 -90.23828125 295.96484375 C-95.52861712 302.07629605 -97.11395186 309.53658772 -97.15821838 317.40338135 C-97.1680072 318.72148804 -97.17779602 320.03959473 -97.18788147 321.39764404 C-97.19378533 322.85656702 -97.1995958 324.31549038 -97.20532227 325.77441406 C-97.21490329 327.311933 -97.22491351 328.84944932 -97.23532104 330.38696289 C-97.26235185 334.56012987 -97.2833713 338.73330814 -97.30332303 342.90651417 C-97.32519383 347.26808033 -97.35257717 351.62961176 -97.37937927 355.9911499 C-97.42929136 364.25000126 -97.4742357 372.50887192 -97.51740164 380.76776099 C-97.56678669 390.17035798 -97.62170012 399.57292013 -97.67708123 408.97548342 C-97.79087849 428.31695659 -97.89772246 447.65846265 -98 467 C-112.31712957 467.07022796 -126.63423224 467.12285574 -140.95149899 467.15543652 C-147.59997805 467.17107563 -154.24831036 467.19228209 -160.89672852 467.22631836 C-167.31579792 467.2589739 -173.73475598 467.27686623 -180.15390205 467.28463173 C-182.59984654 467.29016407 -185.04578511 467.30096736 -187.49168205 467.31719017 C-190.92419358 467.33904628 -194.35624816 467.34196344 -197.78881836 467.34057617 C-199.2971801 467.35675491 -199.2971801 467.35675491 -200.83601379 467.3732605 C-210.78321106 467.3299124 -217.78705665 465.07483113 -225.05078125 458.19140625 C-231.03813531 451.46013245 -232.15253767 444.45274479 -232.12025452 435.69842529 C-232.12110894 434.85379581 -232.12196337 434.00916632 -232.12284368 433.138942 C-232.12449276 430.30452059 -232.11898644 427.47015816 -232.11352539 424.63574219 C-232.11324337 422.60562135 -232.11340154 420.57550041 -232.1139679 418.54537964 C-232.11425529 413.0292546 -232.10836791 407.51315121 -232.10139394 401.99703121 C-232.09515076 396.23412625 -232.09455584 390.47122081 -232.09336853 384.70831299 C-232.09025807 373.79324028 -232.0820485 362.87817756 -232.07201904 351.96310925 C-232.06084908 339.53761942 -232.05534522 327.1121291 -232.05032361 314.68663549 C-232.03986567 289.12441812 -232.02227171 263.56220962 -232 238 C-232.83136475 238.01047363 -233.66272949 238.02094727 -234.51928711 238.03173828 C-237.64476471 238.0661057 -240.77014502 238.09103659 -243.89575195 238.10986328 C-245.89736377 238.12470245 -247.89888812 238.15013361 -249.90039062 238.17578125 C-261.40789698 238.23375357 -270.76902517 237.50644287 -279.6875 229.625 C-286.40061722 222.00470477 -288.50269446 215.35255462 -288.30859375 205.31640625 C-287.02553969 191.52763545 -276.81872991 183.54679334 -267 175 C-266.31808594 174.40316406 -265.63617188 173.80632812 -264.93359375 173.19140625 C-263.64443812 172.06372061 -262.35407187 170.93741744 -261.0625 169.8125 C-258.69035571 167.72788836 -256.34443935 165.61571356 -254 163.5 C-250.38323655 160.23609152 -246.73610392 157.01209051 -243.0625 153.8125 C-240.69035571 151.72788836 -238.34443935 149.61571356 -236 147.5 C-233.01937279 144.81016569 -230.02754767 142.13689636 -227 139.5 C-222.28298716 135.38918961 -217.64361111 131.19332155 -213 127 C-207.72014424 122.23213025 -202.42708194 117.48487782 -197.0625 112.8125 C-194.69035571 110.72788836 -192.34443935 108.61571356 -190 106.5 C-186.38323655 103.23609152 -182.73610392 100.01209051 -179.0625 96.8125 C-176.69035571 94.72788836 -174.34443935 92.61571356 -172 90.5 C-168.38323655 87.23609152 -164.73610392 84.01209051 -161.0625 80.8125 C-158.69035571 78.72788836 -156.34443935 76.61571356 -154 74.5 C-150.38323655 71.23609152 -146.73610392 68.01209051 -143.0625 64.8125 C-140.69035571 62.72788836 -138.34443935 60.61571356 -136 58.5 C-132.38323655 55.23609152 -128.73610392 52.01209051 -125.0625 48.8125 C-122.69035571 46.72788836 -120.34443935 44.61571356 -118 42.5 C-114.38323655 39.23609152 -110.73610392 36.01209051 -107.0625 32.8125 C-104.69035571 30.72788836 -102.34443935 28.61571356 -100 26.5 C-96.38112436 23.2341854 -92.73316615 20.00694969 -89.0546875 16.80859375 C-86.71979109 14.75335223 -84.42420466 12.65756967 -82.125 10.5625 C-58.56117503 -10.55873336 -27.91371784 -20.67550089 0 0 Z " fill="%23fff" transform="translate(291,28)"/></svg>')
+    center center/contain no-repeat;
+  content: "";
   display: inline-block;
   margin-right: 11px;
   margin-left: -9px;
@@ -882,23 +855,34 @@ nav .btn:active {
 }
 .wohnung-grundriss img {
   margin: -90px auto;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .wohnungs-grundriss img {
   margin: 35px auto;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
+.ausstattung-item img,
+.plagwitz-item .icon-viertel,
+.plagwitz-item img,
+.price-icon,
 .size-icon,
 .zimmer-icon {
   user-select: none !important;
   -webkit-user-drag: none !important;
 }
-.apartments {
+.ausstattung-item img,
+.price-icon,
+.size-icon,
+.zimmer-icon {
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+.apartments,
+.slider-custom-section,
+.viertel {
   background-color: rgba(0, 117, 210, 0.075);
   padding: 80px 0;
 }
+.download-table th,
+.team-section,
 .wohnungdetails {
   background-color: rgba(0, 117, 210, 0.075);
 }
@@ -938,6 +922,12 @@ nav .btn:active {
   transition: background 0.3s;
   text-align: center;
 }
+.apartment .btn,
+.ausstattung-item img,
+.contact .btn,
+.download-btn {
+  transition: background 0.3s, transform 0.1s;
+}
 .apartment-image {
   width: 100%;
   height: 500px;
@@ -957,7 +947,6 @@ nav .btn:active {
   color: var(--hintergrund-farbe);
   font-size: 0.875rem;
   text-transform: uppercase;
-  transition: background 0.3s, transform 0.1s;
 }
 .apartment .btn::before,
 .ausstattung .btn::before {
@@ -971,12 +960,6 @@ nav .btn:active {
 .download-btn:hover {
   background-color: var(--dunkelblau-farbe);
   transform: scale(1.02);
-}
-#scroll-to-top:active,
-.apartment .btn:active,
-.ausstattung .btn:active,
-.download-btn:active {
-  transform: scale(0.98);
 }
 .wohnung-details {
   font-size: 1rem;
@@ -998,41 +981,41 @@ nav .btn:active {
   height: 17.5px;
   margin-right: 2px;
   margin-bottom: 4px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
-
 .zimmer-icon {
   width: 19.5px;
   height: 19.5px;
   margin-right: 7px;
   margin-left: 20px;
   margin-bottom: 5px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
-.ausstattung-item img,
-.price-icon {
-  user-select: none !important;
-  -webkit-user-drag: none !important;
-}
-
 .ausstattung-item img {
-  transition: all 0.3s ease-in-out;
-  transition: background 0.3s, transform 0.1s;
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.footer-links a,
+.text-impressum a {
+  transition: color 0.3s;
+  text-decoration: none;
 }
 .ausstattung-item img:hover {
   transform: scale(1.08);
 }
-
 .price-icon {
   width: 18px;
   height: 18px;
   margin-right: 9px;
   margin-left: 22px;
   margin-bottom: 2px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
+}
+.contact-icon,
+.footer-logo,
+.slider img {
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
 }
 .trenner {
   width: 60%;
@@ -1078,26 +1061,18 @@ nav .btn:active {
   gap: 15px;
   margin-bottom: 15px;
 }
-.ausstattung-item img {
-  width: 98px;
-  height: 98px;
-  object-fit: cover;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  border-radius: var(--radius);
-}
 .contact-icon,
 .slider img {
-  user-select: none !important;
-  pointer-events: none !important;
-  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .ausstattung-item h3 {
   font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.ausstattung-item p {
+.ausstattung-item p,
+.plagwitz-item h4 {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -1106,20 +1081,12 @@ nav .btn:active {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
-.ausstattung .btn,
-.contact,
-.contact-address a,
-.contact-header h3 {
-  color: var(--hintergrund-farbe);
-}
 .ausstattung .btn {
   align-items: center;
   background-color: var(--blau-farbe);
   margin-top: 20px;
 }
-
 @media (max-width: 600px) {
-  /* Reihenfolge: erst Text/Tabelle, dann Bild */
   .about-content2 {
     display: flex;
     flex-direction: column;
@@ -1131,8 +1098,11 @@ nav .btn:active {
   .bild-plagwitz-neu {
     order: 2;
     width: 100%;
-    min-height: 220px; /* auf Mobile sichtbar halten */
+    min-height: 220px;
     display: block;
+  }
+  .header-content {
+    margin-top: 40px;
   }
 }
 .contact .container,
@@ -1140,18 +1110,10 @@ nav .btn:active {
   margin: 0 auto;
   max-width: 90%;
 }
-.image-slider {
-  width: 100%;
-  overflow: hidden;
-}
 .slider-container {
-  position: relative;
   max-width: 100%;
-  overflow: hidden;
 }
 .slider-wrapper {
-  width: 100%;
-  overflow: hidden;
   position: relative;
 }
 .slider {
@@ -1159,13 +1121,17 @@ nav .btn:active {
   transition: transform 0.5s;
   gap: 3px;
 }
+.swiper-slide,
+.swiper-wrapper,
+swiper-slide {
+  position: relative;
+  transition-property: transform;
+}
 .slider img {
   width: 400px;
   height: 400px;
   object-fit: cover;
   flex-shrink: 0;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .contact {
   background: var(--blau-farbe);
@@ -1205,6 +1171,7 @@ nav .btn:active {
 .contact-form {
   width: 55%;
 }
+.accordion,
 .contact form {
   display: flex;
   flex-direction: column;
@@ -1242,8 +1209,6 @@ nav .btn:active {
   width: 22px;
   height: 22px;
   object-fit: contain;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
   opacity: 0.85;
   color: #fff;
 }
@@ -1261,7 +1226,6 @@ nav .btn:active {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: var(--radius);
-  transition: background 0.3s, transform 0.1s;
 }
 .contact .btn::before {
   content: "";
@@ -1273,7 +1237,6 @@ nav .btn:active {
   margin-right: 13px;
   margin-bottom: -4.7px;
 }
-
 .contact-map {
   width: 40%;
   display: flex;
@@ -1302,26 +1265,17 @@ nav .btn:active {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 4px 0;
-
   hyphens: auto;
 }
-.contact-address a {
+.contact-address a,
+h4 a {
   text-decoration: none;
-}
-.footer,
-.footer-content,
-.footer-links a {
-  color: var(--text-farbe);
 }
 .footer {
   position: relative;
   background: var(--hintergrund-farbe);
-  padding: 0px 0px 40px 0px;
+  padding: 0 0 40px;
   overflow: visible;
-}
-.download-table th,
-.team-section {
-  background-color: rgba(0, 117, 210, 0.075);
 }
 .footer::before {
   content: "";
@@ -1349,10 +1303,6 @@ nav .btn:active {
     transparent
   );
 }
-.footer .container {
-  position: relative;
-  z-index: 1;
-}
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -1362,23 +1312,16 @@ nav .btn:active {
 }
 .footer-logo {
   height: 50px;
-  pointer-events: none !important;
-  user-select: none !important;
-  -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
 .footer-links ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   gap: 25px;
 }
 .footer-links a {
-  text-decoration: none;
   font-size: 0.875rem;
   font-weight: 400;
-  transition: color 0.3s;
 }
 .footer-links a:after,
 .plagwitz-link:after {
@@ -1393,12 +1336,6 @@ nav .btn:active {
 .plagwitz-link:hover:after {
   transition: width 50ms ease-in-out;
   width: 100%;
-  color: var(--blau-farbe);
-}
-.download-text,
-.footer-links a:hover,
-.plagwitz-link:hover,
-h4 a:hover {
   color: var(--blau-farbe);
 }
 .footer-copy {
@@ -1460,6 +1397,7 @@ h4 a:hover {
     transform: translateX(2px) rotateY(3deg);
   }
 }
+.slider-track,
 .swiper-pagination,
 .swiper-slide,
 .swiper-wrapper {
@@ -1491,7 +1429,20 @@ h4 a:hover {
   -webkit-user-drag: none !important;
   color: var(--blau-farbe);
 }
-
+.icon-aufgaben,
+.icon-ausbildung,
+.plagwitz-item .icon-viertel {
+  object-fit: contain;
+  opacity: 0.45;
+  pointer-events: none !important;
+  vertical-align: middle;
+}
+.downloads-icon,
+.downloads-iconalt,
+.downloads-iconalt2 {
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
 .download-table td,
 .download-table th {
   border-bottom: 1px solid var(--blau-farbe);
@@ -1500,6 +1451,9 @@ h4 a:hover {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
 }
 .download-table thead tr th,
 .download-table tr:last-child td {
@@ -1512,10 +1466,6 @@ h4 a:hover {
   text-transform: uppercase;
   margin-bottom: 10px;
   padding: 20px;
-}
-.plagwitz-item p,
-h4 a {
-  color: var(--text-farbe);
 }
 .download-table img.icon {
   width: 32px;
@@ -1535,52 +1485,39 @@ h4 a {
 .downloads-icon {
   width: 40px;
   height: 40px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .downloads-iconalt {
   width: 43px;
   height: 43px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
 .downloads-iconalt2 {
   width: 48px;
   height: 48px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
-
-.download-table th,
-.download-table td {
-  overflow: hidden; /* falls Text zu lang ist */
-  text-overflow: ellipsis;
-  vertical-align: middle;
-}
-
-/* Standard (Desktop) – Beispielwerte */
-.download-table th:nth-child(1),
-.download-table td:nth-child(1) {
+.download-table td:first-child,
+.download-table th:first-child {
   width: 10%;
-} /* Dokument (Icon) */
-.download-table th:nth-child(2),
-.download-table td:nth-child(2) {
+}
+.download-table td:nth-child(2),
+.download-table th:nth-child(2) {
   width: 70%;
-} /* Beschreibung */
-.download-table th:nth-child(3),
-.download-table td:nth-child(3) {
+}
+.download-table td:nth-child(3),
+.download-table th:nth-child(3) {
   width: 20%;
-} /* Download */
-
+}
 .icon-aufgaben,
 .icon-ausbildung {
   margin-right: 10px;
   user-select: none !important;
   -webkit-user-drag: none !important;
-  object-fit: contain;
-  vertical-align: middle;
-  opacity: 0.45;
-  pointer-events: none !important;
+}
+.icon-aufgaben,
+.icon-ausbildung,
+.plagwitz-item .icon-viertel,
+.plagwitz-item img {
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .team-section {
   padding: 60px 0;
@@ -1632,6 +1569,7 @@ h4 a {
 .team-container div {
   text-align: left;
 }
+.impressumue,
 .team-text {
   color: var(--blau-farbe);
   font-weight: 400;
@@ -1640,22 +1578,13 @@ h4 a {
   width: 24px;
   height: 24px;
   margin-left: -3px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
   color: var(--blau-farbe);
 }
 .icon-aufgaben {
   width: 22px;
   height: 22px;
   margin-left: -2px;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
   color: var(--blau-farbe);
-}
-.plagwitz-item .icon-viertel,
-.plagwitz-item img {
-  user-select: none !important;
-  -webkit-user-drag: none !important;
 }
 .tabelle-container {
   display: flex;
@@ -1695,14 +1624,8 @@ h4 a {
   display: flex;
   border-radius: var(--radius);
 }
-.slider-custom-section,
-.viertel {
-  background-color: rgba(0, 117, 210, 0.075);
-  padding: 80px 0;
-}
-
 .slider-wohnung-section {
-  background-color: white;
+  background-color: #fff;
   padding: 80px 0;
   margin: 0 auto;
 }
@@ -1717,8 +1640,6 @@ h4 a {
   height: 210px;
   max-width: 140px;
   object-fit: cover;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
   border-radius: var(--radius);
 }
 .plagwitz-item p {
@@ -1726,29 +1647,27 @@ h4 a {
   text-align: justify;
   hyphens: auto;
 }
-.plagwitz-item h4 {
-  font-size: 1rem;
-  font-weight: 300;
+.accordion h1,
+.counter-box,
+.einblenden,
+.quote-carousel,
+.quote-dots,
+.wekontakt {
+  text-align: center;
 }
 .plagwitz-item .icon-viertel {
   width: 20px;
   height: 20px;
-  object-fit: contain;
-  vertical-align: middle;
   margin-right: 3px;
   margin-bottom: 4px;
   margin-left: -4px;
   color: var(--blau-farbe);
-  opacity: 0.45;
-  pointer-events: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
 }
-
 .plagwitz-item h3 {
   font-size: 1.125rem;
   font-weight: 400;
 }
+.footer-content .footer-links a,
 .plagwitz-link {
   display: inline-block;
 }
@@ -1773,12 +1692,10 @@ swiper-container {
   height: 350px;
 }
 .swiper-wrapper {
-  position: relative;
   width: 100%;
   height: 100%;
   z-index: 1;
   display: flex;
-  transition-property: transform;
   box-sizing: content-box;
 }
 .swiper-slide,
@@ -1787,8 +1704,6 @@ swiper-slide {
   width: 350px;
   height: 350px;
   object-fit: cover;
-  position: relative;
-  transition-property: transform;
   display: block;
   user-select: none !important;
   -webkit-user-drag: none !important;
@@ -1815,6 +1730,13 @@ swiper-slide {
   overflow: hidden;
   font-size: 0;
 }
+.blue-share,
+.einblenden,
+.wekontakt {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   transform: scale(0.33);
   position: relative;
@@ -1839,6 +1761,11 @@ swiper-slide {
   background: #fff;
   opacity: 0.6;
   margin: 5px;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc,
+.einblenden,
+.quote-carousel .quote.active {
+  display: block;
 }
 #scroll-to-top,
 .einblenden {
@@ -1867,9 +1794,6 @@ button.swiper-pagination-bullet {
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
-h4 a {
-  text-decoration: none;
-}
 #scroll-to-top {
   position: fixed;
   z-index: 10;
@@ -1895,18 +1819,17 @@ h4 a {
   visibility: visible;
 }
 .einblenden {
-  display: block;
   margin: 20px 0 0;
   padding: 10px 20px;
   color: var(--hintergrund-farbe);
   border: none;
-  text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 600;
   transition: background 0.3s, transform 0.1s;
   border-radius: var(--radius);
+}
+.blue-share,
+.icon-share {
+  color: var(--blau-farbe);
 }
 .einblenden::before {
   content: "";
@@ -1919,7 +1842,6 @@ h4 a {
   margin-bottom: -5px;
   margin-left: -4px;
 }
-
 .action-buttons {
   display: flex;
   justify-content: flex-end;
@@ -1931,75 +1853,60 @@ h4 a {
   margin: 0 auto;
   z-index: 20;
 }
-
-.action-buttons button,
-.action-buttons a {
-  background: none;
+.action-buttons a,
+.action-buttons button {
+  background: 0 0;
   border: none;
   cursor: pointer;
   padding: 0;
 }
-
+.accordion-item,
+.blauerbg {
+  border-radius: var(--radius);
+}
 .icon-share {
-  color: var(--blau-farbe);
   opacity: 0.45;
   transition: transform 0.1s;
   margin-top: -10px;
 }
-
 .icon-share:hover {
   transform: scale(1.04);
   opacity: 0.85;
 }
-
 .icon-share:active {
   transform: scale(0.96);
 }
-
-.blue-share {
-  color: var(--blau-farbe);
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .blauerbg {
   background-color: var(--blau-farbe);
-  color: white;
+  color: #fff;
   padding-top: 8px;
   padding-bottom: 12px;
   padding-left: 13px;
   margin-left: -13px;
-  border-radius: var(--radius);
 }
-
 .weissicon {
   opacity: 1;
-  color: white;
+  color: #fff;
 }
-
 .weiss {
   opacity: 1;
-  background-color: white;
+  background-color: #fff;
 }
-
 .tabelle-resultate a {
   color: var(--text-farbe);
   text-decoration: none;
 }
-
-.accordion {
-  display: flex;
-  flex-direction: column;
-}
 .accordion h1 {
   font-size: 2rem;
-  text-align: center;
 }
 .accordion-item {
   margin-top: 16px;
+  background: #fff;
+}
+.plagwitzbar,
+.wekontakt {
+  background-color: var(--blau-farbe);
   border-radius: var(--radius);
-  background: #ffffff;
 }
 .accordion-item .accordion-item-title {
   position: relative;
@@ -2018,34 +1925,27 @@ h4 a {
 .accordion-item .accordion-item-desc {
   display: none;
   font-size: 1.125rem;
-  line-height: 22px;
   font-weight: 300;
   color: var(--text-farbe);
   border-top: 1px solid var(--blau-farbe);
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   box-sizing: border-box;
   line-height: 1.6;
   text-align: justify;
   hyphens: auto;
 }
-
 .accordion-item-desc li {
   margin-left: 40px;
 }
-
 .accordion-item-desc a {
   text-decoration: none;
   color: var(--blau-farbe);
 }
-
 .accordion-item input[type="checkbox"] {
   position: absolute;
   height: 0;
   width: 0;
   opacity: 0;
-}
-.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
-  display: block;
 }
 .accordion-item
   input[type="checkbox"]:checked
@@ -2068,7 +1968,6 @@ h4 a {
 .accordion-item .icon {
   margin-left: 14px;
 }
-
 .about-content6 {
   justify-content: space-between;
   align-items: stretch;
@@ -2076,35 +1975,14 @@ h4 a {
   width: 100%;
   height: 100%;
 }
-
 .wekontakt {
   color: var(--hintergrund-farbe);
-}
-
-.wekontakt {
   display: inline-flex;
   align-items: center;
   padding: 12px 24px;
-  background-color: var(--blau-farbe);
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
   transition: background 0.3s, transform 0.1s;
-  border-radius: var(--radius);
 }
-
-.wekontakt:hover {
-  background-color: var(--dunkelblau-farbe);
-  color: var(--hintergrund-farbe);
-  transform: scale(1.02);
-}
-
-.wekontakt:active {
-  transform: scale(0.98);
-}
-
 .wekontakt::before {
   width: 20px;
   height: 20px;
@@ -2112,13 +1990,10 @@ h4 a {
     center center/contain no-repeat;
   margin-bottom: 1px;
   content: "";
-}
-.wekontakt::before {
   display: inline-block;
   margin-right: 8px;
   margin-left: -4px;
 }
-
 .slider-container {
   overflow: hidden;
   width: 100%;
@@ -2141,38 +2016,29 @@ h4 a {
     black 90%,
     transparent
   );
-
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0;
 }
-
 .slider-track {
   display: flex;
   width: fit-content;
-  animation: scroll 50s linear infinite;
-  -webkit-animation: scroll 50s linear infinite;
+  animation: 50s linear infinite scroll;
+  -webkit-animation: 50s linear infinite forwards scroll;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   will-change: transform;
-  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
 }
-
 .slider-track-right {
   display: flex;
   width: fit-content;
-  animation: scroll-right 50s linear infinite;
-  -webkit-animation: scroll-right 50s linear infinite;
+  animation: 50s linear infinite scroll-right;
+  -webkit-animation: 50s linear infinite forwards scroll-right;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   will-change: transform, opacity;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
 }
-
 .slider-track .icon,
 .slider-track-right .icon {
   flex: 0 0 auto;
@@ -2180,17 +2046,15 @@ h4 a {
   align-items: center;
   justify-content: center;
   margin-right: 30px;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transition: background 0.3s, transform 0.1s;
   opacity: 0.7;
 }
-
 .slider-track .icon:hover,
 .slider-track-right .icon:hover {
   transform: scale(1.08);
   opacity: 1;
 }
-
 .slider-track svg,
 .slider-track-right svg {
   max-height: 150px;
@@ -2199,7 +2063,6 @@ h4 a {
   display: block;
   color: #0075d2;
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -2208,7 +2071,6 @@ h4 a {
     transform: translateX(-50%);
   }
 }
-
 @keyframes scroll-right {
   0% {
     transform: translateX(-50%);
@@ -2217,34 +2079,24 @@ h4 a {
     transform: translateX(0);
   }
 }
-
-.hovering {
-  transition: all 0.3s ease-in-out;
+.hovering,
+.hoveringbild,
+.hoveringsmall {
+  transition: 0.3s ease-in-out;
   transition: background 0.3s, transform 0.1s;
 }
 .hovering:hover {
   transform: scale(1.025);
   opacity: 1;
 }
-
-.hoveringsmall {
-  transition: all 0.3s ease-in-out;
-  transition: background 0.3s, transform 0.1s;
-}
 .hoveringsmall:hover {
   transform: scale(1.01);
   opacity: 1;
-}
-
-.hoveringbild {
-  transition: all 0.3s ease-in-out;
-  transition: background 0.3s, transform 0.1s;
 }
 .hoveringbild:hover {
   transform: scale(1.04);
   opacity: 1;
 }
-
 .text-impressum li {
   font-size: 1.125rem;
   font-weight: 300;
@@ -2253,32 +2105,24 @@ h4 a {
   hyphens: auto;
   color: var(--text-farbe);
 }
-
-.impressumue {
+.counter-img,
+.counter-number,
+.text-impressum a {
   color: var(--blau-farbe);
-  font-weight: 400;
 }
 ::marker {
   color: var(--blau-farbe);
 }
-
-.text-impressum a {
-  text-decoration: none;
-  color: var(--blau-farbe);
-  transition: color 0.3s;
-}
-
 .counter-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   gap: 10px;
   width: 100%;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0 0;
   box-sizing: border-box;
 }
 .counter-box {
-  text-align: center;
   max-width: 280px;
   display: flex;
   flex-direction: column;
@@ -2289,14 +2133,12 @@ h4 a {
   width: auto;
   height: auto;
   display: block;
-  color: var(--blau-farbe);
   margin-bottom: 15px;
   opacity: 0.7;
 }
 .counter-number {
   font-size: 1.5625rem;
   font-weight: 300;
-  color: var(--blau-farbe);
   min-height: 30px;
   line-height: 1.3;
   display: inline-block;
@@ -2308,84 +2150,64 @@ h4 a {
   color: var(--text-farbe);
   min-height: 40px;
 }
-
+.plagwitzitem,
+.quote-carousel .quote span {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
 .plagwitzbar {
-  background-color: var(--blau-farbe);
-  border-radius: var(--radius);
   display: flex;
   justify-content: center;
   padding: 10px 0;
   margin-bottom: 35px;
 }
-
 .plagwitzitem {
   display: inline-block;
   align-items: center;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 5px 20px;
-  border-right: 1px solid white;
-  text-transform: uppercase;
-  font-size: 0.875rem;
+  border-right: 1px solid #fff;
   font-weight: 600;
   position: relative;
 }
-
 .plagwitzitem:last-child {
   border-right: none;
 }
-
 .plagwitzlink:after {
   content: "";
   display: block;
   height: 3px;
-  background: white;
+  background: #fff;
   width: 0;
   margin: 0 auto;
   transition: width 50ms ease-in-out;
 }
-
-.plagwitzlink:hover:after {
-  width: 100%;
-}
 .quote-carousel {
-  width: 90%; /* gleiche Breite wie andere Container */
+  width: 90%;
   max-width: 1000px;
-  margin: 30px 0px 10px 0px;
+  margin: 30px 0 10px;
   padding: 20px;
   position: relative;
-  text-align: center;
   background: #0075d2;
   border-radius: 6px;
 }
-
 .quote-carousel .quote {
   display: none;
   font-size: 1.375rem;
-
-  color: white;
-  font-family: "Mynerve", sans-serif;
+  color: #fff;
+  font-family: Mynerve, sans-serif;
 }
-
-.quote-carousel .quote.active {
-  display: block;
-}
-
 .quote-carousel .quote span {
   display: block;
   margin-top: 12px;
-  font-size: 0.875rem;
   font-weight: 400;
-  text-transform: uppercase;
-  color: white;
+  color: #fff;
 }
-
 .quote-dots {
-  text-align: center;
   margin-bottom: -80px;
   cursor: pointer;
 }
-
 .quote-dots .dot {
   display: inline-block;
   width: 10px;
@@ -2395,11 +2217,9 @@ h4 a {
   border-radius: 50%;
   transition: background-color 0.3s;
 }
-
 .quote-dots .dot.active {
   background-color: #0075d2;
 }
-
 .blue-text-quote {
   color: var(--blau-farbe);
   font-size: 1.125rem;
@@ -2407,12 +2227,11 @@ h4 a {
   margin-top: -10px;
   font-weight: 300;
 }
-
 .energie {
   color: #ecf5fc;
   width: 10px;
   height: 24px;
-  padding: 0px 30px 0px 6px; /* Rechts mehr Platz für die Spitze */
+  padding: 0 30px 0 6px;
   background-color: #65b32e;
   border-radius: 3px;
   font-size: 15.5px;
@@ -2428,15 +2247,13 @@ h4 a {
     0% 100%
   );
 }
-
-/* === Hamburger Menu (mobile) === */
 .hamburger {
   display: none;
   position: relative;
   width: 44px;
   height: 44px;
   border: none;
-  background: transparent;
+  background: 0 0;
   cursor: pointer;
 }
 .hamburger span {
@@ -2446,9 +2263,9 @@ h4 a {
   height: 3px;
   background: #fff;
   border-radius: 2px;
-  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+  transition: transform 0.2s, opacity 0.2s, top 0.2s;
 }
-.hamburger span:nth-child(1) {
+.hamburger span:first-child {
   top: 14px;
 }
 .hamburger span:nth-child(2) {
@@ -2457,8 +2274,7 @@ h4 a {
 .hamburger span:nth-child(3) {
   top: 28px;
 }
-
-body.menu-open .hamburger span:nth-child(1) {
+body.menu-open .hamburger span:first-child {
   top: 21px;
   transform: rotate(45deg);
 }
@@ -2469,19 +2285,48 @@ body.menu-open .hamburger span:nth-child(3) {
   top: 21px;
   transform: rotate(-45deg);
 }
-
 .nav-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   z-index: 999;
 }
-
+.footer .container {
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  max-width: 90%;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.footer-logo {
+  flex: 0 0 auto;
+}
+.footer-links {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-links li {
+  margin: 0;
+}
 @media (max-width: 900px) {
   .hamburger {
     display: inline-block;
   }
-
   #primary-nav {
     position: fixed;
     top: 0;
@@ -2499,7 +2344,6 @@ body.menu-open .hamburger span:nth-child(3) {
   body.menu-open #primary-nav {
     transform: translateX(0);
   }
-
   #primary-nav ul {
     flex-direction: column;
     gap: 18px;
@@ -2507,141 +2351,111 @@ body.menu-open .hamburger span:nth-child(3) {
   #primary-nav a {
     font-size: 1.125rem;
   }
-
   #primary-nav .btn {
     background: #fff;
     color: var(--blau-farbe);
     padding: 10px 16px;
     border-radius: 4px;
   }
-
   #primary-nav .btn::before {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(0,512) scale(0.1,-0.1)" fill="%230075d2"><path d="M1386 5109 c-62 -15 -153 -68 -197 -116 -22 -24 -55 -74 -72 -111 l-32 -67 -3 -210 -3 -211 -86 -29 c-230 -78 -591 -287 -695 -403 -68 -75 -140 -249 -180 -431 -30 -136 -30 -416 0 -581 112 -614 506 -1279 1108 -1872 594 -585 1248 -958 1860 -1059 46 -8 155 -13 259 -13 147 0 199 4 282 22 195 42 369 119 447 199 67 67 167 221 257 398 127 245 160 345 160 476 0 194 -51 302 -193 406 -46 34 -175 129 -288 212 -113 83 -230 164 -260 180 -155 83 -335 57 -476 -69 -32 -29 -135 -125 -227 -213 l-169 -161 -36 20 c-71 37 -279 181 -376 259 -142 114 -298 258 -414 382 l-102 108 1383 5 1382 5 58 24 c118 47 210 152 242 276 22 88 23 2191 0 2278 -32 125 -107 215 -223 270 l-67 32 -1650 2 c-974 0 -1666 -3 -1689 -8z m839 -1268 c385 -316 716 -584 735 -595 44 -26 141 -28 185 -4 17 9 351 280 743 602 393 322 716 586 718 586 2 0 4 -400 4 -890 l0 -890 -1492 0 -1493 0 -38 66 c-38 64 -38 66 -20 87 10 11 101 109 204 218 202 215 239 270 260 382 15 81 2 173 -37 248 -28 57 -396 564 -454 627 -37 39 -40 48 -40 98 0 41 3 53 12 48 7 -4 327 -267 713 -583z m-1375 -211 c110 -154 257 -349 351 -466 l58 -71 -71 -78 c-80 -89 -98 -124 -98 -192 0 -127 211 -477 479 -798 159 -191 446 -469 657 -637 162 -129 373 -264 529 -340 84 -40 109 -48 158 -48 72 0 102 15 193 96 39 35 74 64 78 64 4 0 78 -56 166 -124 134 -104 265 -201 482 -356 l37 -26 -41 -64 c-35 -53 -50 -67 -102 -91 -94 -44 -208 -70 -336 -76 -258 -13 -538 60 -870 226 -939 468 -1800 1481 -1981 2333 -17 79 -22 139 -23 258 -1 172 12 249 65 376 28 66 36 76 96 118 37 25 67 45 68 43 1 -1 49 -67 105 -147z"/></g></svg>')
       center center/contain no-repeat;
   }
-
   #primary-nav .btn:hover {
     background: var(--grau-farbe);
     color: var(--blau-farbe);
   }
-
   body.menu-open {
     overflow: hidden;
   }
   body.menu-open .nav-backdrop {
     display: block;
   }
-}
-
-.footer .container {
-  width: 1000px;
-  max-width: 90%;
-}
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: nowrap; /* prevent the logo and links block from breaking into separate rows */
-}
-.footer-logo {
-  flex: 0 0 auto; /* keep logo fixed width */
-}
-.footer-links {
-  flex: 1 1 auto; /* take remaining space to the right */
-  min-width: 0; /* allow content to shrink and wrap inside */
-}
-.footer-links ul {
-  display: flex;
-  flex-wrap: wrap; /* allow links to wrap into multiple rows within the right area */
-  justify-content: flex-end; /* stick to the right edge */
-  gap: 10px 24px; /* row and column gaps between links */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-links li {
-  margin: 0;
-}
-.footer-links a {
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
   body:not(.menu-open) #primary-nav {
     position: fixed;
     top: 0;
-    right: -100vw; /* sicher aus dem Viewport schieben */
+    right: -100vw;
     height: 100vh;
-    transform: none; /* Transform-Bugs vermeiden */
-    box-shadow: none; /* Shadow soll keinen Scrollbalken auslösen */
+    transform: none;
+    box-shadow: none;
   }
-
   body.menu-open #primary-nav {
     right: 0;
     transform: none;
     box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
-    transition: right 0.25s ease-in-out; /* gleitet rein/raus */
+    transition: right 0.25s ease-in-out;
   }
 }
-
 .header {
   overflow-x: hidden;
 }
-
 .contact-map iframe {
   display: block;
   max-width: 100%;
 }
-
-/* --- Mobile Fix: Bild zwischen Text und Button in .about-content --- */
-@media (max-width: 750px) {
-  /* Staple alles untereinander */
-  .about-content {
+@media (max-width: 980px) {
+  .about-content2 {
+    display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 20px;
   }
-
-  /* Container-Hülle auflösen, damit Kinder (h3,h2,p,Button) einzeln sortierbar sind */
-  .about-content .text {
-    display: contents;
-  }
-
-  /* Reihenfolge festlegen: Textteile (h3,h2,p) -> Bild -> Button */
-  .about-content .text h3 {
+  .text-plagwitz {
     order: 1;
   }
-  .about-content .text h2 {
+  .bild-plagwitz-neu {
     order: 2;
-  }
-  .about-content .text p {
-    order: 3;
-  }
-
-  /* Bild direkt NACH dem Text platzieren */
-  .about-content .bild-plagwitz {
-    order: 4;
     width: 100%;
-    min-height: 450px;
-    margin-bottom: 30px;
-    margin-top: 15px;
+    min-height: 350px;
+    display: block;
+    background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
   }
-
-  /* Button NACH dem Bild */
-  .about-content .read-more {
-    order: 5;
-    align-self: flex-start;
+  .bild-links,
+  .bild-mitte {
+    order: 3;
+    width: 100%;
+    min-height: 350px;
+  }
+  .bild-mitte {
+    display: block;
+    background: url("/images/wohnungen/mitte/tuer.webp") 80% 80% / cover
+      no-repeat;
+  }
+  .bild-links {
+    background: url("/images/wohnungen/links/tuer.webp") 80% 30% / cover
+      no-repeat;
+  }
+  .tabelle-info {
+    min-width: 195px;
   }
 }
-
+.text-plagwitz .tabelle-resultate,
+.text-plagwitz .tabelle-resultate p {
+  text-align: left;
+  hyphens: none;
+}
+@media (max-width: 1000px) {
+  .plagwitz-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+  }
+  .plagwitz-item img {
+    flex: 0 0 0%;
+    max-width: 200px;
+    height: auto;
+  }
+  .plagwitz-item .text {
+    flex: 1;
+    width: auto;
+  }
+}
 @media (max-width: 800px) {
-  .about-content .text {
+  .about-content .text,
+  .about-content4 .text {
     width: 50%;
   }
-}
-
-@media (max-width: 800px) {
-  /* Apartments untereinander statt nebeneinander */
   .apartment-list {
     flex-direction: column;
     gap: 30px;
@@ -2649,35 +2463,22 @@ body.menu-open .hamburger span:nth-child(3) {
   .apartment {
     width: 100%;
   }
-
-  /* Abstand vor dem zweiten Apartment-Bild */
-  .apartment:nth-child(1) .apartment-image {
+  .apartment:first-child .apartment-image {
     margin-top: -60px;
   }
   .apartment:nth-child(2) .apartment-image {
     margin-top: 30px;
   }
-}
-
-@media (max-width: 800px) {
   .ausstattung-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-}
-
-@media (max-width: 800px) {
-  .ausstattung-list {
-    grid-template-columns: 1fr; /* nur 1 pro Zeile */
+    grid-template-columns: 1fr;
   }
   .ausstattung-item {
-    width: 100%; /* volle Breite */
+    width: 100%;
     margin-bottom: 10px;
   }
-}
-
-@media (max-width: 800px) {
   .contact-columns {
     flex-direction: column;
   }
@@ -2695,110 +2496,38 @@ body.menu-open .hamburger span:nth-child(3) {
     margin-top: -10px;
     margin-bottom: 5px;
   }
-}
-
-@media (max-width: 600px) {
-  .header-content {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 800px) {
   html {
     font-size: 95%;
   }
 }
-
-@media (max-width: 700px) {
-  html {
-    font-size: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 87%;
-  }
-}
-
-@media (max-width: 980px) {
-  /* Reihenfolge: erst Text/Tabelle, dann Bild */
-  .about-content2 {
-    display: flex;
+@media (max-width: 750px) {
+  .about-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
-  .text-plagwitz {
+  .about-content .text {
+    display: contents;
+  }
+  .about-content .text h3 {
     order: 1;
   }
-  .bild-plagwitz-neu {
+  .about-content .text h2 {
     order: 2;
-    width: 100%;
-    min-height: 350px; /* auf Mobile sichtbar halten */
-    display: block;
-    background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
   }
-
-  .bild-mitte {
+  .about-content .text p {
     order: 3;
+  }
+  .about-content .bild-plagwitz {
+    order: 4;
     width: 100%;
-    min-height: 350px; /* auf Mobile sichtbar halten */
-    display: block;
-    background: url("/images/wohnungen/mitte/tuer.webp") 80% 80% / cover
-      no-repeat;
+    min-height: 450px;
+    margin-bottom: 30px;
+    margin-top: 15px;
   }
-
-  .bild-links {
-    order: 3;
-    width: 100%;
-    min-height: 350px; /* auf Mobile sichtbar halten */
-    background: url("/images/wohnungen/links/tuer.webp") 80% 30% / cover
-      no-repeat;
+  .about-content .read-more {
+    order: 5;
+    align-self: flex-start;
   }
-
-  .tabelle-info {
-    min-width: 195px;
-  }
-}
-
-.text-plagwitz .tabelle-resultate,
-.text-plagwitz .tabelle-resultate p {
-  text-align: left;
-  hyphens: none;
-}
-
-@media (max-width: 1000px) {
-  .plagwitz-item {
-    display: flex;
-    flex-direction: row; /* Bild links, Text rechts */
-    align-items: flex-start;
-    width: 100%; /* volle Containerbreite */
-    gap: 15px; /* kleiner Abstand zwischen Bild & Text */
-  }
-
-  .plagwitz-item img {
-    flex: 0 0 0%; /* Bild fix 40% Breite, passt sich an Höhe an */
-    max-width: 200px; /* optional Begrenzung */
-    height: auto;
-  }
-
-  .plagwitz-item .text {
-    flex: 1; /* Text füllt Rest */
-    width: auto;
-  }
-}
-
-@media (max-width: 800px) {
-  /* Giesser-Bild */
-
-  .about-content4 .text {
-    width: 50%;
-  }
-}
-
-@media (max-width: 750px) {
-  /* Giesser-Bild */
-
   .about-content4 .text {
     width: 100%;
     margin-bottom: -10px;
@@ -2808,51 +2537,40 @@ body.menu-open .hamburger span:nth-child(3) {
     flex-direction: column;
     gap: 20px;
   }
-
   .bild-giesser {
     order: 2;
     width: 100%;
-    min-height: 250px; /* auf Mobile sichtbar halten */
+    min-height: 250px;
     display: block;
     background: url("/images/plagwitz/giesserstrasse.webp") 15% 35% / cover
       no-repeat;
   }
 }
-
-@media (max-width: 700px) {
-  .download-btn {
-    padding: 12px 8px 12px 23px; /* etwas schmaler ohne Text */
-  }
-
-  .download-btn::after {
-    content: ""; /* sicherstellen, dass kein Rest-Text kommt */
-  }
-
-  .download-btn {
-    font-size: 0; /* Text unsichtbar machen */
-  }
-
-  .download-btn i {
-    font-size: 0px; /* Icon sichtbar halten */
-    margin: 0; /* zentrieren */
-  }
-}
-
 @media (max-width: 500px) {
-  .download-table th:nth-child(1),
-  .download-table td:nth-child(1) {
+  .download-table td:first-child,
+  .download-table th:first-child {
     display: none;
   }
 }
-
 .download-table td:nth-child(3) {
-  text-align: center; /* horizontal */
-  vertical-align: middle; /* vertikal in der Zelle */
+  text-align: center;
+  vertical-align: middle;
 }
-
-/* Mobile: Counter-Boxen auf 2 pro Reihe */
 @media (max-width: 700px) {
-  /* Container auf Grid umstellen: 2 Spalten */
+  html {
+    font-size: 90%;
+  }
+  .download-btn {
+    padding: 12px 8px 12px 23px;
+    font-size: 0;
+  }
+  .download-btn::after {
+    content: "";
+  }
+  .download-btn i {
+    font-size: 0px;
+    margin: 0;
+  }
   .counter-wrapper {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2861,115 +2579,91 @@ body.menu-open .hamburger span:nth-child(3) {
     width: 100%;
     margin-bottom: -30px;
   }
-
-  /* Boxen dürfen nicht breiter/min-breiter sein → sauber umbrechen */
   .counter-wrapper .counter-box {
     width: 100% !important;
     min-width: 0 !important;
-    flex: initial !important; /* überschreibt evtl. frühere Flex-Breiten */
+    flex: initial !important;
     box-sizing: border-box;
     margin-bottom: 20px;
   }
 }
-
-/* Mobile: Team-Member Container untereinander */
 @media (max-width: 600px) {
+  html {
+    font-size: 87%;
+  }
   .team-wrapper {
     display: flex !important;
     flex-direction: column !important;
-    gap: 16px; /* optionaler Abstand */
+    gap: 16px;
   }
-
   .team-wrapper .team-member {
     width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box;
   }
 }
-
-/* Mobile: Team-Container untereinander (richtige Klassen) */
 @media (max-width: 850px) {
   .team-container {
     display: flex !important;
     flex-direction: column !important;
-    gap: 20px; /* Abstand zwischen den beiden Team-Karten */
+    gap: 20px;
   }
-
   .team-container > div {
     width: 100% !important;
     max-width: 100% !important;
-    flex: initial !important; /* überschreibt evtl. flex-basis/min-width */
+    flex: initial !important;
     box-sizing: border-box;
   }
 }
-
 @media (max-width: 950px) {
-  /* Falls irgendwo Mehrspalten aktiv sind */
   .about .container-wohnung .text-plagwitz {
     column-count: 1 !important;
     column-gap: 0 !important;
   }
-
   .container-wohnung .trenner {
     visibility: hidden;
     margin-bottom: -5px;
   }
-
   .container-wohnung .about-content3 {
     margin-bottom: 9px;
   }
-
   .tabelle-info-wohnung {
     min-width: auto;
   }
-
-  /* Jeder Tabellen-Block nimmt volle Breite → keine 2 Spalten */
   .tabelle-container-wohnung {
     width: 100% !important;
     max-width: 100% !important;
     display: flex;
-    flex-direction: row; /* Label links, Wert rechts wie bisher */
+    flex-direction: row;
     gap: 8px;
-    break-inside: avoid; /* vermeidet Split in CSS-Multicol */
+    break-inside: avoid;
   }
-
-  /* Falls ein Grid/Flex den Parent in 2 Spalten teilt, auf Block zwingen */
   .about .container-wohnung,
   .about .container-wohnung .about-content3,
   .about .container-wohnung .text-plagwitz {
     display: block !important;
   }
-
-  /* Kleine Typo-Optimierung für die zwei Zellen innerhalb eines Rows */
   .about-content3 .tabelle-info-wohnung,
   .about-content3 .tabelle-resultate {
     flex: 0 1 auto;
   }
-
-  /* Abstände zwischen den Zeilen etwas erhöhen */
   .tabelle-container-wohnung + .tabelle-container-wohnung {
     margin-top: 10px;
   }
-
   .icon-gruen {
-    margin-right: 0px;
+    margin-right: 0;
   }
-
   .icon-rot {
     margin-right: 2px;
   }
-
   .energie {
     margin-right: -14px;
   }
-
   .blauerbg {
     padding-right: 13px;
     margin-right: -13px;
   }
 }
-
-/* Mobile: Footer untereinander */
 @media (max-width: 620px) {
   .footer-content {
     display: flex !important;
@@ -2977,57 +2671,43 @@ body.menu-open .hamburger span:nth-child(3) {
     align-items: center !important;
     text-align: center !important;
   }
-
   .footer-content .footer-logo {
-    order: -1; /* Logo an erster Stelle */
+    order: -1;
     margin: 0 auto;
     height: 40px;
   }
-
   .footer-content .footer-links {
     justify-content: center !important;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
     flex-wrap: nowrap;
     white-space: nowrap;
     list-style: nowrap;
   }
-
   .footer-copy {
     margin-top: 20px;
   }
 }
-
 .footer-content .footer-links a {
   padding: 0 8px;
 }
-
 .footer-content .footer-links a:not(:last-child)::after {
   content: "|";
   margin-left: 8px;
   color: var(--blau-farbe);
-  font-size: 0.8em; /* etwas kleiner */
+  font-size: 0.8em;
 }
-
-/* Footer Links als Reihe + ASCII-Separators */
 .footer-content .footer-links ul {
   display: flex;
   align-items: center;
-  gap: 0; /* Abstand kommt über Separator */
+  gap: 0;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .footer-content .footer-links li + li::before {
   content: "|";
   display: inline-block;
   margin: 0 5px;
   color: var(--blau-farbe);
-  font-size: 0.8em; /* etwas kleiner */
-}
-
-/* Falls Anker block-level sind → auf inline-block setzen, damit Separator sichtbar bleibt */
-.footer-content .footer-links a {
-  display: inline-block;
+  font-size: 0.8em;
 }
