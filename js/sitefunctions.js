@@ -93,118 +93,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-// ButtonShowMore
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton");
-    const hiddenItems = document.querySelector(".hidden-items");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Weniger anzeigen";
+// ButtonShowMore (null-safe, wiederverwendbar)
+function setupToggle(btnId, hiddenSelector, moreText, lessText) {
+  const btn = document.getElementById(btnId);
+  const hiddenEl = document.querySelector(hiddenSelector);
+  if (!btn || !hiddenEl) return; // Elemente fehlen auf dieser Seite → still überspringen
+
+  btn.addEventListener("click", function () {
+    const shouldShow =
+      hiddenEl.style.display === "none" || hiddenEl.style.display === "";
+    if (shouldShow) {
+      hiddenEl.style.display = "block";
+      btn.textContent = " " + lessText;
+    } else {
+      hiddenEl.style.display = "none";
+      btn.textContent = " " + moreText;
+    }
+  });
+}
+
+// Initialisierung erst nach DOM-Ready
+document.addEventListener("DOMContentLoaded", function () {
+  // ScrollToTop (nur wenn Button existiert)
+  const scrollToTopBtn = document.getElementById("scroll-to-top");
+  if (scrollToTopBtn) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 800) {
+        scrollToTopBtn.classList.add("show");
       } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Weitere anzeigen";
+        scrollToTopBtn.classList.remove("show");
       }
     });
-  });
-  
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton2");
-    const hiddenItems = document.querySelector(".hidden-items2");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Weniger anzeigen";
-      } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Weitere anzeigen";
-      }
+
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
-  });
-  
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton3");
-    const hiddenItems = document.querySelector(".hidden-items3");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Weniger anzeigen";
-      } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Weitere anzeigen";
-      }
-    });
-  });
-  
+  }
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton4");
-    const hiddenItems = document.querySelector(".hidden-items4");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Grundriss ausblenden";
-      } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Grundriss anzeigen";
-      }
-    });
-  });
-
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton5");
-    const hiddenItems = document.querySelector(".hidden-items5");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Weniger anzeigen";
-      } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Weitere anzeigen";
-      }
-    });
-  });
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton6");
-    const hiddenItems = document.querySelector(".hidden-items6");
-  
-    toggleButton.addEventListener("click", function () {
-      if (
-        hiddenItems.style.display === "none" ||
-        hiddenItems.style.display === ""
-      ) {
-        hiddenItems.style.display = "block";
-        toggleButton.textContent = " Weniger anzeigen";
-      } else {
-        hiddenItems.style.display = "none";
-        toggleButton.textContent = " Weitere anzeigen";
-      }
-    });
-  });
+  // Alle optionalen Toggles (binden sich nur, wenn vorhanden)
+  setupToggle("toggleButton",  ".hidden-items",  "Weitere anzeigen", "Weniger anzeigen");
+  setupToggle("toggleButton2", ".hidden-items2", "Weitere anzeigen", "Weniger anzeigen");
+  setupToggle("toggleButton3", ".hidden-items3", "Weitere anzeigen", "Weniger anzeigen");
+  setupToggle("toggleButton4", ".hidden-items4", " Grundriss anzeigen", " Grundriss ausblenden");
+  setupToggle("toggleButton5", ".hidden-items5", "Weitere anzeigen", "Weniger anzeigen");
+  setupToggle("toggleButton6", ".hidden-items6", "Weitere anzeigen", "Weniger anzeigen");
+});
