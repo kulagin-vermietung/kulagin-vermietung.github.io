@@ -155,8 +155,18 @@
     <div class="header-404" id="header-page">
       <div class="nav-bar">
         <div class="container">
-          <a href="/index.html" class="hovering">
-            <svg width="180px" viewBox="0 0 1444 649" class="logo">
+          <a
+            href="/index.html"
+            class="hovering"
+            aria-label="Kulagin Vermietung – Startseite"
+          >
+            <svg
+              width="180px"
+              viewBox="0 0 1444 649"
+              class="logo"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g
                 transform="translate(0,649) scale(0.100000,-0.100000)"
                 fill="currentColor"
@@ -309,7 +319,7 @@
           >
             <span></span><span></span><span></span>
           </button>
-          <nav id="primary-nav">
+          <nav id="primary-nav" role="navigation" aria-label="Hauptnavigation">
             <ul>
               <li><a href="/plagwitz.html" class="navlink">Plagwitz</a></li>
               <li>
@@ -337,30 +347,37 @@
       </div>
     </div>
 
-    <section class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="text-plagwitz">
-            <h3 class="blue-text">Manchmal führen Wege ins Leere…</h3>
+    <main id="main-content" aria-labelledby="header-title">
+      <section class="about" aria-labelledby="header-title">
+        <div class="container">
+          <div class="about-content">
+            <div class="text-plagwitz">
+              <h3 class="blue-text">Manchmal führen Wege ins Leere…</h3>
 
-            <p>
-              Diese Seite existiert nicht – zumindest nicht mehr. Aber das ist
-              kein Grund, den Kopf hängen zu lassen. Bei Kulagin Vermietung
-              findest du Wohnträume, die real sind. Vielleicht war das hier nur
-              ein kleiner Umweg zu deinem nächsten Zuhause.
-            </p>
+              <p>
+                Diese Seite existiert nicht – zumindest nicht mehr. Aber das ist
+                kein Grund, den Kopf hängen zu lassen. Bei Kulagin Vermietung
+                findest du Wohnträume, die real sind. Vielleicht war das hier
+                nur ein kleiner Umweg zu deinem nächsten Zuhause.
+              </p>
 
-            <a href="/index.html" class="error-btn">Startseite</a>
+              <a href="/index.html" class="error-btn">Startseite</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <svg width="150px" viewBox="0 0 1444 649">
+            <svg
+              width="150px"
+              viewBox="0 0 1444 649"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g transform="translate(0,649) scale(0.100000,-0.100000)">
                 <path
                   d="M5430 5878 l-635 -449 -100 -229 -100 -229 -3 421 c-1 232 0 424 3
@@ -528,14 +545,26 @@
               </g>
             </svg>
           </div>
-          <div class="footer-links">
+          <div
+            class="footer-links"
+            role="navigation"
+            aria-label="Footernavigation"
+          >
             <ul>
               <li>
                 <a href="/index.html#contact">Kontakt</a>
               </li>
               <li><a href="/impressum.html">Impressum</a></li>
               <li><a href="/datenschutz.html">Datenschutz</a></li>
-              <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
+              <li>
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sitemap in neuem Tab öffnen"
+                  >Sitemap</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -545,8 +574,14 @@
       </div>
     </footer>
 
-    <button id="scroll-to-top" aria-label="Scroll to top">
-      <svg width="22px" height="22px" viewBox="0 0 512 512">
+    <button id="scroll-to-top" aria-label="Nach oben scrollen">
+      <svg
+        width="22px"
+        height="22px"
+        viewBox="0 0 512 512"
+        aria-hidden="true"
+        focusable="false"
+      >
         <g
           transform="translate(0,512) scale(0.100000,-0.100000)"
           fill="currentColor"

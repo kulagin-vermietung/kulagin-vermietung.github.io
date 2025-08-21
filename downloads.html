@@ -156,8 +156,18 @@
     <div class="header-downloads" id="header-page">
       <div class="nav-bar">
         <div class="container">
-          <a href="/index.html" class="hovering">
-            <svg width="180px" viewBox="0 0 1444 649" class="logo">
+          <a
+            href="/index.html"
+            class="hovering"
+            aria-label="Kulagin Vermietung – Startseite"
+          >
+            <svg
+              width="180px"
+              viewBox="0 0 1444 649"
+              class="logo"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g
                 transform="translate(0,649) scale(0.100000,-0.100000)"
                 fill="currentColor"
@@ -310,13 +320,17 @@
           >
             <span></span><span></span><span></span>
           </button>
-          <nav id="primary-nav">
+          <nav id="primary-nav" role="navigation" aria-label="Hauptnavigation">
             <ul>
               <li><a href="/plagwitz.html" class="navlink">Plagwitz</a></li>
               <li>
                 <a href="/ausstattung.html" class="navlink">Ausstattung</a>
               </li>
-              <li><a href="/downloads.html" class="navlink">Downloads</a></li>
+              <li>
+                <a href="/downloads.html" class="navlink" aria-current="page"
+                  >Downloads</a
+                >
+              </li>
               <li><a href="/ueberuns.html" class="navlink">Über Uns</a></li>
               <li><a href="/index.html#contact" class="btn">KONTAKT</a></li>
             </ul>
@@ -339,43 +353,44 @@
       </div>
     </div>
 
-    <section class="about" style="padding-bottom: 0px">
-      <div class="container">
-        <div class="about-content">
-          <div class="text-plagwitz">
-            <h3 class="blue-text">Dokumente & Vorlagen</h3>
+    <main id="main-content" aria-labelledby="header-title">
+      <section class="about" style="padding-bottom: 0px">
+        <div class="container">
+          <div class="about-content">
+            <div class="text-plagwitz">
+              <h3 class="blue-text">Dokumente & Vorlagen</h3>
 
-            <h2>Alle wichtigen Unterlagen an einem Ort</h2>
-            <p>
-              Hier finden Sie alle wichtigen Unterlagen für Ihr Mietverhältnis –
-              übersichtlich und jederzeit abrufbar. Von Mietvertrag und
-              Hausordnung über Übergabeprotokolle bis hin zu hilfreichen
-              Informationen zur Nutzung der Wohnung – diese Dokumente helfen
-              Ihnen, den Überblick zu behalten. Zusätzlich stehen Ihnen
-              Bedienungsanleitungen für Haushaltsgeräte zur Verfügung. Diese
-              Dokumente unterstützen Sie dabei, Ihre Wohnung optimal zu nutzen
-              und mögliche Missverständnisse zu vermeiden. Einfach herunterladen
-              und bestens vorbereitet sein!
-            </p>
+              <h2>Alle wichtigen Unterlagen an einem Ort</h2>
+              <p>
+                Hier finden Sie alle wichtigen Unterlagen für Ihr Mietverhältnis
+                – übersichtlich und jederzeit abrufbar. Von Mietvertrag und
+                Hausordnung über Übergabeprotokolle bis hin zu hilfreichen
+                Informationen zur Nutzung der Wohnung – diese Dokumente helfen
+                Ihnen, den Überblick zu behalten. Zusätzlich stehen Ihnen
+                Bedienungsanleitungen für Haushaltsgeräte zur Verfügung. Diese
+                Dokumente unterstützen Sie dabei, Ihre Wohnung optimal zu nutzen
+                und mögliche Missverständnisse zu vermeiden. Einfach
+                herunterladen und bestens vorbereitet sein!
+              </p>
 
-            <table class="download-table">
-              <thead>
-                <tr>
-                  <th>Dokument</th>
-                  <th>Beschreibung</th>
-                  <th>Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-icon">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M2430 5104 c-221 -47 -408 -236 -455 -459 -8 -38 -15 -82 -15 -97 l0
+              <table class="download-table">
+                <thead>
+                  <tr>
+                    <th>Dokument</th>
+                    <th>Beschreibung</th>
+                    <th>Download</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-icon">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M2430 5104 c-221 -47 -408 -236 -455 -459 -8 -38 -15 -82 -15 -97 l0
                          -28 -95 0 c-51 0 -118 -5 -147 -11 -124 -27 -244 -118 -303 -232 l-30 -57
                          -176 0 c-97 0 -200 -5 -230 -10 -180 -34 -325 -179 -359 -359 -14 -74 -14
                          -3408 0 -3482 34 -180 179 -325 359 -359 74 -14 3088 -14 3162 0 180 34 325
@@ -404,38 +419,38 @@
                          213 136z m2407 -304 c45 -23 80 -80 80 -130 0 -50 -35 -107 -80 -130 -38 -19
                          -58 -20 -670 -20 -612 0 -632 1 -670 20 -45 23 -80 80 -80 130 0 48 35 107 78
                          129 36 19 60 20 670 21 615 0 634 -1 672 -20z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text">Mieterselbstauskunft</span
-                    ><br />Persönliche Angaben für die Wohnungsbewerbung
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Mieterselbstauskunft.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-icon">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text">Mieterselbstauskunft</span
+                      ><br />Persönliche Angaben für die Wohnungsbewerbung
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Mieterselbstauskunft.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M1531 5062 c-19 -10 -43 -34 -53 -53 -17 -32 -18 -100 -18 -1536 l0
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-icon">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M1531 5062 c-19 -10 -43 -34 -53 -53 -17 -32 -18 -100 -18 -1536 l0
                          -1503 135 0 135 0 0 1503 c0 1436 -1 1504 -18 1536 -21 40 -73 71 -117 71 -17
                          0 -46 -8 -64 -18z"
-                        />
-                        <path
-                          d="M3064 4491 c-214 -52 -403 -203 -502 -397 -32 -62 -60 -70 -173 -48
+                          />
+                          <path
+                            d="M3064 4491 c-214 -52 -403 -203 -502 -397 -32 -62 -60 -70 -173 -48
                          -78 15 -106 16 -178 7 -95 -12 -200 -50 -261 -94 l-40 -29 0 -185 0 -185 1384
                          0 1384 0 -15 58 c-70 268 -335 459 -609 438 -96 -8 -114 2 -163 89 -64 114
                          -216 248 -346 304 -136 60 -337 78 -481 42z m165 -266 c75 -38 44 -165 -39
@@ -445,76 +460,76 @@
                          73 62 124 35z m680 0 c79 -40 46 -165 -44 -165 -39 0 -65 18 -81 55 -17 43 -3
                          90 35 110 34 18 55 18 90 0z m564 3 c34 -18 46 -39 47 -81 0 -77 -87 -114
                          -147 -63 -22 19 -28 32 -28 66 0 70 67 111 128 78z"
-                        />
-                        <path
-                          d="M1912 3243 l3 -138 1445 0 c1364 0 1447 1 1477 18 43 23 64 57 70
+                          />
+                          <path
+                            d="M1912 3243 l3 -138 1445 0 c1364 0 1447 1 1477 18 43 23 64 57 70
                          110 6 52 -25 103 -77 129 -33 17 -124 18 -1478 18 l-1443 0 3 -137z"
-                        />
-                        <path
-                          d="M1910 2446 l0 -475 223 -3 c250 -3 274 -9 357 -84 71 -64 93 -120 99
+                          />
+                          <path
+                            d="M1910 2446 l0 -475 223 -3 c250 -3 274 -9 357 -84 71 -64 93 -120 99
                          -254 l6 -115 69 -8 c198 -22 371 -134 445 -290 42 -90 51 -148 51 -337 0 -164
                          -1 -170 -24 -197 -23 -26 -30 -28 -115 -31 l-91 -4 0 -304 0 -305 593 3 592 3
                          62 29 c75 34 144 104 180 182 23 51 36 154 169 1342 79 708 144 1295 144 1305
                          0 16 -72 17 -1380 17 l-1380 0 0 -474z"
-                        />
-                        <path
-                          d="M865 1776 c-16 -7 -41 -26 -55 -41 -22 -24 -25 -37 -28 -121 l-4 -94
+                          />
+                          <path
+                            d="M865 1776 c-16 -7 -41 -26 -55 -41 -22 -24 -25 -37 -28 -121 l-4 -94
                          817 0 817 0 -4 94 c-3 84 -6 97 -28 122 -52 55 -32 54 -787 54 -559 -1 -704
                          -3 -728 -14z"
-                        />
-                        <path
-                          d="M449 1311 c-108 -42 -192 -133 -223 -240 -10 -32 -16 -93 -16 -148
+                          />
+                          <path
+                            d="M449 1311 c-108 -42 -192 -133 -223 -240 -10 -32 -16 -93 -16 -148
                          l0 -93 1385 0 1385 0 0 94 c0 196 -81 327 -240 387 -48 18 -94 19 -1148 19
                          -1036 -1 -1100 -2 -1143 -19z"
-                        />
-                        <path
-                          d="M440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
-                        />
-                        <path
-                          d="M940 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
-                        />
-                        <path
-                          d="M1440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
-                        />
-                        <path
-                          d="M1940 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
-                        />
-                        <path
-                          d="M2440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text">Hausordnung</span><br />Regeln
-                    für ein harmonisches Miteinander
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Hausordnung.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-icon">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                          <path
+                            d="M440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
+                          />
+                          <path
+                            d="M940 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
+                          />
+                          <path
+                            d="M1440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
+                          />
+                          <path
+                            d="M1940 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
+                          />
+                          <path
+                            d="M2440 345 l0 -305 155 0 155 0 0 305 0 305 -155 0 -155 0 0 -305z"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text">Hausordnung</span><br />Regeln
+                      für ein harmonisches Miteinander
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Hausordnung.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M3426 4839 l-154 -149 -429 0 c-403 0 -433 -1 -503 -21 -137 -38
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-icon">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M3426 4839 l-154 -149 -429 0 c-403 0 -433 -1 -503 -21 -137 -38
                          -160 -56 -506 -404 -285 -286 -326 -331 -355 -391 -31 -63 -34 -76 -34 -164 0
                          -87 3 -101 32 -161 39 -79 102 -140 181 -177 49 -23 70 -27 152 -27 158 0 171
                          9 504 345 l278 280 341 0 342 0 587 -587 588 -588 42 41 c36 34 577 534 616
                          569 11 10 -95 123 -529 566 -298 305 -645 658 -771 785 l-229 232 -153 -149z"
-                        />
-                        <path
-                          d="M890 3994 c-437 -492 -795 -896 -795 -897 0 -6 186 -355 198 -371 13
+                          />
+                          <path
+                            d="M890 3994 c-437 -492 -795 -896 -795 -897 0 -6 186 -355 198 -371 13
                          -18 16 -18 78 7 126 50 296 55 426 11 180 -60 336 -213 398 -391 l24 -68 58
                          -20 c188 -66 337 -217 402 -407 16 -48 21 -53 67 -68 185 -63 326 -199 398
                          -382 30 -77 34 -82 72 -93 83 -24 187 -89 259 -160 231 -229 248 -614 38 -854
@@ -526,9 +541,9 @@
                          -82 -253 -113 -413 -104 -302 16 -558 239 -617 538 -17 87 -7 259 20 339 48
                          140 83 184 419 522 173 174 312 320 308 326 -7 11 -191 122 -203 122 -4 0
                          -366 -403 -803 -896z"
-                        />
-                        <path
-                          d="M550 2470 c-98 -14 -137 -41 -322 -228 -97 -97 -182 -190 -190 -207
+                          />
+                          <path
+                            d="M550 2470 c-98 -14 -137 -41 -322 -228 -97 -97 -182 -190 -190 -207
                          -122 -245 90 -532 356 -484 34 6 80 21 102 33 l42 23 -33 -43 c-132 -173 -68
                          -419 133 -512 45 -21 73 -26 133 -27 68 0 84 4 146 36 l70 36 -24 -35 c-86
                          -128 -61 -312 58 -424 64 -60 137 -88 230 -88 99 0 170 35 279 136 46 43 74
@@ -538,33 +553,33 @@
                          -69 26 -140 26 -75 0 -93 -4 -147 -30 l-61 -31 31 61 c28 53 31 70 31 145 1
                          71 -4 94 -25 140 -82 176 -285 246 -457 159 -31 -16 -58 -29 -60 -29 -2 0 5
                          12 16 28 40 57 55 117 50 199 -7 115 -52 197 -142 257 -75 50 -150 68 -236 56z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text">Übergabeprotokoll</span
-                    ><br />Wohnungszustand bei Ein- und Auszug
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Uebergabeprotokoll.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-iconalt">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text">Übergabeprotokoll</span
+                      ><br />Wohnungszustand bei Ein- und Auszug
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Uebergabeprotokoll.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M663 4782 c-94 -33 -166 -106 -198 -201 -14 -42 -15 -245 -13 -1951
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-iconalt">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M663 4782 c-94 -33 -166 -106 -198 -201 -14 -42 -15 -245 -13 -1951
                          l3 -1905 30 -54 c37 -68 102 -125 171 -151 54 -20 73 -20 1150 -20 l1096 0
                          -31 38 c-384 459 -370 1095 32 1519 97 102 182 164 312 228 133 66 267 103
                          398 112 l97 6 -2 1086 -3 1086 -23 43 c-35 66 -88 119 -150 149 l-57 28 -1380
@@ -587,37 +602,37 @@
                          24 -25 26 -25 205 0 179 0 181 25 205 l24 25 265 0 265 0 20 -26z m920 0 c19
                          -25 21 -40 21 -204 0 -164 -2 -179 -21 -204 l-20 -26 -265 0 -265 0 -24 25
                          c-25 24 -25 26 -25 205 0 179 0 181 25 205 l24 25 265 0 265 0 20 -26z"
-                        />
-                        <path
-                          d="M930 3895 l0 -435 1150 0 1150 0 0 435 0 435 -1150 0 -1150 0 0 -435z
+                          />
+                          <path
+                            d="M930 3895 l0 -435 1150 0 1150 0 0 435 0 435 -1150 0 -1150 0 0 -435z
                          m261 374 c30 -15 351 -665 343 -693 -18 -58 -76 -83 -122 -50 -28 19 -342 643
                          -342 679 0 54 70 92 121 64z m398 -175 c23 -17 191 -343 191 -373 0 -50 -64
                          -90 -113 -70 -24 10 -44 42 -118 192 -95 192 -98 203 -53 245 30 26 61 28 93
                          6z"
-                        />
-                        <path
-                          d="M1010 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
-                        />
-                        <path
-                          d="M1930 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
-                        />
-                        <path
-                          d="M2850 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
-                        />
-                        <path
-                          d="M1010 1885 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
-                        />
-                        <path
-                          d="M1930 1885 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
-                        />
-                        <path
-                          d="M1010 1170 l0 -70 150 0 150 0 0 70 0 70 -150 0 -150 0 0 -70z"
-                        />
-                        <path
-                          d="M1930 1170 l0 -70 150 0 150 0 0 70 0 70 -150 0 -150 0 0 -70z"
-                        />
-                        <path
-                          d="M3510 2221 c-312 -68 -575 -288 -691 -578 -115 -286 -81 -618 89
+                          />
+                          <path
+                            d="M1010 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
+                          />
+                          <path
+                            d="M1930 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
+                          />
+                          <path
+                            d="M2850 2595 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
+                          />
+                          <path
+                            d="M1010 1885 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
+                          />
+                          <path
+                            d="M1930 1885 l0 -75 150 0 150 0 0 75 0 75 -150 0 -150 0 0 -75z"
+                          />
+                          <path
+                            d="M1010 1170 l0 -70 150 0 150 0 0 70 0 70 -150 0 -150 0 0 -70z"
+                          />
+                          <path
+                            d="M1930 1170 l0 -70 150 0 150 0 0 70 0 70 -150 0 -150 0 0 -70z"
+                          />
+                          <path
+                            d="M3510 2221 c-312 -68 -575 -288 -691 -578 -115 -286 -81 -618 89
                          -884 91 -140 233 -270 377 -341 261 -130 596 -129 859 4 168 84 312 227 406
                          400 77 143 109 261 117 428 11 254 -64 472 -230 663 -114 132 -310 253 -482
                          298 -116 31 -330 35 -445 10z m521 -365 c67 -21 126 -53 133 -71 12 -33 5 -66
@@ -631,33 +646,33 @@
                          25 l63 0 0 130 0 130 -52 0 c-63 0 -97 14 -112 47 -17 37 -13 62 14 88 22 23
                          31 25 122 25 l98 0 28 44 c40 63 142 155 214 194 101 53 191 73 308 68 55 -3
                          121 -12 146 -20z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text">Betriebskostenverordnung</span
-                    ><br />Regelung der umlagefähigen Nebenkosten
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Betriebskostenverordnung.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-iconalt">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text">Betriebskostenverordnung</span
+                      ><br />Regelung der umlagefähigen Nebenkosten
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Betriebskostenverordnung.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M1435 3953 c-616 -432 -1120 -790 -1119 -797 2 -20 226 -336 238
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-iconalt">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M1435 3953 c-616 -432 -1120 -790 -1119 -797 2 -20 226 -336 238
                          -336 6 1 74 45 151 100 l140 98 3 -1294 2 -1294 1710 0 1710 0 2 1295 3 1295
                          142 -100 c78 -55 146 -100 151 -100 9 0 228 307 238 333 3 8 -442 325 -1120
                          800 -619 433 -1126 787 -1128 786 -2 0 -507 -354 -1123 -786z m1343 -754 c92
@@ -665,74 +680,74 @@
                          0 -7 92 -105 205 -218 113 -113 205 -208 205 -213 0 -7 -493 -752 -510 -770
                          -4 -5 -87 43 -184 107 l-176 115 164 248 164 248 -213 214 -213 214 259 389
                          c143 213 264 388 269 388 6 0 86 -50 178 -111z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text">Energieausweis</span
-                    ><br />Informationen zum energetischen Zustand
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Energieausweis.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <svg
-                      viewBox="0 0 512.000000 512.000000"
-                      class="downloads-iconalt2"
-                    >
-                      <g
-                        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text">Energieausweis</span
+                      ><br />Informationen zum energetischen Zustand
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Energieausweis.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M1810 5106 c-261 -57 -426 -206 -438 -399 -6 -95 14 -139 110 -249
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <svg
+                        viewBox="0 0 512.000000 512.000000"
+                        class="downloads-iconalt2"
+                      >
+                        <g
+                          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M1810 5106 c-261 -57 -426 -206 -438 -399 -6 -95 14 -139 110 -249
                  91 -103 154 -196 203 -301 37 -77 65 -173 65 -220 0 -24 3 -28 18 -22 43 17
                  209 17 292 1 95 -20 222 -75 290 -127 25 -19 51 -38 57 -42 8 -5 32 19 71 70
                  144 195 232 447 232 662 0 146 -42 255 -136 359 -96 107 -281 215 -439 257
                  -83 23 -245 28 -325 11z"
-                        />
-                        <path
-                          d="M506 3979 c-201 -47 -388 -263 -478 -551 -33 -106 -33 -292 0 -398
+                          />
+                          <path
+                            d="M506 3979 c-201 -47 -388 -263 -478 -551 -33 -106 -33 -292 0 -398
                  74 -237 209 -368 389 -378 93 -5 149 20 258 119 162 146 383 259 507 259 28 0
                  28 1 21 43 -16 89 -9 248 16 327 28 92 81 194 128 250 34 39 35 42 18 60 -56
                  62 -243 167 -387 218 -158 56 -358 78 -472 51z"
-                        />
-                        <path
-                          d="M1803 3735 c-186 -40 -352 -196 -408 -381 -73 -242 46 -520 272 -637
+                          />
+                          <path
+                            d="M1803 3735 c-186 -40 -352 -196 -408 -381 -73 -242 46 -520 272 -637
                  219 -114 464 -76 638 98 219 218 219 550 0 771 -134 135 -316 189 -502 149z
                  m257 -198 c39 -14 73 -38 116 -81 78 -78 107 -148 107 -256 0 -108 -29 -178
                  -107 -256 -77 -77 -146 -106 -256 -105 -84 0 -140 16 -204 60 -86 60 -138 141
                  -154 243 -44 283 224 496 498 395z"
-                        />
-                        <path
-                          d="M1845 3366 c-16 -8 -42 -26 -57 -42 -108 -116 -26 -304 131 -304 159
+                          />
+                          <path
+                            d="M1845 3366 c-16 -8 -42 -26 -57 -42 -108 -116 -26 -304 131 -304 159
                  0 241 188 133 304 -51 54 -140 72 -207 42z"
-                        />
-                        <path
-                          d="M3302 3730 c-24 -11 -74 -47 -110 -81 -168 -154 -406 -279 -534 -279
+                          />
+                          <path
+                            d="M3302 3730 c-24 -11 -74 -47 -110 -81 -168 -154 -406 -279 -534 -279
                  -26 0 -27 -2 -20 -32 14 -66 7 -270 -12 -333 -24 -79 -77 -184 -126 -248 l-39
                  -52 27 -22 c94 -78 291 -189 402 -227 l55 -18 83 55 c165 111 363 191 545 223
                  51 8 103 17 115 20 29 6 89 127 123 249 33 113 33 280 1 383 -56 179 -138 290
                  -257 347 -80 39 -189 45 -253 15z"
-                        />
-                        <path
-                          d="M1362 2582 c-142 -191 -232 -449 -232 -664 0 -241 153 -440 431 -560
+                          />
+                          <path
+                            d="M1362 2582 c-142 -191 -232 -449 -232 -664 0 -241 153 -440 431 -560
                  292 -125 552 -96 807 93 16 12 26 37 38 100 9 46 29 125 45 174 l28 90 -84 88
                  c-169 176 -305 426 -305 560 0 24 -3 28 -17 22 -44 -17 -210 -17 -293 -1 -98
                  20 -244 86 -307 140 -22 20 -44 36 -47 36 -3 0 -32 -35 -64 -78z"
-                        />
-                        <path
-                          d="M3640 2543 c-175 -26 -363 -101 -520 -206 -96 -64 -273 -241 -337
+                          />
+                          <path
+                            d="M3640 2543 c-175 -26 -363 -101 -520 -206 -96 -64 -273 -241 -337
                  -337 -150 -225 -217 -447 -217 -720 0 -357 120 -649 373 -901 201 -202 439
                  -323 714 -363 405 -61 796 70 1088 363 58 58 128 140 156 181 261 391 294 880
                  85 1295 -117 234 -334 451 -570 569 -231 116 -511 159 -772 119z m188 -177
@@ -740,47 +755,47 @@
                  -672 -167 -330 -535 -509 -876 -427 -308 74 -537 304 -603 605 -19 88 -16 295
                  5 375 44 161 110 263 352 545 75 88 153 184 171 213 51 79 83 175 94 277 13
                  126 16 133 52 155 38 24 49 24 85 6z"
-                        />
-                        <path
-                          d="M3857 2070 c-3 -8 -11 -33 -17 -55 -24 -79 -101 -211 -172 -296 -348
+                          />
+                          <path
+                            d="M3857 2070 c-3 -8 -11 -33 -17 -55 -24 -79 -101 -211 -172 -296 -348
                  -412 -362 -432 -404 -564 -31 -97 -35 -243 -9 -340 19 -71 64 -170 93 -205
                  l21 -25 1 85 c0 114 19 183 85 315 61 123 148 246 251 355 145 154 205 181
                  265 120 29 -29 30 -31 23 -102 -8 -98 15 -158 101 -263 162 -197 197 -263 218
                  -412 l12 -84 33 54 c18 31 45 88 60 129 25 68 27 84 27 228 -1 138 -4 166 -28
                  255 -50 180 -147 349 -330 574 -103 126 -225 248 -230 231z"
-                        />
-                        <path
-                          d="M3797 1172 c-47 -50 -139 -187 -177 -262 -52 -103 -70 -170 -70 -259
+                          />
+                          <path
+                            d="M3797 1172 c-47 -50 -139 -187 -177 -262 -52 -103 -70 -170 -70 -259
                  0 -63 5 -87 28 -136 50 -105 124 -154 241 -162 93 -6 146 7 203 50 69 53 101
                  114 106 206 7 126 -24 193 -167 356 -28 32 -72 98 -96 146 l-43 87 -25 -26z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text"
-                      >Richtiges Lüften und Heizen</span
-                    ><br />Vermeidung von Schimmel und Energieverschwendung
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Richtiges_Lueften_Heizen.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-icon">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text"
+                        >Richtiges Lüften und Heizen</span
+                      ><br />Vermeidung von Schimmel und Energieverschwendung
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Richtiges_Lueften_Heizen.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M360 4941 c-69 -21 -130 -73 -166 -141 -18 -34 -19 -109 -19 -2240
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-icon">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M360 4941 c-69 -21 -130 -73 -166 -141 -18 -34 -19 -109 -19 -2240
                          l0 -2205 22 -40 c25 -47 74 -95 123 -121 34 -18 109 -19 2240 -19 l2205 0 40
                          22 c47 25 95 74 121 123 18 34 19 109 19 2240 0 2131 -1 2206 -19 2240 -26 49
                          -74 98 -121 123 l-40 22 -2190 2 c-1204 1 -2201 -2 -2215 -6z m4241 -177 c39
@@ -797,9 +812,9 @@
                          -122 -129 -154 -51 -27 -59 -28 -201 -28 -142 0 -150 1 -201 28 -60 31 -113
                          93 -129 150 -15 57 -13 282 4 330 27 76 78 126 161 159 19 8 80 11 175 10 120
                          -2 152 -5 184 -21z"
-                        />
-                        <path
-                          d="M560 4597 c-13 -7 -30 -24 -37 -37 -18 -35 -19 -2600 -1 -2633 6 -12
+                          />
+                          <path
+                            d="M560 4597 c-13 -7 -30 -24 -37 -37 -18 -35 -19 -2600 -1 -2633 6 -12
                          18 -27 27 -34 12 -10 459 -12 2012 -13 1991 0 1995 0 2017 20 12 11 24 31 27
                          43 3 12 4 606 3 1319 l-3 1297 -23 23 -23 23 -1987 2 c-1581 2 -1992 0 -2012
                          -10z m1223 -691 c22 -11 51 -37 65 -59 l27 -40 3 -283 c3 -297 -1 -340 -40
@@ -816,59 +831,59 @@
                          6 188 6 134 1 179 -2 201 -14z m-684 -626 c9 -16 15 -55 15 -89 0 -55 -3 -65
                          -29 -91 -38 -37 -82 -39 -116 -4 -22 21 -25 33 -25 98 0 59 4 79 20 100 36 45
                          109 38 135 -14z"
-                        />
-                        <path
-                          d="M2300 3155 l0 -595 260 0 260 0 0 595 0 595 -260 0 -260 0 0 -595z"
-                        />
-                        <path
-                          d="M3670 2815 l0 -255 130 0 130 0 0 255 0 255 -130 0 -130 0 0 -255z"
-                        />
-                        <path
-                          d="M1128 1358 c-130 -17 -252 -108 -315 -235 -31 -63 -37 -87 -41 -157
+                          />
+                          <path
+                            d="M2300 3155 l0 -595 260 0 260 0 0 595 0 595 -260 0 -260 0 0 -595z"
+                          />
+                          <path
+                            d="M3670 2815 l0 -255 130 0 130 0 0 255 0 255 -130 0 -130 0 0 -255z"
+                          />
+                          <path
+                            d="M1128 1358 c-130 -17 -252 -108 -315 -235 -31 -63 -37 -87 -41 -157
                          -7 -140 33 -240 133 -335 214 -202 550 -134 678 136 29 63 32 76 32 168 -1 80
                          -5 111 -24 158 -74 185 -261 292 -463 265z m209 -361 c98 -98 113 -117 113
                          -145 0 -46 -38 -82 -86 -82 -31 0 -45 9 -102 64 l-67 64 -68 -64 c-55 -52 -73
                          -64 -100 -64 -54 0 -96 53 -83 104 6 23 127 153 194 209 57 47 73 40 199 -86z"
-                        />
-                        <path
-                          d="M3870 1359 c-281 -34 -451 -338 -331 -595 126 -269 465 -334 680
+                          />
+                          <path
+                            d="M3870 1359 c-281 -34 -451 -338 -331 -595 126 -269 465 -334 680
                          -129 96 92 138 200 128 337 -16 242 -231 416 -477 387z m-21 -314 c37 -36 71
                          -65 76 -65 5 0 39 29 76 65 78 75 104 82 150 36 20 -21 29 -39 29 -62 0 -29
                          -15 -48 -108 -141 -100 -100 -111 -108 -146 -108 -35 0 -47 8 -133 93 -132
                          129 -148 164 -94 218 46 46 72 39 150 -36z"
-                        />
-                        <path
-                          d="M2419 1081 c-29 -29 -29 -31 -29 -146 0 -110 1 -117 25 -140 23 -24
+                          />
+                          <path
+                            d="M2419 1081 c-29 -29 -29 -31 -29 -146 0 -110 1 -117 25 -140 23 -24
                          30 -25 145 -25 115 0 122 1 145 25 24 23 25 30 25 140 0 115 0 117 -29 146
                          -29 29 -31 29 -141 29 -110 0 -112 0 -141 -29z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text"
-                      >Bedienungsanleitung Digitales Thermostat</span
-                    ><br />Optimale Temperatureinstellung leicht gemacht
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Anleitung_Thermostat.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-iconalt">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text"
+                        >Bedienungsanleitung Digitales Thermostat</span
+                      ><br />Optimale Temperatureinstellung leicht gemacht
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Anleitung_Thermostat.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M684 4741 c-148 -42 -270 -167 -308 -316 -14 -52 -16 -265 -16 -1865
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-iconalt">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M684 4741 c-148 -42 -270 -167 -308 -316 -14 -52 -16 -265 -16 -1865
                          0 -1600 2 -1813 16 -1865 39 -151 161 -275 312 -317 64 -17 149 -18 1872 -18
                          1600 0 1813 2 1865 16 109 28 201 96 266 197 73 113 69 -13 69 1994 0 1968 3
                          1860 -57 1963 -38 64 -103 130 -165 167 -111 67 16 63 -1983 62 -1696 0 -1814
@@ -883,42 +898,42 @@
                          -136 324 28 408 63 31 115 35 184 11z m2883 -12 c142 -73 172 -263 59 -377
                          -113 -112 -304 -83 -376 57 -27 53 -34 119 -18 175 15 57 95 143 149 161 49
                          16 139 8 186 -16z"
-                        />
-                        <path
-                          d="M2393 3486 c-361 -69 -648 -335 -745 -691 -31 -116 -31 -355 0 -470
+                          />
+                          <path
+                            d="M2393 3486 c-361 -69 -648 -335 -745 -691 -31 -116 -31 -355 0 -470
                          91 -331 347 -586 679 -677 113 -31 353 -31 468 0 329 90 587 348 677 677 31
                          115 31 355 0 470 -90 329 -351 590 -677 676 -102 27 -300 34 -402 15z m324
                          -487 c121 -46 202 -118 258 -232 69 -140 69 -277 -1 -416 -88 -176 -293 -284
                          -481 -253 -128 21 -262 107 -326 208 -51 81 -70 152 -70 254 0 101 19 173 69
                          252 65 102 196 188 324 212 50 9 170 -4 227 -25z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text"
-                      >Bedienungsanleitung DAB+/UKW-Radio</span
-                    ><br />Senderwahl und Funktionen im Überblick
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Anleitung_Radio.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg viewBox="0 0 512 512" class="downloads-iconalt">
-                      <g
-                        transform="translate(0,512) scale(0.100000,-0.100000)"
-                        fill="currentColor"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text"
+                        >Bedienungsanleitung DAB+/UKW-Radio</span
+                      ><br />Senderwahl und Funktionen im Überblick
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Anleitung_Radio.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
                       >
-                        <path
-                          d="M531 4539 c-56 -11 -124 -51 -155 -92 -59 -78 -56 41 -56 -1886 0
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg viewBox="0 0 512 512" class="downloads-iconalt">
+                        <g
+                          transform="translate(0,512) scale(0.100000,-0.100000)"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M531 4539 c-56 -11 -124 -51 -155 -92 -59 -78 -56 41 -56 -1886 0
                          -1944 -4 -1815 60 -1893 17 -20 56 -49 88 -65 l57 -28 2035 0 2035 0 53 24
                          c29 13 68 42 87 64 70 81 65 -60 65 1897 0 1957 5 1816 -65 1897 -19 22 -58
                          51 -87 64 l-53 24 -2010 1 c-1105 1 -2030 -2 -2054 -7z m3804 -394 l25 -24 0
@@ -948,75 +963,75 @@
                          47 -62 40 -94 -8 -35 -33 -58 -73 -66 -26 -5 -36 -1 -62 24 -70 71 0 172 95
                          136z m274 -20 c56 -71 -9 -166 -92 -135 -37 14 -61 69 -46 108 14 38 36 53 80
                          53 29 0 42 -6 58 -26z"
-                        />
-                        <path
-                          d="M920 3125 l0 -885 509 0 509 0 4 168 c4 149 7 175 31 245 36 103 95
+                          />
+                          <path
+                            d="M920 3125 l0 -885 509 0 509 0 4 168 c4 149 7 175 31 245 36 103 95
                          195 170 262 33 30 65 55 70 55 5 0 -13 24 -39 53 -91 100 -134 210 -134 345 0
                          148 53 276 160 382 105 105 213 150 360 150 147 0 255 -45 360 -150 205 -204
                          216 -519 26 -727 -26 -29 -43 -53 -38 -53 21 0 130 -111 170 -172 22 -35 53
                          -99 68 -143 25 -72 28 -97 32 -247 l4 -168 509 0 509 0 0 885 0 885 -1640 0
                          -1640 0 0 -885z"
-                        />
-                        <path
-                          d="M2443 3722 c-158 -57 -252 -203 -241 -376 9 -137 80 -239 206 -299
+                          />
+                          <path
+                            d="M2443 3722 c-158 -57 -252 -203 -241 -376 9 -137 80 -239 206 -299
                          59 -28 77 -32 152 -32 76 0 93 4 152 33 84 41 158 120 188 200 32 83 26 205
                          -13 284 -36 73 -101 139 -174 174 -74 37 -193 44 -270 16z"
-                        />
-                        <path
-                          d="M2320 2852 c-61 -40 -141 -127 -169 -185 -40 -83 -51 -144 -51 -289
+                          />
+                          <path
+                            d="M2320 2852 c-61 -40 -141 -127 -169 -185 -40 -83 -51 -144 -51 -289
                          l0 -138 460 0 460 0 0 138 c-1 152 -8 198 -47 281 -31 66 -119 162 -182 199
                          -41 24 -47 25 -90 13 -74 -20 -162 -24 -226 -11 -107 22 -108 22 -155 -8z"
-                        />
-                        <path
-                          d="M2477 1636 c-62 -23 -113 -64 -141 -116 -70 -129 -28 -287 93 -354
+                          />
+                          <path
+                            d="M2477 1636 c-62 -23 -113 -64 -141 -116 -70 -129 -28 -287 93 -354
                          130 -70 288 -28 356 95 26 46 30 64 30 129 0 64 -4 83 -29 127 -44 81 -133
                          132 -226 132 -25 0 -62 -6 -83 -13z"
-                        />
-                      </g>
-                    </svg>
-                  </td>
-                  <td>
-                    <span class="download-text"
-                      >Bedienungsanleitung Videosprechanlage</span
-                    ><br />Nutzung und Einstellungen einfach erklärt
-                  </td>
-                  <td>
-                    <a
-                      href="/downloads/Anleitung_Sprechanlage.pdf"
-                      class="download-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Download</a
-                    >
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <p>
-              Falls Sie ein bestimmtes Dokument vermissen oder weitere
-              Unterlagen benötigen, lassen Sie es uns wissen! Nutzen Sie einfach
-              das Kontaktformular, um Ihre Anfrage zu stellen. Wir hoffen, dass
-              Sie hier alle benötigten Informationen finden und Ihr Anliegen mit
-              den verfügbaren Downloads geklärt werden kann.
-            </p>
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>
+                      <span class="download-text"
+                        >Bedienungsanleitung Videosprechanlage</span
+                      ><br />Nutzung und Einstellungen einfach erklärt
+                    </td>
+                    <td>
+                      <a
+                        href="/downloads/Anleitung_Sprechanlage.pdf"
+                        class="download-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Download</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Falls Sie ein bestimmtes Dokument vermissen oder weitere
+                Unterlagen benötigen, lassen Sie es uns wissen! Nutzen Sie
+                einfach das Kontaktformular, um Ihre Anfrage zu stellen. Wir
+                hoffen, dass Sie hier alle benötigten Informationen finden und
+                Ihr Anliegen mit den verfügbaren Downloads geklärt werden kann.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="action-buttons">
-      <h3 class="blue-share">Seite teilen</h3>
-      <button id="shareButton" title="Teilen">
-        <svg
-          width="32px"
-          height="32px"
-          class="icon-share"
-          fill="currentColor"
-          viewBox="0 0 512 512"
-        >
-          <g transform="translate(0,512) scale(0.100000,-0.100000)">
-            <path
-              d="M1355 5113 c-201 -24 -375 -76 -544 -163 -411 -213 -701 -605 -787
+      <section class="action-buttons">
+        <h3 class="blue-share">Seite teilen</h3>
+        <button id="shareButton" title="Teilen" aria-label="Seite teilen">
+          <svg
+            width="32px"
+            height="32px"
+            class="icon-share"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <g transform="translate(0,512) scale(0.100000,-0.100000)">
+              <path
+                d="M1355 5113 c-201 -24 -375 -76 -544 -163 -411 -213 -701 -605 -787
      -1065 -18 -94 -19 -171 -19 -1325 0 -1154 1 -1231 19 -1325 115 -617 594
      -1096 1211 -1211 94 -18 171 -19 1335 -19 l1235 0 105 23 c463 102 829 377
      1039 782 68 130 109 247 143 400 l23 105 0 1235 c0 1164 -1 1241 -19 1335
@@ -1035,26 +1050,27 @@
      -60 c-68 -171 -199 -284 -370 -321 -98 -20 -2404 -20 -2502 0 -189 40 -334
      181 -384 372 -13 49 -15 156 -15 661 0 401 4 620 11 655 37 178 185 335 362
      383 71 19 406 20 460 1z"
-            />
-          </g>
-        </svg>
-      </button>
-      <a
-        href="/downloads/Downloads_Print.pdf"
-        title="Downloads Druckversion"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          width="40px"
-          height="40px"
-          class="icon-share"
-          fill="currentColor"
-          viewBox="0 0 512 512"
+              />
+            </g>
+          </svg>
+        </button>
+        <a
+          href="/downloads/Downloads_Print.pdf"
+          title="Downloads Druckversion"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Druckversion als PDF öffnen (neuer Tab)"
         >
-          <g transform="translate(0,512) scale(0.100000,-0.100000)">
-            <path
-              d="M2952 4700 c-86 -12 -203 -45 -287 -82 -149 -64 -331 -211 -414 -331
+          <svg
+            width="40px"
+            height="40px"
+            class="icon-share"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <g transform="translate(0,512) scale(0.100000,-0.100000)">
+              <path
+                d="M2952 4700 c-86 -12 -203 -45 -287 -82 -149 -64 -331 -211 -414 -331
 -29 -43 -37 -48 -60 -43 -198 43 -327 45 -476 6 -325 -83 -581 -351 -650 -681
 -8 -39 -15 -80 -15 -93 0 -18 -14 -28 -80 -55 -213 -87 -384 -249 -490 -464
 -77 -156 -93 -230 -94 -422 0 -187 16 -262 88 -410 93 -190 258 -356 451 -452
@@ -1063,9 +1079,9 @@
 -436 156 -595 0 -57 1 -59 23 -52 92 28 244 132 340 233 313 328 355 821 102
 1201 -96 145 -279 294 -432 355 l-69 27 12 76 c85 518 -256 1028 -771 1153
 -93 22 -273 32 -363 19z"
-            />
-            <path
-              d="M2406 2779 c-481 -66 -879 -417 -996 -878 -118 -469 49 -956 429
+              />
+              <path
+                d="M2406 2779 c-481 -66 -879 -417 -996 -878 -118 -469 49 -956 429
 -1245 392 -298 926 -324 1347 -65 120 73 308 261 382 380 288 468 222 1072
 -160 1458 -172 175 -372 284 -613 336 -89 19 -299 27 -389 14z m230 -558 c23
 -10 54 -36 70 -57 l29 -37 3 -269 3 -269 50 45 c72 64 136 80 207 51 93 -40
@@ -1073,17 +1089,23 @@
 -65 0 -103 29 -313 238 -115 114 -215 220 -224 237 -9 16 -16 52 -16 80 0 80
 40 138 115 170 71 29 135 13 207 -51 l50 -45 3 269 3 269 29 37 c33 44 95 76
 146 76 19 0 54 -9 76 -19z"
-            />
-          </g>
-        </svg>
-      </a>
-    </section>
+              />
+            </g>
+          </svg>
+        </a>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <svg width="150px" viewBox="0 0 1444 649">
+            <svg
+              width="150px"
+              viewBox="0 0 1444 649"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g transform="translate(0,649) scale(0.100000,-0.100000)">
                 <path
                   d="M5430 5878 l-635 -449 -100 -229 -100 -229 -3 421 c-1 232 0 424 3
@@ -1251,14 +1273,26 @@
               </g>
             </svg>
           </div>
-          <div class="footer-links">
+          <div
+            class="footer-links"
+            role="navigation"
+            aria-label="Footernavigation"
+          >
             <ul>
               <li>
                 <a href="/index.html#contact">Kontakt</a>
               </li>
               <li><a href="/impressum.html">Impressum</a></li>
               <li><a href="/datenschutz.html">Datenschutz</a></li>
-              <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
+              <li>
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sitemap in neuem Tab öffnen"
+                  >Sitemap</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -1287,8 +1321,14 @@
         });
     </script>
 
-    <button id="scroll-to-top" aria-label="Scroll to top">
-      <svg width="22px" height="22px" viewBox="0 0 512 512">
+    <button id="scroll-to-top" aria-label="Nach oben scrollen">
+      <svg
+        width="22px"
+        height="22px"
+        viewBox="0 0 512 512"
+        aria-hidden="true"
+        focusable="false"
+      >
         <g
           transform="translate(0,512) scale(0.100000,-0.100000)"
           fill="currentColor"

@@ -168,7 +168,13 @@
             class="hovering"
             aria-label="Kulagin Vermietung – Startseite"
           >
-            <svg width="180px" viewBox="0 0 1444 649" class="logo">
+            <svg
+              width="180px"
+              viewBox="0 0 1444 649"
+              class="logo"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g
                 transform="translate(0,649) scale(0.100000,-0.100000)"
                 fill="currentColor"
@@ -358,431 +364,66 @@
       </div>
     </div>
 
-    <section class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="text">
-            <h3 class="blue-text">PLAGWITZ</h3>
-            <h2>Ein lebendiger und kreativer Stadtteil mit Geschichte</h2>
-            <p>
-              Die Gießerstraße 50 befindet sich im Herzen von Plagwitz, einem
-              Stadtteil, der die perfekte Symbiose aus Vergangenheit und
-              Gegenwart darstellt. Einst ein florierendes Industriegebiet mit
-              Fabriken und Produktionsstätten, hat sich Plagwitz in den letzten
-              Jahrzehnten zu einem Vorzeigeprojekt des urbanen Wandels
-              entwickelt. Die Umnutzung historischer Industriegebäude in moderne
-              Wohn-, Arbeits- und Kulturflächen ist ein Paradebeispiel für
-              nachhaltige Stadtentwicklung.
-            </p>
-            <a
-              href="/plagwitz.html"
-              class="read-more"
-              aria-label="Mehr über Leipzig Plagwitz lesen"
-              >Weiterlesen</a
-            >
-          </div>
-          <div class="hovering bild-plagwitz"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="apartments">
-      <div class="container">
-        <h3 class="blue-text">WOHNEN NEU ERLEBEN</h3>
-        <h2>Stilvoll renoviert & modern ausgestattet</h2>
-        <p>
-          Unsere Wohnungen bieten mehr als nur vier Wände – sie verbinden
-          stilvolle Renovierung mit moderner Ausstattung und durchdachtem
-          Wohnkomfort. Jede Einheit wurde mit Liebe zum Detail gestaltet, um
-          Ihnen ein angenehmes und zeitgemäßes Wohnen zu ermöglichen. Erleben
-          Sie ein Zuhause, das Ästhetik, Funktionalität und ein einzigartiges
-          Wohngefühl vereint.
-        </p>
-
-        <div class="apartment-list">
-          <div class="apartment">
-            <div
-              class="hovering apartment-image"
-              role="img"
-              aria-label="Wohnungsbild – 2‑Zimmer Wohnung"
-            ></div>
-            <h3>2 Zimmer Wohnung</h3>
-            <p>
-              Ideal für Singles oder Paare: Frisch renoviert, modern
-              ausgestattet und perfekt für komfortables Wohnen.
-            </p>
-            <div class="trenner"></div>
-
-            <div class="wohnung-details">
-              <svg
-                viewBox="0 0 512 512"
-                class="size-icon"
-                aria-hidden="true"
-                focusable="false"
+    <main id="main-content" aria-labelledby="header-title">
+      <section class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="text">
+              <h3 class="blue-text">PLAGWITZ</h3>
+              <h2>Ein lebendiger und kreativer Stadtteil mit Geschichte</h2>
+              <p>
+                Die Gießerstraße 50 befindet sich im Herzen von Plagwitz, einem
+                Stadtteil, der die perfekte Symbiose aus Vergangenheit und
+                Gegenwart darstellt. Einst ein florierendes Industriegebiet mit
+                Fabriken und Produktionsstätten, hat sich Plagwitz in den
+                letzten Jahrzehnten zu einem Vorzeigeprojekt des urbanen Wandels
+                entwickelt. Die Umnutzung historischer Industriegebäude in
+                moderne Wohn-, Arbeits- und Kulturflächen ist ein Paradebeispiel
+                für nachhaltige Stadtentwicklung.
+              </p>
+              <a
+                href="/plagwitz.html"
+                class="read-more"
+                aria-label="Mehr über Leipzig Plagwitz lesen"
+                >Weiterlesen</a
               >
-                <g
-                  transform="translate(0,512) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M244 5111 c-48 -12 -133 -62 -160 -94 -14 -17 -37 -53 -52 -81 l-27
--51 0 -2325 0 -2325 27 -51 c40 -76 70 -107 140 -145 l63 -34 2325 0 2325 0
-52 27 c66 35 116 85 151 151 l27 52 0 725 0 725 -34 63 c-38 70 -69 100 -145
-140 l-51 27 -362 3 -362 3 -3 -430 c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66
--116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429
-c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66 -116 -71 -58 -7 -108 15 -144 63
-l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429 c-3 -416 -4 -430 -24 -457 -32
--44 -68 -66 -116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -415 0
-c-461 0 -460 0 -510 66 -24 31 -29 47 -29 95 0 62 17 94 69 133 27 20 41 21
-457 24 l429 3 0 319 0 320 -415 0 c-462 0 -461 0 -511 66 -24 31 -29 47 -29
-95 0 62 17 94 69 133 27 20 41 21 457 24 l429 3 0 318 0 318 -417 8 c-452 8
--459 8 -506 64 -65 78 -40 194 53 241 37 19 61 20 455 20 l416 0 -3 358 c-3
-342 -4 359 -25 404 -27 60 -94 127 -158 158 l-50 25 -705 2 c-388 1 -719 -2
--736 -6z"
-                  />
-                </g>
-              </svg>
-              55 m²
-              <svg
-                viewBox="0 0 512 512"
-                class="zimmer-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g
-                  transform="translate(0,512) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M1636 4601 c-483 -127 -892 -235 -908 -242 -51 -21 -114 -91 -137
--153 l-21 -57 0 -1649 0 -1649 -238 -3 c-263 -3 -272 -5 -312 -71 -18 -29 -20
--51 -20 -207 0 -197 8 -226 69 -267 l34 -23 1369 0 1368 0 -2 2173 -3 2172
--23 45 c-32 61 -68 97 -127 127 -102 52 -76 57 -1049 -196z m511 -1802 c41
--20 89 -75 107 -124 47 -124 5 -300 -88 -366 -81 -60 -158 -51 -231 24 -80 82
--105 196 -70 314 42 143 165 209 282 152z"
-                  />
-                  <path
-                    d="M3130 3975 l0 -285 425 0 425 0 0 -1705 0 -1705 518 0 c498 0 518 1
-550 20 65 40 72 65 72 252 0 189 -10 232 -64 271 -30 21 -41 22 -268 25 l-238
-3 0 1513 c0 1624 2 1565 -49 1665 -37 72 -117 148 -199 188 l-76 38 -548 3
--548 3 0 -286z"
-                  />
-                </g></svg
-              >2 Zi.
-              <svg
-                viewBox="0 0 128 128"
-                class="price-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g
-                  transform="translate(0,128) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M97 1239 c-20 -11 -49 -38 -65 -61 l-27 -42 -3 -390 c-2 -346 -1
--396 14 -435 22 -56 73 -113 121 -134 54 -24 633 -157 680 -157 50 0 102 33
-125 80 16 31 18 69 18 325 0 160 -4 305 -10 324 -16 58 -58 108 -113 135 -29
-15 -178 61 -332 102 -154 42 -288 80 -297 86 -23 11 -23 57 -1 65 9 4 58 -4
-107 -18 86 -23 110 -24 445 -29 323 -5 355 -7 365 -22 8 -13 8 -23 0 -35 -10
--16 -31 -18 -168 -21 -86 -1 -156 -7 -156 -12 0 -4 24 -19 53 -33 29 -13 69
--38 89 -56 31 -27 43 -31 95 -31 69 0 96 -15 91 -51 -3 -21 -9 -24 -48 -27
-l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
-118 22 55 22 671 0 725 -20 48 -41 71 -87 94 -35 18 -66 19 -540 19 -482 -1
--505 -2 -541 -21z m674 -685 c93 -48 55 -194 -50 -194 -104 0 -146 137 -57
-191 38 23 67 24 107 3z"
-                  />
-                </g></svg
-              >800 €
             </div>
-            <a href="/wohnung-2-zimmer.html" class="btn">MEHR INFOS</a>
-          </div>
-          <div class="apartment">
-            <div
-              class="hovering apartment-image"
-              role="img"
-              aria-label="Wohnungsbild – 3‑Zimmer Wohnung"
-            ></div>
-            <h3>3 Zimmer Wohnung</h3>
-            <p>
-              Geräumig und modern: Bietet viel Platz, eine clevere
-              Raumaufteilung und hochwertige Ausstattung.
-            </p>
-            <div class="trenner"></div>
-            <div class="wohnung-details">
-              <svg
-                viewBox="0 0 512 512"
-                class="size-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g
-                  transform="translate(0,512) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M244 5111 c-48 -12 -133 -62 -160 -94 -14 -17 -37 -53 -52 -81 l-27
--51 0 -2325 0 -2325 27 -51 c40 -76 70 -107 140 -145 l63 -34 2325 0 2325 0
-52 27 c66 35 116 85 151 151 l27 52 0 725 0 725 -34 63 c-38 70 -69 100 -145
-140 l-51 27 -362 3 -362 3 -3 -430 c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66
--116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429
-c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66 -116 -71 -58 -7 -108 15 -144 63
-l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429 c-3 -416 -4 -430 -24 -457 -32
--44 -68 -66 -116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -415 0
-c-461 0 -460 0 -510 66 -24 31 -29 47 -29 95 0 62 17 94 69 133 27 20 41 21
-457 24 l429 3 0 319 0 320 -415 0 c-462 0 -461 0 -511 66 -24 31 -29 47 -29
-95 0 62 17 94 69 133 27 20 41 21 457 24 l429 3 0 318 0 318 -417 8 c-452 8
--459 8 -506 64 -65 78 -40 194 53 241 37 19 61 20 455 20 l416 0 -3 358 c-3
-342 -4 359 -25 404 -27 60 -94 127 -158 158 l-50 25 -705 2 c-388 1 -719 -2
--736 -6z"
-                  />
-                </g>
-              </svg>
-              77 m²
-              <svg
-                viewBox="0 0 512 512"
-                class="zimmer-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g
-                  transform="translate(0,512) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M1636 4601 c-483 -127 -892 -235 -908 -242 -51 -21 -114 -91 -137
--153 l-21 -57 0 -1649 0 -1649 -238 -3 c-263 -3 -272 -5 -312 -71 -18 -29 -20
--51 -20 -207 0 -197 8 -226 69 -267 l34 -23 1369 0 1368 0 -2 2173 -3 2172
--23 45 c-32 61 -68 97 -127 127 -102 52 -76 57 -1049 -196z m511 -1802 c41
--20 89 -75 107 -124 47 -124 5 -300 -88 -366 -81 -60 -158 -51 -231 24 -80 82
--105 196 -70 314 42 143 165 209 282 152z"
-                  />
-                  <path
-                    d="M3130 3975 l0 -285 425 0 425 0 0 -1705 0 -1705 518 0 c498 0 518 1
-550 20 65 40 72 65 72 252 0 189 -10 232 -64 271 -30 21 -41 22 -268 25 l-238
-3 0 1513 c0 1624 2 1565 -49 1665 -37 72 -117 148 -199 188 l-76 38 -548 3
--548 3 0 -286z"
-                  />
-                </g></svg
-              >3 Zi.
-              <svg
-                viewBox="0 0 128 128"
-                class="price-icon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g
-                  transform="translate(0,128) scale(0.100000,-0.100000)"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M97 1239 c-20 -11 -49 -38 -65 -61 l-27 -42 -3 -390 c-2 -346 -1
--396 14 -435 22 -56 73 -113 121 -134 54 -24 633 -157 680 -157 50 0 102 33
-125 80 16 31 18 69 18 325 0 160 -4 305 -10 324 -16 58 -58 108 -113 135 -29
-15 -178 61 -332 102 -154 42 -288 80 -297 86 -23 11 -23 57 -1 65 9 4 58 -4
-107 -18 86 -23 110 -24 445 -29 323 -5 355 -7 365 -22 8 -13 8 -23 0 -35 -10
--16 -31 -18 -168 -21 -86 -1 -156 -7 -156 -12 0 -4 24 -19 53 -33 29 -13 69
--38 89 -56 31 -27 43 -31 95 -31 69 0 96 -15 91 -51 -3 -21 -9 -24 -48 -27
-l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
-118 22 55 22 671 0 725 -20 48 -41 71 -87 94 -35 18 -66 19 -540 19 -482 -1
--505 -2 -541 -21z m674 -685 c93 -48 55 -194 -50 -194 -104 0 -146 137 -57
-191 38 23 67 24 107 3z"
-                  />
-                </g></svg
-              >1.120 €
-            </div>
-            <a href="/wohnung-3-zimmer.html" class="btn">MEHR INFOS</a>
+            <div class="hovering bild-plagwitz"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="ausstattung">
-      <div class="container">
-        <h3 class="blue-text">AUSSTATTUNG</h3>
-        <h2>Durchdachte Details für höchsten Wohnkomfort</h2>
-        <p>
-          Jede Wohnung ist mit hochwertigen Materialien und moderner Technik
-          ausgestattet, um Ihren Alltag so angenehm wie möglich zu gestalten.
-          Intelligente Lösungen, stilvolle Elemente und praktische Features
-          sorgen für eine harmonische Wohnatmosphäre, in der Funktionalität und
-          Design perfekt aufeinander abgestimmt sind.
-        </p>
-
-        <div class="ausstattung-list">
-          <div class="ausstattung-item">
-            <img
-              src="/images/ausstattung/thermostat.webp"
-              alt="Digitale Thermostate"
-              loading="lazy"
-            />
-            <div>
-              <h3>Digitale Thermostate</h3>
-              <p>
-                Effiziente Steuerung der Raumtemperatur für optimalen Komfort
-                und Energieeinsparung.
-              </p>
-            </div>
-          </div>
-          <div class="ausstattung-item">
-            <img
-              src="/images/ausstattung/rfid.webp"
-              alt="Zutritt über RFID-System"
-              loading="lazy"
-            />
-            <div>
-              <h3>Zutritt über RFID-System</h3>
-              <p>
-                Sicherer und bequemer Zugang durch moderne
-                RFID-Schlüsseltechnologie.
-              </p>
-            </div>
-          </div>
-          <div class="ausstattung-item">
-            <img
-              src="/images/ausstattung/sprechanlage.webp"
-              alt="Videosprechanlage"
-              loading="lazy"
-            />
-            <div>
-              <h3>Videosprechanlage</h3>
-              <p>
-                Klare Bild- und Tonübertragung für sichere und komfortable
-                Besucherkommunikation.
-              </p>
-            </div>
-          </div>
-          <div class="ausstattung-item">
-            <img
-              src="/images/ausstattung/fussbodenheizung.webp"
-              alt="Fußbodenheizung in jedem Zimmer"
-              loading="lazy"
-            />
-            <div>
-              <h3>Fußbodenheizung in jedem Zimmer</h3>
-              <p>
-                Angenehme, gleichmäßige Wärme in allen Räumen für höchsten
-                Wohnkomfort.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <a href="/ausstattung.html" class="btn">Alle Anzeigen</a>
-      </div>
-    </section>
-
-    <section class="slider-custom-section">
-      <div class="container">
-        <div class="slider-custom-container">
-          <h3 class="blue-text">BILDER SAGEN MEHR ALS WORTE</h3>
-          <h2>Unsere Impressionen auf einen Blick</h2>
-          <div class="swiper swiper-slider">
-            <div class="swiper-wrapper">
-              <img
-                class="swiper-slide"
-                src="/images/slider/ansicht_innen_einfahrt.webp"
-                alt="Innenansicht – Einfahrt Gießerstraße 50"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/ansicht_innen_hof.webp"
-                alt="Innenhof der Gießerstraße 50"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/treppenhaus.webp"
-                alt="Treppenhaus"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/treppenhaus_erdgeschoss.webp"
-                alt="Treppenhaus im Erdgeschoss"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/eingang_keller.webp"
-                alt="Eingang zum Keller"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/keller.webp"
-                alt="Kellerbereich"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/ansicht_aussen_zaun.webp"
-                alt="Außenansicht mit Zaun"
-                loading="lazy"
-              />
-              <img
-                class="swiper-slide"
-                src="/images/slider/ansicht_ecke_aussen.webp"
-                alt="Außenansicht der Hausecke"
-                loading="lazy"
-              />
-            </div>
-            <span class="swiper-pagination"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact-header">
-          <h3 class="blue-text">KONTAKTIEREN SIE UNS</h3>
-          <h2>Wir freuen uns auf Ihre Anfrage</h2>
+      <section class="apartments">
+        <div class="container">
+          <h3 class="blue-text">WOHNEN NEU ERLEBEN</h3>
+          <h2>Stilvoll renoviert & modern ausgestattet</h2>
           <p>
-            Haben Sie Fragen oder Interesse an unseren Wohnungen? Schreiben Sie
-            uns – wir helfen Ihnen gerne weiter und melden uns schnellstmöglich
-            bei Ihnen.
+            Unsere Wohnungen bieten mehr als nur vier Wände – sie verbinden
+            stilvolle Renovierung mit moderner Ausstattung und durchdachtem
+            Wohnkomfort. Jede Einheit wurde mit Liebe zum Detail gestaltet, um
+            Ihnen ein angenehmes und zeitgemäßes Wohnen zu ermöglichen. Erleben
+            Sie ein Zuhause, das Ästhetik, Funktionalität und ein einzigartiges
+            Wohngefühl vereint.
           </p>
-        </div>
 
-        <div class="contact-columns">
-          <div class="contact-form">
-            <form action="https://formspree.io/f/xzbonqko" method="POST">
-              <label for="email"
-                >Ihre E-Mail: <span class="required">(Pflichtfeld)</span></label
-              >
-              <input type="email" id="email" name="E-Mail" required />
+          <div class="apartment-list">
+            <div class="apartment">
+              <div
+                class="hovering apartment-image"
+                role="img"
+                aria-label="Wohnungsbild – 2‑Zimmer Wohnung"
+              ></div>
+              <h3>2 Zimmer Wohnung</h3>
+              <p>
+                Ideal für Singles oder Paare: Frisch renoviert, modern
+                ausgestattet und perfekt für komfortables Wohnen.
+              </p>
+              <div class="trenner"></div>
 
-              <label for="name"
-                >Ihr Name: <span class="required">(Pflichtfeld)</span></label
-              >
-              <input type="text" id="name" name="Interessent" required />
-
-              <label for="phone">Telefon:</label>
-              <input type="tel" id="phone" name="Telefon" />
-
-              <label for="message"
-                >Ihre Nachricht:
-                <span class="required">(Pflichtfeld)</span></label
-              >
-              <textarea id="message" name="Nachricht" required></textarea>
-
-              <button type="submit" class="btn">ABSENDEN</button>
-            </form>
-            <div
-              id="responseMessage"
-              style="display: none; color: white; margin-top: 15px"
-            ></div>
-          </div>
-
-          <div class="contact-map">
-            <!-- Anschrift über der Karte -->
-            <div class="contact-address">
-              <p class="contact-info">
+              <div class="wohnung-details">
                 <svg
                   viewBox="0 0 512 512"
-                  class="contact-icon"
+                  class="size-icon"
                   aria-hidden="true"
                   focusable="false"
                 >
@@ -791,121 +432,503 @@ l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
                     fill="currentColor"
                   >
                     <path
-                      d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
+                      d="M244 5111 c-48 -12 -133 -62 -160 -94 -14 -17 -37 -53 -52 -81 l-27
+-51 0 -2325 0 -2325 27 -51 c40 -76 70 -107 140 -145 l63 -34 2325 0 2325 0
+52 27 c66 35 116 85 151 151 l27 52 0 725 0 725 -34 63 c-38 70 -69 100 -145
+140 l-51 27 -362 3 -362 3 -3 -430 c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66
+-116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429
+c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66 -116 -71 -58 -7 -108 15 -144 63
+l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429 c-3 -416 -4 -430 -24 -457 -32
+-44 -68 -66 -116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -415 0
+c-461 0 -460 0 -510 66 -24 31 -29 47 -29 95 0 62 17 94 69 133 27 20 41 21
+457 24 l429 3 0 319 0 320 -415 0 c-462 0 -461 0 -511 66 -24 31 -29 47 -29
+95 0 62 17 94 69 133 27 20 41 21 457 24 l429 3 0 318 0 318 -417 8 c-452 8
+-459 8 -506 64 -65 78 -40 194 53 241 37 19 61 20 455 20 l416 0 -3 358 c-3
+342 -4 359 -25 404 -27 60 -94 127 -158 158 l-50 25 -705 2 c-388 1 -719 -2
+-736 -6z"
+                    />
+                  </g>
+                </svg>
+                55 m²
+                <svg
+                  viewBox="0 0 512 512"
+                  class="zimmer-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g
+                    transform="translate(0,512) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M1636 4601 c-483 -127 -892 -235 -908 -242 -51 -21 -114 -91 -137
+-153 l-21 -57 0 -1649 0 -1649 -238 -3 c-263 -3 -272 -5 -312 -71 -18 -29 -20
+-51 -20 -207 0 -197 8 -226 69 -267 l34 -23 1369 0 1368 0 -2 2173 -3 2172
+-23 45 c-32 61 -68 97 -127 127 -102 52 -76 57 -1049 -196z m511 -1802 c41
+-20 89 -75 107 -124 47 -124 5 -300 -88 -366 -81 -60 -158 -51 -231 24 -80 82
+-105 196 -70 314 42 143 165 209 282 152z"
+                    />
+                    <path
+                      d="M3130 3975 l0 -285 425 0 425 0 0 -1705 0 -1705 518 0 c498 0 518 1
+550 20 65 40 72 65 72 252 0 189 -10 232 -64 271 -30 21 -41 22 -268 25 l-238
+3 0 1513 c0 1624 2 1565 -49 1665 -37 72 -117 148 -199 188 l-76 38 -548 3
+-548 3 0 -286z"
+                    />
+                  </g></svg
+                >2 Zi.
+                <svg
+                  viewBox="0 0 128 128"
+                  class="price-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g
+                    transform="translate(0,128) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M97 1239 c-20 -11 -49 -38 -65 -61 l-27 -42 -3 -390 c-2 -346 -1
+-396 14 -435 22 -56 73 -113 121 -134 54 -24 633 -157 680 -157 50 0 102 33
+125 80 16 31 18 69 18 325 0 160 -4 305 -10 324 -16 58 -58 108 -113 135 -29
+15 -178 61 -332 102 -154 42 -288 80 -297 86 -23 11 -23 57 -1 65 9 4 58 -4
+107 -18 86 -23 110 -24 445 -29 323 -5 355 -7 365 -22 8 -13 8 -23 0 -35 -10
+-16 -31 -18 -168 -21 -86 -1 -156 -7 -156 -12 0 -4 24 -19 53 -33 29 -13 69
+-38 89 -56 31 -27 43 -31 95 -31 69 0 96 -15 91 -51 -3 -21 -9 -24 -48 -27
+l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
+118 22 55 22 671 0 725 -20 48 -41 71 -87 94 -35 18 -66 19 -540 19 -482 -1
+-505 -2 -541 -21z m674 -685 c93 -48 55 -194 -50 -194 -104 0 -146 137 -57
+191 38 23 67 24 107 3z"
+                    />
+                  </g></svg
+                >800 €
+              </div>
+              <a
+                href="/wohnung-2-zimmer.html"
+                class="btn"
+                aria-label="Mehr über 2-Zimmer-Wohnung lesen"
+                >MEHR INFOS</a
+              >
+            </div>
+            <div class="apartment">
+              <div
+                class="hovering apartment-image"
+                role="img"
+                aria-label="Wohnungsbild – 3‑Zimmer Wohnung"
+              ></div>
+              <h3>3 Zimmer Wohnung</h3>
+              <p>
+                Geräumig und modern: Bietet viel Platz, eine clevere
+                Raumaufteilung und hochwertige Ausstattung.
+              </p>
+              <div class="trenner"></div>
+              <div class="wohnung-details">
+                <svg
+                  viewBox="0 0 512 512"
+                  class="size-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g
+                    transform="translate(0,512) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M244 5111 c-48 -12 -133 -62 -160 -94 -14 -17 -37 -53 -52 -81 l-27
+-51 0 -2325 0 -2325 27 -51 c40 -76 70 -107 140 -145 l63 -34 2325 0 2325 0
+52 27 c66 35 116 85 151 151 l27 52 0 725 0 725 -34 63 c-38 70 -69 100 -145
+140 l-51 27 -362 3 -362 3 -3 -430 c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66
+-116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429
+c-3 -416 -4 -430 -24 -457 -32 -44 -68 -66 -116 -71 -58 -7 -108 15 -144 63
+l-29 37 -3 429 -3 428 -319 0 -319 0 -3 -429 c-3 -416 -4 -430 -24 -457 -32
+-44 -68 -66 -116 -71 -58 -7 -108 15 -144 63 l-29 37 -3 429 -3 428 -415 0
+c-461 0 -460 0 -510 66 -24 31 -29 47 -29 95 0 62 17 94 69 133 27 20 41 21
+457 24 l429 3 0 319 0 320 -415 0 c-462 0 -461 0 -511 66 -24 31 -29 47 -29
+95 0 62 17 94 69 133 27 20 41 21 457 24 l429 3 0 318 0 318 -417 8 c-452 8
+-459 8 -506 64 -65 78 -40 194 53 241 37 19 61 20 455 20 l416 0 -3 358 c-3
+342 -4 359 -25 404 -27 60 -94 127 -158 158 l-50 25 -705 2 c-388 1 -719 -2
+-736 -6z"
+                    />
+                  </g>
+                </svg>
+                77 m²
+                <svg
+                  viewBox="0 0 512 512"
+                  class="zimmer-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g
+                    transform="translate(0,512) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M1636 4601 c-483 -127 -892 -235 -908 -242 -51 -21 -114 -91 -137
+-153 l-21 -57 0 -1649 0 -1649 -238 -3 c-263 -3 -272 -5 -312 -71 -18 -29 -20
+-51 -20 -207 0 -197 8 -226 69 -267 l34 -23 1369 0 1368 0 -2 2173 -3 2172
+-23 45 c-32 61 -68 97 -127 127 -102 52 -76 57 -1049 -196z m511 -1802 c41
+-20 89 -75 107 -124 47 -124 5 -300 -88 -366 -81 -60 -158 -51 -231 24 -80 82
+-105 196 -70 314 42 143 165 209 282 152z"
+                    />
+                    <path
+                      d="M3130 3975 l0 -285 425 0 425 0 0 -1705 0 -1705 518 0 c498 0 518 1
+550 20 65 40 72 65 72 252 0 189 -10 232 -64 271 -30 21 -41 22 -268 25 l-238
+3 0 1513 c0 1624 2 1565 -49 1665 -37 72 -117 148 -199 188 l-76 38 -548 3
+-548 3 0 -286z"
+                    />
+                  </g></svg
+                >3 Zi.
+                <svg
+                  viewBox="0 0 128 128"
+                  class="price-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g
+                    transform="translate(0,128) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M97 1239 c-20 -11 -49 -38 -65 -61 l-27 -42 -3 -390 c-2 -346 -1
+-396 14 -435 22 -56 73 -113 121 -134 54 -24 633 -157 680 -157 50 0 102 33
+125 80 16 31 18 69 18 325 0 160 -4 305 -10 324 -16 58 -58 108 -113 135 -29
+15 -178 61 -332 102 -154 42 -288 80 -297 86 -23 11 -23 57 -1 65 9 4 58 -4
+107 -18 86 -23 110 -24 445 -29 323 -5 355 -7 365 -22 8 -13 8 -23 0 -35 -10
+-16 -31 -18 -168 -21 -86 -1 -156 -7 -156 -12 0 -4 24 -19 53 -33 29 -13 69
+-38 89 -56 31 -27 43 -31 95 -31 69 0 96 -15 91 -51 -3 -21 -9 -24 -48 -27
+l-45 -3 3 -237 c2 -130 5 -243 8 -251 3 -10 16 -12 56 -7 84 12 132 46 163
+118 22 55 22 671 0 725 -20 48 -41 71 -87 94 -35 18 -66 19 -540 19 -482 -1
+-505 -2 -541 -21z m674 -685 c93 -48 55 -194 -50 -194 -104 0 -146 137 -57
+191 38 23 67 24 107 3z"
+                    />
+                  </g></svg
+                >1.120 €
+              </div>
+              <a
+                href="/wohnung-3-zimmer.html"
+                class="btn"
+                aria-label="Mehr über 3-Zimmer-Wohnung lesen"
+                >MEHR INFOS</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ausstattung">
+        <div class="container">
+          <h3 class="blue-text">AUSSTATTUNG</h3>
+          <h2>Durchdachte Details für höchsten Wohnkomfort</h2>
+          <p>
+            Jede Wohnung ist mit hochwertigen Materialien und moderner Technik
+            ausgestattet, um Ihren Alltag so angenehm wie möglich zu gestalten.
+            Intelligente Lösungen, stilvolle Elemente und praktische Features
+            sorgen für eine harmonische Wohnatmosphäre, in der Funktionalität
+            und Design perfekt aufeinander abgestimmt sind.
+          </p>
+
+          <div class="ausstattung-list">
+            <div class="ausstattung-item">
+              <img
+                src="/images/ausstattung/thermostat.webp"
+                alt="Digitale Thermostate"
+                loading="lazy"
+              />
+              <div>
+                <h3>Digitale Thermostate</h3>
+                <p>
+                  Effiziente Steuerung der Raumtemperatur für optimalen Komfort
+                  und Energieeinsparung.
+                </p>
+              </div>
+            </div>
+            <div class="ausstattung-item">
+              <img
+                src="/images/ausstattung/rfid.webp"
+                alt="Zutritt über RFID-System"
+                loading="lazy"
+              />
+              <div>
+                <h3>Zutritt über RFID-System</h3>
+                <p>
+                  Sicherer und bequemer Zugang durch moderne
+                  RFID-Schlüsseltechnologie.
+                </p>
+              </div>
+            </div>
+            <div class="ausstattung-item">
+              <img
+                src="/images/ausstattung/sprechanlage.webp"
+                alt="Videosprechanlage"
+                loading="lazy"
+              />
+              <div>
+                <h3>Videosprechanlage</h3>
+                <p>
+                  Klare Bild- und Tonübertragung für sichere und komfortable
+                  Besucherkommunikation.
+                </p>
+              </div>
+            </div>
+            <div class="ausstattung-item">
+              <img
+                src="/images/ausstattung/fussbodenheizung.webp"
+                alt="Fußbodenheizung in jedem Zimmer"
+                loading="lazy"
+              />
+              <div>
+                <h3>Fußbodenheizung in jedem Zimmer</h3>
+                <p>
+                  Angenehme, gleichmäßige Wärme in allen Räumen für höchsten
+                  Wohnkomfort.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="/ausstattung.html"
+            class="btn"
+            aria-label="Mehr über Wohnungsausstattung lesen"
+            >Alle Anzeigen</a
+          >
+        </div>
+      </section>
+
+      <section class="slider-custom-section">
+        <div class="container">
+          <div class="slider-custom-container">
+            <h3 class="blue-text">BILDER SAGEN MEHR ALS WORTE</h3>
+            <h2>Unsere Impressionen auf einen Blick</h2>
+            <div class="swiper swiper-slider">
+              <div class="swiper-wrapper">
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/ansicht_innen_einfahrt.webp"
+                  alt="Innenansicht – Einfahrt Gießerstraße 50"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/ansicht_innen_hof.webp"
+                  alt="Innenhof der Gießerstraße 50"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/treppenhaus.webp"
+                  alt="Treppenhaus"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/treppenhaus_erdgeschoss.webp"
+                  alt="Treppenhaus im Erdgeschoss"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/eingang_keller.webp"
+                  alt="Eingang zum Keller"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/keller.webp"
+                  alt="Kellerbereich"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/ansicht_aussen_zaun.webp"
+                  alt="Außenansicht mit Zaun"
+                  loading="lazy"
+                />
+                <img
+                  class="swiper-slide"
+                  src="/images/slider/ansicht_ecke_aussen.webp"
+                  alt="Außenansicht der Hausecke"
+                  loading="lazy"
+                />
+              </div>
+              <span class="swiper-pagination"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-header">
+            <h3 class="blue-text">KONTAKTIEREN SIE UNS</h3>
+            <h2>Wir freuen uns auf Ihre Anfrage</h2>
+            <p>
+              Haben Sie Fragen oder Interesse an unseren Wohnungen? Schreiben
+              Sie uns – wir helfen Ihnen gerne weiter und melden uns
+              schnellstmöglich bei Ihnen.
+            </p>
+          </div>
+
+          <div class="contact-columns">
+            <div class="contact-form">
+              <form action="https://formspree.io/f/xzbonqko" method="POST">
+                <label for="email"
+                  >Ihre E-Mail:
+                  <span class="required">(Pflichtfeld)</span></label
+                >
+                <input type="email" id="email" name="E-Mail" required />
+
+                <label for="name"
+                  >Ihr Name: <span class="required">(Pflichtfeld)</span></label
+                >
+                <input type="text" id="name" name="Interessent" required />
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="Telefon" />
+
+                <label for="message"
+                  >Ihre Nachricht:
+                  <span class="required">(Pflichtfeld)</span></label
+                >
+                <textarea id="message" name="Nachricht" required></textarea>
+
+                <button type="submit" class="btn">ABSENDEN</button>
+              </form>
+              <div
+                id="responseMessage"
+                style="display: none; color: white; margin-top: 15px"
+              ></div>
+            </div>
+
+            <div class="contact-map">
+              <!-- Anschrift über der Karte -->
+              <div class="contact-address">
+                <p class="contact-info">
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="contact-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <g
+                      transform="translate(0,512) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M2335 4785 c-917 -130 -1569 -907 -1532 -1825 25 -592 278 -1174 772
 -1772 206 -249 561 -589 827 -791 137 -104 179 -103 326 7 251 190 612 536
 817 784 623 754 878 1526 735 2220 -79 382 -312 757 -625 1009 -213 171 -504
 303 -777 354 -148 27 -405 34 -543 14z m360 -1120 c287 -60 505 -329 505 -625
 0 -297 -218 -565 -510 -626 -277 -58 -575 85 -699 337 -126 255 -80 541 118
 740 156 155 370 219 586 174z"
-                    />
-                  </g>
-                </svg>
-                Gießerstraße 50, 04229 Leipzig
-              </p>
-              <p class="contact-info">
-                <svg viewBox="0 0 512 512" class="contact-icon">
-                  <g
-                    transform="translate(0,512) scale(0.100000,-0.100000)"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M1004 4469 c-136 -23 -265 -91 -370 -194 -104 -103 -179 -247 -197
+                      />
+                    </g>
+                  </svg>
+                  Gießerstraße 50, 04229 Leipzig
+                </p>
+                <p class="contact-info">
+                  <svg viewBox="0 0 512 512" class="contact-icon">
+                    <g
+                      transform="translate(0,512) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M1004 4469 c-136 -23 -265 -91 -370 -194 -104 -103 -179 -247 -197
 -380 l-6 -40 1065 -557 1064 -557 1063 556 c584 306 1064 557 1065 559 8 5
 -21 123 -45 184 -76 195 -234 340 -448 412 l-70 23 -1535 1 c-844 1 -1558 -2
 -1586 -7z"
-                    />
-                    <path
-                      d="M432 2553 l3 -938 23 -65 c41 -115 90 -190 181 -280 69 -68 103 -94
+                      />
+                      <path
+                        d="M432 2553 l3 -938 23 -65 c41 -115 90 -190 181 -280 69 -68 103 -94
 171 -127 152 -74 138 -73 959 -73 l731 0 21 42 c12 24 41 70 64 103 24 33 353
 369 732 746 l688 686 92 46 c125 62 215 81 356 74 73 -3 134 -12 175 -25 l62
 -20 0 384 c0 211 -2 384 -4 384 -2 0 -469 -244 -1037 -542 -1003 -526 -1036
 -543 -1089 -543 -53 0 -88 18 -1087 543 -568 298 -1035 542 -1038 542 -3 0 -4
 -422 -3 -937z"
-                    />
-                    <path
-                      d="M4306 2544 c-138 -33 -128 -24 -867 -763 l-687 -686 -40 -85 c-28
+                      />
+                      <path
+                        d="M4306 2544 c-138 -33 -128 -24 -867 -763 l-687 -686 -40 -85 c-28
 -59 -57 -154 -96 -312 -31 -125 -56 -241 -56 -257 0 -114 110 -224 225 -224
 76 0 485 106 575 149 72 35 101 62 767 728 672 671 693 693 727 766 61 129 66
 260 16 393 -68 179 -264 310 -459 306 -25 0 -72 -7 -105 -15z"
-                    />
-                  </g>
-                </svg>
-                <a
-                  href="mailto:kontakt@kulagin-vermietung.de"
-                  aria-label="E-Mail an kontakt@kulagin-vermietung.de senden"
-                  >kontakt@kulagin-vermietung.de</a
-                >
-              </p>
-              <p class="contact-info">
-                <svg
-                  viewBox="0 0 512 512"
-                  class="contact-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <g
-                    transform="translate(0,512) scale(0.100000,-0.100000)"
-                    fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                  <a
+                    href="mailto:kontakt@kulagin-vermietung.de"
+                    aria-label="E-Mail an kontakt@kulagin-vermietung.de senden"
+                    >kontakt@kulagin-vermietung.de</a
                   >
-                    <path
-                      d="M1480 4605 c-128 -33 -312 -126 -417 -210 -204 -163 -343 -390 -399
+                </p>
+                <p class="contact-info">
+                  <svg
+                    viewBox="0 0 512 512"
+                    class="contact-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <g
+                      transform="translate(0,512) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M1480 4605 c-128 -33 -312 -126 -417 -210 -204 -163 -343 -390 -399
 -649 -46 -214 -19 -603 66 -936 258 -1017 1066 -1824 2083 -2081 334 -84 722
 -111 932 -65 222 48 415 153 570 311 138 139 240 320 289 509 58 222 11 373
 -141 453 -32 17 -272 122 -533 234 l-475 203 -80 0 c-102 0 -110 -4 -430 -217
 l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
 73 124 162 260 209 321 212 326 213 427 l0 80 -204 475 c-112 261 -217 501
 -234 533 -80 152 -232 199 -457 142z"
-                    />
-                    <path
-                      d="M3092 4460 c-92 -56 -98 -207 -10 -264 13 -8 72 -31 132 -51 447
+                      />
+                      <path
+                        d="M3092 4460 c-92 -56 -98 -207 -10 -264 13 -8 72 -31 132 -51 447
 -149 782 -484 931 -931 39 -115 60 -148 112 -170 99 -42 208 21 220 127 9 79
 -88 332 -192 504 -220 365 -559 637 -958 769 -123 41 -186 46 -235 16z"
-                    />
-                    <path
-                      d="M2975 3860 c-47 -10 -84 -39 -106 -81 -26 -52 -24 -103 6 -154 26
+                      />
+                      <path
+                        d="M2975 3860 c-47 -10 -84 -39 -106 -81 -26 -52 -24 -103 6 -154 26
 -45 49 -59 155 -94 233 -76 424 -270 506 -514 16 -48 37 -88 55 -107 100 -99
 269 -28 269 113 0 40 -37 151 -79 239 -123 259 -354 467 -622 562 -111 39
 -143 46 -184 36z"
-                    />
-                  </g>
-                </svg>
+                      />
+                    </g>
+                  </svg>
 
-                <a
-                  href="tel:+4915560422999"
-                  aria-label="Telefon: 01556 04229 99"
-                  >01556 ❘ 04229 99</a
-                >
-              </p>
+                  <a
+                    href="tel:+4915560422999"
+                    aria-label="Telefon: 01556 04229 99"
+                    >01556 ❘ 04229 99</a
+                  >
+                </p>
+              </div>
+
+              <iframe
+                src="https://maps.google.com/maps?hl=de&amp;q=Gie%C3%9Ferstra%C3%9Fe%2050,%20Plagwitz%20+(Kulagin%20Vermietung)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Karte: Standort Gießerstraße 50, Leipzig (Kulagin Vermietung)"
+              ></iframe>
             </div>
-
-            <iframe
-              src="https://maps.google.com/maps?hl=de&amp;q=Gie%C3%9Ferstra%C3%9Fe%2050,%20Plagwitz%20+(Kulagin%20Vermietung)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Karte: Standort Gießerstraße 50, Leipzig (Kulagin Vermietung)"
-            ></iframe>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="action-buttons" style="margin-top: -15px">
-      <h3 class="blue-share">Seite teilen</h3>
-      <button id="shareButton" title="Seite Teilen" aria-label="Seite teilen">
-        <svg
-          width="32px"
-          height="32px"
-          class="icon-share"
-          fill="currentColor"
-          viewBox="0 0 512 512"
-        >
-          <g transform="translate(0,512) scale(0.100000,-0.100000)">
-            <path
-              d="M1355 5113 c-201 -24 -375 -76 -544 -163 -411 -213 -701 -605 -787
+      <section class="action-buttons" style="margin-top: -15px">
+        <h3 class="blue-share">Seite teilen</h3>
+        <button id="shareButton" title="Seite Teilen" aria-label="Seite teilen">
+          <svg
+            width="32px"
+            height="32px"
+            class="icon-share"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <g transform="translate(0,512) scale(0.100000,-0.100000)">
+              <path
+                d="M1355 5113 c-201 -24 -375 -76 -544 -163 -411 -213 -701 -605 -787
        -1065 -18 -94 -19 -171 -19 -1325 0 -1154 1 -1231 19 -1325 115 -617 594
        -1096 1211 -1211 94 -18 171 -19 1335 -19 l1235 0 105 23 c463 102 829 377
        1039 782 68 130 109 247 143 400 l23 105 0 1235 c0 1164 -1 1241 -19 1335
@@ -924,27 +947,27 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
        -60 c-68 -171 -199 -284 -370 -321 -98 -20 -2404 -20 -2502 0 -189 40 -334
        181 -384 372 -13 49 -15 156 -15 661 0 401 4 620 11 655 37 178 185 335 362
        383 71 19 406 20 460 1z"
-            />
-          </g>
-        </svg>
-      </button>
-      <a
-        href="/downloads/Kulagin_Vermietung_Print.pdf"
-        title="Startseite Druckversion"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Druckversion als PDF öffnen (neuer Tab)"
-      >
-        <svg
-          width="40px"
-          height="40px"
-          class="icon-share"
-          fill="currentColor"
-          viewBox="0 0 512 512"
+              />
+            </g>
+          </svg>
+        </button>
+        <a
+          href="/downloads/Kulagin_Vermietung_Print.pdf"
+          title="Startseite Druckversion"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Druckversion als PDF öffnen (neuer Tab)"
         >
-          <g transform="translate(0,512) scale(0.100000,-0.100000)">
-            <path
-              d="M2952 4700 c-86 -12 -203 -45 -287 -82 -149 -64 -331 -211 -414 -331
+          <svg
+            width="40px"
+            height="40px"
+            class="icon-share"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <g transform="translate(0,512) scale(0.100000,-0.100000)">
+              <path
+                d="M2952 4700 c-86 -12 -203 -45 -287 -82 -149 -64 -331 -211 -414 -331
 -29 -43 -37 -48 -60 -43 -198 43 -327 45 -476 6 -325 -83 -581 -351 -650 -681
 -8 -39 -15 -80 -15 -93 0 -18 -14 -28 -80 -55 -213 -87 -384 -249 -490 -464
 -77 -156 -93 -230 -94 -422 0 -187 16 -262 88 -410 93 -190 258 -356 451 -452
@@ -953,9 +976,9 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
 -436 156 -595 0 -57 1 -59 23 -52 92 28 244 132 340 233 313 328 355 821 102
 1201 -96 145 -279 294 -432 355 l-69 27 12 76 c85 518 -256 1028 -771 1153
 -93 22 -273 32 -363 19z"
-            />
-            <path
-              d="M2406 2779 c-481 -66 -879 -417 -996 -878 -118 -469 49 -956 429
+              />
+              <path
+                d="M2406 2779 c-481 -66 -879 -417 -996 -878 -118 -469 49 -956 429
 -1245 392 -298 926 -324 1347 -65 120 73 308 261 382 380 288 468 222 1072
 -160 1458 -172 175 -372 284 -613 336 -89 19 -299 27 -389 14z m230 -558 c23
 -10 54 -36 70 -57 l29 -37 3 -269 3 -269 50 45 c72 64 136 80 207 51 93 -40
@@ -963,11 +986,12 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
 -65 0 -103 29 -313 238 -115 114 -215 220 -224 237 -9 16 -16 52 -16 80 0 80
 40 138 115 170 71 29 135 13 207 -51 l50 -45 3 269 3 269 29 37 c33 44 95 76
 146 76 19 0 54 -9 76 -19z"
-            />
-          </g>
-        </svg>
-      </a>
-    </section>
+              />
+            </g>
+          </svg>
+        </a>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -1146,14 +1170,26 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
               </g>
             </svg>
           </div>
-          <div class="footer-links">
+          <div
+            class="footer-links"
+            role="navigation"
+            aria-label="Footernavigation"
+          >
             <ul>
               <li>
                 <a href="/index.html#contact">Kontakt</a>
               </li>
               <li><a href="/impressum.html">Impressum</a></li>
               <li><a href="/datenschutz.html">Datenschutz</a></li>
-              <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
+              <li>
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sitemap in neuem Tab öffnen"
+                  >Sitemap</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -1182,8 +1218,14 @@ l-249 -167 -56 31 c-180 101 -368 261 -484 412 -61 80 -156 235 -156 255 0 7
         });
     </script>
 
-    <button id="scroll-to-top" aria-label="Scroll to top">
-      <svg width="22px" height="22px" viewBox="0 0 512 512">
+    <button id="scroll-to-top" aria-label="Nach oben scrollen">
+      <svg
+        width="22px"
+        height="22px"
+        viewBox="0 0 512 512"
+        aria-hidden="true"
+        focusable="false"
+      >
         <g
           transform="translate(0,512) scale(0.100000,-0.100000)"
           fill="currentColor"

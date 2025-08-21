@@ -149,8 +149,18 @@
     <div class="header-impressum" id="header-page">
       <div class="nav-bar">
         <div class="container">
-          <a href="/index.html" class="hovering">
-            <svg width="180px" viewBox="0 0 1444 649" class="logo">
+          <a
+            href="/index.html"
+            class="hovering"
+            aria-label="Kulagin Vermietung – Startseite"
+          >
+            <svg
+              width="180px"
+              viewBox="0 0 1444 649"
+              class="logo"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g
                 transform="translate(0,649) scale(0.100000,-0.100000)"
                 fill="currentColor"
@@ -303,7 +313,7 @@
           >
             <span></span><span></span><span></span>
           </button>
-          <nav id="primary-nav">
+          <nav id="primary-nav" role="navigation" aria-label="Hauptnavigation">
             <ul>
               <li><a href="/plagwitz.html" class="navlink">Plagwitz</a></li>
               <li>
@@ -311,6 +321,7 @@
               </li>
               <li><a href="/downloads.html" class="navlink">Downloads</a></li>
               <li><a href="/ueberuns.html" class="navlink">Über Uns</a></li>
+
               <li><a href="/index.html#contact" class="btn">KONTAKT</a></li>
             </ul>
           </nav>
@@ -332,146 +343,182 @@
       </div>
     </div>
 
-    <section class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="text-impressum">
-            <h3 class="blue-text">Angaben gemäß § 5 DDG</h3>
-            <h2 style="margin-bottom: 15px">
-              Verantwortlich für diese Website
-            </h2>
-            <p>
-              <span class="impressumue">Kulagin Vermietung</span><br />Sergej
-              Kulagin<br />Gießerstraße 50<br />04229 Leipzig
-            </p>
-            <p>
-              Diese Website dient ausschließlich der privaten
-              Wohnungsvermietung. Die Vermietung erfolgt nicht im Rahmen eines
-              Gewerbes.
-            </p>
-            <h3 class="blue-text" style="margin-top: 40px">Kontakt</h3>
-            <p>
-              Telefon: 01556 ❘ 04229 99<br />Website:
-              www.kulagin-vermietung.de<br />E-Mail:
-              kontakt@kulagin-vermietung.de
-            </p>
-
-            <h2 style="margin-bottom: 15px; margin-top: 40px">
-              Haftungsausschluss
-            </h2>
-
-            <h3 class="blue-text">Haftung für Inhalte</h3>
-
-            <p>
-              Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
-              Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-              können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
-              sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten
-              nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG
-              sind wir als Diensteanbieter jedoch nicht verpflichtet,
-              übermittelte oder gespeicherte fremde Informationen zu überwachen
-              oder nach Umständen zu forschen, die auf eine rechtswidrige
-              Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung
-              der Nutzung von Informationen nach den allgemeinen Gesetzen
-              bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch
-              erst ab dem Zeitpunkt der Kenntnis einer konkreten
-              Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
-              Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-            </p>
-            <h3 class="blue-text">Haftung für Links</h3>
-
-            <p>
-              Unser Angebot enthält Links zu externen Webseiten Dritter, auf
-              deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
-              diese fremden Inhalte auch keine Gewähr übernehmen. Für die
-              Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
-              oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
-              wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
-              überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
-              Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle
-              der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
-              Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
-              Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-            </p>
-
-            <h3 class="blue-text">Urheberrecht</h3>
-            <p>
-              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-              diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-              Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-              Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-              schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-              Downloads und Kopien dieser Seite sind nur für den privaten, nicht
-              kommerziellen Gebrauch gestattet. Soweit Inhalte auf dieser Seite
-              nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-              Dritter beachtet. Dies betrifft insbesondere:
-
-              <li style="margin-top: 15px">
-                Icons und Bilder, die teilweise von
+    <main id="main-content" aria-labelledby="header-title">
+      <section class="about" aria-labelledby="header-title">
+        <div class="container">
+          <div class="about-content">
+            <div class="text-impressum">
+              <h3 class="blue-text">Angaben gemäß § 5 DDG</h3>
+              <h2 style="margin-bottom: 15px">
+                Verantwortlich für diese Website
+              </h2>
+              <p>
+                <span class="impressumue">Kulagin Vermietung</span><br />Sergej
+                Kulagin<br />Gießerstraße 50<br />04229 Leipzig
+              </p>
+              <p>
+                Diese Website dient ausschließlich der privaten
+                Wohnungsvermietung. Die Vermietung erfolgt nicht im Rahmen eines
+                Gewerbes.
+              </p>
+              <h3 class="blue-text" style="margin-top: 40px">Kontakt</h3>
+              <p>
+                Telefon:
                 <a
-                  href="https://de.freepik.com"
-                  class="plagwitz-link"
-                  target="_blank"
-                  >Freepik</a
-                >
-                stammen,
-              </li>
-              <li>
-                Instagram-Bild “We love Plagwitz” aus dem Beitrag von Leipzig
-                HAFEN (<a
-                  href="https://www.instagram.com/p/CmGxvVPo6kH/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
-                  class="plagwitz-link"
-                  target="_blank"
-                  >Instagram-Link</a
-                >),
-              </li>
-              <li>
-                Kartenausschnitte, die über
+                  href="tel:+4915560422999"
+                  aria-label="Telefon: 01556 04229 99"
+                  >01556 ❘ 04229 99</a
+                ><br />
+                Website:
                 <a
-                  href="https://www.google.com/maps"
-                  class="plagwitz-link"
+                  href="https://www.kulagin-vermietung.de"
                   target="_blank"
-                  >Google Maps</a
-                >
-                eingebunden sind,
-              </li>
-              <li>
-                das Kontaktformular, das den Dienst
+                  rel="noopener noreferrer"
+                  aria-label="Website von Kulagin Vermietung (neuer Tab)"
+                  >www.kulagin-vermietung.de</a
+                ><br />
+                E‑Mail:
                 <a
-                  href="https://formspree.io"
-                  class="plagwitz-link"
-                  target="_blank"
-                  >Formspree</a
+                  href="mailto:kontakt@kulagin-vermietung.de"
+                  aria-label="E‑Mail an kontakt@kulagin-vermietung.de senden"
+                  >kontakt@kulagin-vermietung.de</a
                 >
-                nutzt,
-              </li>
-              <li style="margin-bottom: 20px">
-                sowie Grundrisszeichnungen, die mit dem Tool
-                <a
-                  href="https://floorplanner.com"
-                  class="plagwitz-link"
-                  target="_blank"
-                  >Floorplanner</a
-                >
-                erstellt wurden.
-              </li>
-            </p>
-            <p>
-              Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam
-              werden, bitten wir um einen entsprechenden Hinweis. Bei
-              Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte
-              umgehend entfernen.
-            </p>
+              </p>
+
+              <h2 style="margin-bottom: 15px; margin-top: 40px">
+                Haftungsausschluss
+              </h2>
+
+              <h3 class="blue-text">Haftung für Inhalte</h3>
+
+              <p>
+                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+                Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+                können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
+                sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen
+                Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
+                bis 10 DDG sind wir als Diensteanbieter jedoch nicht
+                verpflichtet, übermittelte oder gespeicherte fremde
+                Informationen zu überwachen oder nach Umständen zu forschen, die
+                auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+                Entfernung oder Sperrung der Nutzung von Informationen nach den
+                allgemeinen Gesetzen bleiben hiervon unberührt. Eine
+                diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
+                Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+                Bekanntwerden von entsprechenden Rechtsverletzungen werden wir
+                diese Inhalte umgehend entfernen.
+              </p>
+              <h3 class="blue-text">Haftung für Links</h3>
+
+              <p>
+                Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+                deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+                diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+                Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
+                wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+                überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+                Verlinkung nicht erkennbar. Eine permanente inhaltliche
+                Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
+                Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+                Bekanntwerden von Rechtsverletzungen werden wir derartige Links
+                umgehend entfernen.
+              </p>
+
+              <h3 class="blue-text">Urheberrecht</h3>
+              <p>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+                diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+                Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+                schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                Downloads und Kopien dieser Seite sind nur für den privaten,
+                nicht kommerziellen Gebrauch gestattet. Soweit Inhalte auf
+                dieser Seite nicht vom Betreiber erstellt wurden, werden die
+                Urheberrechte Dritter beachtet. Dies betrifft insbesondere:
+
+                <li style="margin-top: 15px">
+                  Icons und Bilder, die teilweise von
+                  <a
+                    href="https://de.freepik.com"
+                    class="plagwitz-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Freepik Webseite in neuem Tab öffnen"
+                    >Freepik</a
+                  >
+                  stammen,
+                </li>
+                <li>
+                  Instagram-Bild “We love Plagwitz” aus dem Beitrag von Leipzig
+                  HAFEN (<a
+                    href="https://www.instagram.com/p/CmGxvVPo6kH/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+                    class="plagwitz-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram-Beitrag in neuem Tab öffnen"
+                    >Instagram-Link</a
+                  >),
+                </li>
+                <li>
+                  Kartenausschnitte, die über
+                  <a
+                    href="https://www.google.com/maps"
+                    class="plagwitz-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google Maps in neuem Tab öffnen"
+                    >Google Maps</a
+                  >
+                  eingebunden sind,
+                </li>
+                <li>
+                  das Kontaktformular, das den Dienst
+                  <a
+                    href="https://formspree.io"
+                    class="plagwitz-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Formspree Webseite in neuem Tab öffnen"
+                    >Formspree</a
+                  >
+                  nutzt,
+                </li>
+                <li style="margin-bottom: 20px">
+                  sowie Grundrisszeichnungen, die mit dem Tool
+                  <a
+                    href="https://floorplanner.com"
+                    class="plagwitz-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Floorplanner Webseite in neuem Tab öffnen"
+                    >Floorplanner</a
+                  >
+                  erstellt wurden.
+                </li>
+              </p>
+              <p>
+                Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam
+                werden, bitten wir um einen entsprechenden Hinweis. Bei
+                Bekanntwerden von Rechtsverletzungen werden wir derartige
+                Inhalte umgehend entfernen.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <svg width="150px" viewBox="0 0 1444 649">
+            <svg
+              width="150px"
+              viewBox="0 0 1444 649"
+              aria-hidden="true"
+              focusable="false"
+            >
               <g transform="translate(0,649) scale(0.100000,-0.100000)">
                 <path
                   d="M5430 5878 l-635 -449 -100 -229 -100 -229 -3 421 c-1 232 0 424 3
@@ -639,14 +686,28 @@
               </g>
             </svg>
           </div>
-          <div class="footer-links">
+          <div
+            class="footer-links"
+            role="navigation"
+            aria-label="Footernavigation"
+          >
             <ul>
               <li>
                 <a href="/index.html#contact">Kontakt</a>
               </li>
-              <li><a href="/impressum.html">Impressum</a></li>
+              <li>
+                <a href="/impressum.html" aria-current="page">Impressum</a>
+              </li>
               <li><a href="/datenschutz.html">Datenschutz</a></li>
-              <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
+              <li>
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sitemap in neuem Tab öffnen"
+                  >Sitemap</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -656,27 +717,14 @@
       </div>
     </footer>
 
-    <script>
-      document
-        .getElementById("shareButton")
-        .addEventListener("click", async () => {
-          if (navigator.share) {
-            try {
-              await navigator.share({
-                title: document.title,
-                url: window.location.href,
-              });
-            } catch (err) {
-              console.error("Teilen fehlgeschlagen:", err);
-            }
-          } else {
-            alert("Teilen wird von diesem Browser nicht unterstützt.");
-          }
-        });
-    </script>
-
-    <button id="scroll-to-top" aria-label="Scroll to top">
-      <svg width="22px" height="22px" viewBox="0 0 512 512">
+    <button id="scroll-to-top" aria-label="Nach oben scrollen">
+      <svg
+        width="22px"
+        height="22px"
+        viewBox="0 0 512 512"
+        aria-hidden="true"
+        focusable="false"
+      >
         <g
           transform="translate(0,512) scale(0.100000,-0.100000)"
           fill="currentColor"
