@@ -1584,6 +1584,10 @@ swiper-slide {
   display: block;
   width: 100%;
   height: 100%;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
 }
 
 .team-member img {
