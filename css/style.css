@@ -1588,6 +1588,7 @@ swiper-slide {
   -ms-user-select: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
+  pointer-events: none !important;
 }
 
 .team-member img {
