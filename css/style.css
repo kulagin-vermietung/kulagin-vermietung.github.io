@@ -463,7 +463,8 @@ h4 a:hover {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url("/images/plagwitz/giesserei.webp") 45% center/cover no-repeat;
+  background: url("/images/plagwitz/giesserstrasse-giesserei-fassade-leipzig-plagwitz.webp")
+    45% center/cover no-repeat;
   display: flex;
   transition: 0.3s ease-in-out;
   transition: background 0.3s, transform 0.1s;
@@ -477,8 +478,8 @@ h4 a:hover {
 }
 .bild-giesser {
   flex-grow: 1;
-  background: url("/images/plagwitz/giesserstrasse.webp") 15% center/cover
-    no-repeat;
+  background: url("/images/plagwitz/giesserstrasse-50-leipzig-plagwitz.webp")
+    15% center/cover no-repeat;
   transition: background 0.3s, transform 0.1s;
 }
 .bild-mitte {
@@ -1627,7 +1628,8 @@ swiper-slide {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url("/images/plagwitz/plagwitz.webp") 45% center/cover no-repeat;
+  background: url("/images/plagwitz/leipzig-stadtteil-we-love-plagwitz.webp")
+    45% center/cover no-repeat;
   display: flex;
   border-radius: var(--radius);
 }
@@ -2402,7 +2404,8 @@ body.menu-open .hamburger span:nth-child(3) {
     width: 100%;
     min-height: 350px;
     display: block;
-    background: url("/images/plagwitz/plagwitz.webp") 75% 40% / cover no-repeat;
+    background: url("/images/plagwitz/leipzig-stadtteil-we-love-plagwitz.webp")
+      75% 40% / cover no-repeat;
   }
   .bild-links,
   .bild-mitte {
@@ -2537,8 +2540,8 @@ body.menu-open .hamburger span:nth-child(3) {
     width: 100%;
     min-height: 250px;
     display: block;
-    background: url("/images/plagwitz/giesserstrasse.webp") 15% 35% / cover
-      no-repeat;
+    background: url("/images/plagwitz/giesserstrasse-50-leipzig-plagwitz.webp")
+      15% 35% / cover no-repeat;
   }
 }
 @media (max-width: 500px) {
