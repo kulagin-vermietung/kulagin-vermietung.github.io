@@ -787,13 +787,12 @@ h4 a:hover {
   -ms-user-select: none !important;
 }
 .icon-auto,
-.icon-fahrrad,
-.wohnung-grundriss img,
-.wohnungs-grundriss img {
+.icon-fahrrad {
   user-select: none !important;
   -webkit-user-drag: none !important;
   pointer-events: none !important;
 }
+
 .icon-gelb {
   width: 18.88px;
   height: 18.88px;
