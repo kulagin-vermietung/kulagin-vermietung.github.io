@@ -1717,6 +1717,30 @@ swiper-slide {
 .plagwitz-link {
   display: inline-block;
 }
+
+.plagwitz-link-dark:hover {
+  color: #00509e;
+}
+
+.plagwitz-link-dark:after {
+  border-bottom: 2px solid #00509e;
+  content: "";
+  display: block;
+  margin: 0.1px auto 0;
+  transition: width 50ms ease-in-out;
+  width: 0;
+}
+
+.plagwitz-link-dark:hover:after {
+  transition: width 50ms ease-in-out;
+  width: 100%;
+  color: #00509e;
+}
+
+.plagwitz-link-dark {
+  display: inline-block;
+}
+
 .slider-custom-section {
   margin: 0 auto;
 }
