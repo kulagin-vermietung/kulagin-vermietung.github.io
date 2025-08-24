@@ -2771,7 +2771,7 @@ body.menu-open .hamburger span:nth-child(3) {
 
 @media (max-width: 800px) {
   .header {
-    background: url("/images/header/header-wohnung-leipzig-plagwitz.webp") 20%
+    background: url("/images/header/header-wohnung-leipzig-plagwitz.webp") 27%
       center/cover no-repeat #4498d2;
   }
 
