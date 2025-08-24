@@ -2768,3 +2768,45 @@ body.menu-open .hamburger span:nth-child(3) {
   color: var(--blau-farbe);
   font-size: 0.8em;
 }
+
+@media (max-width: 800px) {
+  .header {
+    background: url("/images/header/header-wohnung-leipzig-plagwitz.webp") 20%
+      center/cover no-repeat #4498d2;
+  }
+
+  .header-plagwitz {
+    background: url("/images/header/wohnung-leipzig-plagwitz-stadtteil.webp")
+      25% center/cover no-repeat #72b4db;
+  }
+
+  .header-ausstattung {
+    background: url(/images/header/wohnung-ausstattung-modern-leipzig.webp) 70%
+      55% / cover no-repeat #cbd2d4;
+  }
+
+  .header-downloads {
+    background: url(/images/header/mietunterlagen-downloads-leipzig-wohnung.webp)
+      16% 75% / cover no-repeat #a2adb5;
+  }
+
+  .header-ueberuns {
+    background: url(/images/header/ueber-uns-kulagin-vermietung.webp) 34% 35% /
+      cover no-repeat #30547d;
+  }
+
+  .header-impressum {
+    background: url(/images/header/impressum-kulagin-vermietung-leipzig.webp)
+      44% center / cover no-repeat #ccc1b4;
+  }
+
+  .header-datenschutz {
+    background: url(/images/header/datenschutz-kulagin-vermietung-leipzig.webp)
+      39% center / cover no-repeat #ccc1b4;
+  }
+
+  .header-404 {
+    background: url(/images/header/404-fehlerseite-leipzig-vermietung.webp) 44%
+      center / cover no-repeat #ccc1b4;
+  }
+}
