@@ -1,3 +1,18 @@
+# === Kanonische URL + /index.html -> / ================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1) Alles auf https + www kappen
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} !^www\.kulagin-vermietung\.de$ [NC]
+  RewriteRule ^(.*)$ https://www.kulagin-vermietung.de/$1 [R=301,L]
+
+  # 2) /index.html dauerhaft auf / umleiten (nur wenn vom Client explizit angefordert)
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+</IfModule>
+# =====================================================================
+
 ### Caching — statische Dateien lange cachen
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -21,13 +36,13 @@
   <FilesMatch "\.(html)$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
   </FilesMatch>
-  # Fonts-CORS (verhindert 403/Blocker bei Subdomains/CDN)
+  # Fonts-CORS
   <FilesMatch "\.(woff2?|ttf|otf)$">
     Header set Access-Control-Allow-Origin "*"
   </FilesMatch>
 </IfModule>
 
-### Kompression (ist bei goneo meist aktiv; hier fallback)
+### Kompression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
 </IfModule>
