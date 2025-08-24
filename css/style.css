@@ -2476,7 +2476,7 @@ body.menu-open .hamburger span:nth-child(3) {
   }
   .plagwitz-item img {
     flex: 0 0 0%;
-    max-width: 200px;
+    max-width: 140px;
     height: auto;
   }
   .plagwitz-item .text {
