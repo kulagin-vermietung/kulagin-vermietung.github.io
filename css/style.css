@@ -501,7 +501,10 @@ h4 a:hover {
   display: block;
   object-fit: cover;
   border-radius: 0; /* parent hat schon Radius + overflow hidden */
+  user-select: none !important;
   -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .bild-giesser,
 .bild-mitte {
@@ -511,23 +514,49 @@ h4 a:hover {
   height: auto;
 }
 .bild-giesser {
+  flex: 1;
+  width: 100%;
+  height: auto;
   flex-grow: 1;
-  background: url(/images/plagwitz/giesserstrasse-50-leipzig-plagwitz.webp) 15%
-    center/cover no-repeat;
+  display: block;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 0;
 }
-.bild-mitte {
-  flex-grow: 1;
-  background: url(/images/wohnungen/wohnung-mitte-leipzig-plagwitz/wohnung-mitte-tuer-leipzig-plagwitz.webp)
-    10% 70% / cover no-repeat;
+.bild-giesser img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  -webkit-user-drag: none !important;
+  pointer-events: none !important;
 }
+
 .bild-links {
   flex: 1;
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url(/images/wohnungen/wohnung-links-leipzig-plagwitz/wohnung-links-tuer-leipzig-plagwitz.webp)
-    center 70% / cover no-repeat;
-  display: flex;
+  display: block;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 0;
+}
+.bild-links img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .about-content .text,
 .about-content4 .text {
@@ -783,6 +812,8 @@ h4 a:hover {
 .size-icon,
 .slider img,
 .zimmer-icon {
+  user-select: none !important;
+  -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
@@ -848,6 +879,8 @@ h4 a:hover {
   height: auto;
   display: block;
   object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
@@ -869,6 +902,8 @@ h4 a:hover {
 swiper-slide {
   user-select: none !important;
   -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .downloads-icon,
 .downloads-iconalt,
@@ -876,6 +911,8 @@ swiper-slide {
 .footer-logo,
 .team-member img,
 .team-member picture {
+  user-select: none !important;
+  -webkit-user-drag: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
@@ -981,6 +1018,10 @@ swiper-slide {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .apartment .btn,
 .download-btn {
@@ -1662,9 +1703,49 @@ h4 a {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url(/images/plagwitz/leipzig-stadtteil-we-love-plagwitz.webp) 45%
-    center/cover no-repeat;
-  display: flex;
+  display: block;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 0;
+}
+
+.bild-plagwitz-neu img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.bild-mitte {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  display: block;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 0;
+}
+
+.bild-mitte img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .visually-hidden {
   position: absolute;
@@ -1693,6 +1774,10 @@ h4 a {
   max-width: 140px;
   object-fit: cover;
   border-radius: var(--radius);
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 .plagwitz-item p {
   font-size: 1rem;
@@ -2448,8 +2533,7 @@ body.menu-open .hamburger span:nth-child(3) {
     width: 100%;
     min-height: 350px;
     display: block;
-    background: url(/images/plagwitz/leipzig-stadtteil-we-love-plagwitz.webp)
-      75% 40% / cover no-repeat;
+    position: relative;
   }
   .bild-links,
   .bild-mitte {
@@ -2459,12 +2543,13 @@ body.menu-open .hamburger span:nth-child(3) {
   }
   .bild-mitte {
     display: block;
-    background: url(/images/wohnungen/wohnung-mitte-leipzig-plagwitz/wohnung-mitte-tuer-leipzig-plagwitz.webp)
-      80% 80% / cover no-repeat;
+    min-height: 300px; /* gleiches visuelles Gewicht wie vorher */
   }
   .bild-links {
-    background: url(/images/wohnungen/wohnung-links-leipzig-plagwitz/wohnung-links-tuer-leipzig-plagwitz.webp)
-      80% 30% / cover no-repeat;
+    order: 3;
+    width: 100%;
+    min-height: 350px;
+    display: block;
   }
   .tabelle-info {
     min-width: 195px;
@@ -2597,6 +2682,44 @@ body.menu-open .hamburger span:nth-child(3) {
     display: block;
     position: relative;
     min-height: 400px; /* Fallback, falls aspect-ratio nicht greift */
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .about-content .bild-mitte {
+    order: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 400px; /* Fallback falls aspect-ratio nicht greift */
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .about-content .bild-giesser {
+    order: 2;
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .about-content .bild-plagwitz-neu {
+    order: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 400px; /* Fallback falls aspect-ratio nicht greift */
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .about-content .bild-links {
+    order: 4;
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 400px; /* Fallback falls aspect-ratio nicht greift */
     margin-bottom: 30px;
     margin-top: 15px;
   }
