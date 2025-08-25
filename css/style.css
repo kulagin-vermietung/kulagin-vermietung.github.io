@@ -486,9 +486,22 @@ h4 a:hover {
   width: 100%;
   height: auto;
   flex-grow: 1;
-  background: url(/images/plagwitz/giesserstrasse-giesserei-fassade-leipzig-plagwitz.webp)
-    45% center/cover no-repeat;
-  display: flex;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.bild-plagwitz img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0; /* parent hat schon Radius + overflow hidden */
+  -webkit-user-drag: none !important;
 }
 .bild-giesser,
 .bild-mitte {
@@ -1125,6 +1138,7 @@ swiper-slide {
     min-height: 220px;
     display: block;
   }
+
   .header-content {
     margin-top: 40px;
   }
@@ -2580,7 +2594,9 @@ body.menu-open .hamburger span:nth-child(3) {
   .about-content .bild-plagwitz {
     order: 4;
     width: 100%;
-    min-height: 450px;
+    display: block;
+    position: relative;
+    min-height: 400px; /* Fallback, falls aspect-ratio nicht greift */
     margin-bottom: 30px;
     margin-top: 15px;
   }
