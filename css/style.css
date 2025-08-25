@@ -91,7 +91,7 @@ h4 a {
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-  height: 110px;
+  height: 110px !important;
   background: 0 0;
   transition: background 0.2s ease-in-out;
   z-index: 1000;
